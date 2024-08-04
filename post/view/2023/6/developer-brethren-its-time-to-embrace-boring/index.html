@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Developer Brethren, its Time to Embrace Boring! | Jay Little</title>
+<meta name="keywords" content="">
+<meta name="description" content="So this morning I was listening to one of the Linux related podcasts, Coder Radio and the hosts read feedback from a listener who claimed that he was &ldquo;bored&rdquo; with PHP and ready to try something else. Now to be fair, in this particular case, the writer outlined some circumstances that made me sympathize with him. Long story short is that parts of the PHP based stack he was relying on for some of his software had changed significantly.">
+<meta name="author" content="Jay Little">
+<link rel="canonical" href="https://jaylittle.github.io/post/view/2023/6/developer-brethren-its-time-to-embrace-boring/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://jaylittle.github.io/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://jaylittle.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://jaylittle.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Developer Brethren, its Time to Embrace Boring!" />
+<meta property="og:description" content="So this morning I was listening to one of the Linux related podcasts, Coder Radio and the hosts read feedback from a listener who claimed that he was &ldquo;bored&rdquo; with PHP and ready to try something else. Now to be fair, in this particular case, the writer outlined some circumstances that made me sympathize with him. Long story short is that parts of the PHP based stack he was relying on for some of his software had changed significantly." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jaylittle.github.io/post/view/2023/6/developer-brethren-its-time-to-embrace-boring/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-06-22T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-06-22T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Developer Brethren, its Time to Embrace Boring!"/>
+<meta name="twitter:description" content="So this morning I was listening to one of the Linux related podcasts, Coder Radio and the hosts read feedback from a listener who claimed that he was &ldquo;bored&rdquo; with PHP and ready to try something else. Now to be fair, in this particular case, the writer outlined some circumstances that made me sympathize with him. Long story short is that parts of the PHP based stack he was relying on for some of his software had changed significantly."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://jaylittle.github.io/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Developer Brethren, its Time to Embrace Boring!",
+      "item": "https://jaylittle.github.io/post/view/2023/6/developer-brethren-its-time-to-embrace-boring/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Developer Brethren, its Time to Embrace Boring!",
+  "name": "Developer Brethren, its Time to Embrace Boring!",
+  "description": "So this morning I was listening to one of the Linux related podcasts, Coder Radio and the hosts read feedback from a listener who claimed that he was \u0026ldquo;bored\u0026rdquo; with PHP and ready to try something else. Now to be fair, in this particular case, the writer outlined some circumstances that made me sympathize with him. Long story short is that parts of the PHP based stack he was relying on for some of his software had changed significantly.",
+  "keywords": [
+    
+  ],
+  "articleBody": "So this morning I was listening to one of the Linux related podcasts, Coder Radio and the hosts read feedback from a listener who claimed that he was “bored” with PHP and ready to try something else. Now to be fair, in this particular case, the writer outlined some circumstances that made me sympathize with him. Long story short is that parts of the PHP based stack he was relying on for some of his software had changed significantly. In order to update his software to a currently supported version of PHP, he basically now has to rewrite it from scratch. So yeah, that sucks.\nI’ve been there before however and I freaking hated it. At my previous job I spent the previous four years painstakingly building out an awesome .NET and Vue 2.x based web application stack that I really liked. While the .NET parts of that stack are still very much relevant, the Vue 2.x code is deprecated and updating it basically requires a from scratch rewrite as Vue 3.x (unless you enable the compatibility layer kludge) drastically changes the way Vue works and how you interact with it.\nAt this moment, I haven’t bothered to go down that road. Mostly because I have no current use for an up to date version of that stack as it was mostly geared towards facilitating the completion of paid work. As my more consistent readers already know, at my current job, a large portion of my web facing work is done using a low coding tool called OutSystems (which I despise). The rest of my work is back end work and thus is written entirely in C#. This of course means that I current have no motivation to spend my time rewriting this stack.\nSo in this particular case, I identify with that viewer and his feedback. As developers, we all know that this is a shitty situation to find yourself in. But why do we find ourselves in this position so often? Also why are we getting bored with our tools? Also, why is being bored with your tool even a problem?\nWell for starters, sometimes this happens because developers responsible for parts of our chosen tech stack decide themselves that they are bored and that everything they do needs to reworked from scratch. This is typically done to facilitate a massive change to the preferred operational abstraction that the developer or team of developers behind the tool are working with.\nThis happens a lot. Disturbingly so. It happened with AngularJS 1.x when Angular 2.x was released. It was essentially incompatible with work done in AngularJS 1.x. Now to be fair, while they did somewhat change the name, only developers themselves make a distinction between the two. To the rest of the world, they are treated as if they are one and the same, despite the fact that my experience with AngularJS 1.x in no way translates to any sort of proficiency with Angular 2.x and its successive releases. It has now happened to Vue as well. Vue 2.x and 3.x share a name and the while latter provides a compatibility layer to help people transition, it really doesn’t matter. My skills with Vue 2.x are in no way directly transferable to Vue 3.x.\nFrankly, this situation pisses me off. Mostly because when these developers decide to change everything and rewrite their portion of my tech stack from scratch, it basically forces me to waste a ton of time, which could’ve been spent solving actual user problems, trying to adapt, rework or rewrite my code that depends upon their code. Nobody wins here.\nSo why did this happen? Well sometimes rewrites like this solve real problems. Sometimes these things can’t be avoided. Sometimes old and broken and insecure code just needs to be flushed down the proverbial toilet. I can’t speak for any portions of the PHP stack that the Coder Radio viewer referred to as I have no real PHP knowledge. However on the Vue side, I can absolutely say that without a doubt, Vue 3.x changes nothing that benefits me in any way possible. In fact when it comes to Vue 2.x, I personally feel that it was a top tier way to develop single page web applications. I really liked it because to me it was AngularJS 1.x with a lot of the annoyances resolved. Moving away from it is not my choice.\nMy theory on why this happened is that the Vue developers got bored. Vue 2.x was established, working well and maintaining it had become a mundane chore that was bereft of the excitement that comes with writing fresh new code around shiny new abstractions. So because of that Vue 3.x was inevitably birthed into existence and thousands upon thousands of functional and perfectly fine Vue 2.x applications became deprecated overnight. Let’s be clear, Vue 3.x is not all bad. However the reality here is that the advertised benefits are absolutely meaningless to me and my now ex-employer who relies upon that deprecated Vue 2.x component. Here are the big advertised wins of Vue 3.x:\nVue 3 Performance Tree-shaking support The Composition API Teleport Fragments Improved TypeScript support Other breaking changes In truth, none of that stuff in the list above matters to me beyond performance improvements. None of it matters to my ex-employer either as everything was running perfectly fine. If I was still working there, I would already be lobbying heavily for the time required to make the transition from Vue 2.x to Vue 3.x and it would be an exceptionally hard sell. That’s because as soon as you take the argument for the upgrade outside of the Developer Echo Chamber, it falls flat on its face. The best possible case one could make is that soon Vue 2.x will no longer be supported with security updates or be extended to take advantage of relevant new browser features. But even that’s a hard sell as it doesn’t create a path for you to argue for any tangible up front benefits.\nLet me go even further here: I like it when my developer tools are boring. If they are boring, it means they are consistent and reliable. It means that they aren’t creating undue drama in my life or the lives of my end users. As an industry, we should all be striving towards building things that ultimately end up being boring. But of course that engineer like inclination flies in the face of all the scam-adjacent tech bro behavior that makes up the public face of our industry. You can’t spend all of your time hyping up investors and rich assholes so they’ll give you stacks of cash by telling them that you are going to be building boring and reliable tools based on boring and reliable technologies that already exist. Not unless you are building something that is actually innovative. Which most of us aren’t.\nSo of course that’s why everybody is talking themselves blue in the face about nonsense techs like Artificial Intelligence and Blockchains. Because new is what reels in big fish so that they’ll fund whatever dumbass idea the founder has hidden behind a shiny layer of en vogue tech buzzwords. Developers get sucked into this thinking because all of the tech personalities spend a huge chunk of their time talking up all of this stuff which creates all of the conditions required for FOMO (Fear Of Missing Out) to percolate through our professional ranks.\nMy sense of accomplishment is primarily derived from writing tools that I know will work and will to at least some reasonable degree stand the test of time. That’s a much harder and also much more boring measuring stick to judge myself against, but its the one I use. Much like a civil engineer, I’m not here to build the flashiest bridge that will draw the hordes of tourists in, instead I to strive to build one that is stable, reliable and will stand the test of time while allowing those who wish to cross to do so sans undue drama.\nFrankly, our industry needs to grow up. We have to stop embracing change for the sake of change. We have to stop predicating our professional sense of accomplishment on how high our work scores on today’s Tech Buzzword Bingo card. The longer we go on pretending that buzzword bingo is the way to go, the less respect we will be afforded as an industry.\n",
+  "wordCount" : "1412",
+  "inLanguage": "en",
+  "datePublished": "2023-06-22T00:00:00Z",
+  "dateModified": "2023-06-22T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "Jay Little"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://jaylittle.github.io/post/view/2023/6/developer-brethren-its-time-to-embrace-boring/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jay Little",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jaylittle.github.io/favicon.png"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://jaylittle.github.io" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://jaylittle.github.io/article/view/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/post/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/resume/" title="Resume">
+                    <span>Resume</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/article/view/jay-and-annette-wedding-2004/" title="Family">
+                    <span>Family</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/article/view/recipes/" title="Recipes">
+                    <span>Recipes</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://jaylittle.github.io">Home</a>&nbsp;»&nbsp;<a href="https://jaylittle.github.io/post/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Developer Brethren, its Time to Embrace Boring!
+    </h1>
+    <div class="post-meta"><span title='2023-06-22 00:00:00 +0000 UTC'>June 22, 2023</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;Jay Little
+
+</div>
+  </header> 
+  <div class="post-content"><p>So this morning I was listening to one of the Linux related podcasts, <a href="https://coder.show/">Coder Radio</a> and the hosts read feedback from a listener who claimed that he was &ldquo;bored&rdquo; with PHP and ready to try something else.  Now to be fair, in this particular case, the writer outlined some circumstances that made me sympathize with him.  Long story short is that parts of the PHP based stack he was relying on for some of his software had changed significantly.  In order to update his software to a currently supported version of PHP, he basically now has to rewrite it from scratch.  So yeah, that sucks.</p>
+<p>I&rsquo;ve been there before however and I freaking hated it.  At my previous job I spent the previous four years painstakingly building out an awesome .NET and Vue 2.x based web application stack that I really liked.  While the .NET parts of that stack are still very much relevant, the Vue 2.x code is deprecated and updating it basically requires a from scratch rewrite as Vue 3.x (unless you enable the compatibility layer kludge) drastically changes the way Vue works and how you interact with it.</p>
+<p>At this moment, I haven&rsquo;t bothered to go down that road.  Mostly because I have no current use for an up to date version of that stack as it was mostly geared towards facilitating the completion of paid work.  As my more consistent readers already know, at my current job, a large portion of my web facing work is done using a <a href="https://jaylittle.com/post/view/2023/4/low-code-software-development-is-a-lie">low coding tool called OutSystems (which I despise)</a>.  The rest of  my work is back end work and thus is written entirely in C#.  This of course means that I current have no motivation to spend my time rewriting this stack.</p>
+<p>So in this particular case, I identify with that viewer and his feedback.  As developers, we all know that this is a shitty situation to find yourself in.  But why do we find ourselves in this position so often?  Also why are we getting bored with our tools?  Also, why is being bored with your tool even a problem?</p>
+<p>Well for starters, sometimes this happens because developers responsible for parts of our chosen tech stack decide themselves that they are bored and that everything they do needs to reworked from scratch.  This is typically done to facilitate a massive change to the preferred operational abstraction that the developer or team of developers behind the tool are working with.</p>
+<p>This happens a lot.  Disturbingly so.  It happened with AngularJS 1.x when Angular 2.x was released.  It was essentially incompatible with work done in AngularJS 1.x.  Now to be fair, while they did somewhat change the name, only developers themselves make a distinction between the two.  To the rest of the world, they are treated as if they are one and the same, despite the fact that my experience with AngularJS 1.x in no way translates to any sort of proficiency with Angular 2.x and its successive releases.  It has now happened to Vue as well.  Vue 2.x and 3.x share a name and the while latter provides a compatibility layer to help people transition, it really doesn&rsquo;t matter.  My skills with Vue 2.x are in no way directly transferable to Vue 3.x.</p>
+<p>Frankly, this situation pisses me off.  Mostly because when these developers decide to change everything and rewrite their portion of my tech stack from scratch, it basically forces me to waste a ton of time, which could&rsquo;ve been spent solving actual user problems, trying to adapt, rework or rewrite my code that depends upon their code.  Nobody wins here.</p>
+<p>So why did this happen?  Well sometimes rewrites like this solve real problems.  Sometimes these things can&rsquo;t be avoided.  Sometimes old and broken and insecure code just needs to be flushed down the proverbial toilet.  I can&rsquo;t speak for any portions of the PHP stack that the Coder Radio viewer referred to as I have no real PHP knowledge.  However on the Vue side, I can absolutely say that without a doubt, Vue 3.x changes nothing that benefits me in any way possible.  In fact when it comes to Vue 2.x, I personally feel that it was a top tier way to develop single page web applications.  I really liked it because to me it was AngularJS 1.x with a lot of the annoyances resolved.  Moving away from it is not my choice.</p>
+<p>My theory on why this happened is that the Vue developers got bored.  Vue 2.x was established, working well and maintaining it had become a mundane chore that was bereft of the excitement that comes with writing fresh new code around shiny new abstractions.  So because of that Vue 3.x was inevitably birthed into existence and thousands upon thousands of functional and perfectly fine Vue 2.x applications became deprecated overnight.  Let&rsquo;s be clear, Vue 3.x is not all bad.  However the reality here is that the advertised benefits are absolutely meaningless to me and my now ex-employer who relies upon that deprecated Vue 2.x component.  Here are the <a href="https://blog.logrocket.com/new-features-in-vue-3-and-how-to-use-them-2/">big advertised wins of Vue 3.x</a>:</p>
+<blockquote>
+<ol>
+<li>Vue 3 Performance</li>
+<li>Tree-shaking support</li>
+<li>The Composition API</li>
+<li>Teleport</li>
+<li>Fragments</li>
+<li>Improved TypeScript support</li>
+<li>Other breaking changes</li>
+</ol>
+</blockquote>
+<p>In truth, none of that stuff in the list above matters to me beyond performance improvements.  None of it matters to my ex-employer either as everything was running perfectly fine.  If I was still working there, I would already be lobbying heavily for the time required to make the transition from Vue 2.x to Vue 3.x and it would be an exceptionally hard sell.  That&rsquo;s because as soon as you take the argument for the upgrade outside of the Developer Echo Chamber, it falls flat on its face.  The best possible case one could make is that soon Vue 2.x will no longer be supported with security updates or be extended to take advantage of relevant new browser features.  But even that&rsquo;s a hard sell as it doesn&rsquo;t create a path for you to argue for any tangible up front benefits.</p>
+<p>Let me go even further here:  I like it when my developer tools are boring.  If they are boring, it means they are consistent and reliable.  It means that they aren&rsquo;t creating undue drama in my life or the lives of my end users.  As an industry, we should all be striving towards building things that ultimately end up being boring.  But of course that engineer like inclination flies in the face of all the scam-adjacent tech bro behavior that makes up the public face of our industry.  You can&rsquo;t spend all of your time hyping up investors and rich assholes so they&rsquo;ll give you stacks of cash by telling them that you are going to be building boring and reliable tools based on boring and reliable technologies that already exist.  Not unless you are building something that is actually innovative.  Which most of us aren&rsquo;t.</p>
+<p>So of course that&rsquo;s why everybody is talking themselves blue in the face about nonsense techs like Artificial Intelligence and Blockchains.  Because new is what reels in big fish so that they&rsquo;ll fund whatever dumbass idea the founder has hidden behind a shiny layer of en vogue tech buzzwords.  Developers get sucked into this thinking because all of the tech personalities spend a huge chunk of their time talking up all of this stuff which creates all of the conditions required for <a href="https://www.verywellmind.com/how-to-cope-with-fomo-4174664">FOMO (Fear Of Missing Out)</a> to percolate through our professional ranks.</p>
+<p>My sense of accomplishment is primarily derived from writing tools that I know will work and will to at least some reasonable degree stand the test of time.  That&rsquo;s a much harder and also much more boring measuring stick to judge myself against, but its the one I use.  Much like a civil engineer, I&rsquo;m not here to build the flashiest bridge that will draw the hordes of tourists in, instead I to strive to build one that is stable, reliable and will stand the test of time while allowing those who wish to cross to do so sans undue drama.</p>
+<p>Frankly, our industry needs to grow up.  We have to stop embracing change for the sake of change.  We have to stop predicating our professional sense of accomplishment on how high our work scores on today&rsquo;s Tech Buzzword Bingo card.  The longer we go on pretending that buzzword bingo is the way to go, the less respect we will be afforded as an industry.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="https://jaylittle.github.io">Jay Little</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

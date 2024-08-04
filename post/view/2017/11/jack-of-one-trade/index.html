@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Jack of One Trade | Jay Little</title>
+<meta name="keywords" content="">
+<meta name="description" content="I recently discovered that a virtual Windows server I was running had been hacked. I was being paid to run it as part of an arrangement with a long time client of mine. This server ran Windows Server 2008 R2 and though it was rarely used, it was configured to automatically update when required. The only service it exposed to the internet was RDP over TCP/IP port 3392 instead of the default 3389.">
+<meta name="author" content="Jay Little">
+<link rel="canonical" href="https://jaylittle.github.io/post/view/2017/11/jack-of-one-trade/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://jaylittle.github.io/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://jaylittle.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://jaylittle.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Jack of One Trade" />
+<meta property="og:description" content="I recently discovered that a virtual Windows server I was running had been hacked. I was being paid to run it as part of an arrangement with a long time client of mine. This server ran Windows Server 2008 R2 and though it was rarely used, it was configured to automatically update when required. The only service it exposed to the internet was RDP over TCP/IP port 3392 instead of the default 3389." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jaylittle.github.io/post/view/2017/11/jack-of-one-trade/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2017-11-21T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-11-21T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Jack of One Trade"/>
+<meta name="twitter:description" content="I recently discovered that a virtual Windows server I was running had been hacked. I was being paid to run it as part of an arrangement with a long time client of mine. This server ran Windows Server 2008 R2 and though it was rarely used, it was configured to automatically update when required. The only service it exposed to the internet was RDP over TCP/IP port 3392 instead of the default 3389."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://jaylittle.github.io/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Jack of One Trade",
+      "item": "https://jaylittle.github.io/post/view/2017/11/jack-of-one-trade/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Jack of One Trade",
+  "name": "Jack of One Trade",
+  "description": "I recently discovered that a virtual Windows server I was running had been hacked. I was being paid to run it as part of an arrangement with a long time client of mine. This server ran Windows Server 2008 R2 and though it was rarely used, it was configured to automatically update when required. The only service it exposed to the internet was RDP over TCP/IP port 3392 instead of the default 3389.",
+  "keywords": [
+    
+  ],
+  "articleBody": "I recently discovered that a virtual Windows server I was running had been hacked. I was being paid to run it as part of an arrangement with a long time client of mine. This server ran Windows Server 2008 R2 and though it was rarely used, it was configured to automatically update when required. The only service it exposed to the internet was RDP over TCP/IP port 3392 instead of the default 3389.\nNevertheless it was hacked. Somebody found the RDP service and managed to crack the credentials for a low privilege account on the machine. Now this isn’t a particularly great accomplishment as both the user name and the password were extraordinarily simple. I could’ve made them more complex but opted to keep it simple for the benefit of my client and ultimately because I believed that exposing RDP over a non-standard TCP/IP port was enough to save me from myself. This of course violated the first and most important rule of security: Security achieved through Obscurity is an illusion.\nThe hacker in question, operating from an IP address out of the United Kingdom, proceeded to install a fresh variant of Cryptomix Ransomware in an attempt to extort money out of me. Well this is where the story gets both more funny and more sad. You see, I really didn’t pay much attention to the server. The compromised user account didn’t have access to much. But it did have write access (yet another oversight on my part) to an off site replica of some of the client’s files which got updated nightly. So when I started noticing that those files were being renamed and encrypted, I simply assumed they were coming from the client. Truth is, I had almost totally forgotten about this server.\nThe situation got more confusing when I logged into the clients server only to find that the files appeared to be in pristine condition. Naturally I jumped to the first and most obvious conclusion available: Somebody at the client site paid the ransom. So I re-synced their files with mine, created a backup of those files at an alternate location and raised red flags with my client contact. I then spent more than a few hours researching and digging through the data in an attempt to discover who had done what.\nA few days later the files became corrupted again. Yet the clients copies appeared to be pristine. At this point I got paranoid and checked my primary Linux systems for signs of compromise, though none was to be found. I raised more red flags at the client site and was asked to come in and attempt to figure out exactly what was going on. I spent six hours on site that day researching the situation. Yet I was unable to come to a definitive conclusion other than the fact that nobody at the client appeared to have actually paid any ransom and a secondary server of theirs had in fact been compromised. In theory the access there would’ve been enough to access and ransom the files in question.\nThe result of this is that the original conclusion no longer made sense. If the client wasn’t paying the ransom, then why weren’t their files encrypted and renamed by the time I showed up? So I jumped to a new conclusion: The intruder must be using my clients file store as a test bed for their new ransomware variant and the nightly sync process happened to be copying them up while they were having their fun. It seemed plausible enough, though didn’t sit right with me. I knew I was missing something, but given the evidence I had gathered at the time, it was the best working theory I could construct. Yes it was terribly contrived. But solving a mystery is kind of like making an omelet: You gotta break more than a few eggs.\nSomewhere in the flurry of activity and conversations with the client, I realized in the back of my mind that I needed to harden the virtual Windows server I was running for the client like I was hardening their server. But by the time I got home, I had forgotten about it. On Monday evening however, I thankfully remembered and logged onto the server in question. After logging on with the Administrator account, I was surprised to discover that the low level account reserved for the client’s use was logged on as well. This was quite odd as they rarely ever use the server. It exists merely to service them in “oh shit” type of scenarios. So after reconfiguring the NAT rules around the RDP port for the server, I hijacked the user’s session.\nThe files on the desktop had been renamed and encrypted. The files in the public user profile had been renamed and encrypted. Some of the files in the ProgramData folder had been renamed and encrypted. Most importantly, I apparently had caught the attacker in the act as the ransomware was running and it was again renaming and encrypting the off site replica of my clients files. So I logged the user off. I then killed all remaining process running under the context of said user. I then nuked the user profile. I then cleaned up some of the damage. I restored my offsite replica using the secondary backup I had created.\nAt this point I realized that cleaning up the mess wasn’t enough. There was a bigger problem here. I was being paid to run a Windows server with a single service exposed to the open internet. The reality is that I’m not a Windows guy. I’ve been transitioning to Linux for well over a decade now and my Windows skills have suffered as a result. In addition, I’ve been working solely as a software developer in my primary job for almost the last three years. I haven’t been doing any real server maintenance work in that time. The hard truth is that this was no longer my area of expertise. This is why I updated my resume. I changed my objective statement. For well over a decade it has read:\n“My objective is to expand upon my skills as an Information Technology professional in the areas of Web Development, Networked Systems Security and Systems Administration.”\nSounds great, right? Well yeah it sounds great when you are first starting out in your career and have a “jack of all trades” mentality. For a long while it was actually true. I was doing all of those things simultaneously at previous jobs and I was mostly doing them with Windows.\nBut now? I primarily write software. I run a few Linux servers, but I’m also a dedicated Linux user. I own a single Windows machine and its an old Surface 3 that I only boot up when I need to reprogram my Logitech Harmony One remote control. That is really its sole purpose in life. The only servers I’m fully responsible for are my own. So given all that, I have now updated my objective statement to this:\n“My objective is to write the most useful, efficient and secure software possible to solve the problem at hand.”\nSo what can you learn from this? For starters: When solving a mystery, don’t limit yourself to whatever narrow scope you happen to be currently entrenched in. That was my primary mistake here. Had I thought about that server sooner, I would’ve discovered the real problem sooner and saved myself and my client a lot of heartache. Secondly, if you don’t use it, you’ll lose it. I used to be able to competently administer a Windows server and keep it safe from all the script kiddies and hackers out there. Clearly that is not the case anymore.\n",
+  "wordCount" : "1295",
+  "inLanguage": "en",
+  "datePublished": "2017-11-21T00:00:00Z",
+  "dateModified": "2017-11-21T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "Jay Little"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://jaylittle.github.io/post/view/2017/11/jack-of-one-trade/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jay Little",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jaylittle.github.io/favicon.png"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://jaylittle.github.io" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://jaylittle.github.io/article/view/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/post/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/resume/" title="Resume">
+                    <span>Resume</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/article/view/jay-and-annette-wedding-2004/" title="Family">
+                    <span>Family</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/article/view/recipes/" title="Recipes">
+                    <span>Recipes</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://jaylittle.github.io">Home</a>&nbsp;»&nbsp;<a href="https://jaylittle.github.io/post/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Jack of One Trade
+    </h1>
+    <div class="post-meta"><span title='2017-11-21 00:00:00 +0000 UTC'>November 21, 2017</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;Jay Little
+
+</div>
+  </header> 
+  <div class="post-content"><p>I recently discovered that a virtual Windows server I was running had been hacked.  I was being paid to run it as part of an arrangement with a long time client of mine.  This server ran Windows Server 2008 R2 and though it was rarely used, it was configured to automatically update when required.  The only service it exposed to the internet was RDP over TCP/IP port 3392 instead of the default 3389.</p>
+<p>Nevertheless it was hacked.  Somebody found the RDP service and managed to crack the credentials for a low privilege account on the machine.  Now this isn&rsquo;t a particularly great accomplishment as both the user name and the password were extraordinarily simple.  I could&rsquo;ve made them more complex but opted to keep it simple for the benefit of my client and ultimately because I believed that exposing RDP over a non-standard TCP/IP port was enough to save me from myself.  This of course violated the first and most important rule of security: Security achieved through Obscurity is an illusion.</p>
+<p>The hacker in question, operating from an IP address out of the United Kingdom, proceeded to install a fresh variant of <a href="https://www.bleepingcomputer.com/news/security/0000-cryptomix-ransomware-variant-released/">Cryptomix Ransomware</a> in an attempt to extort money out of me.  Well this is where the story gets both more funny and more sad.  You see, I really didn&rsquo;t pay much attention to the server.  The compromised user account didn&rsquo;t have access to much.  But it did have write access (yet another oversight on my part) to an off site replica of some of the client&rsquo;s files which got updated nightly.  So when I started noticing that those files were being renamed and encrypted, I simply assumed they were coming from the client.  Truth is, I had almost totally forgotten about this server.</p>
+<p>The situation got more confusing when I logged into the clients server only to find that the files appeared to be in pristine condition.  Naturally I jumped to the first and most obvious conclusion available: Somebody at the client site paid the ransom.  So I re-synced their files with mine, created a backup of those files at an alternate location and raised red flags with my client contact.  I then spent more than a few hours researching and digging through the data in an attempt to discover who had done what.</p>
+<p>A few days later the files became corrupted again.  Yet the clients copies appeared to be pristine.  At this point I got paranoid and checked my primary Linux systems for signs of compromise, though none was to be found.  I raised more red flags at the client site and was asked to come in and attempt to figure out exactly what was going on.  I spent six hours on site that day researching the situation.  Yet I was unable to come to a definitive conclusion other than the fact that nobody at the client appeared to have actually paid any ransom and a secondary server of theirs had in fact been compromised.  In theory the access there would&rsquo;ve been enough to access and ransom the files in question.</p>
+<p>The result of this is that the original conclusion no longer made sense.  If the client wasn&rsquo;t paying the ransom, then why weren&rsquo;t their files encrypted and renamed by the time I showed up?  So I jumped to a new conclusion: The intruder must be using my clients file store as a test bed for their new ransomware variant and the nightly sync process happened to be copying them up while they were having their fun.  It seemed plausible enough, though didn&rsquo;t sit right with me.  I knew I was missing something, but given the evidence I had gathered at the time, it was the best working theory I could construct.  Yes it was terribly contrived.  But solving a mystery is kind of like making an omelet: You gotta break more than a few eggs.</p>
+<p>Somewhere in the flurry of activity and conversations with the client, I realized in the back of my mind that I needed to harden the virtual Windows server I was running for the client like I was hardening their server.  But by the time I got home, I had forgotten about it.  On Monday evening however, I thankfully remembered and logged onto the server in question.  After logging on with the Administrator account, I was surprised to discover that the low level account reserved for the client&rsquo;s use was logged on as well.  This was quite odd as they rarely ever use the server.  It exists merely to service them in &ldquo;oh shit&rdquo; type of scenarios.  So after reconfiguring the NAT rules around the RDP port for the server, I hijacked the user&rsquo;s session.</p>
+<p>The files on the desktop had been renamed and encrypted.  The files in the public user profile had been renamed and encrypted.  Some of the files in the ProgramData folder had been renamed and encrypted.  Most importantly, I apparently had caught the attacker in the act as the ransomware was running and it was again renaming and encrypting the off site replica of my clients files.  So I logged the user off.  I then killed all remaining process running under the context of said user.  I then nuked the user profile.  I then cleaned up some of the damage.  I restored my offsite replica using the secondary backup I had created.</p>
+<p>At this point I realized that cleaning up the mess wasn&rsquo;t enough.  There was a bigger problem here.  I was being paid to run a Windows server with a single service exposed to the open internet.  The reality is that I&rsquo;m not a Windows guy.  I&rsquo;ve been transitioning to Linux for well over a decade now and my Windows skills have suffered as a result.  In addition, I&rsquo;ve been working solely as a software developer in my primary job for almost the last three years.  I haven&rsquo;t been doing any real server maintenance work in that time.  The hard truth is that this was no longer my area of expertise.  This is why I updated my resume.  I changed my objective statement.  For well over a decade it has read:</p>
+<blockquote>
+<p>&ldquo;My objective is to expand upon my skills as an Information Technology professional in the areas of Web Development, Networked Systems Security and Systems Administration.&rdquo;</p>
+</blockquote>
+<p>Sounds great, right?  Well yeah it sounds great when you are first starting out in your career and have a &ldquo;jack of all trades&rdquo; mentality.  For a long while it was actually true.  I was doing all of those things simultaneously at previous jobs and I was mostly doing them with Windows.</p>
+<p>But now?  I primarily write software.  I run a few Linux servers, but I&rsquo;m also a dedicated Linux user.  I own a single Windows machine and its an old Surface 3 that I only boot up when I need to reprogram my Logitech Harmony One remote control.  That is really its sole purpose in life.  The only servers I&rsquo;m fully responsible for are my own.  So given all that, I have now updated my objective statement to this:</p>
+<blockquote>
+<p>&ldquo;My objective is to write the most useful, efficient and secure software possible to solve the problem at hand.&rdquo;</p>
+</blockquote>
+<p>So what can you learn from this?  For starters: When solving a mystery, don&rsquo;t limit yourself to whatever narrow scope you happen to be currently entrenched in.  That was my primary mistake here.  Had I thought about that server sooner, I would&rsquo;ve discovered the real problem sooner and saved myself and my client a lot of heartache.  Secondly, if you don&rsquo;t use it, you&rsquo;ll lose it.  I used to be able to competently administer a Windows server and keep it safe from all the script kiddies and hackers out there.  Clearly that is not the case anymore.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="https://jaylittle.github.io">Jay Little</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

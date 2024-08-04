@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Goodbye Small Server, Hello 150 Watt Office | Jay Little</title>
+<meta name="keywords" content="">
+<meta name="description" content="Anybody who has spent any amount of time reading my content over the past few years knows what my small server project is. For those of you not in the know, it was basically my attempt to stop using an old desktop as my home server and transition all of its duties to SBCs (Single Board Computers) which are smaller, quieter, cooler, less performant and most importantly, use way less power.">
+<meta name="author" content="Jay Little">
+<link rel="canonical" href="https://jaylittle.github.io/post/view/2021/3/goodbye-small-server-hello-150-watt-office/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://jaylittle.github.io/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://jaylittle.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://jaylittle.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Goodbye Small Server, Hello 150 Watt Office" />
+<meta property="og:description" content="Anybody who has spent any amount of time reading my content over the past few years knows what my small server project is. For those of you not in the know, it was basically my attempt to stop using an old desktop as my home server and transition all of its duties to SBCs (Single Board Computers) which are smaller, quieter, cooler, less performant and most importantly, use way less power." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jaylittle.github.io/post/view/2021/3/goodbye-small-server-hello-150-watt-office/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-03-04T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-03-04T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Goodbye Small Server, Hello 150 Watt Office"/>
+<meta name="twitter:description" content="Anybody who has spent any amount of time reading my content over the past few years knows what my small server project is. For those of you not in the know, it was basically my attempt to stop using an old desktop as my home server and transition all of its duties to SBCs (Single Board Computers) which are smaller, quieter, cooler, less performant and most importantly, use way less power."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://jaylittle.github.io/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Goodbye Small Server, Hello 150 Watt Office",
+      "item": "https://jaylittle.github.io/post/view/2021/3/goodbye-small-server-hello-150-watt-office/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Goodbye Small Server, Hello 150 Watt Office",
+  "name": "Goodbye Small Server, Hello 150 Watt Office",
+  "description": "Anybody who has spent any amount of time reading my content over the past few years knows what my small server project is. For those of you not in the know, it was basically my attempt to stop using an old desktop as my home server and transition all of its duties to SBCs (Single Board Computers) which are smaller, quieter, cooler, less performant and most importantly, use way less power.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Anybody who has spent any amount of time reading my content over the past few years knows what my small server project is. For those of you not in the know, it was basically my attempt to stop using an old desktop as my home server and transition all of its duties to SBCs (Single Board Computers) which are smaller, quieter, cooler, less performant and most importantly, use way less power. That project was a success. I eventually ended up with four ODroid XU4Qs handling various tasks. After I finished that project I started to get more ambitious. Could I actually take this project to the next level and curtail the power usage of my home office?\nNow to be clear: This was a much harder nut to crack than small server was. Namely because when it comes to my work, I need a particular level of processing power as I’m a software developer and there are additional compatibility performance concerns that hinder my ability to curtail power usage. I spent a lot of time at the beginning of this project trying to figure out a way to move my workflow over to various Raspberry Pi units, namely the 4th gen units with 4 gigabytes and 8 gigabytes of RAM. Sadly, it just wasn’t doable. I still need too many things that the Raspberry Pi platform just cannot provide.\nNamely and depressingly, I still need the ability to use Windows. Despite how far and wide I have spread my hatred and disdain for Windows as a platform, even I cannot escape the ghosts of Christmas past which force me to interact with it. Without some ability to use and interact with Windows, I would not be able to keep my current job. Let me assure you all that outside of work related tasks, my interaction with Windows remains non-existent and I would have it no other way. Nonetheless the long and short of this is to illustrate that as much as I wanted to make a low powered ARM device work in this situation, It just wasn’t in the cards, no matter how much time I pissed away trying to make it work.\nSo I could’ve just stuck with one of the many cheapo Intel / AMD laptops I keep in reserve. However I didn’t want to do that either. It turns out that x86 laptops are generally noisy little beasts and I really wanted my office to be as quiet as possible. So I ended up getting two ODroid H2 single board computers. They have large heatsinks and low RPM fans on the top that when configured properly stay on all the time and generate next to nothing in terms of noise while keeping the internals quite cool. The first one of these (box with the blue power button on the right) was purchased by a current employer of mine and natively runs Windows 10 for the express purposes of doing their work. This was an original ODroid H2 unit, so it has an Intel Quad Core J4105 Celeron processor. It also has 16 gigs of RAM installed, along with a terabyte and a half of SSD disk space. The second unit (box with the blue power button on the left) was very similar except it was a later revision of the ODroid H2 called the ODroid H2+. It is basically the same as the first revision except it has a slightly faster J4115 processor instead and has dual 2.5 gigabit ethernet ports instead of dual 1.0 gigabit ethernet ports. It of course is entirely my own, so it runs Pop OS 20.10 and is my primary workstation.\nMy personal H2 is assigned to the leftmost two monitors in my group of four monitors. Depending on whether or not I’m doing work for my employer the other H2 either uses one monitor or no monitors. In the use case where it has a monitor, I use the wonderful Barrier software to allow me to seamlessly control both boxes with the mouse and keyboard connected to my personal box. It is a great setup and has worked exceptionally well. When the Windows H2 isn’t being used, I have employed the use of a DisplayPort Splitter to turn one DisplayPort port into two ports on my personal H2. This allows me to use three monitors on a box that only has a single HDMI and single DisplayPort output. In practice each H2 uses anywhere between 5 to 20 watts of power depending upon what they are doing.\nThe fourth, rightmost monitor, is 100% dedicated to my office AppleTV. Typically while I work I’m generally letting something play on Plex or I have a Twitch stream playing to add background noise if I’m not listening to music. The AppleTV has proven to be a wonderfully low powered option for handling these sorts of tasks. When it comes to performance-per-watt Apple is at the top of the heap and even an old pre-4k AppleTV is not an exception to that.\nIn addition to those things my office also has a soundbar, a wireless headset, a simple switch for switching between the audio output devices (which also has a button that allows me to mute everything with a press), a powered USB Hub (plugged into my primary box and connects webcam and external USB SSD storage to it), a powered USB switch (allows keyboard and mouse to be switched to all the boxes), an Amazon Echo and an hardware audio mixer. I would be reticent to neglect to mention that the hardware audio mixer is one of my favorite pieces of equipment. Prior to purchasing that I had a bunch of dumb audio switches which determined what audio outputs I could hear whereas now I can hear them all at the same time and mix them individually with hardware knobs. It uses very little power and makes my life much easier. Oh and we have a postage scale, which is generally off, so it’s not being counted as part of the typical power draw.\nI will also add that the Amazon Echo is here (generally the mic is muted 100% of the time so privacy concerns are minimal) as my wife find its convenient to use the one in the living room to let me know that dinner is ready. Also as a last little pro tip: I also learned that plugging a USB Hub into a USB Switch is generally a bad idea. It creates a bunch of weird USB issues such as laggy keystokes and USB related errors in the Linux Kernel log that worried me a great deal. My advice? Don’t plug a USB hub into a switch. Don’t believe me? I tried this with multiple combinations of hardware, host machines and operating systems and it was consistently a pain in my ass. So just don’t do it.\nThe combined power usage of all these devices which I use in a typical work day tops out at just under 110 watts. This quite an accomplishment in my opinion. My work has not been hampered in any significant way either. I have enough processing power and enough RAM and enough software compatibility to do all the things I need to do. I can even run heavy legacy Windows 10 VMs which are required for some legacy contract work I am still on the hook for without skipping a beat.\nFinally I also have a Mister FPGA gaming unit setup in the far right corner of the picture. It’s power usage has not been taken into consideration as it’s not something I use very often. Nevertheless if you love retro gaming, you’ll want to look into building one of these for yourself. It’s quite choice. Warning: But not cheap.\nThe remaining 40 watts of power is used by the server side of the room. Note that even though there is a monitor in that picture, it is typically off as it’s only there in case shit hits the fan (aka I need to access the console of the Pi 400s so I can fix things), so it isn’t counted as part of the power measurements here. There is also a Raspberry Pi 4 8 gigabyte model on the desk which is typically off as it is my testbed for playing with a full desktop experience on an ARM based SBC. This of course is still very much a work in progress. Also if you are wondering what the official Raspberry Pi keyboard and mouse in front of the PI 400s are for, they are connected to that test unit for when I use it. The mouse pad is a custom item I purchased off of Zazzle for entirely too much money but it was so cute and matched the RPI motif so well that I just couldn’t resist.\nThose ODroid XU4Qs I mentioned earlier have now been replaced by two Raspberry Pi 400s and I could not be happier. Software support for the XU4 platform was starting to lag and despite the fact that they are “supported” by mainline Linux kernels, they never ran particularly stable with a mainline kernel in my experience, especially when you start doing lots of IO over USB External drives as my nightly jobs tend to do. My PI 400s are connected to three six terabyte external USB 3.0 SATA spinning rust drives. These drives basically store all of my media, files and backups for the house. While the PI 400s are a little slower and use more power than the XU4Qs, the reality is that they run way better due to a much higher level of optimization on the software side. The wide software support enjoyed by Raspberry Pis running Raspberry Pi OS is ultimately awesome compared to what I had with Armbian on the XU4Qs. It is important to note that I am running Raspberry Pi OS 64 bit on both units as I wanted a platform I know would be viable into the future for years to come. Let’s face the facts people: 32 bit processors and operating systems are dead tech.\nBeyond that I got a Spectrum Cable Modem, an HDMI switch (for the Pi 400s in case I need to access their consoles), a PoE capable 8 port network switch, a Unifi Edge Router X-1, a Unifi CloudKey and a Unifi AC-LR wireless access point. There is a Brother laser printer there but it sits idle 99% of the time so that’s how I counted it’s power usage.\nHow did I measure all this? Well I bought a Kill A Watt unit and measured the power usage when it came to the workstation side of the room. On the server side of the room I simply hit some buttons on each UPS I have sitting on the floor to show the current watts being used and added those numbers together. My initial goal here was to hit 100 watts of total power usage or less, but alas that just wasn’t feasible. I could squeeze some extra power savings out of the monitors by running them in Eco mode, but honestly I just can’t stand looking at them in Eco mode. They are just too bright and I can’t turn on the built in blue light filters when they are configured that way. So I am incurring an extra 8 watts of total power usage because I hate eye strain. But I managed to save another 10 watts just by switching out the old fluorescent bulb in my office lamp (which was given to me by my in-laws and I just love to death) for a new LED bulb. That was literally the easiest most pain free upgrade I made that saved power as the lamp not only turns on faster and gives off the same quality and quantity of light, but uses 10 watts of power versus 21 watts with the old bulb. In addition I switched out my three old mismatched 1080p Asus monitors (two 27\" and one 24\") for four brand new matched 1080p Asus monitors (two 24\" and two 27\") which way less power than the old ones. My three old monitors used about 75 watts of power all together and my four new monitors use about 48 watts (without eco mode) all together. Technology has come a long way.\nIn any event, this has been a labor of love for me but alas the project has come to an end now. It would be very difficult to lower power usage much further without incurring significant changes that may actually hinder my ability to be productive. One of the goals here was not only to use the least amount of power possible in my office, but to do it without bending over backwards to accommodate the sacrifices made to get there. So what you have here is a modern and efficient setup which allows to me get my work done (and even a tiny bit of light gaming here and there) while keeping my negative environmental impact to a minimum.\nSo why was this project so important to me? Well simply put: Climate change is real and it’s long past time that we all started taking it more seriously. That having been said, that was a huge motivating factor for me here. I didn’t want to feel like my work itself was having a profoundly negative impact on the environment and now that I’ve finally gotten to that point, I could not be more thrilled. In time I suspect more people will become interested in pursuing setups such as this as the climate begins to exert more and more pressure upon us to curb our wasteful ways not only in my industry but in society as a whole.\nAs for where this project goes next… I really don’t know. For the time being I’m content with the progress I have made. But of course I am reserving the right to change my mind. After all, if I didn’t do that what would be the point? Changing one’s mind from time to time keeps life interesting, does it not? If anybody would like more details on this setup, feel free to reach out to me via email or on Twitter (yeah I’m back on Twitter for the time being) and I’ll be more than happy to help in any way that I reasonably can. In the meantime, please accept my thanks for taking the time to read through this post as it was long and jam packed full of information.\n",
+  "wordCount" : "2429",
+  "inLanguage": "en",
+  "datePublished": "2021-03-04T00:00:00Z",
+  "dateModified": "2021-03-04T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "Jay Little"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://jaylittle.github.io/post/view/2021/3/goodbye-small-server-hello-150-watt-office/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jay Little",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jaylittle.github.io/favicon.png"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://jaylittle.github.io" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://jaylittle.github.io/article/view/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/post/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/resume/" title="Resume">
+                    <span>Resume</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/article/view/jay-and-annette-wedding-2004/" title="Family">
+                    <span>Family</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/article/view/recipes/" title="Recipes">
+                    <span>Recipes</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://jaylittle.github.io">Home</a>&nbsp;»&nbsp;<a href="https://jaylittle.github.io/post/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Goodbye Small Server, Hello 150 Watt Office
+    </h1>
+    <div class="post-meta"><span title='2021-03-04 00:00:00 +0000 UTC'>March 4, 2021</span>&nbsp;·&nbsp;12 min&nbsp;·&nbsp;Jay Little
+
+</div>
+  </header> 
+  <div class="post-content"><p>Anybody who has spent any amount of time reading my content over the past few years knows what my small server project is.  For those of you not in the know, it was basically my attempt to stop using an old desktop as my home server and transition all of its duties to SBCs (Single Board Computers) which are smaller, quieter, cooler, less performant and most importantly, use way less power.  That project was a success.  I eventually ended up with four ODroid XU4Qs handling various tasks.  After I finished that project I started to get more ambitious.  Could I actually take this project to the next level and curtail the power usage of my home office?</p>
+<p>Now to be clear: This was a much harder nut to crack than small server was.  Namely because when it comes to my work, I need a particular level of processing power as I&rsquo;m a software developer and there are additional compatibility performance concerns that hinder my ability to curtail power usage.  I spent a lot of time at the beginning of this project trying to figure out a way to move my workflow over to various Raspberry Pi units, namely the 4th gen units with 4 gigabytes and 8 gigabytes of RAM.  Sadly, it just wasn&rsquo;t doable.  I still need too many things that the Raspberry Pi platform just cannot provide.</p>
+<p>Namely and depressingly, I still need the ability to use Windows.  Despite how far and wide I have spread my hatred and disdain for Windows as a platform, even I cannot escape the ghosts of Christmas past which force me to interact with it.  Without some ability to use and interact with Windows, I would not be able to keep my current job.  Let me assure you all that outside of work related tasks, my interaction with Windows remains non-existent and I would have it no other way.  Nonetheless the long and short of this is to illustrate that as much as I wanted to make a low powered ARM device work in this situation, It just wasn&rsquo;t in the cards, no matter how much time I pissed away trying to make it work.</p>
+<figure class="align-center "><a href="/images/articles/150_watt_office_workstation_side.jpg" target="_blank">
+    <img loading="lazy" src="/images/articles/150_watt_office_workstation_side_small.jpg#center"
+         alt="Workstation Side Image"/> </a>
+</figure>
+
+<p>So I could&rsquo;ve just stuck with one of the many cheapo Intel / AMD laptops I keep in reserve.  However I didn&rsquo;t want to do that either.  It turns out that x86 laptops are generally noisy little beasts and I really wanted my office to be as quiet as possible.  So I ended up getting two <a href="https://wiki.odroid.com/odroid-h2/start">ODroid H2 single board computers</a>.  They have large heatsinks and low RPM fans on the top that when configured properly stay on all the time and generate next to nothing in terms of noise while keeping the internals quite cool.  The first one of these (box with the blue power button on the right) was purchased by a current employer of mine and natively runs Windows 10 for the express purposes of doing their work.  This was an original ODroid H2 unit, so it has an Intel Quad Core J4105 Celeron processor.  It also has 16 gigs of RAM installed, along with a terabyte and a half of SSD disk space.  The second unit (box with the blue power button on the left) was very similar except it was a later revision of the ODroid H2 called the ODroid H2+.  It is basically the same as the first revision except it has a slightly faster J4115 processor instead and has dual 2.5 gigabit ethernet ports instead of dual 1.0 gigabit ethernet ports.  It of course is entirely my own, so it runs Pop OS 20.10 and is my primary workstation.</p>
+<p>My personal H2 is assigned to the leftmost two monitors in my group of four monitors.  Depending on whether or not I&rsquo;m doing work for my employer the other H2 either uses one monitor or no monitors.  In the use case where it has a monitor, I use the wonderful <a href="https://github.com/debauchee/barrier">Barrier</a> software to allow me to seamlessly control both boxes with the mouse and keyboard connected to my personal box.  It is a great setup and has worked exceptionally well.  When the Windows H2 isn&rsquo;t being used, I have employed the use of a <a href="https://www.amazon.com/gp/product/B075754ZYC/">DisplayPort Splitter</a> to turn one DisplayPort port into two ports on my personal H2.  This allows me to use three monitors on a box that only has a single HDMI and single DisplayPort output.  In practice each H2 uses anywhere between 5 to 20 watts of power depending upon what they are doing.</p>
+<p>The fourth, rightmost monitor, is 100% dedicated to my office AppleTV.  Typically while I work I&rsquo;m generally letting something play on Plex or I have a Twitch stream playing to add background noise if I&rsquo;m not listening to music.  The AppleTV has proven to be a wonderfully low powered option for handling these sorts of tasks.  When it comes to performance-per-watt Apple is at the top of the heap and even an old pre-4k AppleTV is not an exception to that.</p>
+<p>In addition to those things my office also has a soundbar, a wireless headset, a simple switch for switching between the audio output devices (which also has a button that allows me to mute everything with a press), a powered USB Hub (plugged into my primary box and connects webcam and external USB SSD storage to it), a powered USB switch (allows keyboard and mouse to be switched to all the boxes), an Amazon Echo and an hardware audio mixer.  I would be reticent to neglect to mention that the hardware audio mixer is one of my favorite pieces of equipment.  Prior to purchasing that I had a bunch of dumb audio switches which determined what audio outputs I could hear whereas now I can hear them all at the same time and mix them individually with hardware knobs.  It uses very little power and makes my life much easier.  Oh and we have a postage scale, which is generally off, so it&rsquo;s not being counted as part of the typical power draw.</p>
+<p>I will also add that the Amazon Echo is here (generally the mic is muted 100% of the time so privacy concerns are minimal) as my wife find its convenient to use the one in the living room to let me know that dinner is ready.  Also as a last little pro tip: I also learned that plugging a USB Hub into a USB Switch is generally a bad idea.  It creates a bunch of weird USB issues such as laggy keystokes and USB related errors in the Linux Kernel log that worried me a great deal.  My advice?  Don&rsquo;t plug a USB hub into a switch.  Don&rsquo;t believe me? I tried this with multiple combinations of hardware, host machines and operating systems and it was consistently a pain in my ass.  So just don&rsquo;t do it.</p>
+<p>The combined power usage of all these devices which I use in a typical work day tops out at just under 110 watts.  This quite an accomplishment in my opinion.  My work has not been hampered in any significant way either.  I have enough processing power and enough RAM and enough software compatibility to do all the things I need to do.  I can even run heavy legacy Windows 10 VMs which are required for some legacy contract work I am still on the hook for without skipping a beat.</p>
+<p>Finally I also have a <a href="https://github.com/MiSTer-devel/Main_MiSTer/wiki">Mister FPGA gaming unit</a> setup in the far right corner of the picture.  It&rsquo;s power usage has not been taken into consideration as it&rsquo;s not something I use very often.  Nevertheless if you love retro gaming, you&rsquo;ll want to look into building one of these for yourself. It&rsquo;s quite choice. Warning: But not cheap.</p>
+<figure class="align-center "><a href="/images/articles/150_watt_office_server_side.jpg" target="_blank">
+    <img loading="lazy" src="/images/articles/150_watt_office_server_side_small.jpg#center"
+         alt="Server Side Image"/> </a>
+</figure>
+
+<p>The remaining 40 watts of power is used by the server side of the room.  Note that even though there is a monitor in that picture, it is typically off as it&rsquo;s only there in case shit hits the fan (aka I need to access the console of the Pi 400s so I can fix things), so it isn&rsquo;t counted as part of the power measurements here.  There is also a Raspberry Pi 4 8 gigabyte model on the desk which is typically off as it is my testbed for playing with a full desktop experience on an ARM based SBC.  This of course is still very much a work in progress.  Also if you are wondering what the official Raspberry Pi keyboard and mouse in front of the PI 400s are for, they are connected to that test unit for when I use it.  The mouse pad is a custom item I purchased off of Zazzle for entirely too much money but it was so cute and matched the RPI motif so well that I just couldn&rsquo;t resist.</p>
+<p>Those ODroid XU4Qs I mentioned earlier have now been replaced by two Raspberry Pi 400s and I could not be happier.  Software support for the XU4 platform was starting to lag and despite the fact that they are &ldquo;supported&rdquo; by mainline Linux kernels, they never ran particularly stable with a mainline kernel in my experience, especially when you start doing lots of IO over USB External drives as my nightly jobs tend to do.  My PI 400s are connected to three six terabyte external USB 3.0 SATA spinning rust drives.  These drives basically store all of my media, files and backups for the house.  While the PI 400s are a little slower and use more power than the XU4Qs, the reality is that they run way better due to a much higher level of optimization on the software side.  The wide software support enjoyed by Raspberry Pis running Raspberry Pi OS is ultimately awesome compared to what I had with Armbian on the XU4Qs.  It is important to note that I am running Raspberry Pi OS 64 bit on both units as I wanted a platform I know would be viable into the future for years to come.  Let&rsquo;s face the facts people: 32 bit processors and operating systems are dead tech.</p>
+<p>Beyond that I got a Spectrum Cable Modem, an HDMI switch (for the Pi 400s in case I need to access their consoles), a PoE capable 8 port network switch, a Unifi Edge Router X-1, a Unifi CloudKey and a Unifi AC-LR wireless access point.  There is a Brother laser printer there but it sits idle 99% of the time so that&rsquo;s how I counted it&rsquo;s power usage.</p>
+<figure class="align-center "><a href="/images/articles/150_watt_office_the_lamp.jpg" target="_blank">
+    <img loading="lazy" src="/images/articles/150_watt_office_the_lamp_small.jpg#center"
+         alt="Office Lamp Image"/> </a>
+</figure>
+
+<p>How did I measure all this?  Well I bought a <a href="https://www.amazon.com/gp/product/B00009MDBU/">Kill A Watt</a> unit and measured the power usage when it came to the workstation side of the room.  On the server side of the room I simply hit some buttons on each UPS I have sitting on the floor to show the current watts being used and added those numbers together.  My initial goal here was to hit 100 watts of total power usage or less, but alas that just wasn&rsquo;t feasible.  I could squeeze some extra power savings out of the monitors by running them in Eco mode, but honestly I just can&rsquo;t stand looking at them in Eco mode.  They are just too bright and I can&rsquo;t turn on the built in blue light filters when they are configured that way.  So I am incurring an extra 8 watts of total power usage because I hate eye strain.  But I managed to save another 10 watts just by switching out the old fluorescent bulb in my office lamp (which was given to me by my in-laws and I just love to death) for a new LED bulb.  That was literally the easiest most pain free upgrade I made that saved power as the lamp not only turns on faster and gives off the same quality and quantity of light, but uses 10 watts of power versus 21 watts with the old bulb.  In addition I switched out my three old mismatched 1080p Asus monitors (two 27&quot; and one 24&quot;) for four brand new matched 1080p Asus monitors (two 24&quot; and two 27&quot;) which way less power than the old ones.  My three old monitors used about 75 watts of power all together and my four new monitors use about 48 watts (without eco mode) all together.  Technology has come a long way.</p>
+<p>In any event, this has been a labor of love for me but alas the project has come to an end now.  It would be very difficult to lower power usage much further without incurring significant changes that may actually hinder my ability to be productive.  One of the goals here was not only to use the least amount of power possible in my office, but to do it without bending over backwards to accommodate the sacrifices made to get there.  So what you have here is a modern and efficient setup which allows to me get my work done (and even a tiny bit of light gaming here and there) while keeping my negative environmental impact to a minimum.</p>
+<p>So why was this project so important to me?  Well simply put: Climate change is real and it&rsquo;s long past time that we all started taking it more seriously.  That having been said, that was a huge motivating factor for me here.  I didn&rsquo;t want to feel like my work itself was having a profoundly negative impact on the environment and now that I&rsquo;ve finally gotten to that point, I could not be more thrilled.  In time I suspect more people will become interested in pursuing setups such as this as the climate begins to exert more and more pressure upon us to curb our wasteful ways not only in my industry but in society as a whole.</p>
+<p>As for where this project goes next&hellip; I really don&rsquo;t know.  For the time being I&rsquo;m content with the progress I have made.  But of course I am reserving the right to change my mind.  After all, if I didn&rsquo;t do that what would be the point?  Changing one&rsquo;s mind from time to time keeps life interesting, does it not?  If anybody would like more details on this setup, feel free to reach out to me via email or on Twitter (yeah I&rsquo;m back on Twitter for the time being) and I&rsquo;ll be more than happy to help in any way that I reasonably can.  In the meantime, please accept my thanks for taking the time to read through this post as it was long and jam packed full of information.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="https://jaylittle.github.io">Jay Little</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

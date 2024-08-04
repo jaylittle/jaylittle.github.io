@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Ethical Quandary: Is it ever responsible to irresponsibly disclose? | Jay Little</title>
+<meta name="keywords" content="">
+<meta name="description" content="Today&rsquo;s post is going to examine an ethical grey area that I currently find to be very relevant. Is it ever okay to ignore responsible disclosure standards for security related issues? Spoiler alert: I&rsquo;m going to argue that there are cases in which ignoring these standards is not only permissible but the only real ethical course of action.
+Okay so lets start with some sample code. The below code represents a simple .">
+<meta name="author" content="Jay Little">
+<link rel="canonical" href="https://jaylittle.github.io/post/view/2018/2/ethical-quandary-is-it-ever-responsible-to-irresponsibly-disclose/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://jaylittle.github.io/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://jaylittle.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://jaylittle.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Ethical Quandary: Is it ever responsible to irresponsibly disclose?" />
+<meta property="og:description" content="Today&rsquo;s post is going to examine an ethical grey area that I currently find to be very relevant. Is it ever okay to ignore responsible disclosure standards for security related issues? Spoiler alert: I&rsquo;m going to argue that there are cases in which ignoring these standards is not only permissible but the only real ethical course of action.
+Okay so lets start with some sample code. The below code represents a simple ." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jaylittle.github.io/post/view/2018/2/ethical-quandary-is-it-ever-responsible-to-irresponsibly-disclose/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2018-02-07T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-02-07T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Ethical Quandary: Is it ever responsible to irresponsibly disclose?"/>
+<meta name="twitter:description" content="Today&rsquo;s post is going to examine an ethical grey area that I currently find to be very relevant. Is it ever okay to ignore responsible disclosure standards for security related issues? Spoiler alert: I&rsquo;m going to argue that there are cases in which ignoring these standards is not only permissible but the only real ethical course of action.
+Okay so lets start with some sample code. The below code represents a simple ."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://jaylittle.github.io/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Ethical Quandary: Is it ever responsible to irresponsibly disclose?",
+      "item": "https://jaylittle.github.io/post/view/2018/2/ethical-quandary-is-it-ever-responsible-to-irresponsibly-disclose/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Ethical Quandary: Is it ever responsible to irresponsibly disclose?",
+  "name": "Ethical Quandary: Is it ever responsible to irresponsibly disclose?",
+  "description": "Today\u0026rsquo;s post is going to examine an ethical grey area that I currently find to be very relevant. Is it ever okay to ignore responsible disclosure standards for security related issues? Spoiler alert: I\u0026rsquo;m going to argue that there are cases in which ignoring these standards is not only permissible but the only real ethical course of action.\nOkay so lets start with some sample code. The below code represents a simple .",
+  "keywords": [
+    
+  ],
+  "articleBody": "Today’s post is going to examine an ethical grey area that I currently find to be very relevant. Is it ever okay to ignore responsible disclosure standards for security related issues? Spoiler alert: I’m going to argue that there are cases in which ignoring these standards is not only permissible but the only real ethical course of action.\nOkay so lets start with some sample code. The below code represents a simple .NET Core C# program that encrypts a piece of plaintext.\nusing System; using System.Linq; using System.IO; using System.Text; using System.Security.Cryptography; namespace Playground { class Program { private const string ENCRYPTION_KEY = \"SuperSecretKey678$210!Hahahaha\"; public static void Main(string[] args) { if (args.Length \u003e 0) { var plainText = string.Join(\" \", args); Console.WriteLine($\"Plain Text is {plainText}\"); var encrypted = Encrypt(plainText); Console.WriteLine($\"Encrypted Version is {encrypted}\"); } } private static string Encrypt(string plainText) { using (var aes = GetAes()) { using (var encryptor = aes.CreateEncryptor(aes.Key, aes.IV)) { using (MemoryStream encryptedData = new MemoryStream()) { using (CryptoStream csEncrypt = new CryptoStream(encryptedData, encryptor, CryptoStreamMode.Write)) { using (StreamWriter swEncrypt = new StreamWriter(csEncrypt)) { swEncrypt.Write(plainText); } using (var combiner = new MemoryStream()) { var encryptedBytes = encryptedData.ToArray(); combiner.Write(aes.IV, 0, aes.IV.Length); combiner.Write(encryptedBytes, 0, encryptedBytes.Length); return Convert.ToBase64String(combiner.ToArray()); } } } } } } private static Aes GetAes(byte[] iv = null) { using (var sha = SHA256.Create()) { var aes = Aes.Create(); aes.KeySize = 256; aes.Key = sha.ComputeHash(Encoding.UTF8.GetBytes(ENCRYPTION_KEY)); aes.IV = iv ?? aes.IV; return aes; } } } } Pretty basic, right? Now this program contains a rather large security flaw. Namely the fact that it uses a hard coded encryption key in the form of the ENCRYPTION_KEY constant near the top. But hey so what? When I distribute the program the code will be obfuscated by the compilation process, right? Well yeah, but not really. Even if it was, this encryption implementation is unforgivable as it effectively ensures that the only thing standing between your users and a breach is the contents of the ENCRYPTION_KEY string constant. If I compiled this C# code I would get back a DLL file. That DLL file can be dissected using fun little tools like ILSpy or Reflector which effectively decompile compiled .NET binaries back into useful source code. So that effectively means that anybody with a copy of the DLL file can obtain the keys to the entire kingdom. It is stunningly easy for any competent C# developer to write a decryption routine after having seen the code above.\nSo while this example may seem contrived, I can assure you that I’ve seen this kind of thing more than a few times over my last 20 years in the business despite the fact that everything ever written on the subject of implementing encryption in code (regardless of language and platform) will decry this approach. Okay so what if you find out that some piece of software has employed this technique, is it okay to irresponsibly disclose the security vulnerability due to the nature of the bug? No, I don’t believe so. But as I’ve already indicated, I believe there are other circumstances that can arise which force issue. For starters, what if the data being encrypted is something sensitive like say a credit card number? Or a users password? Or some key piece of info used to implement an authentication system? To be honest even in the face of those extenuating circumstances, I still stand by responsible disclosure though I would find it difficult. So what then? Is it ever acceptable to eschew the standards of conduct?\nAbsolutely yes. Where I personally draw the line is in situations in which the piece of software has clearly been relying upon the flawed implementation for an extended period of time. This becomes even more pertinent in situations in which the piece of software and its creator advertises or implies that security is one of their core competencies. In cases such as those, I believe the bug represents an egregious violation of an implied agreement between the creator of the software and the users of the software. To put it bluntly: the reality in this situation is that if the bug is this easy to find, other less than savory individuals are likely already aware of it and actively exploiting it.\nThat being the case, time is of the essence. The interests of the users must be placed above that of the creator. While responsible disclosure typically serves the needs of both by at least attempting to protect users while giving the creator time to react, in cases such as these, protecting the users isn’t actually possible. Once the users interests have already been so deeply compromised, only the desires of the creator remain. Given the severity inherent in the oversight and how little the creator seems to care, the creator likely deserves no real consideration.\nIs this policy harsh? Absolutely. But it needs to be. The world of software ought to be harsh lest we fall into the trap of simply devouring whatever garbage a particular creator or creators sees fit to offer us. In the situation I described above, I prefer to err on the side of the greater good. The greater good in this case is to let the users as well as the creator know about the issue simultaneously so that users have an opportunity to mitigate their level of exposure and risk. Anything less than that gives the already irresponsible creator an opportunity to punt on taking responsibility at the expense of their users - yet again.\n",
+  "wordCount" : "917",
+  "inLanguage": "en",
+  "datePublished": "2018-02-07T00:00:00Z",
+  "dateModified": "2018-02-07T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "Jay Little"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://jaylittle.github.io/post/view/2018/2/ethical-quandary-is-it-ever-responsible-to-irresponsibly-disclose/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jay Little",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jaylittle.github.io/favicon.png"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://jaylittle.github.io" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://jaylittle.github.io/article/view/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/post/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/resume/" title="Resume">
+                    <span>Resume</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/article/view/jay-and-annette-wedding-2004/" title="Family">
+                    <span>Family</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/article/view/recipes/" title="Recipes">
+                    <span>Recipes</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://jaylittle.github.io">Home</a>&nbsp;»&nbsp;<a href="https://jaylittle.github.io/post/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Ethical Quandary: Is it ever responsible to irresponsibly disclose?
+    </h1>
+    <div class="post-meta"><span title='2018-02-07 00:00:00 +0000 UTC'>February 7, 2018</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Jay Little
+
+</div>
+  </header> 
+  <div class="post-content"><p>Today&rsquo;s post is going to examine an ethical grey area that I currently find to be very relevant. Is it ever okay to ignore responsible disclosure standards for security related issues?  Spoiler alert: I&rsquo;m going to argue that there are cases in which ignoring these standards is not only permissible but the only real ethical course of action.</p>
+<p>Okay so lets start with some sample code.  The below code represents a simple .NET Core C# program that encrypts a piece of plaintext.</p>
+<pre><code>using System;
+using System.Linq;
+using System.IO;
+using System.Text;
+using System.Security.Cryptography;
+
+namespace Playground
+{
+  class Program
+  {
+    private const string ENCRYPTION_KEY = &quot;SuperSecretKey678$210!Hahahaha&quot;;
+
+    public static void Main(string[] args)
+    {
+      if (args.Length &gt; 0)
+      {
+        var plainText = string.Join(&quot; &quot;, args);
+        Console.WriteLine($&quot;Plain Text is {plainText}&quot;);
+        var encrypted = Encrypt(plainText);
+        Console.WriteLine($&quot;Encrypted Version is {encrypted}&quot;);
+      }
+    }
+
+    private static string Encrypt(string plainText)
+    {
+      using (var aes = GetAes())
+      {
+        using (var encryptor = aes.CreateEncryptor(aes.Key, aes.IV))
+        {
+          using (MemoryStream encryptedData = new MemoryStream())
+          {
+            using (CryptoStream csEncrypt = new CryptoStream(encryptedData, encryptor, CryptoStreamMode.Write))
+            {
+              using (StreamWriter swEncrypt = new StreamWriter(csEncrypt))
+              {
+                swEncrypt.Write(plainText);
+              }
+              using (var combiner = new MemoryStream())
+              {
+                var encryptedBytes = encryptedData.ToArray();
+                combiner.Write(aes.IV, 0, aes.IV.Length);
+                combiner.Write(encryptedBytes, 0, encryptedBytes.Length);
+                return Convert.ToBase64String(combiner.ToArray());
+              }
+            }
+          }
+        }
+      }
+    }
+
+    private static Aes GetAes(byte[] iv = null)
+    {
+      using (var sha = SHA256.Create())
+      {
+        var aes = Aes.Create();
+        aes.KeySize = 256;
+        aes.Key = sha.ComputeHash(Encoding.UTF8.GetBytes(ENCRYPTION_KEY));
+        aes.IV = iv ?? aes.IV;
+        return aes;
+      }
+    }
+  }
+}
+</code></pre>
+<p>Pretty basic, right?  Now this program contains a rather large security flaw.  Namely the fact that it uses a hard coded encryption key in the form of the ENCRYPTION_KEY constant near the top.  But hey so what?  When I distribute the program the code will be obfuscated by the compilation process, right?  Well yeah, but not really.  Even if it was, this encryption implementation is unforgivable as it effectively ensures that the only thing standing between your users and a breach is the contents of the ENCRYPTION_KEY string constant.  If I compiled this C# code I would get back a DLL file.  That DLL file can be dissected using fun little tools like ILSpy or Reflector which effectively decompile compiled .NET binaries back into useful source code.  So that effectively means that anybody with a copy of the DLL file can obtain the keys to the entire kingdom.  It is stunningly easy for any competent C# developer to write a decryption routine after having seen the code above.</p>
+<p>So while this example may seem contrived, I can assure you that I&rsquo;ve seen this kind of thing more than a few times over my last 20 years in the business despite the fact that everything ever written on the subject of implementing encryption in code (regardless of language and platform) will decry this approach.  Okay so what if you find out that some piece of software has employed this technique, is it okay to irresponsibly disclose the security vulnerability due to the nature of the bug?  No, I don&rsquo;t believe so.  But as I&rsquo;ve already indicated, I believe there are other circumstances that can arise which force issue.  For starters, what if the data being encrypted is something sensitive like say a credit card number?  Or a users password?  Or some key piece of info used to implement an authentication system?  To be honest even in the face of those extenuating circumstances, I still stand by responsible disclosure though I would find it difficult.  So what then?  Is it ever acceptable to eschew the standards of conduct?</p>
+<p>Absolutely yes.  Where I personally draw the line is in situations in which the piece of software has clearly been relying upon the flawed implementation for an extended period of time.  This becomes even more pertinent in situations in which the piece of software and its creator advertises or implies that security is one of their core competencies.  In cases such as those, I believe the bug represents an egregious violation of an implied agreement between the creator of the software and the users of the software.  To put it bluntly: the reality in this situation is that if the bug is this easy to find, other less than savory individuals are likely already aware of it and actively exploiting it.</p>
+<p>That being the case, time is of the essence.  The interests of the users must be placed above that of the creator.  While responsible disclosure typically serves the needs of both by at least attempting to protect users while giving the creator time to react, in cases such as these, protecting the users isn&rsquo;t actually possible.  Once the users interests have already been so deeply compromised, only the desires of the creator remain.  Given the severity inherent in the oversight and how little the creator seems to care, the creator likely deserves no real consideration.</p>
+<p>Is this policy harsh?  Absolutely.  But it needs to be.  The world of software ought to be harsh lest we fall into the trap of simply devouring whatever garbage a particular creator or creators sees fit to offer us.  In the situation I described above, I prefer to err on the side of the greater good.  The greater good in this case is to let the users as well as the creator know about the issue simultaneously so that users have an opportunity to mitigate their level of exposure and risk.  Anything less than that gives the already irresponsible creator an opportunity to punt on taking responsibility at the expense of their users - yet again.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="https://jaylittle.github.io">Jay Little</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

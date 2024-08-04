@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>The Bigger They are, the Harder They Fall | Jay Little</title>
+<meta name="keywords" content="">
+<meta name="description" content="When it comes to the modern day world of software, one thing above all has become clear to me over the last 20 years: On a long enough time line, failure is virtually guaranteed. That being the case, how our software approaches, adjusts for and reconciles failure is clearly its most important characteristic.
+That&rsquo;s not to say that modern day software is all garbage, but in all the ways that actually matter, that largely appears to be the case.">
+<meta name="author" content="Jay Little">
+<link rel="canonical" href="https://jaylittle.github.io/post/view/2018/2/the-bigger-they-are-the-harder-they-fall/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://jaylittle.github.io/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://jaylittle.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://jaylittle.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="The Bigger They are, the Harder They Fall" />
+<meta property="og:description" content="When it comes to the modern day world of software, one thing above all has become clear to me over the last 20 years: On a long enough time line, failure is virtually guaranteed. That being the case, how our software approaches, adjusts for and reconciles failure is clearly its most important characteristic.
+That&rsquo;s not to say that modern day software is all garbage, but in all the ways that actually matter, that largely appears to be the case." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jaylittle.github.io/post/view/2018/2/the-bigger-they-are-the-harder-they-fall/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2018-02-12T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-02-12T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="The Bigger They are, the Harder They Fall"/>
+<meta name="twitter:description" content="When it comes to the modern day world of software, one thing above all has become clear to me over the last 20 years: On a long enough time line, failure is virtually guaranteed. That being the case, how our software approaches, adjusts for and reconciles failure is clearly its most important characteristic.
+That&rsquo;s not to say that modern day software is all garbage, but in all the ways that actually matter, that largely appears to be the case."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://jaylittle.github.io/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "The Bigger They are, the Harder They Fall",
+      "item": "https://jaylittle.github.io/post/view/2018/2/the-bigger-they-are-the-harder-they-fall/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "The Bigger They are, the Harder They Fall",
+  "name": "The Bigger They are, the Harder They Fall",
+  "description": "When it comes to the modern day world of software, one thing above all has become clear to me over the last 20 years: On a long enough time line, failure is virtually guaranteed. That being the case, how our software approaches, adjusts for and reconciles failure is clearly its most important characteristic.\nThat\u0026rsquo;s not to say that modern day software is all garbage, but in all the ways that actually matter, that largely appears to be the case.",
+  "keywords": [
+    
+  ],
+  "articleBody": "When it comes to the modern day world of software, one thing above all has become clear to me over the last 20 years: On a long enough time line, failure is virtually guaranteed. That being the case, how our software approaches, adjusts for and reconciles failure is clearly its most important characteristic.\nThat’s not to say that modern day software is all garbage, but in all the ways that actually matter, that largely appears to be the case. The cold hard reality is that as requirements and technology have advanced, software developers have struggled in earnest to keep up. Despite the rapid rate of advancement on the tooling side there is still a finite limit to the level of complication a single human being can grapple with on a mental level. The specific limit varies from developer to developer but regardless of how good anybody is there is no debate: We all have a limit.\nAs I’ve spent the last year writing and maintaining a load test framework, I’ve spent a huge portion of my time optimizing the performance of my own software (Note: this software provides live results to onlookers via a web application by collating the results of hundreds of thousands of requests a minute). Much of my time has been spent multi-threading code that was originally written to operate in a serialized fashion, tweaking mundane bits like how we calculate percentiles and adding feature after feature. Through all of this I have come to realize that I have limits on the amount of complexity I can hold in my head at any one time. There are some days where I honestly feel like Dr. Frankenstein staring powerlessly at his creation, regardless of whether it happens to be spreading joy or misery at the moment.\nWhy is this? In all honesty my own creation has grown and been optimized to the point that I can only grapple with a reasonably large but incomplete portion of it in my head at any given time. As more optimizations are made and more features are added, this situation is only going to get worse. A primary way to hedge against this inevitable outcome is to design software that is modularized in such a way that you can work on discrete components in a semi-independent fashion and then use automated testing processes like unit and integration testing to positively and negatively test for known common and edge case scenarios.\nSadly I have neither integration nor unit tests. I’d like to have them, but being on a relatively small team (2 Devs, 1 QA, 1 Performance Engineer) who are expected to demo new features at the end of every sprint, not to mention address a seemingly endless list of feature requests from internal customers, has relegated these desires to the backlog. Is that the right choice? Probably not. But given this combination of factors it is currently the only feasible approach.\nThe reason why this situation scares me is that failure is virtually guaranteed here on a long enough time line. Currently our approach isn’t adequately addressing the obvious failure modes much less the obscure ones. The reality is that as software is being birthed it tends to be small, fast and likely exists to solve a single problem. Over time, short of real discipline and push back on the developer side of the fence, it will inevitably grow beyond that. One day that growth will mutate the would-be prodigy into a monstrosity.\nThe question that remains is: How well prepared are you to do combat with your monstrosity? With the proper preparation you can hedge your bets effectively while enabling less knowledgeable personnel to positively contribute to your code base. Without that preparation you will effectively be at the mercy of a multitude of factors that you have no direct control over and one day they absolutely will overtake you.\nThis is something we as a team are currently grappling with while ultimately hoping to come out on top. Until then, I hope that sharing will prove at least as educational for you as it has proven to be therapeutic for me.\n",
+  "wordCount" : "691",
+  "inLanguage": "en",
+  "datePublished": "2018-02-12T00:00:00Z",
+  "dateModified": "2018-02-12T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "Jay Little"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://jaylittle.github.io/post/view/2018/2/the-bigger-they-are-the-harder-they-fall/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jay Little",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jaylittle.github.io/favicon.png"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://jaylittle.github.io" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://jaylittle.github.io/article/view/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/post/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/resume/" title="Resume">
+                    <span>Resume</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/article/view/jay-and-annette-wedding-2004/" title="Family">
+                    <span>Family</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/article/view/recipes/" title="Recipes">
+                    <span>Recipes</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://jaylittle.github.io">Home</a>&nbsp;»&nbsp;<a href="https://jaylittle.github.io/post/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      The Bigger They are, the Harder They Fall
+    </h1>
+    <div class="post-meta"><span title='2018-02-12 00:00:00 +0000 UTC'>February 12, 2018</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Jay Little
+
+</div>
+  </header> 
+  <div class="post-content"><p>When it comes to the modern day world of software, one thing above all has become clear to me over the last 20 years: On a long enough time line, failure is virtually guaranteed.  That being the case, how our software approaches, adjusts for and reconciles failure is clearly its most important characteristic.</p>
+<p>That&rsquo;s not to say that modern day software is all garbage, but in all the ways that actually matter, that largely appears to be the case.  The cold hard reality is that as requirements and technology have advanced, software developers have struggled in earnest to keep up.  Despite the rapid rate of advancement on the tooling side there is still a finite limit to the level of complication a single human being can grapple with on a mental level.  The specific limit varies from developer to developer but regardless of how good anybody is there is no debate: We all have a limit.</p>
+<p>As I&rsquo;ve spent the last year writing and maintaining a load test framework, I&rsquo;ve spent a huge portion of my time optimizing the performance of my own software (Note: this software provides live results to onlookers via a web application by collating the results of hundreds of thousands of requests a minute).  Much of my time has been spent multi-threading code that was originally written to operate in a serialized fashion, tweaking mundane bits like how we calculate percentiles and adding feature after feature.  Through all of this I have come to realize that I have limits on the amount of complexity I can hold in my head at any one time.  There are some days where I honestly feel like Dr. Frankenstein staring powerlessly at his creation, regardless of whether it happens to be spreading joy or misery at the moment.</p>
+<p>Why is this?  In all honesty my own creation has grown and been optimized to the point that I can only grapple with a reasonably large but incomplete portion of it in my head at any given time.  As more optimizations are made and more features are added, this situation is only going to get worse.  A primary way to hedge against this inevitable outcome is to design software that is modularized in such a way that you can work on discrete components in a semi-independent fashion and then use automated testing processes like unit and integration testing to positively and negatively test for known common and edge case scenarios.</p>
+<p>Sadly I have neither integration nor unit tests.  I&rsquo;d like to have them, but being on a relatively small team (2 Devs, 1 QA, 1 Performance Engineer) who are expected to demo new features at the end of every sprint, not to mention address a seemingly endless list of feature requests from internal customers, has relegated these desires to the backlog.  Is that the right choice?  Probably not.  But given this combination of factors it is currently the only feasible approach.</p>
+<p>The reason why this situation scares me is that failure is virtually guaranteed here on a long enough time line.  Currently our approach isn&rsquo;t adequately addressing the obvious failure modes much less the obscure ones.  The reality is that as software is being birthed it tends to be small, fast and likely exists to solve a single problem.  Over time, short of real discipline and push back on the developer side of the fence, it will inevitably grow beyond that.  One day that growth will mutate the would-be prodigy into a monstrosity.</p>
+<p>The question that remains is: How well prepared are you to do combat with your monstrosity?  With the proper preparation you can hedge your bets effectively while enabling less knowledgeable personnel to positively contribute to your code base.  Without that preparation you will effectively be at the mercy of a multitude of factors that you have no direct control over and one day they absolutely will overtake you.</p>
+<p>This is something we as a team are currently grappling with while ultimately hoping to come out on top.  Until then, I hope that sharing will prove at least as educational for you as it has proven to be therapeutic for me.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="https://jaylittle.github.io">Jay Little</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Small Servers, Shitty RAID, Twitch and Caves of Qud | Jay Little</title>
+<meta name="keywords" content="">
+<meta name="description" content="This post is really going to be just a random collection of random updates and thoughts. If you are looking for an overarching theme, I&rsquo;m sorry to disappoint but there isn&rsquo;t one. Nevertheless, this might be worth reading anyway. Your call.
+So yesterday was a painful and stressful but ultimately fruitful day for me in terms of tech. You see I received the parts required to complete my small server project.">
+<meta name="author" content="Jay Little">
+<link rel="canonical" href="https://jaylittle.github.io/post/view/2018/10/small-servers-shitty-raid-twitch-and-caves-of-qud/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://jaylittle.github.io/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://jaylittle.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://jaylittle.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Small Servers, Shitty RAID, Twitch and Caves of Qud" />
+<meta property="og:description" content="This post is really going to be just a random collection of random updates and thoughts. If you are looking for an overarching theme, I&rsquo;m sorry to disappoint but there isn&rsquo;t one. Nevertheless, this might be worth reading anyway. Your call.
+So yesterday was a painful and stressful but ultimately fruitful day for me in terms of tech. You see I received the parts required to complete my small server project." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jaylittle.github.io/post/view/2018/10/small-servers-shitty-raid-twitch-and-caves-of-qud/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2018-10-06T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-10-06T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Small Servers, Shitty RAID, Twitch and Caves of Qud"/>
+<meta name="twitter:description" content="This post is really going to be just a random collection of random updates and thoughts. If you are looking for an overarching theme, I&rsquo;m sorry to disappoint but there isn&rsquo;t one. Nevertheless, this might be worth reading anyway. Your call.
+So yesterday was a painful and stressful but ultimately fruitful day for me in terms of tech. You see I received the parts required to complete my small server project."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://jaylittle.github.io/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Small Servers, Shitty RAID, Twitch and Caves of Qud",
+      "item": "https://jaylittle.github.io/post/view/2018/10/small-servers-shitty-raid-twitch-and-caves-of-qud/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Small Servers, Shitty RAID, Twitch and Caves of Qud",
+  "name": "Small Servers, Shitty RAID, Twitch and Caves of Qud",
+  "description": "This post is really going to be just a random collection of random updates and thoughts. If you are looking for an overarching theme, I\u0026rsquo;m sorry to disappoint but there isn\u0026rsquo;t one. Nevertheless, this might be worth reading anyway. Your call.\nSo yesterday was a painful and stressful but ultimately fruitful day for me in terms of tech. You see I received the parts required to complete my small server project.",
+  "keywords": [
+    
+  ],
+  "articleBody": "This post is really going to be just a random collection of random updates and thoughts. If you are looking for an overarching theme, I’m sorry to disappoint but there isn’t one. Nevertheless, this might be worth reading anyway. Your call.\nSo yesterday was a painful and stressful but ultimately fruitful day for me in terms of tech. You see I received the parts required to complete my small server project. By some miracle Fedex delivered the parts early in the morning rather than later, so I ended up spending a huge portion of my day on this. However since this final server was meant to act as my file/print server, I decided to deviate a bit and buy a CloudShell2 NAS case for the ODroid XU4Q SBC (Single Board Computer). What a mistake that turned out to be. As it’s first order of business the embedded RAID Controller decided to mirror my backup drive onto my live drive despite the fact I had configured the jumpers to turn off RAID in favor of presenting the two six terabyte drives as separate volumes.\nNevertheless this created a lot of stress as it effectively destroyed the filesystem on my live volume and required me to restore terabytes of data off of the mirror volume (which is basically just a rsynced copy of the data on the live drive that is updated once a week on Sunday mornings). This also meant I had to ditch the fancy case and setup the SBC raw (e.g. with no case) in order to get the server up and running. After hours and hours of work, I got it done and thus far everything appears to be working as expected. The lesson here is twofold: Always plan for the worst as I did and don’t buy random pieces of hardware with embedded RAID controllers that have very few reviews. In my defense, the case really did look cool. Dammit.\nSo what will I do with the old Intel desktop that was my one server to rule them all before I started down the small server road? Well that’s a good question. I’ve been thinking a lot about that. The hardware is moderately specced with an Ivy Bridge Core I5 Intel processor and a GeForce 750 MX. Nevertheless it has occurred to me that this box would be perfect for a side project I’ve been toying with for awhile. Namely, starting a recreational twitch channel dedicated to showcasing the weird and odd games that I tend to play nowadays.\nFor those of you don’t know me, I tend to watch a lot of Twitch streams while I work and that’s been the case for at least a few years now. While it usually just serves as background noise (with the exception of Kitboga) you tend to pick up on a lot of trends if you spend enough time on Twitch. The most disturbing trend I’ve found is how all the popular game oriented streamers seem to play games in cycles. Either that or they just play the same game over and over again. The ones that play games in cycles tend to all play the same games around the same time as they play whatever hot Indie or AAA game was recently released.\nThe problem with this is that even with the best intentions and a streamer with a great personality this tends to get boring. It also serves as an unintended platform to showcase how very boring, non-creative and conservative many new games actually are. In addition it has become stunningly obvious to me that the genre of games that I tend to really enjoy are not streamed very often. Interested in watching a Caves of Qud stream? Good luck. Seriously. I think I’ve only stumbled on one or two over the years and they haven’t lasted very long.\nSo right now I’m toying with the idea of starting a recreational twitch channel dedicated to showcasing the odd games I like to play and how much I suck at playing them. Yes, I really am that terrible. In any event, even a moderately specced desktop like the one that I now have available to me would be more than enough to handle this task.\nAm I just talking out of my ass or will this actually happen? Stay tuned because only time will tell.\n",
+  "wordCount" : "728",
+  "inLanguage": "en",
+  "datePublished": "2018-10-06T00:00:00Z",
+  "dateModified": "2018-10-06T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "Jay Little"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://jaylittle.github.io/post/view/2018/10/small-servers-shitty-raid-twitch-and-caves-of-qud/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jay Little",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jaylittle.github.io/favicon.png"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://jaylittle.github.io" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://jaylittle.github.io/article/view/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/post/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/resume/" title="Resume">
+                    <span>Resume</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/article/view/jay-and-annette-wedding-2004/" title="Family">
+                    <span>Family</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/article/view/recipes/" title="Recipes">
+                    <span>Recipes</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://jaylittle.github.io">Home</a>&nbsp;»&nbsp;<a href="https://jaylittle.github.io/post/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Small Servers, Shitty RAID, Twitch and Caves of Qud
+    </h1>
+    <div class="post-meta"><span title='2018-10-06 00:00:00 +0000 UTC'>October 6, 2018</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Jay Little
+
+</div>
+  </header> 
+  <div class="post-content"><p>This post is really going to be just a random collection of random updates and thoughts.  If you are looking for an overarching theme, I&rsquo;m sorry to disappoint but there isn&rsquo;t one.  Nevertheless, this might be worth reading anyway. Your call.</p>
+<p>So yesterday was a painful and stressful but ultimately fruitful day for me in terms of tech.  You see I received the parts required to complete my small server project.  By some miracle Fedex delivered the parts early in the morning rather than later, so I ended up spending a huge portion of my day on this.  However since this final server was meant to act as my file/print server, I decided to deviate a bit and buy a <a href="https://wiki.odroid.com/accessory/add-on_boards/xu4_cloudshell2/xu4_cloudshell2">CloudShell2 NAS</a> case for the <a href="https://wiki.odroid.com/odroid-xu4/odroid-xu4">ODroid XU4Q</a> SBC (Single Board Computer).  What a mistake that turned out to be.  As it&rsquo;s first order of business the embedded RAID Controller decided to mirror my backup drive onto my live drive despite the fact I had configured the jumpers to turn off RAID in favor of presenting the two six terabyte drives as separate volumes.</p>
+<p>Nevertheless this created a lot of stress as it effectively destroyed the filesystem on my live volume and required me to restore terabytes of data off of the mirror volume (which is basically just a rsynced copy of the data on the live drive that is updated once a week on Sunday mornings).  This also meant I had to ditch the fancy case and setup the SBC raw (e.g. with no case) in order to get the server up and running.  After hours and hours of work, I got it done and thus far everything appears to be working as expected.  The lesson here is twofold: Always plan for the worst as I did and don&rsquo;t buy random pieces of hardware with embedded RAID controllers that have very few reviews.  In my defense, the case really did look cool.  Dammit.</p>
+<p>So what will I do with the old Intel desktop that was my one server to rule them all before I started down the small server road?  Well that&rsquo;s a good question.  I&rsquo;ve been thinking a lot about that.  The hardware is moderately specced with an Ivy Bridge Core I5 Intel processor and a GeForce 750 MX.  Nevertheless it has occurred to me that this box would be perfect for a side project I&rsquo;ve been toying with for awhile.  Namely, starting a recreational twitch channel dedicated to showcasing the weird and odd games that I tend to play nowadays.</p>
+<p>For those of you don&rsquo;t know me, I tend to watch a lot of <a href="https://www.twitch.tv/">Twitch</a> streams while I work and that&rsquo;s been the case for at least a few years now.  While it usually just serves as background noise (with the exception of <a href="https://www.twitch.tv/kitboga">Kitboga</a>) you tend to pick up on a lot of trends if you spend enough time on Twitch.  The most disturbing trend I&rsquo;ve found is how all the popular game oriented streamers seem to play games in cycles.  Either that or they just play the same game over and over again.  The ones that play games in cycles tend to all play the same games around the same time as they play whatever hot Indie or AAA game was recently released.</p>
+<p>The problem with this is that even with the best intentions and a streamer with a great personality this tends to get boring.  It also serves as an unintended platform to showcase how very boring, non-creative and conservative many new games actually are.  In addition it has become stunningly obvious to me that the genre of games that I tend to really enjoy are not streamed very often.  Interested in watching a <a href="http://www.cavesofqud.com/">Caves of Qud</a> stream?  Good luck.  Seriously. I think I&rsquo;ve only stumbled on one or two over the years and they haven&rsquo;t lasted very long.</p>
+<p>So right now I&rsquo;m toying with the idea of starting a recreational twitch channel dedicated to showcasing the odd games I like to play and how much I suck at playing them.  Yes, I really am that terrible.  In any event, even a moderately specced desktop like the one that I now have available to me would be more than enough to handle this task.</p>
+<p>Am I just talking out of my ass or will this actually happen?  Stay tuned because only time will tell.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="https://jaylittle.github.io">Jay Little</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

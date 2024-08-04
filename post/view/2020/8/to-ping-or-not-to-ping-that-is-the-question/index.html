@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>To Ping Or Not To Ping, That Is The Question | Jay Little</title>
+<meta name="keywords" content="">
+<meta name="description" content="Over the last few months, I have been having trouble with the stability of my home internet connection. This became evident to me while live streaming to Twitch as my stream would begin dropping a lot of frames in a really short amount of time. For a time, recycling the power on the cable modem would make a positive difference, but after a few months that stopped working reliably. This post is about my subsequent experience trying to write a scheduled cron job that would let me know whenever my internet connection was having issues.">
+<meta name="author" content="Jay Little">
+<link rel="canonical" href="https://jaylittle.github.io/post/view/2020/8/to-ping-or-not-to-ping-that-is-the-question/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://jaylittle.github.io/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://jaylittle.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://jaylittle.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="To Ping Or Not To Ping, That Is The Question" />
+<meta property="og:description" content="Over the last few months, I have been having trouble with the stability of my home internet connection. This became evident to me while live streaming to Twitch as my stream would begin dropping a lot of frames in a really short amount of time. For a time, recycling the power on the cable modem would make a positive difference, but after a few months that stopped working reliably. This post is about my subsequent experience trying to write a scheduled cron job that would let me know whenever my internet connection was having issues." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jaylittle.github.io/post/view/2020/8/to-ping-or-not-to-ping-that-is-the-question/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-08-05T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-08-05T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="To Ping Or Not To Ping, That Is The Question"/>
+<meta name="twitter:description" content="Over the last few months, I have been having trouble with the stability of my home internet connection. This became evident to me while live streaming to Twitch as my stream would begin dropping a lot of frames in a really short amount of time. For a time, recycling the power on the cable modem would make a positive difference, but after a few months that stopped working reliably. This post is about my subsequent experience trying to write a scheduled cron job that would let me know whenever my internet connection was having issues."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://jaylittle.github.io/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "To Ping Or Not To Ping, That Is The Question",
+      "item": "https://jaylittle.github.io/post/view/2020/8/to-ping-or-not-to-ping-that-is-the-question/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "To Ping Or Not To Ping, That Is The Question",
+  "name": "To Ping Or Not To Ping, That Is The Question",
+  "description": "Over the last few months, I have been having trouble with the stability of my home internet connection. This became evident to me while live streaming to Twitch as my stream would begin dropping a lot of frames in a really short amount of time. For a time, recycling the power on the cable modem would make a positive difference, but after a few months that stopped working reliably. This post is about my subsequent experience trying to write a scheduled cron job that would let me know whenever my internet connection was having issues.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Over the last few months, I have been having trouble with the stability of my home internet connection. This became evident to me while live streaming to Twitch as my stream would begin dropping a lot of frames in a really short amount of time. For a time, recycling the power on the cable modem would make a positive difference, but after a few months that stopped working reliably. This post is about my subsequent experience trying to write a scheduled cron job that would let me know whenever my internet connection was having issues.\nA few years ago I had a similar issue. That took six months to resolve and it ended up requiring that some cable run underneath the sidewalk in front of my house be replaced. So because of the PTSD associated with that hellish experience (which effectively rendered my connection unusable for hours on end at random times, making working remotely from home quite difficult), I took immediate action when I was presented with a similar issue once again.\nOnce recycling the power on the modem stopped working, I called Charter / Spectrum. They sent a tech out and he replaced the line run from the street, through my yard, into my crawlspace which goes through the floor into my office where the Cable Modem resides. The tech also replaced my Cable Modem (which incidentally was not only an older model, but also “survived” our house getting struck by lightning in 2019).\nHowever that wasn’t enough. I wanted to be able to monitor this situation so I wouldn’t be caught with my pants down again. I decided to write a simple cron job which would notify me when my internet connection was not working. So how do I did that? Well I decided that pinging some known IP addresses was the way to go. Initially the script was written to simply ping Google’s public DNS server @ 8.8.8.8 one hundred times and only produce output in the event that at least one packet was dropped.\nEventually I updated the script so that it would randomly select an IP from a list of IPs, all of which are IPs of publicly accessible DNS servers. Below is the final version of the script in its entirety:\n#!/bin/bash IPS[0]=9.9.9.9 IPS[1]=208.67.222.222 IPS[2]=208.67.220.220 IPS[3]=1.1.1.1 IPS[4]=1.0.0.1 IPS[5]=205.210.42.205 IPS[6]=64.68.200.200 IPS_SIZE=${#IPS[@]} IPS_INDEX=$(($RANDOM % $IPS_SIZE)) IP=${IPS[$IPS_INDEX]} COUNT=100 rm /tmp/ping_test_output.txt \u003e /dev/null 2\u003e\u00261 ping -c $COUNT -D -O $IP \u003e /tmp/ping_test_output.txt 2\u003e\u00261 if grep -qi \" 0% packet loss\" /tmp/ping_test_output.txt; then exit 0 else echo ALERT: Ping Test to $IP lost at least one packet! cat /tmp/ping_test_output.txt | tail -n 2 | head -n 1 echo ----------------------------------------------------- cat /tmp/ping_test_output.txt echo ----------------------------------------------------- exit 1 fi This script ran every half an hour via the magic of cron and in the event any packets were dropped produces an email with the pertinent details. So now I had a great way to track when my internet connection was acting up, right?\nWrong.\nAs I soon came to realize, even though this script seemed to do its job by sending emails when packets were lost, it didn’t actually mean my internet connection was having a problem at all. Nevertheless since I didn’t realize this I started calling Spectrum each and every time I started getting more than one or two of these emails within a period of a few hours (as I am willing to tolerate maybe one or two a day, because this is the internet after all). At some point it became clear that unlike before, I wasn’t seeing other things fail. My streams were not being negatively effected despite receiving these emails and most importantly Spectrum’s phone support wasn’t able to replicate the packet loss on their end (which they were able to do before).\nAt this point, I thought maybe that some other piece of network equipment on my side was responsible. My network is largely powered by Ubiquiti equipment and ever since the Coronavirus became an issue, their firmware updates have been less than stellar. I had already rolled back one upgrade on my Wireless Access Point to resolve a separate issue, so I decided to roll back the most recent update on my EdgeRouter X-1 as well.\nInitially this seemed to resolve my issues. I went a few weeks and only got an email here and there and all seemed well. Then sometime last week I started getting A LOT of these emails. Every half an hour in fact. Not only that but the packet loss started creeping up from 1% to as high as 3% and 4%. But everything else appeared to be working fine. I was still live streaming without dropping any frames. Internet video services were working fine (exempting of course the occasional glitch from Philo which is just standard operating procedure sadly).\nSo what the hell was going on? Sadly my entire approach was absolutely idiotic and had never had a real chance of working. However because networking isn’t my primary forte and is probably not yours, you are probably scratching your head just like I was wondering what the flaw was. Remember the point of this script is to let me know that my internet connection is having issues, but so far the output produced by this script didn’t seem to correlate with any actual issues. So I started to do some research. Eventually I stumbled on this conversation which helped to shed some light on the problem. The subject of the thread really says it all:\nDNS Rate Limiting ICMP (8.8.8.8 and 8.8.4.4) Holy shit. Wow. It never even occurred to me that a public DNS server like 8.8.8.8 would put rate limits on things like ICMP. But when you think about it, it makes perfect sense. These servers exist primarily to service DNS clients, not allow half ass network admins like me to “test” the quality of their internet connection. So of course you want to prioritize servicing DNS clients over anything else.\nKeep in mind at this point, the script was only pinging 8.8.8.8. This is when I went back and made it randomly pick an IP out of a list of IPs. There are a variety of IPs there including the IPs for Cloudflares, Quad 9 and OpenDNS servers. But of course after making this mod, I was still getting negative results that didn’t correlate with any other symptoms.\nWell of course the problem now should be obvious. I’m pinging DNS servers. If Google isn’t prioritizing responding to ICMP requests, then it would make sense that other providers are doing that as well. That realization hit me like a bag of bricks. But it doesn’t end there. As I began to try and figure out what IPs I could actually ping to test my connection, I suddenly realized that this entire idea was an epic fail.\nWhy is that? Well it’s because when you ping some external IP, that packet is being routed through any number of routers, only a portion of which will be controlled by your ISP. The internet is a collection of connected yet independently operated network devices. Lets check out this traceroute from one of my servers to 8.8.8.8:\ntraceroute to 8.8.8.8 (8.8.8.8), 30 hops max, 60 byte packets 1 _gateway (192.168.128.253) 0.551 ms 0.448 ms 0.352 ms 2 * * * 3 dtr01wavsnc-gbe-0-0-1-2.wavs.nc.charter.com (96.34.65.244) 14.287 ms 14.168 ms 14.090 ms 4 crr01gnvlsc-bue-100.gnvl.sc.charter.com (96.34.67.12) 14.214 ms 14.146 ms 15.439 ms 5 crr12gnvlsc-tge-0-1-0-1.gnvl.sc.charter.com (96.34.92.62) 15.372 ms bbr01gnvlsc-bue-3.gnvl.sc.charter.com (96.34.2.112) 16.865 ms crr12gnvlsc-tge-0-1-0-1.gnvl.sc.charter.com (96.34.92.62) 16.786 ms 6 bbr01chcgil-tge-0-1-0-6.chcg.il.charter.com (96.34.0.135) 22.548 ms bbr01spbgsc-bue-4.spbg.sc.charter.com (96.34.2.50) 25.352 ms bbr01chcgil-tge-0-1-0-6.chcg.il.charter.com (96.34.0.135) 20.630 ms 7 bbr02slidla-tge-0-1-0-4.slid.la.charter.com (96.34.0.133) 29.150 ms 28.740 ms bbr01chcgil-tge-0-3-0-8.chcg.il.charter.com (96.34.0.184) 26.993 ms 8 prr01snjsca-tge-0-0-0-1.snjs.ca.charter.com (96.34.3.35) 28.525 ms bbr02atlnga-tge-0-2-0-0.atln.ga.charter.com (96.34.3.111) 28.416 ms 28.341 ms 9 74.125.51.142 (74.125.51.142) 19.665 ms 24.198 ms 22.476 ms 10 108.170.249.161 (108.170.249.161) 22.400 ms * 15.815 ms 11 dns.google (8.8.8.8) 22.684 ms 108.170.225.117 (108.170.225.117) 16.751 ms 209.85.241.153 (209.85.241.153) 16.602 ms Now that should be enlightening. However for those of you who don’t know how to read that output, let me explain. It basically tells me that my request to 8.8.8.8 goes through ten different devices before reaching its ultimate destination. Looking closely we can see that only points 2 through 8 appear to be controlled by my Charter / Spectrum whereas everything before and after that is outside of their control. Presumably point 2 is the immediate internal gateway accessed by my router (which is 192.168.128.253) and it is not directly pingable.\nIn any event, its really not fair to hold Charter / Spectrum accountable for things that happen outside of their network, is it? It’s really not. I guess I could start pinging some of those Spectrum IPs directly using the previous script, but what if Spectrum changes something and modifies their network routing somehow? Well then I have to manually update the script with new IPs anytime that happens. I really didn’t want to have to commit to doing that, so I decided that it was time to take a different approach to solving this problem. Below is the current version of the script:\n#!/bin/bash IP=8.8.8.8 MIN=3 MAX=8 rm /tmp/traceroute_test_output.txt \u003e /dev/null 2\u003e\u00261 traceroute -n -f $MIN -m $MAX $IP \u003e /tmp/traceroute_test_output.txt 2\u003e\u00261 if grep -qi \"*\" /tmp/traceroute_test_output.txt; then echo ALERT: Traceroute Test to $IP lost at least one packet! echo ----------------------------------------------------- cat /tmp/traceroute_test_output.txt echo ----------------------------------------------------- exit 1 else exit 0 fi So instead of pinging 8.8.8.8 we are now attempting to route a packet to 8.8.8.8 and only testing the 3rd through 8th hops of the transaction. As I noted before, those are all Spectrum devices, so it’s reasonable to hold them accountable for those devices being able to service requests regardless of what 8.8.8.8 ultimately decides to do with my ICMP request.\nSo far this script has worked far better. I’m still getting two emails each day since I implemented this and each and every time the point of failure has been the 8th hop. From my perspective, my connection has been functioning perfectly so these emails are likely false negatives and may require me to modify the script to stop at the 7th hop rather than the 8th hop. I’m going to let it progress for the next few days and modify the script appropriately then.\nYou have to be careful when it comes to testing network connectivity because in a lot of cases you may be biting off more than you can chew and not even realize it. Simply pinging an IP requires a lot of independent devices and networks to work in concert with one another and it’s not fair to hold the operator of one network accountable for the actions of operator of a different network. It is sometimes easy to forget how wonderfully complicated all of this is and that’s okay.\nNeedless to say this is a forgivable sin just so long as you course correct appropriately. Speaking of that, the next time I talk to Spectrum (which should be a few days as they put a monitor on my cable modem that expires on Friday) I plan on apologizing profusely to them. While there initially was an actual issue, it appears that their initial work resolved the problem. The subsequent four times I have called were in error and I sincerely regret wasting their time on the issue.\nSo what’s the moral of the story? You live, you learn. But don’t forget that last part as it is quite important.\n",
+  "wordCount" : "1907",
+  "inLanguage": "en",
+  "datePublished": "2020-08-05T00:00:00Z",
+  "dateModified": "2020-08-05T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "Jay Little"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://jaylittle.github.io/post/view/2020/8/to-ping-or-not-to-ping-that-is-the-question/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jay Little",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jaylittle.github.io/favicon.png"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://jaylittle.github.io" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://jaylittle.github.io/article/view/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/post/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/resume/" title="Resume">
+                    <span>Resume</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/article/view/jay-and-annette-wedding-2004/" title="Family">
+                    <span>Family</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/article/view/recipes/" title="Recipes">
+                    <span>Recipes</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://jaylittle.github.io">Home</a>&nbsp;»&nbsp;<a href="https://jaylittle.github.io/post/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      To Ping Or Not To Ping, That Is The Question
+    </h1>
+    <div class="post-meta"><span title='2020-08-05 00:00:00 +0000 UTC'>August 5, 2020</span>&nbsp;·&nbsp;9 min&nbsp;·&nbsp;Jay Little
+
+</div>
+  </header> 
+  <div class="post-content"><p>Over the last few months, I have been having trouble with the stability of my home internet connection.  This became evident to me while live streaming to Twitch as my stream would begin dropping a lot of frames in a really short amount of time.  For a time, recycling the power on the cable modem would make a positive difference, but after a few months that stopped working reliably.  This post is about my subsequent experience trying to write a scheduled cron job that would let me know whenever my internet connection was having issues.</p>
+<p>A few years ago I had a similar issue.  That took six months to resolve and it ended up requiring that some cable run underneath the sidewalk in front of my house be replaced.  So because of the PTSD associated with that hellish experience (which effectively rendered my connection unusable for hours on end at random times, making working remotely from home quite difficult), I took immediate action when I was presented with a similar issue once again.</p>
+<p>Once recycling the power on the modem stopped working, I called Charter / Spectrum.  They sent a tech out and he replaced the line run from the street, through my yard, into my crawlspace which goes through the floor into my office where the Cable Modem resides.  The tech also replaced my Cable Modem (which incidentally was not only an older model, but also &ldquo;survived&rdquo; our house getting struck by lightning in 2019).</p>
+<p>However that wasn&rsquo;t enough.  I wanted to be able to monitor this situation so I wouldn&rsquo;t be caught with my pants down again. I decided to write a simple cron job which would notify me when my internet connection was not working.  So how do I did that?  Well I decided that pinging some known IP addresses was the way to go.  Initially the script was written to simply ping Google&rsquo;s public DNS server @ 8.8.8.8 one hundred times and only produce output in the event that at least one packet was dropped.</p>
+<p>Eventually I updated the script so that it would randomly select an IP from a list of IPs, all of which are IPs of publicly accessible DNS servers.  Below is the final version of the script in its entirety:</p>
+<pre><code>#!/bin/bash
+IPS[0]=9.9.9.9
+IPS[1]=208.67.222.222
+IPS[2]=208.67.220.220
+IPS[3]=1.1.1.1
+IPS[4]=1.0.0.1
+IPS[5]=205.210.42.205
+IPS[6]=64.68.200.200
+IPS_SIZE=${#IPS[@]}
+IPS_INDEX=$(($RANDOM % $IPS_SIZE))
+IP=${IPS[$IPS_INDEX]}
+
+COUNT=100
+
+rm /tmp/ping_test_output.txt &gt; /dev/null 2&gt;&amp;1
+ping -c $COUNT -D -O $IP &gt; /tmp/ping_test_output.txt 2&gt;&amp;1
+if grep -qi &quot; 0% packet loss&quot; /tmp/ping_test_output.txt; then
+ exit 0
+else
+ echo ALERT: Ping Test to $IP lost at least one packet!
+ cat /tmp/ping_test_output.txt | tail -n 2 | head -n 1
+ echo -----------------------------------------------------
+ cat /tmp/ping_test_output.txt
+ echo -----------------------------------------------------
+ exit 1
+fi
+</code></pre>
+<p>This script ran every half an hour via the magic of cron and in the event any packets were dropped produces an email with the pertinent details.  So now I had a great way to track when my internet connection was acting up, right?</p>
+<p><strong>Wrong.</strong></p>
+<p>As I soon came to realize, even though this script seemed to do its job by sending emails when packets were lost, it didn&rsquo;t actually mean my internet connection was having a problem at all.  Nevertheless since I didn&rsquo;t realize this I started calling Spectrum each and every time I started getting more than one or two of these emails within a period of a few hours (as I am willing to tolerate maybe one or two a day, because this is the internet after all).  At some point it became clear that unlike before, I wasn&rsquo;t seeing other things fail.  My streams were not being negatively effected despite receiving these emails and most importantly Spectrum&rsquo;s phone support wasn&rsquo;t able to replicate the packet loss on their end (which they were able to do before).</p>
+<p>At this point, I thought maybe that some other piece of network equipment on my side was responsible.  My network is largely powered by Ubiquiti equipment and ever since the Coronavirus became an issue, their firmware updates have been less than stellar.  I had already rolled back one upgrade on my Wireless Access Point to resolve a separate issue, so I decided to roll back the most recent update on my EdgeRouter X-1 as well.</p>
+<p>Initially this seemed to resolve my issues.  I went a few weeks and only got an email here and there and all seemed well.  Then sometime last week I started getting A LOT of these emails.  Every half an hour in fact.  Not only that but the packet loss started creeping up from 1% to as high as 3% and 4%.  But everything else appeared to be working fine.  I was still live streaming without dropping any frames.  Internet video services were working fine (exempting of course the occasional glitch from Philo which is just standard operating procedure sadly).</p>
+<p>So what the hell was going on?  Sadly my entire approach was absolutely idiotic and had never had a real chance of working.  However because networking isn&rsquo;t my primary forte and is probably not yours, you are probably scratching your head just like I was wondering what the flaw was.  Remember the point of this script is to let me know that my internet connection is having issues, but so far the output produced by this script didn&rsquo;t seem to correlate with any actual issues.  So I started to do some research.  Eventually I stumbled on <a href="https://groups.google.com/forum/#!topic/public-dns-discuss/p1o62SJElck">this conversation</a> which helped to shed some light on the problem.  The subject of the thread really says it all:</p>
+<span class="centered"><strong>DNS Rate Limiting ICMP (8.8.8.8 and 8.8.4.4)</strong></span>
+<p>Holy shit.  Wow.  It never even occurred to me that a public DNS server like 8.8.8.8 would put rate limits on things like ICMP.  But when you think about it, it makes perfect sense.  These servers exist primarily to service DNS clients, not allow half ass network admins like me to &ldquo;test&rdquo; the quality of their internet connection.  So of course you want to prioritize servicing DNS clients over anything else.</p>
+<p>Keep in mind at this point, the script was only pinging 8.8.8.8.  This is when I went back and made it randomly pick an IP out of a list of IPs.  There are a variety of IPs there including the IPs for Cloudflares, Quad 9 and OpenDNS servers.  But of course after making this mod, I was still getting negative results that didn&rsquo;t correlate with any other symptoms.</p>
+<p>Well of course the problem now should be obvious.  I&rsquo;m pinging DNS servers.  If Google isn&rsquo;t prioritizing responding to ICMP requests, then it would make sense that other providers are doing that as well.  That realization hit me like a bag of bricks.  But it doesn&rsquo;t end there.  As I began to try and figure out what IPs I could actually ping to test my connection, I suddenly realized that this entire idea was an epic fail.</p>
+<p>Why is that?  Well it&rsquo;s because when you ping some external IP, that packet is being routed through any number of routers, only a portion of which will be controlled by your ISP.  The internet is a collection of connected yet independently operated network devices.  Lets check out this traceroute from one of my servers to 8.8.8.8:</p>
+<pre><code>traceroute to 8.8.8.8 (8.8.8.8), 30 hops max, 60 byte packets
+ 1  _gateway (192.168.128.253)  0.551 ms  0.448 ms  0.352 ms
+ 2  * * *
+ 3  dtr01wavsnc-gbe-0-0-1-2.wavs.nc.charter.com (96.34.65.244)  14.287 ms  14.168 ms  14.090 ms
+ 4  crr01gnvlsc-bue-100.gnvl.sc.charter.com (96.34.67.12)  14.214 ms  14.146 ms  15.439 ms
+ 5  crr12gnvlsc-tge-0-1-0-1.gnvl.sc.charter.com (96.34.92.62)  15.372 ms bbr01gnvlsc-bue-3.gnvl.sc.charter.com (96.34.2.112)  16.865 ms crr12gnvlsc-tge-0-1-0-1.gnvl.sc.charter.com (96.34.92.62)  16.786 ms
+ 6  bbr01chcgil-tge-0-1-0-6.chcg.il.charter.com (96.34.0.135)  22.548 ms bbr01spbgsc-bue-4.spbg.sc.charter.com (96.34.2.50)  25.352 ms bbr01chcgil-tge-0-1-0-6.chcg.il.charter.com (96.34.0.135)  20.630 ms
+ 7  bbr02slidla-tge-0-1-0-4.slid.la.charter.com (96.34.0.133)  29.150 ms  28.740 ms bbr01chcgil-tge-0-3-0-8.chcg.il.charter.com (96.34.0.184)  26.993 ms
+ 8  prr01snjsca-tge-0-0-0-1.snjs.ca.charter.com (96.34.3.35)  28.525 ms bbr02atlnga-tge-0-2-0-0.atln.ga.charter.com (96.34.3.111)  28.416 ms  28.341 ms
+ 9  74.125.51.142 (74.125.51.142)  19.665 ms  24.198 ms  22.476 ms
+10  108.170.249.161 (108.170.249.161)  22.400 ms *  15.815 ms
+11  dns.google (8.8.8.8)  22.684 ms 108.170.225.117 (108.170.225.117)  16.751 ms 209.85.241.153 (209.85.241.153)  16.602 ms
+</code></pre>
+<p>Now that should be enlightening.  However for those of you who don&rsquo;t know how to read that output, let me explain.  It basically tells me that my request to 8.8.8.8 goes through ten different devices before reaching its ultimate destination.  Looking closely we can see that only points 2 through 8 appear to be controlled by my Charter / Spectrum whereas everything before and after that is outside of their control.  Presumably point 2 is the immediate internal gateway accessed by my router (which is 192.168.128.253) and it is not directly pingable.</p>
+<p>In any event, its really not fair to hold Charter / Spectrum accountable for things that happen outside of their network, is it?  It&rsquo;s really not.  I guess I could start pinging some of those Spectrum IPs directly using the previous script, but what if Spectrum changes something and modifies their network routing somehow?  Well then I have to manually update the script with new IPs anytime that happens.  I really didn&rsquo;t want to have to commit to doing that, so I decided that it was time to take a different approach to solving this problem.  Below is the current version of the script:</p>
+<pre><code>#!/bin/bash
+IP=8.8.8.8
+MIN=3
+MAX=8
+
+rm /tmp/traceroute_test_output.txt &gt; /dev/null 2&gt;&amp;1
+traceroute -n -f $MIN -m $MAX $IP &gt; /tmp/traceroute_test_output.txt 2&gt;&amp;1
+if grep -qi &quot;*&quot; /tmp/traceroute_test_output.txt; then
+ echo ALERT: Traceroute Test to $IP lost at least one packet!
+ echo -----------------------------------------------------
+ cat /tmp/traceroute_test_output.txt
+ echo -----------------------------------------------------
+ exit 1
+else
+ exit 0
+fi
+</code></pre>
+<p>So instead of pinging 8.8.8.8 we are now attempting to route a packet to 8.8.8.8 and only testing the 3rd through 8th hops of the transaction.  As I noted before, those are all Spectrum devices, so it&rsquo;s reasonable to hold them accountable for those devices being able to service requests regardless of what 8.8.8.8 ultimately decides to do with my ICMP request.</p>
+<p>So far this script has worked far better.  I&rsquo;m still getting two emails each day since I implemented this and each and every time the point of failure has been the 8th hop.  From my perspective, my connection has been functioning perfectly so these emails are likely false negatives and may require me to modify the script to stop at the 7th hop rather than the 8th hop.  I&rsquo;m going to let it progress for the next few days and modify the script appropriately then.</p>
+<p>You have to be careful when it comes to testing network connectivity because in a lot of cases you may be biting off more than you can chew and not even realize it.  Simply pinging an IP requires a lot of independent devices and networks to work in concert with one another and it&rsquo;s not fair to hold the operator of one network accountable for the actions of operator of a different network.  It is sometimes easy to forget how wonderfully complicated all of this is and that&rsquo;s okay.</p>
+<p>Needless to say this is a forgivable sin just so long as you course correct appropriately.  Speaking of that, the next time I talk to Spectrum (which should be a few days as they put a monitor on my cable modem that expires on Friday) I plan on apologizing profusely to them.  While there initially was an actual issue, it appears that their initial work resolved the problem.  The subsequent four times I have called were in error and I sincerely regret wasting their time on the issue.</p>
+<p>So what&rsquo;s the moral of the story?  You live, you learn.  But don&rsquo;t forget that last part as it is quite important.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="https://jaylittle.github.io">Jay Little</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

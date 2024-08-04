@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Tor Versus Zoom | Jay Little</title>
+<meta name="keywords" content="">
+<meta name="description" content="As I&rsquo;m sure many of you know, an important part of being a remote worker is maintaining lines of communication with your co-workers. At work we use a variety of tools to accomplish that but one of the most important tools is one called Zoom. It is a screen sharing, audio and video conferencing tool that can accommodate hundreds of people at once and this tends to make it very useful.">
+<meta name="author" content="Jay Little">
+<link rel="canonical" href="https://jaylittle.github.io/post/view/2018/4/tor-versus-zoom/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://jaylittle.github.io/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://jaylittle.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://jaylittle.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Tor Versus Zoom" />
+<meta property="og:description" content="As I&rsquo;m sure many of you know, an important part of being a remote worker is maintaining lines of communication with your co-workers. At work we use a variety of tools to accomplish that but one of the most important tools is one called Zoom. It is a screen sharing, audio and video conferencing tool that can accommodate hundreds of people at once and this tends to make it very useful." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jaylittle.github.io/post/view/2018/4/tor-versus-zoom/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2018-04-23T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-04-23T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Tor Versus Zoom"/>
+<meta name="twitter:description" content="As I&rsquo;m sure many of you know, an important part of being a remote worker is maintaining lines of communication with your co-workers. At work we use a variety of tools to accomplish that but one of the most important tools is one called Zoom. It is a screen sharing, audio and video conferencing tool that can accommodate hundreds of people at once and this tends to make it very useful."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://jaylittle.github.io/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Tor Versus Zoom",
+      "item": "https://jaylittle.github.io/post/view/2018/4/tor-versus-zoom/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Tor Versus Zoom",
+  "name": "Tor Versus Zoom",
+  "description": "As I\u0026rsquo;m sure many of you know, an important part of being a remote worker is maintaining lines of communication with your co-workers. At work we use a variety of tools to accomplish that but one of the most important tools is one called Zoom. It is a screen sharing, audio and video conferencing tool that can accommodate hundreds of people at once and this tends to make it very useful.",
+  "keywords": [
+    
+  ],
+  "articleBody": "As I’m sure many of you know, an important part of being a remote worker is maintaining lines of communication with your co-workers. At work we use a variety of tools to accomplish that but one of the most important tools is one called Zoom. It is a screen sharing, audio and video conferencing tool that can accommodate hundreds of people at once and this tends to make it very useful.\nHowever Zoom and I now suffer from a disagreement that I just cannot abide. That disagreement centers around the fact that I’m running a Tor relay on my server at home. Tor relays are listed in a public Tor directory. I have been running this relay for over a year and with the exception of one service cough cough Hulu cough cough, I’ve not had any problems resulting from this choice. Of course that ceased to be the case last Friday when Zoom decided to start blacklisting all publicly listed Tor machines (including non-exit nodes like mine).\nBefore we continue, it’s best that you take a moment to understand what Tor actually is. Tor is what dip shit media personalities, fictional “techs” on crime dramas and wannabe in-the-know hipster morons are actually referring to when they throw around the term “THE DARK WEB”. However while it is that, in reality it is actually a network construct that allows people of all kinds to access content over the internet anonymously in which both the client and the server can be and generally are obfuscated. In fact the Tor project is largely funded by the US Government among other entities. That’s because it allows dissidents in hard line regimes to communicate with other like-minded personalities. So while Tor can be used for less than savory things, it can also be used for great things. Like any tool, it is inherently amoral. As a true believer in civil rights, I appreciate the freedom that a tool like Tor brings to the table. For better or worse, it promotes individual freedom and that is generally something I can and will always get behind.\nSo back in the now: Zoom decided that as of late last week, they no longer appreciate users who happen to participate in Tor. This is extremely disappointing. Zoom is required for me to do my job so that makes this especially painful. However at the moment I’m able to work around the block by using a paid VPN service and that will suffice for now. Since I’ve given my employer my notice, in a few weeks Zoom will no longer be required for me to do my work on a daily basis.\nThat having been said, after a long conversation with Zoom support and one other co-worker who has also been directly effected by this ban, I have decided that once my current job ends, I will no longer be using Zoom in any way, shape or form. Now I can hear you asking, “But Jay have you verified this is actually a thing?” Actually yes. I shut down my Tor relay for a few hours and the block was removed a few hours later after being in place for over three whole days. Afterwards I turned the relay back on and within a couple hours the ban was back in place. Sadly this appears to be part of Zooms new policy despite the fact that it is not publicly stated anywhere on their website.\nPersonally I think it’s a shame when any cloud services provider decides to err on the side of internet facism rather than internet freedom. The way Zoom has handled this has been particularly egregious and at the end of the day I can only hope that other cloud providers do not decide to follow suit. But if they do, know that I will err on the side of internet freedom because I truly do care.\n",
+  "wordCount" : "651",
+  "inLanguage": "en",
+  "datePublished": "2018-04-23T00:00:00Z",
+  "dateModified": "2018-04-23T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "Jay Little"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://jaylittle.github.io/post/view/2018/4/tor-versus-zoom/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jay Little",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jaylittle.github.io/favicon.png"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://jaylittle.github.io" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://jaylittle.github.io/article/view/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/post/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/resume/" title="Resume">
+                    <span>Resume</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/article/view/jay-and-annette-wedding-2004/" title="Family">
+                    <span>Family</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/article/view/recipes/" title="Recipes">
+                    <span>Recipes</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://jaylittle.github.io">Home</a>&nbsp;»&nbsp;<a href="https://jaylittle.github.io/post/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Tor Versus Zoom
+    </h1>
+    <div class="post-meta"><span title='2018-04-23 00:00:00 +0000 UTC'>April 23, 2018</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Jay Little
+
+</div>
+  </header> 
+  <div class="post-content"><p>As I&rsquo;m sure many of you know, an important part of being a remote worker is maintaining lines of communication with your co-workers.  At work we use a variety of tools to accomplish that but one of the most important tools is one called <a href="https://zoom.us">Zoom</a>.  It is a screen sharing, audio and video conferencing tool that can accommodate hundreds of people at once and this tends to make it very useful.</p>
+<p>However Zoom and I now suffer from a disagreement that I just cannot abide.  That disagreement centers around the fact that I&rsquo;m running a <a href="http://www.bsdnow.tv/tutorials/tor">Tor relay</a> on my server at home.  Tor relays are listed in a public Tor directory.  I have been running this relay for over a year and with the exception of one service <em>cough</em> <em>cough</em> Hulu <em>cough</em> <em>cough</em>, I&rsquo;ve not had any problems resulting from this choice.  Of course that ceased to be the case last Friday when Zoom decided to start blacklisting all publicly listed Tor machines (including non-exit nodes like mine).</p>
+<p>Before we continue, it&rsquo;s best that you take a moment to understand what Tor actually is.  Tor is what dip shit media personalities, fictional &ldquo;techs&rdquo; on crime dramas and wannabe in-the-know hipster morons are actually referring to when they throw around the term &ldquo;THE DARK WEB&rdquo;.  However while it is that, in reality it is actually a network construct that allows people of all kinds to access content over the internet anonymously in which both the client and the server can be and generally are obfuscated.  In fact the Tor project is <a href="https://www.torproject.org/about/sponsors.html.en">largely funded by the US Government</a> among other entities.  That&rsquo;s because it allows dissidents in hard line regimes to communicate with other like-minded personalities.  So while Tor can be used for less than savory things, it can also be used for great things.  Like any tool, it is inherently amoral.  As a true believer in civil rights, I appreciate the freedom that a tool like Tor brings to the table.  For better or worse, it promotes individual freedom and that is generally something I can and will always get behind.</p>
+<p>So back in the now: Zoom decided that as of late last week, they no longer appreciate users who happen to participate in Tor.  This is extremely disappointing.  Zoom is required for me to do my job so that makes this especially painful.  However at the moment I&rsquo;m able to work around the block by using a paid VPN service and that will suffice for now.  Since I&rsquo;ve given my employer my notice, in a few weeks Zoom will no longer be required for me to do my work on a daily basis.</p>
+<p>That having been said, after a long conversation with Zoom support and one other co-worker who has also been directly effected by this ban, I have decided that once my current job ends, I will no longer be using Zoom in any way, shape or form.  Now I can hear you asking, &ldquo;But Jay have you verified this is actually a thing?&rdquo;  Actually yes.  I shut down my Tor relay for a few hours and the block was removed a few hours later after being in place for over three whole days.  Afterwards I turned the relay back on and within a couple hours the ban was back in place.  Sadly this appears to be part of Zooms new policy despite the fact that it is not publicly stated anywhere on their website.</p>
+<p>Personally I think it&rsquo;s a shame when any cloud services provider decides to err on the side of internet facism rather than internet freedom.  The way Zoom has handled this has been particularly egregious and at the end of the day I can only hope that other cloud providers do not decide to follow suit.  But if they do, know that I will err on the side of internet freedom because I truly do care.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="https://jaylittle.github.io">Jay Little</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

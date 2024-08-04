@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>The Problem with Internet Explorer and Spartan | Jay Little</title>
+<meta name="keywords" content="">
+<meta name="description" content="Anybody who knows me professionally, knows that I despise Microsofts Internet Explorer web browser. What they probably don&rsquo;t know is why I despise it. Most people likely assume that because I&rsquo;m a Penguin, I&rsquo;m also an Internet Explorer hater. The two do tend to go hand in hand. However nothing could be further from the truth. I use Linux a great deal on my own time, but professionally I tend to spend most of my time with Windows.">
+<meta name="author" content="Jay Little">
+<link rel="canonical" href="https://jaylittle.github.io/post/view/2015/3/the-problem-with-internet-explorer-and-spartan/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://jaylittle.github.io/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://jaylittle.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://jaylittle.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="The Problem with Internet Explorer and Spartan" />
+<meta property="og:description" content="Anybody who knows me professionally, knows that I despise Microsofts Internet Explorer web browser. What they probably don&rsquo;t know is why I despise it. Most people likely assume that because I&rsquo;m a Penguin, I&rsquo;m also an Internet Explorer hater. The two do tend to go hand in hand. However nothing could be further from the truth. I use Linux a great deal on my own time, but professionally I tend to spend most of my time with Windows." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jaylittle.github.io/post/view/2015/3/the-problem-with-internet-explorer-and-spartan/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2015-03-31T00:00:00+00:00" />
+<meta property="article:modified_time" content="2015-03-31T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="The Problem with Internet Explorer and Spartan"/>
+<meta name="twitter:description" content="Anybody who knows me professionally, knows that I despise Microsofts Internet Explorer web browser. What they probably don&rsquo;t know is why I despise it. Most people likely assume that because I&rsquo;m a Penguin, I&rsquo;m also an Internet Explorer hater. The two do tend to go hand in hand. However nothing could be further from the truth. I use Linux a great deal on my own time, but professionally I tend to spend most of my time with Windows."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://jaylittle.github.io/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "The Problem with Internet Explorer and Spartan",
+      "item": "https://jaylittle.github.io/post/view/2015/3/the-problem-with-internet-explorer-and-spartan/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "The Problem with Internet Explorer and Spartan",
+  "name": "The Problem with Internet Explorer and Spartan",
+  "description": "Anybody who knows me professionally, knows that I despise Microsofts Internet Explorer web browser. What they probably don\u0026rsquo;t know is why I despise it. Most people likely assume that because I\u0026rsquo;m a Penguin, I\u0026rsquo;m also an Internet Explorer hater. The two do tend to go hand in hand. However nothing could be further from the truth. I use Linux a great deal on my own time, but professionally I tend to spend most of my time with Windows.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Anybody who knows me professionally, knows that I despise Microsofts Internet Explorer web browser. What they probably don’t know is why I despise it. Most people likely assume that because I’m a Penguin, I’m also an Internet Explorer hater. The two do tend to go hand in hand. However nothing could be further from the truth. I use Linux a great deal on my own time, but professionally I tend to spend most of my time with Windows. I have a healthy respect for Microsoft products and techs such as Windows Server, IIS and .NET. This respect does not extend to Internet Explorer. The purpose of this post is to explain why that is.\nTo start, this post was at least partially inspired by the first public/beta release of Microsoft’s new Spartan browser. Spartan has been getting heavily hyped over the last few months and with good reason. It represents a few major steps in the right direction for Microsoft. Spartan fixes a lot of the complaints people have made in regards to Internet Explorer, but it does not fix them all. Though it is a step in the right direction and for that Microsoft should be applauded. Nevertheless, it brings with it some of the same baggage that IE does.\nBack to IE, where do I even begin? I’ve been developing web applications for 15 years now and half of that time has been spent suffering with the most infamous version of IE, 6.0. In early 2008 I told my current employer that I was no longer going to spend time trying to make IE 6.0 work with my latest apps and that upgrading to IE 7.0 should be their priority. Surprisingly enough this strategy actually worked though I suffered with IE 7.0 until January of 2013 when I left a position that was forcing me to continue writing code for that browser.\nI say all this in an effort to point out that because of Microsofts position in the industry and their general approach to software, web developers like myself have been forced to live with their mistakes for a very long time. IE 6.0 took thirteen years to stop being supported by Microsoft. That’s insane despite the fact that when it was released in 2001 it was heralded as a great piece of software. But after Microsoft sat on their laurels for a few years, competitors rose to fill the void and subsequently showed the world that the web browser could still be improved upon. Microsoft released IE 7.0 in 2006, a full five years later. It was woefully behind and unable to compete on most levels with the likes of Firefox. But it still won.\nThis of course brings me to my first complaint about Internet Explorer: It is perpetually behind the curve. Because of the sluggishness of Microsoft and their general inability to keep up with consumer facing technology trends IE still forces the rest of us to remain behind the curve in order to support the overwhelming majority of desktop and laptop users that still insist on using IE. No matter what Chrome and Firefox bring to the table in terms of standards support, web developers still have to deal with the likes of poly-fills and a variety of other unsavory hacks in order to support popular versions of IE such as version 9.0.\nMy second complaint about IE is the fact that it is still being tied to specific versions of Windows. I really have no understanding of why Microsoft chooses to do this in this day and age. It really is quite silly. But more than that it ties specific versions of IE to life cycle support commitments Microsoft has made for specific versions of Windows. These commitments are generous and generally last far longer than the commitments Microsofts competitors are willing to make. There are exceptions to this rule of course, but they are for niche products that bear very little relevance to the topic at hand. Nonetheless, IE being tied to specific versions of Windows is a primary reason why web developers like myself are always having to support much older versions of IE.\nIf you compare this situation to Chrome and Firefox, most web developers don’t care about older versions of Chrome and Firefox. These browsers both auto-update and for the most part they do it without even bothering the user. If it is found that a user is in fact using an older version of one of these browsers, they are immediately asked to upgrade. On the other hand, web devs are still being forced to support IE 8 and IE 9 which were released in 2009 and 2011 respectively. In the age of modern tech, that’s stunningly outdated.\nPart of the motivation here is that Microsoft views IE as a feature that can drive the sales of Windows licenses. That’s what they really care about. Sadly that’s not working out so great for them. Windows is no longer the dominant OS in the modern world and IE is no longer the only game in town. If a new browser is the best feature your new OS has to offer, then the odds favor the idea that your new OS isn’t worth the upgrade. No other browser is treated as an appendage that drives license sales for a specific version of an operating system. This approach has and continues to severely hamper Microsoft’s ability to compete in the browser market.\nThose are my two primary complaints regarding IE. Now lets be honest, just a few short years ago this list would’ve been a lot longer. Microsoft has taken steps to close the gap that exists between them and their competition. However Spartan doesn’t really address either of these issues. Sure Spartan users will finally get support for extensions, a feature Chrome and Firefox users have enjoyed for God only knows how long but all this really does is prove my point. They are perpetually behind the curve. Extension support is something that makes or breaks my decision to use a particular browser. Without the right extensions, I have no interest in a particular browser. Therefore I have no interest in IE as an end user. Spartan on the other hand… well there is no Linux port at the moment so I cannot upgrade to it ;)\nSpartan also continues the unsavory trend of tying Microsoft browsers to specific versions of Windows. This practice will continue to insure that the web development community will be forced to support old versions of IE long after Microsoft has stopped pimping them out to the unwitting masses. No matter what Spartan adds as a web developer, I am really only interested in what IE 9.0 has to offer because that is the minimum version that I have to support. This is sad and ultimately detracts from any headway that Microsoft makes in this area. One can only hope that they will address this issue at some point, thereby paving the way for IE/Spartan to become a first class citizen in the browser community.\n",
+  "wordCount" : "1181",
+  "inLanguage": "en",
+  "datePublished": "2015-03-31T00:00:00Z",
+  "dateModified": "2015-03-31T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "Jay Little"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://jaylittle.github.io/post/view/2015/3/the-problem-with-internet-explorer-and-spartan/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jay Little",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jaylittle.github.io/favicon.png"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://jaylittle.github.io" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://jaylittle.github.io/article/view/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/post/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/resume/" title="Resume">
+                    <span>Resume</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/article/view/jay-and-annette-wedding-2004/" title="Family">
+                    <span>Family</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jaylittle.github.io/article/view/recipes/" title="Recipes">
+                    <span>Recipes</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://jaylittle.github.io">Home</a>&nbsp;»&nbsp;<a href="https://jaylittle.github.io/post/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      The Problem with Internet Explorer and Spartan
+    </h1>
+    <div class="post-meta"><span title='2015-03-31 00:00:00 +0000 UTC'>March 31, 2015</span>&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Jay Little
+
+</div>
+  </header> 
+  <div class="post-content"><p>Anybody who knows me professionally, knows that I despise Microsofts Internet Explorer web browser.  What they probably don&rsquo;t know is why I despise it.  Most people likely assume that because I&rsquo;m a <a href="http://en.wikipedia.org/wiki/Tux">Penguin</a>, I&rsquo;m also an Internet Explorer hater.  The two do tend to go hand in hand.  However nothing could be further from the truth.  I use Linux a great deal on my own time, but professionally I tend to spend most of my time with Windows.  I have a healthy respect for Microsoft products and techs such as Windows Server, IIS and .NET.  This respect does not extend to Internet Explorer.  The purpose of this post is to explain why that is.</p>
+<p>To start, this post was at least partially inspired by the first public/beta release of <a href="http://blogs.windows.com/bloggingwindows/2015/03/30/introducing-project-spartan-the-new-browser-built-for-windows-10/">Microsoft&rsquo;s new Spartan browser</a>.  Spartan has been getting heavily hyped over the last few months and with good reason.  It represents a few major steps in the right direction for Microsoft.  Spartan fixes a lot of the complaints people have made in regards to Internet Explorer, but it does not fix them all.  Though it is a step in the right direction and for that Microsoft should be applauded.  Nevertheless, it brings with it some of the same baggage that IE does.</p>
+<p>Back to IE, where do I even begin?  I&rsquo;ve been developing web applications for 15 years now and half of that time has been spent suffering with the most infamous version of IE, 6.0.  In early 2008 I told my current employer that I was no longer going to spend time trying to make IE 6.0 work with my latest apps and that upgrading to IE 7.0 should be their priority.  Surprisingly enough this strategy actually worked though I suffered with IE 7.0 until January of 2013 when I left a position that was forcing me to continue writing code for that browser.</p>
+<p>I say all this in an effort to point out that because of Microsofts position in the industry and their general approach to software, web developers like myself have been forced to live with their mistakes for a very long time.  IE 6.0 took thirteen years to stop being supported by Microsoft.  That&rsquo;s insane despite the fact that when it was released in 2001 it was heralded as a great piece of software.  But after Microsoft sat on their laurels for a few years, competitors rose to fill the void and subsequently showed the world that the web browser could still be improved upon.  Microsoft released IE 7.0 in 2006, a full five years later.  It was woefully behind and unable to compete on most levels with the likes of Firefox.  But it still won.</p>
+<p>This of course brings me to my first complaint about Internet Explorer:  It is perpetually behind the curve.  Because of the sluggishness of Microsoft and their general inability to keep up with consumer facing technology trends IE still forces the rest of us to remain behind the curve in order to support the overwhelming majority of desktop and laptop users that still insist on using IE.  No matter what Chrome and Firefox bring to the table in terms of standards support, web developers still have to deal with the likes of poly-fills and a variety of other unsavory hacks in order to support popular versions of IE such as version 9.0.</p>
+<p>My second complaint about IE is the fact that it is still being tied to specific versions of Windows.  I really have no understanding of why Microsoft chooses to do this in this day and age.  It really is quite silly.  But more than that it ties specific versions of IE to life cycle support commitments Microsoft has made for specific versions of Windows.  These commitments are generous and generally last far longer than the commitments Microsofts competitors are willing to make.  There are exceptions to this rule of course, but they are for niche products that bear very little relevance to the topic at hand.  Nonetheless, IE being tied to specific versions of Windows is a primary reason why web developers like myself are always having to support much older versions of IE.</p>
+<p>If you compare this situation to Chrome and Firefox, most web developers don&rsquo;t care about older versions of Chrome and Firefox.  These browsers both auto-update and for the most part they do it without even bothering the user.  If it is found that a user is in fact using an older version of one of these browsers, they are immediately asked to upgrade.  On the other hand, web devs are still being forced to support IE 8 and IE 9 which were released in 2009 and 2011 respectively.  In the age of modern tech, that&rsquo;s stunningly outdated.</p>
+<p>Part of the motivation here is that Microsoft views IE as a feature that can drive the sales of Windows licenses.  That&rsquo;s what they really care about.  Sadly that&rsquo;s not working out so great for them.  Windows is no longer the dominant OS in the modern world and IE is no longer the only game in town.  If a new browser is the best feature your new OS has to offer, then the odds favor the idea that your new OS isn&rsquo;t worth the upgrade.  No other browser is treated as an appendage that drives license sales for a specific version of an operating system.   This approach has and continues to severely hamper Microsoft&rsquo;s ability to compete in the browser market.</p>
+<p>Those are my two primary complaints regarding IE.  Now lets be honest, just a few short years ago this list would&rsquo;ve been a lot longer.  Microsoft has taken steps to close the gap that exists between them and their competition.  However Spartan doesn&rsquo;t really address either of these issues.  Sure Spartan users will finally get support for extensions, a feature Chrome and Firefox users have enjoyed for God only knows how long but all this really does is prove my point.  They are perpetually behind the curve.  Extension support is something that makes or breaks my decision to use a particular browser.  Without the right extensions, I have no interest in a particular browser.  Therefore I have no interest in IE as an end user.  Spartan on the other hand&hellip; well there is no Linux port at the moment so I cannot upgrade to it ;)</p>
+<p>Spartan also continues the unsavory trend of tying Microsoft browsers to specific versions of Windows.  This practice will continue to insure that the web development community will be forced to support old versions of IE long after Microsoft has stopped pimping them out to the unwitting masses.  No matter what Spartan adds as a web developer, I am really only interested in what IE 9.0 has to offer because that is the minimum version that I have to support.  This is sad and ultimately detracts from any headway that Microsoft makes in this area.  One can only hope that they will address this issue at some point, thereby paving the way for IE/Spartan to become a first class citizen in the browser community.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="https://jaylittle.github.io">Jay Little</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
