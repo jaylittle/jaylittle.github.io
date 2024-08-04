@@ -2,1159 +2,1159 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Jay Little</title>
-    <link>https://jaylittle.github.io/</link>
+    <link>https://jaylittle.com/</link>
     <description>Recent content on Jay Little</description>
     <generator>Hugo -- 0.121.2</generator>
     <language>en</language>
     <lastBuildDate>Sun, 04 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://jaylittle.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jaylittle.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pouring One Out for my Homie - RIP Presentation Engine</title>
-      <link>https://jaylittle.github.io/post/view/2024/8/pouring-one-out-for-my-homie-rip-presentation-engine/</link>
+      <link>https://jaylittle.com/post/view/2024/8/pouring-one-out-for-my-homie-rip-presentation-engine/</link>
       <pubDate>Sun, 04 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2024/8/pouring-one-out-for-my-homie-rip-presentation-engine/</guid>
+      <guid>https://jaylittle.com/post/view/2024/8/pouring-one-out-for-my-homie-rip-presentation-engine/</guid>
       <description>Well after nearly 23 years of largely uninterrupted and admirable service, the time has come to officially retire the custom Content Management System that has powered it all: Presentation Engine. I originally created and deployed the first version of PEngine back in late 2001 when I first created this blog before I registered the domain name in October of 2001. Back then it was nothing more than a shoddily put together classic ASP application with an Access DB driving it that I threw together in a hurry.</description>
     </item>
     <item>
       <title>The Court of Fossalot - SouthEast LinuxFest 2024</title>
-      <link>https://jaylittle.github.io/post/view/2024/6/the-court-of-fossalot-southeast-linuxfest-2024/</link>
+      <link>https://jaylittle.com/post/view/2024/6/the-court-of-fossalot-southeast-linuxfest-2024/</link>
       <pubDate>Fri, 14 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2024/6/the-court-of-fossalot-southeast-linuxfest-2024/</guid>
+      <guid>https://jaylittle.com/post/view/2024/6/the-court-of-fossalot-southeast-linuxfest-2024/</guid>
       <description>So it&amp;rsquo;s that time of year and I spent last weekend at SouthEast LinuxFest (SELF) 2024 in Charlotte, NC. This was my second year of attending and it absolutely lived up to the lofty expectations set by my first trip last year. This year was less about the sessions for me and more about the people. Which is interesting to say because if I&amp;rsquo;m being honest about my visit last year, it was also similar.</description>
     </item>
     <item>
       <title>A Change in Direction</title>
-      <link>https://jaylittle.github.io/post/view/2024/4/a-change-in-direction/</link>
+      <link>https://jaylittle.com/post/view/2024/4/a-change-in-direction/</link>
       <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2024/4/a-change-in-direction/</guid>
+      <guid>https://jaylittle.com/post/view/2024/4/a-change-in-direction/</guid>
       <description>As some of you may have noticed, I have been rather quiet over the last few months. There are a lot of reasons for my silence. The more observant among you may have even noticed that content has disappeared and reappeared from this site several times over the same time period. Long story short: The nature of this site and how and when I use it to express myself is changing.</description>
     </item>
     <item>
       <title>Tying Up Tech Loose Ends : 2023 Edition</title>
-      <link>https://jaylittle.github.io/post/view/2023/12/tying-up-tech-loose-ends-2023-edition/</link>
+      <link>https://jaylittle.com/post/view/2023/12/tying-up-tech-loose-ends-2023-edition/</link>
       <pubDate>Fri, 29 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2023/12/tying-up-tech-loose-ends-2023-edition/</guid>
+      <guid>https://jaylittle.com/post/view/2023/12/tying-up-tech-loose-ends-2023-edition/</guid>
       <description>So as most of you know, I tend to take the last few weeks of every year off. Primarily I use this time to celebrate the year and reflect on its events. I also use this time to tie up any tech loose ends that I have&amp;hellip; and boy did I have a few this year.
 My biggest piece of in-home tech debt was definitely my camera system. For years I have run a hodge podge front door camera which basically amounted to an indoor web cam mounted in my front window which was pointed at the foot door area of the porch.</description>
     </item>
     <item>
       <title>The Joy Of Being Alive</title>
-      <link>https://jaylittle.github.io/post/view/2023/11/the-joy-of-being-alive/</link>
+      <link>https://jaylittle.com/post/view/2023/11/the-joy-of-being-alive/</link>
       <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2023/11/the-joy-of-being-alive/</guid>
+      <guid>https://jaylittle.com/post/view/2023/11/the-joy-of-being-alive/</guid>
       <description>Yesterday I almost died. At least I came as close to dying as I have ever come over the course of my life. I hadn&amp;rsquo;t been feeling well since Monday morning. I was experiencing quite a bit of abdominal pain and bloating. It only got worse as time progressed on Monday and that evening I just wasn&amp;rsquo;t able to sleep. No matter what position I got in, I just couldn&amp;rsquo;t get to sleep due to the aches and pains.</description>
     </item>
     <item>
       <title>Linux Laptop Letdown: When OEM Largesse Runs Dry</title>
-      <link>https://jaylittle.github.io/post/view/2023/10/linux-laptop-letdown-when-oem-largesse-runs-dry/</link>
+      <link>https://jaylittle.com/post/view/2023/10/linux-laptop-letdown-when-oem-largesse-runs-dry/</link>
       <pubDate>Tue, 17 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2023/10/linux-laptop-letdown-when-oem-largesse-runs-dry/</guid>
+      <guid>https://jaylittle.com/post/view/2023/10/linux-laptop-letdown-when-oem-largesse-runs-dry/</guid>
       <description>Today&amp;rsquo;s post is about a subject near and dear to my heart: Laptops with Linux preinstalled. Sadly this is not a happy post, but rather one in which I share my recent angst about the state of Linux Laptop hardware and how I have maneuvered myself into a very neglected corner.
 So as regular readers know, I have largely only purchased laptops with Linux preinstalled for quite a few years. This is because as a person living within a capitalistic society, I am ethically compelled to vote with my dollar as it is the only vote I have which actually seems to matter.</description>
     </item>
     <item>
       <title>Penguin&#39;s Side Piece: How and Why I Became a Part Time Apple Fanboi</title>
-      <link>https://jaylittle.github.io/post/view/2023/9/penguins-side-piece-how-and-why-i-became-a-part-time-apple-fanboi/</link>
+      <link>https://jaylittle.com/post/view/2023/9/penguins-side-piece-how-and-why-i-became-a-part-time-apple-fanboi/</link>
       <pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2023/9/penguins-side-piece-how-and-why-i-became-a-part-time-apple-fanboi/</guid>
+      <guid>https://jaylittle.com/post/view/2023/9/penguins-side-piece-how-and-why-i-became-a-part-time-apple-fanboi/</guid>
       <description>While most of my readers probably think of me as being some kind of massive die hard Linux loving Penguin, the reality is that outside of servers, laptops and desktops I don&amp;rsquo;t use Linux very much. The purpose of today&amp;rsquo;s post is to detail the reasons and the journey of how I have basically become an Apple Fanboi nearly everywhere else.
 Let&amp;rsquo;s start with a disclaimer: If you want to email me or send me a message on Mastodon telling me how stupid I am for trusting Apple, well, okay.</description>
     </item>
     <item>
       <title>Unity Killed Modern Proprietary Gaming For Me</title>
-      <link>https://jaylittle.github.io/post/view/2023/9/unity-killed-modern-proprietary-gaming-for-me/</link>
+      <link>https://jaylittle.com/post/view/2023/9/unity-killed-modern-proprietary-gaming-for-me/</link>
       <pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2023/9/unity-killed-modern-proprietary-gaming-for-me/</guid>
+      <guid>https://jaylittle.com/post/view/2023/9/unity-killed-modern-proprietary-gaming-for-me/</guid>
       <description>As some of you undoubtedly have heard Unity, the company behind one of the most prolific game engines of our time called Unity Engine, recently announced some changes to their pricing. On the surface this may sound like quite a big nothing burger if you aren&amp;rsquo;t familiar with the process of how software is made, let me assure you: This announcement is rocking the entire gaming world.
 Note: This post is a follow-up to my 2019 post &amp;ldquo;My Modern Gaming Escape Plan&amp;rdquo;.</description>
     </item>
     <item>
       <title>Echo Chamber Exodus: Bye Bye Bluesky</title>
-      <link>https://jaylittle.github.io/post/view/2023/7/echo-chamber-exodus-bye-bye-bluesky/</link>
+      <link>https://jaylittle.com/post/view/2023/7/echo-chamber-exodus-bye-bye-bluesky/</link>
       <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2023/7/echo-chamber-exodus-bye-bye-bluesky/</guid>
+      <guid>https://jaylittle.com/post/view/2023/7/echo-chamber-exodus-bye-bye-bluesky/</guid>
       <description>As regular readers know, I have long questioned the value of social media and I have struggled with the question of how involved I should be with it. This morning I decided to quit Bluesky permanently because the bulk of the community there seems hellbent on ostracizing and ejecting anybody who doesn&amp;rsquo;t fully subscribe to their specific brand of group think.
 I wish there was a kinder way to put it.</description>
     </item>
     <item>
       <title>Tech Team Dead Weight a.k.a. Lutz</title>
-      <link>https://jaylittle.github.io/post/view/2023/7/tech-team-dead-weight-aka-lutz/</link>
+      <link>https://jaylittle.com/post/view/2023/7/tech-team-dead-weight-aka-lutz/</link>
       <pubDate>Thu, 20 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2023/7/tech-team-dead-weight-aka-lutz/</guid>
+      <guid>https://jaylittle.com/post/view/2023/7/tech-team-dead-weight-aka-lutz/</guid>
       <description>If you&amp;rsquo;ve worked in tech and have any degree of actual talent, you have run into the following scenario: You are on a team and that team has at least one member that isn&amp;rsquo;t pulling their weight. The reasons why generally range from a lack of work ethic to a lack of talent. Regardless that person can&amp;rsquo;t seem to get themselves fired. Why is that?
 UPDATE 8/9/2023: Lutz, in this particular case, has now been fired.</description>
     </item>
     <item>
       <title>I am on the McNulty Spectrum</title>
-      <link>https://jaylittle.github.io/post/view/2023/7/i-am-on-the-mcnulty-spectrum/</link>
+      <link>https://jaylittle.com/post/view/2023/7/i-am-on-the-mcnulty-spectrum/</link>
       <pubDate>Sun, 16 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2023/7/i-am-on-the-mcnulty-spectrum/</guid>
+      <guid>https://jaylittle.com/post/view/2023/7/i-am-on-the-mcnulty-spectrum/</guid>
       <description>So over the last few weeks, I have been re-watching one of my favorite television shows of all time, The Wire. If you haven&amp;rsquo;t seen it, you should probably rectify that oversight. That being what it is, I&amp;rsquo;m currently making my way through Season 3 and I had a revelation of sorts: I might be a McNulty.
 Yeah okay, so for those of you not familiar with the show, you have no idea what that means.</description>
     </item>
     <item>
       <title>Developing Custom Software is Probably a Bad Idea</title>
-      <link>https://jaylittle.github.io/post/view/2023/6/developing-custom-software-is-probably-a-bad-idea/</link>
+      <link>https://jaylittle.com/post/view/2023/6/developing-custom-software-is-probably-a-bad-idea/</link>
       <pubDate>Wed, 28 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2023/6/developing-custom-software-is-probably-a-bad-idea/</guid>
+      <guid>https://jaylittle.com/post/view/2023/6/developing-custom-software-is-probably-a-bad-idea/</guid>
       <description>This post is the culmination of years of accumulated professional frustration. It will not be well received by some. That&amp;rsquo;s okay. If you make it to the 25 year point of your dev career and you spent most of that time writing custom software for clients and you still disagree, feel free to write your own take and send it along to me. I will afford it my due consideration.</description>
     </item>
     <item>
       <title>Developer Brethren, its Time to Embrace Boring!</title>
-      <link>https://jaylittle.github.io/post/view/2023/6/developer-brethren-its-time-to-embrace-boring/</link>
+      <link>https://jaylittle.com/post/view/2023/6/developer-brethren-its-time-to-embrace-boring/</link>
       <pubDate>Thu, 22 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2023/6/developer-brethren-its-time-to-embrace-boring/</guid>
+      <guid>https://jaylittle.com/post/view/2023/6/developer-brethren-its-time-to-embrace-boring/</guid>
       <description>So this morning I was listening to one of the Linux related podcasts, Coder Radio and the hosts read feedback from a listener who claimed that he was &amp;ldquo;bored&amp;rdquo; with PHP and ready to try something else. Now to be fair, in this particular case, the writer outlined some circumstances that made me sympathize with him. Long story short is that parts of the PHP based stack he was relying on for some of his software had changed significantly.</description>
     </item>
     <item>
       <title>My First Linux Conference - SouthEast LinuxFest 2023</title>
-      <link>https://jaylittle.github.io/post/view/2023/6/my-first-linux-conference-southeast-linuxfest-2023/</link>
+      <link>https://jaylittle.com/post/view/2023/6/my-first-linux-conference-southeast-linuxfest-2023/</link>
       <pubDate>Wed, 14 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2023/6/my-first-linux-conference-southeast-linuxfest-2023/</guid>
+      <guid>https://jaylittle.com/post/view/2023/6/my-first-linux-conference-southeast-linuxfest-2023/</guid>
       <description>I&amp;rsquo;ve been a Linux fan for almost 30 years, yet in all of that time, I never actually attended a Linux event (ignoring a handful of local Linux User Group (LUG) events here and there). That is, until this past weekend when I attended SouthEast LinuxFest (SELF) 2023 in Charlotte, NC. So what took so long? Well frankly, traditionally I have avoided socializing with others. COVID and age have both helped to shift my position on this a bit.</description>
     </item>
     <item>
       <title>Your Data, Their Profits, Our Loss: KTHXBAI Reddit, Twitch, StackOverflow, Twitter and how BlueSky Helped</title>
-      <link>https://jaylittle.github.io/post/view/2023/6/your-data-their-profits-our-loss-kthxbai-reddit-twitch-stackoverflow-twitter-and-how-bluesky-helped/</link>
+      <link>https://jaylittle.com/post/view/2023/6/your-data-their-profits-our-loss-kthxbai-reddit-twitch-stackoverflow-twitter-and-how-bluesky-helped/</link>
       <pubDate>Fri, 09 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2023/6/your-data-their-profits-our-loss-kthxbai-reddit-twitch-stackoverflow-twitter-and-how-bluesky-helped/</guid>
+      <guid>https://jaylittle.com/post/view/2023/6/your-data-their-profits-our-loss-kthxbai-reddit-twitch-stackoverflow-twitter-and-how-bluesky-helped/</guid>
       <description>As of late it has become rather fashionable for established tech orgs running established platforms to attempt to make their platforms profitable. While the exact underlying reasons for this in each case varies, the end result is the same: Whatever the secret sauce was, the org manages to forever taint the platform with the changes they end up making. Who are we talking about? Today we&amp;rsquo;ll be discussing Reddit, Twitch, StackOverflow and Twitter.</description>
     </item>
     <item>
       <title>Caveat Emptor - Nightdive Studios, System Shock and Crowdfunding Risk</title>
-      <link>https://jaylittle.github.io/post/view/2023/5/caveat-emptor-nightdive-studios-system-shock-and-crowdfunding-risk/</link>
+      <link>https://jaylittle.com/post/view/2023/5/caveat-emptor-nightdive-studios-system-shock-and-crowdfunding-risk/</link>
       <pubDate>Wed, 31 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2023/5/caveat-emptor-nightdive-studios-system-shock-and-crowdfunding-risk/</guid>
+      <guid>https://jaylittle.com/post/view/2023/5/caveat-emptor-nightdive-studios-system-shock-and-crowdfunding-risk/</guid>
       <description>Back in 2016, a younger and mildly more optimistic Jay heard about a Kickstarter Campaign for a remake of the classic title, System Shock. Young Jay had fond memories of the original and immediately pledged $30 to help turn the dream into reality. Expected delivery was in December of 2017. Actual delivery for some was yesterday: May 30th, 2023.
 UPDATE 6/1/23: After logging onto the Discord server for Nightdive Studio and making a support request, I was able to finally exchange my PS4 version for an actual Steam key.</description>
     </item>
     <item>
       <title>So I Went a Little Viral and Survived</title>
-      <link>https://jaylittle.github.io/post/view/2023/4/so-i-went-a-little-viral-and-survived/</link>
+      <link>https://jaylittle.com/post/view/2023/4/so-i-went-a-little-viral-and-survived/</link>
       <pubDate>Fri, 21 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2023/4/so-i-went-a-little-viral-and-survived/</guid>
+      <guid>https://jaylittle.com/post/view/2023/4/so-i-went-a-little-viral-and-survived/</guid>
       <description>Everybody knows I got a big mouth. That&amp;rsquo;s why I have a domain for my name and I&amp;rsquo;ve been posting tripe to it for over two decades now. The surprising part is that every once in awhile I say something that resonates with other people. That happened last week and I&amp;rsquo;m happy to report that my website handled it wonderfully.
 For starters, if you haven&amp;rsquo;t read my post &amp;ldquo;Low Code Software Development Is A Lie&amp;rdquo;, you should give it a go.</description>
     </item>
     <item>
       <title>Low Code Software Development Is A Lie</title>
-      <link>https://jaylittle.github.io/post/view/2023/4/low-code-software-development-is-a-lie/</link>
+      <link>https://jaylittle.com/post/view/2023/4/low-code-software-development-is-a-lie/</link>
       <pubDate>Fri, 14 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2023/4/low-code-software-development-is-a-lie/</guid>
+      <guid>https://jaylittle.com/post/view/2023/4/low-code-software-development-is-a-lie/</guid>
       <description>I&amp;rsquo;ve been writing custom software for a long time and one of the things that annoys me most is when a client adopts the position that there is a silver bullet which will reduce or remove the inherent complexity of this task. This happens more often than you&amp;rsquo;d think and guess what? They are almost always wrong.
 Perhaps I&amp;rsquo;m getting a bit too old and loose lipped for my own good, but the truth is that creating software for other people is exceedingly difficult.</description>
     </item>
     <item>
       <title>Ship of Fools: The Race to Ban TikTok</title>
-      <link>https://jaylittle.github.io/post/view/2023/4/ship-of-fools-the-race-to-ban-tiktok/</link>
+      <link>https://jaylittle.com/post/view/2023/4/ship-of-fools-the-race-to-ban-tiktok/</link>
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2023/4/ship-of-fools-the-race-to-ban-tiktok/</guid>
+      <guid>https://jaylittle.com/post/view/2023/4/ship-of-fools-the-race-to-ban-tiktok/</guid>
       <description>Anybody even remotely invested in keeping up with current events here in America, knows that TikTok is on the verge of being banned. If you are a frequent reader, you already know that I am against that. Doubly so in this case as the US Government has yet to provide a single evidence based argument to support the move, much less addressed the fact that American tech companies engage in largely the same exact kind of behavior that TikTok does.</description>
     </item>
     <item>
       <title>Code Monkey Mid-Life Crisis</title>
-      <link>https://jaylittle.github.io/post/view/2023/3/code-monkey-midlife-crisis/</link>
+      <link>https://jaylittle.com/post/view/2023/3/code-monkey-midlife-crisis/</link>
       <pubDate>Sun, 12 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2023/3/code-monkey-midlife-crisis/</guid>
+      <guid>https://jaylittle.com/post/view/2023/3/code-monkey-midlife-crisis/</guid>
       <description>Compared to most coders I work with, I&amp;rsquo;ve been coding a long time. Specifically since my father and uncle gifted me and my siblings an Apple II in 1985 when I was six years old. We also received a book called &amp;ldquo;Computer Fun&amp;rdquo; which attempted to teach BASIC programming to children. So despite all that youthful enthusiasm why do I feel like this career may not be for me anymore?</description>
     </item>
     <item>
       <title>ChatGPT: Far More Hype Than Substance</title>
-      <link>https://jaylittle.github.io/post/view/2023/2/chatgpt-far-more-hype-than-substance/</link>
+      <link>https://jaylittle.com/post/view/2023/2/chatgpt-far-more-hype-than-substance/</link>
       <pubDate>Mon, 13 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2023/2/chatgpt-far-more-hype-than-substance/</guid>
+      <guid>https://jaylittle.com/post/view/2023/2/chatgpt-far-more-hype-than-substance/</guid>
       <description>Much text has been written in recent weeks on the topic of the ChatGPT chat bot, its forthcoming integration into Bing and how it will change the world as we know it. While the commentary has run the entire gamut of possible responses, most of it is definitely more hype based than anything else. Today the hype dies.
 So lets start off with the most basic question. What is ChatGPT? Well as it so happens, ChatGPT is capable of furnishing us with a perfectly acceptable answer (LOG-TXT{target=&amp;rsquo;_blank&amp;rsquo;} / LOG-PNG{target=&amp;rsquo;_blank&amp;rsquo;}):</description>
     </item>
     <item>
       <title>MacOS is the Worst Part of Apple Silicon</title>
-      <link>https://jaylittle.github.io/post/view/2023/1/macos-is-the-worst-part-of-apple-silicon/</link>
+      <link>https://jaylittle.com/post/view/2023/1/macos-is-the-worst-part-of-apple-silicon/</link>
       <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2023/1/macos-is-the-worst-part-of-apple-silicon/</guid>
+      <guid>https://jaylittle.com/post/view/2023/1/macos-is-the-worst-part-of-apple-silicon/</guid>
       <description>I recently took a new job and my new employer gave me a choice between a Lenovo Thinkpad with Windows and an M1 Macbook Pro with MacOS. Even my least dedicated readers know that I have no love for Windows and have spent literal years trying to rid myself of it. So of course I chose the Macbook Pro.
 Well dear readers, I&amp;rsquo;m going to be blunt: I wish I hadn&amp;rsquo;t.</description>
     </item>
     <item>
       <title>Pop Goes the Gaslighting Weasel</title>
-      <link>https://jaylittle.github.io/post/view/2022/12/pop-goes-the-gaslighting-weasel/</link>
+      <link>https://jaylittle.com/post/view/2022/12/pop-goes-the-gaslighting-weasel/</link>
       <pubDate>Wed, 28 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2022/12/pop-goes-the-gaslighting-weasel/</guid>
+      <guid>https://jaylittle.com/post/view/2022/12/pop-goes-the-gaslighting-weasel/</guid>
       <description>I&amp;rsquo;ve spent a lot of time debating on whether or not I should even write this blog post. Truth is that I was this close to just letting the entire thing fade into oblivion but after searching out some reading material on the subject, I decided that I needed to write about this, if only to remind future Jay what he just escaped from. Future Jay has a tendency to forget important things like that.</description>
     </item>
     <item>
       <title>A Farewell to Arms</title>
-      <link>https://jaylittle.github.io/post/view/2022/12/a-farewell-to-arms/</link>
+      <link>https://jaylittle.com/post/view/2022/12/a-farewell-to-arms/</link>
       <pubDate>Tue, 06 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2022/12/a-farewell-to-arms/</guid>
+      <guid>https://jaylittle.com/post/view/2022/12/a-farewell-to-arms/</guid>
       <description>There is no great way to put this without a certain segment of my readers recoiling in horror, so I&amp;rsquo;m just going to say it. I&amp;rsquo;m tired of fighting for things on the job. After over 20 years of professionally being combative when I thought the situation called for it, I have resolved to turn over a new leaf.
 If you&amp;rsquo;ve worked with me, you know how it can be at times.</description>
     </item>
     <item>
       <title>Two Jobs, One Life: Nothing Is Forever</title>
-      <link>https://jaylittle.github.io/post/view/2022/10/two-jobs-one-life-nothing-is-forever/</link>
+      <link>https://jaylittle.com/post/view/2022/10/two-jobs-one-life-nothing-is-forever/</link>
       <pubDate>Thu, 20 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2022/10/two-jobs-one-life-nothing-is-forever/</guid>
+      <guid>https://jaylittle.com/post/view/2022/10/two-jobs-one-life-nothing-is-forever/</guid>
       <description>To those who don&amp;rsquo;t already know: I will be starting a new job next week. This is notable for one reason above all others: It marks my return to a much more normal situation. You see, for the last four and a half years I have actually had two jobs with two different employers. One of the conditions of the arrangement with one of my employers was that I had to largely keep this a secret from my coworkers there.</description>
     </item>
     <item>
       <title>The Siren Song of Set It and Forget It</title>
-      <link>https://jaylittle.github.io/post/view/2022/9/the-siren-song-of-set-it-and-forget-it/</link>
+      <link>https://jaylittle.com/post/view/2022/9/the-siren-song-of-set-it-and-forget-it/</link>
       <pubDate>Wed, 28 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2022/9/the-siren-song-of-set-it-and-forget-it/</guid>
+      <guid>https://jaylittle.com/post/view/2022/9/the-siren-song-of-set-it-and-forget-it/</guid>
       <description>The point of today&amp;rsquo;s post, or diatribe if you prefer, is to push back against the notion that once you have a piece of tech integrated into a workflow, you are pretty much good to go barring any sort of critical failure. Sadly a lot of people believe this. However since the first rule of the &amp;ldquo;Set It and Forget It&amp;rdquo; club is that you don&amp;rsquo;t talk about said club, you rarely hear much about it.</description>
     </item>
     <item>
       <title>All Hail the Tech Magicians and their Cantrips</title>
-      <link>https://jaylittle.github.io/post/view/2022/9/all-hail-the-tech-magicians-and-their-cantrips/</link>
+      <link>https://jaylittle.com/post/view/2022/9/all-hail-the-tech-magicians-and-their-cantrips/</link>
       <pubDate>Wed, 07 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2022/9/all-hail-the-tech-magicians-and-their-cantrips/</guid>
+      <guid>https://jaylittle.com/post/view/2022/9/all-hail-the-tech-magicians-and-their-cantrips/</guid>
       <description>Before I launch into this month&amp;rsquo;s diatribe I want to offer my readers a word of warning: I&amp;rsquo;ve been feeling very pessimistic about tech in general as of late and this piece will expose a large portion of that to my audience. If you are already depressed about tech, you might wanna skip this one.
 In any event, I have been fond of occasionally awarding various industries / institutions with the label: The new &amp;ldquo;priesthood&amp;rdquo; of society.</description>
     </item>
     <item>
       <title>Hasta La Vista Android</title>
-      <link>https://jaylittle.github.io/post/view/2022/8/hasta-la-vista-android/</link>
+      <link>https://jaylittle.com/post/view/2022/8/hasta-la-vista-android/</link>
       <pubDate>Wed, 03 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2022/8/hasta-la-vista-android/</guid>
+      <guid>https://jaylittle.com/post/view/2022/8/hasta-la-vista-android/</guid>
       <description>Well two and a half weeks ago I finally put on my big boy pants and took Annette down to the local Apple Store&amp;hellip; and bought two iPhones. That decision came about because of years of accumulated frustration with Android, Google and Android OEMs.
 If you want my overall opinion on the iPhone experience, here it is: It works like it should. Which is a back handed way of saying that the wide variety of Android phones I have used over the years haven&amp;rsquo;t worked that way.</description>
     </item>
     <item>
       <title>Proof of Life: I Still Have Something to Say</title>
-      <link>https://jaylittle.github.io/post/view/2022/6/proof-of-life-i-still-have-something-to-say/</link>
+      <link>https://jaylittle.com/post/view/2022/6/proof-of-life-i-still-have-something-to-say/</link>
       <pubDate>Wed, 22 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2022/6/proof-of-life-i-still-have-something-to-say/</guid>
+      <guid>https://jaylittle.com/post/view/2022/6/proof-of-life-i-still-have-something-to-say/</guid>
       <description>So its been a few months since I have posted anything here and the reason why is simple: I just haven&amp;rsquo;t been feeling all that chatty lately. Now you might be thinking, &amp;ldquo;Has Jay finally run out of tech things to talk about?&amp;rdquo; and let me assure you: This is absolutely not the case.
 It is the case however that despite all of the tech things that I&amp;rsquo;m embroiled in right now, real life is forcing that to mostly take a back seat at least when it comes to spending the time crafting some long winded diatribe about said tech things.</description>
     </item>
     <item>
       <title>Pop! Goes the Distro And Fiber Internet For The Win</title>
-      <link>https://jaylittle.github.io/post/view/2022/4/pop-goes-the-distro-and-fiber-internet-for-the-win/</link>
+      <link>https://jaylittle.com/post/view/2022/4/pop-goes-the-distro-and-fiber-internet-for-the-win/</link>
       <pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2022/4/pop-goes-the-distro-and-fiber-internet-for-the-win/</guid>
+      <guid>https://jaylittle.com/post/view/2022/4/pop-goes-the-distro-and-fiber-internet-for-the-win/</guid>
       <description>Some weeks it sure seems like things are always changing, doesn&amp;rsquo;t it? Well these past few weeks have definitely felt that way for me. Just when I think things in my tech landscape are solidifying to the point where I won&amp;rsquo;t have any more material for tech related blog posts here, lo and behold the universe delivers some.
 So last week I decided, in a huff mind you, to dump Pop!</description>
     </item>
     <item>
       <title>Finally... some Peace and Quiet</title>
-      <link>https://jaylittle.github.io/post/view/2022/3/finally-some-peace-and-quiet/</link>
+      <link>https://jaylittle.com/post/view/2022/3/finally-some-peace-and-quiet/</link>
       <pubDate>Wed, 16 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2022/3/finally-some-peace-and-quiet/</guid>
+      <guid>https://jaylittle.com/post/view/2022/3/finally-some-peace-and-quiet/</guid>
       <description>So ya&amp;rsquo;ll have been following me on my hardware journey for awhile now and you have probably noticed that I keep focusing on different facets of the hardware experience. Well today I have some good news: I have finally found the exact combination of factors that are required to bring me joy on this front and I&amp;rsquo;m about to reveal the details of that secret sauce.
 Once upon a time, I used to be your typical PC Gamer type: I valued performance at the cost of everything else.</description>
     </item>
     <item>
       <title>Scam Review: Big Tech Bullshit</title>
-      <link>https://jaylittle.github.io/post/view/2022/2/scam-review-big-tech-bullshit/</link>
+      <link>https://jaylittle.com/post/view/2022/2/scam-review-big-tech-bullshit/</link>
       <pubDate>Tue, 15 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2022/2/scam-review-big-tech-bullshit/</guid>
+      <guid>https://jaylittle.com/post/view/2022/2/scam-review-big-tech-bullshit/</guid>
       <description>This is a post that I will probably come to regret writing and publishing in the future. The reason for that is simple. This post is going to make a lot of former, current and potentially future co-workers feel like idiots. That&amp;rsquo;s because the topic for this post is scams being pushed by our friends in Big Tech.
 So it gets somewhat awkward when you realize that I work in tech and plan to continue doing so for the foreseeable future.</description>
     </item>
     <item>
       <title>Fun, Franchises and ReMastered Classic Games</title>
-      <link>https://jaylittle.github.io/post/view/2021/10/fun-franchises-and-remastered-classic-games/</link>
+      <link>https://jaylittle.com/post/view/2021/10/fun-franchises-and-remastered-classic-games/</link>
       <pubDate>Wed, 06 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2021/10/fun-franchises-and-remastered-classic-games/</guid>
+      <guid>https://jaylittle.com/post/view/2021/10/fun-franchises-and-remastered-classic-games/</guid>
       <description>So long time readers will remember that about four years back, I posted a diatribe entitled &amp;ldquo;Repeat after me: Games are supposed to be fun&amp;rdquo; that basically railed against the realization that a lot of the new games floating around weren&amp;rsquo;t actually all that fun to play. Well today we are going to revisit that topic, freshly inspired by the time I&amp;rsquo;ve been spending with both Diablo 2: Resurrected and Minecraft: Dungeons.</description>
     </item>
     <item>
       <title>The Rise of Ryzen</title>
-      <link>https://jaylittle.github.io/post/view/2021/7/the-rise-of-ryzen/</link>
+      <link>https://jaylittle.com/post/view/2021/7/the-rise-of-ryzen/</link>
       <pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2021/7/the-rise-of-ryzen/</guid>
+      <guid>https://jaylittle.com/post/view/2021/7/the-rise-of-ryzen/</guid>
       <description>So anybody who is even remotely paying attention to processors knows that Intel is in some really deep shit. Back in 2014 they were essentially riding high above all of the competition and nobody could even come close to challenging their vice like grip on the market. My my how times have changed.
 Fast forward to the present day, seven years later and you&amp;rsquo;ll find a situation that is almost unrecognizable.</description>
     </item>
     <item>
       <title>Windows 11 Announced: A Legacy OS Gives Consumers The Middle Finger</title>
-      <link>https://jaylittle.github.io/post/view/2021/6/windows-11-announced-a-legacy-os-gives-consumers-the-middle-finger/</link>
+      <link>https://jaylittle.com/post/view/2021/6/windows-11-announced-a-legacy-os-gives-consumers-the-middle-finger/</link>
       <pubDate>Fri, 25 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2021/6/windows-11-announced-a-legacy-os-gives-consumers-the-middle-finger/</guid>
+      <guid>https://jaylittle.com/post/view/2021/6/windows-11-announced-a-legacy-os-gives-consumers-the-middle-finger/</guid>
       <description>As some of you may have heard, yesterday Microsoft announced the upcoming release of Windows 11. As an early build had leaked last week and Microsoft had dropped a number of hints this did not shock anybody in particular. What was rather shocking was how little Microsoft seems to give a shit about the normal everyday average computer user.
 Now if you are a frequent reader, you know that I wholeheartedly believe that Windows is a Legacy Operating System.</description>
     </item>
     <item>
       <title>Spock Was Wrong: In Tech it is Easier to Create than to Destroy</title>
-      <link>https://jaylittle.github.io/post/view/2021/4/spock-was-wrong-in-tech-it-is-easier-to-create-than-to-destroy/</link>
+      <link>https://jaylittle.com/post/view/2021/4/spock-was-wrong-in-tech-it-is-easier-to-create-than-to-destroy/</link>
       <pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2021/4/spock-was-wrong-in-tech-it-is-easier-to-create-than-to-destroy/</guid>
+      <guid>https://jaylittle.com/post/view/2021/4/spock-was-wrong-in-tech-it-is-easier-to-create-than-to-destroy/</guid>
       <description>I assume most of you didn&amp;rsquo;t already know this, so I&amp;rsquo;m going to clarify it up front. One of my favorite sci-fi trilogies is comprised of Star Trek II: The Wrath of Khan, Star Trek III: The Search for Spock and Star Trek IV: The Voyage Home. Obviously they weren&amp;rsquo;t meant to stand alone as a trilogy as they are three movies plucked out of a larger group of films, but I don&amp;rsquo;t care.</description>
     </item>
     <item>
       <title>Goodbye Small Server, Hello 150 Watt Office</title>
-      <link>https://jaylittle.github.io/post/view/2021/3/goodbye-small-server-hello-150-watt-office/</link>
+      <link>https://jaylittle.com/post/view/2021/3/goodbye-small-server-hello-150-watt-office/</link>
       <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2021/3/goodbye-small-server-hello-150-watt-office/</guid>
+      <guid>https://jaylittle.com/post/view/2021/3/goodbye-small-server-hello-150-watt-office/</guid>
       <description>Anybody who has spent any amount of time reading my content over the past few years knows what my small server project is. For those of you not in the know, it was basically my attempt to stop using an old desktop as my home server and transition all of its duties to SBCs (Single Board Computers) which are smaller, quieter, cooler, less performant and most importantly, use way less power.</description>
     </item>
     <item>
       <title>To Ping Or Not To Ping, That Is The Question</title>
-      <link>https://jaylittle.github.io/post/view/2020/8/to-ping-or-not-to-ping-that-is-the-question/</link>
+      <link>https://jaylittle.com/post/view/2020/8/to-ping-or-not-to-ping-that-is-the-question/</link>
       <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2020/8/to-ping-or-not-to-ping-that-is-the-question/</guid>
+      <guid>https://jaylittle.com/post/view/2020/8/to-ping-or-not-to-ping-that-is-the-question/</guid>
       <description>Over the last few months, I have been having trouble with the stability of my home internet connection. This became evident to me while live streaming to Twitch as my stream would begin dropping a lot of frames in a really short amount of time. For a time, recycling the power on the cable modem would make a positive difference, but after a few months that stopped working reliably. This post is about my subsequent experience trying to write a scheduled cron job that would let me know whenever my internet connection was having issues.</description>
     </item>
     <item>
       <title>Ding Dong: The Internet is Dead</title>
-      <link>https://jaylittle.github.io/post/view/2020/6/ding-dong-the-internet-is-dead/</link>
+      <link>https://jaylittle.com/post/view/2020/6/ding-dong-the-internet-is-dead/</link>
       <pubDate>Wed, 24 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2020/6/ding-dong-the-internet-is-dead/</guid>
+      <guid>https://jaylittle.com/post/view/2020/6/ding-dong-the-internet-is-dead/</guid>
       <description>In today&amp;rsquo;s world with everything either burning or smoldering, it can be distressing to wake up each day and face the latest developments. Everything that is happening now is happening because, like the Empires of yesteryear, systems rise and they fall. The sad truth is that most people have developed a blind spot when it comes to issues of this sort. That&amp;rsquo;s primarily because getting there requires a bigger picture perspective most people seem to lack.</description>
     </item>
     <item>
       <title>Knowing and Living With Your Boundaries</title>
-      <link>https://jaylittle.github.io/post/view/2020/2/knowing-and-living-with-your-boundaries/</link>
+      <link>https://jaylittle.com/post/view/2020/2/knowing-and-living-with-your-boundaries/</link>
       <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2020/2/knowing-and-living-with-your-boundaries/</guid>
+      <guid>https://jaylittle.com/post/view/2020/2/knowing-and-living-with-your-boundaries/</guid>
       <description>Whether we like to admit it or not, we all have boundaries. Part of growing older is being able to identify and knowing how to address our boundaries. Sometimes we find ways to transcend those boundaries and other times we discover, often as part of a painful journey, that these boundaries are in fact more permanent than we realized.
 I&amp;rsquo;ve got a couple stories about my encounters with my own boundaries that I&amp;rsquo;m going to share you all today.</description>
     </item>
     <item>
       <title>Bah Humbug: Keeping it Real on Christmas</title>
-      <link>https://jaylittle.github.io/post/view/2019/12/bah-humbug-keeping-it-real-on-christmas/</link>
+      <link>https://jaylittle.com/post/view/2019/12/bah-humbug-keeping-it-real-on-christmas/</link>
       <pubDate>Tue, 24 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2019/12/bah-humbug-keeping-it-real-on-christmas/</guid>
+      <guid>https://jaylittle.com/post/view/2019/12/bah-humbug-keeping-it-real-on-christmas/</guid>
       <description>So here I am sitting in an AirBnb on Christmas Eve in North Augusta on my laptop while Annette is watches Wheel of Fortune as she likes to do on weeknights. Inside I&amp;rsquo;m trying to mentally prepare myself for a full day of Christmas related events and visits with various in-laws tomorrow and thought to myself, &amp;ldquo;This would be a great time to spew out a new blog post.&amp;rdquo;
 Dare I say that your opinion on that may clash with mine after you finish reading what I have to say.</description>
     </item>
     <item>
       <title>Why I Can&#39;t STFU And Just Code A Solution To Your Problems</title>
-      <link>https://jaylittle.github.io/post/view/2019/12/why-i-cant-stfu-and-just-code-a-solution-to-your-problems/</link>
+      <link>https://jaylittle.com/post/view/2019/12/why-i-cant-stfu-and-just-code-a-solution-to-your-problems/</link>
       <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2019/12/why-i-cant-stfu-and-just-code-a-solution-to-your-problems/</guid>
+      <guid>https://jaylittle.com/post/view/2019/12/why-i-cant-stfu-and-just-code-a-solution-to-your-problems/</guid>
       <description>So over the years I&amp;rsquo;ve had a number of people tell me that I tend to focus on the negative aspects rather than the positive aspects of situations. This feedback has been relayed to me on both professional and personal levels. Let me tell you: That this is absolutely the case. However I don&amp;rsquo;t see it as a failing so much as an asset. The purpose of today&amp;rsquo;s post is to both delve into why I feel this way and why clients, co-workers and compatriots feel the way they do.</description>
     </item>
     <item>
       <title>Paradise Reclaimed: Retro Gaming, FPGAs and the MiSTer</title>
-      <link>https://jaylittle.github.io/post/view/2019/11/paradise-reclaimed-retro-gaming-fpgas-and-the-mister/</link>
+      <link>https://jaylittle.com/post/view/2019/11/paradise-reclaimed-retro-gaming-fpgas-and-the-mister/</link>
       <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2019/11/paradise-reclaimed-retro-gaming-fpgas-and-the-mister/</guid>
+      <guid>https://jaylittle.com/post/view/2019/11/paradise-reclaimed-retro-gaming-fpgas-and-the-mister/</guid>
       <description>So in light of the exceptionally serious posts that have graced the front page of this site over the last month I have decided to do something a little different today. Consider this my official attempt to remind you all that I am actually capable of doing something other than bitching about the behavior of corporations and people. The topic of conversation today will be the MiSTer and why I&amp;rsquo;m absolutely enthralled with it.</description>
     </item>
     <item>
       <title>The Sad Saga of Purism and the Librem 5 : Part 3</title>
-      <link>https://jaylittle.github.io/post/view/2019/10/the-sad-saga-of-purism-and-the-librem-5-part-3/</link>
+      <link>https://jaylittle.com/post/view/2019/10/the-sad-saga-of-purism-and-the-librem-5-part-3/</link>
       <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2019/10/the-sad-saga-of-purism-and-the-librem-5-part-3/</guid>
+      <guid>https://jaylittle.com/post/view/2019/10/the-sad-saga-of-purism-and-the-librem-5-part-3/</guid>
       <description>This post marks the third in my series about the sad saga of Purism and the Librem 5. If you haven&amp;rsquo;t read the first or second posts yet, I highly recommend that you click here and then click here. Give them both at least a quick skim before reading this one as they contain important background information that is required to appreciate this one.
 After mulling over everything I had seen along with what my source had shared with me, I decided that I had a moral duty to spread the word as far and as wide as possible while protecting the identity of my source as best as I could.</description>
     </item>
     <item>
       <title>The Sad Saga of Purism and the Librem 5 : Part 2</title>
-      <link>https://jaylittle.github.io/post/view/2019/10/the-sad-saga-of-purism-and-the-librem-5-part-2/</link>
+      <link>https://jaylittle.com/post/view/2019/10/the-sad-saga-of-purism-and-the-librem-5-part-2/</link>
       <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2019/10/the-sad-saga-of-purism-and-the-librem-5-part-2/</guid>
+      <guid>https://jaylittle.com/post/view/2019/10/the-sad-saga-of-purism-and-the-librem-5-part-2/</guid>
       <description>This post marks the second in my series about the sad saga of Purism and the Librem 5. If you haven&amp;rsquo;t read the first post yet, I highly recommend that you click here. Give it at least a good skim before reading this one as it contains important background information that is required to appreciate this one.
 Sometime in the midst of the Aspen shipping window I began to casually express skepticism on the Purism subreddit.</description>
     </item>
     <item>
       <title>The Sad Saga of Purism and the Librem 5 : Part 1</title>
-      <link>https://jaylittle.github.io/post/view/2019/10/the-sad-saga-of-purism-and-the-librem-5-part-1/</link>
+      <link>https://jaylittle.com/post/view/2019/10/the-sad-saga-of-purism-and-the-librem-5-part-1/</link>
       <pubDate>Wed, 23 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2019/10/the-sad-saga-of-purism-and-the-librem-5-part-1/</guid>
+      <guid>https://jaylittle.com/post/view/2019/10/the-sad-saga-of-purism-and-the-librem-5-part-1/</guid>
       <description>Today I&amp;rsquo;m going to tell you a sad tale of a device called the Librem 5 and the company behind it, Purism. As of right now, this story does not have a happy ending. I am writing this series of articles as a protest against the behavior of Purism, a company which claims that transparency and openness are their core values. If they won&amp;rsquo;t tell the world the truth about the Librem 5, then I&amp;rsquo;m willing to at least give it a go.</description>
     </item>
     <item>
       <title>The Modern Web Is A Quagmire, So I Embraced NoScript</title>
-      <link>https://jaylittle.github.io/post/view/2019/8/the-modern-web-is-a-quagmire-so-i-embraced-noscript/</link>
+      <link>https://jaylittle.com/post/view/2019/8/the-modern-web-is-a-quagmire-so-i-embraced-noscript/</link>
       <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2019/8/the-modern-web-is-a-quagmire-so-i-embraced-noscript/</guid>
+      <guid>https://jaylittle.com/post/view/2019/8/the-modern-web-is-a-quagmire-so-i-embraced-noscript/</guid>
       <description>If you are a regular visitor, you know that I normally I update my site with new content on a monthly basis. However the events of the last 24 hours have compelled me to break with tradition and reach out to the wider world as soon as possible.
 I already hear you asking, &amp;ldquo;What happened Jay?&amp;rdquo; Well the modern web happened, that&amp;rsquo;s what. Since I&amp;rsquo;m a web developer you are probably operating under the assumption that I&amp;rsquo;m acquainted with the modern web and it&amp;rsquo;s basic rules more-so than most.</description>
     </item>
     <item>
       <title>The Cloud, The Indoctrinated and Their Shared Folly</title>
-      <link>https://jaylittle.github.io/post/view/2019/8/the-cloud-the-indoctrinated-and-their-shared-folly/</link>
+      <link>https://jaylittle.com/post/view/2019/8/the-cloud-the-indoctrinated-and-their-shared-folly/</link>
       <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2019/8/the-cloud-the-indoctrinated-and-their-shared-folly/</guid>
+      <guid>https://jaylittle.com/post/view/2019/8/the-cloud-the-indoctrinated-and-their-shared-folly/</guid>
       <description>Over the past few years, I&amp;rsquo;ve spent a lot of time speaking to the dangers of our current blind obsession with the cloud and all it has to offer. Professionally I&amp;rsquo;ve experienced life on both sides of the fence: I&amp;rsquo;ve seen this problem from the perspective of the cloud provider and from the perspective of the consumer. In both cases I have arrived at the same conclusion: We&amp;rsquo;ve got a rough road ahead of us.</description>
     </item>
     <item>
       <title>My Modern Gaming Escape Plan</title>
-      <link>https://jaylittle.github.io/post/view/2019/7/my-modern-gaming-escape-plan/</link>
+      <link>https://jaylittle.com/post/view/2019/7/my-modern-gaming-escape-plan/</link>
       <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2019/7/my-modern-gaming-escape-plan/</guid>
+      <guid>https://jaylittle.com/post/view/2019/7/my-modern-gaming-escape-plan/</guid>
       <description>Most who know me have at some time or another heard me profess my love for Retro and Indie gaming. At the heart of this love however is a growing and increasingly cancerous disdain for modern gaming that I have finally decided to no longer ignore.
 Now I realize this is going to shock some people, especially as I have a rather embarrassingly large Steam library (as of today it contains 943 games).</description>
     </item>
     <item>
       <title>Why I Push Back</title>
-      <link>https://jaylittle.github.io/post/view/2019/6/why-i-push-back/</link>
+      <link>https://jaylittle.com/post/view/2019/6/why-i-push-back/</link>
       <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2019/6/why-i-push-back/</guid>
+      <guid>https://jaylittle.com/post/view/2019/6/why-i-push-back/</guid>
       <description>A number of people I know have asked me why I feel so strongly about particular tech issues that I feel compelled to take action. A number of those people have also informed me that my practice of maintaining a ban list of companies and products that I refuse to patron is objectionable to them. They don&amp;rsquo;t always say it directly, but once you get used to hearing it implied, it becomes easy enough to recognize it.</description>
     </item>
     <item>
       <title>Google Finally Reveals Its Endgame with Chrome</title>
-      <link>https://jaylittle.github.io/post/view/2019/5/google-finally-reveals-its-endgame-with-chrome/</link>
+      <link>https://jaylittle.com/post/view/2019/5/google-finally-reveals-its-endgame-with-chrome/</link>
       <pubDate>Fri, 31 May 2019 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2019/5/google-finally-reveals-its-endgame-with-chrome/</guid>
+      <guid>https://jaylittle.com/post/view/2019/5/google-finally-reveals-its-endgame-with-chrome/</guid>
       <description>Earlier this year in January, Google publicly toyed with making some changes to its Extension WebRequest API that would effectively kill off reputable ad-blockers. This announcement was met with much sound and fury and Google appeared to fold after a few weeks of controversy and a bit of research on the part of the community. However all of this ultimately signified nothing as Google announced plans to move forward with nearly the exact same plan this week.</description>
     </item>
     <item>
       <title>How Proprietary Tech Was Used to Summarily Execute Huawei</title>
-      <link>https://jaylittle.github.io/post/view/2019/5/how-proprietary-tech-was-used-to-summarily-execute-huawei/</link>
+      <link>https://jaylittle.com/post/view/2019/5/how-proprietary-tech-was-used-to-summarily-execute-huawei/</link>
       <pubDate>Tue, 21 May 2019 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2019/5/how-proprietary-tech-was-used-to-summarily-execute-huawei/</guid>
+      <guid>https://jaylittle.com/post/view/2019/5/how-proprietary-tech-was-used-to-summarily-execute-huawei/</guid>
       <description>So for this month&amp;rsquo;s blog post, I&amp;rsquo;ve decided to tackle a bit of tech drama that has been brewing for awhile. In case you didn&amp;rsquo;t know, the Chinese telecom/tech company Huawei has been repeatedly accused by the US government of spying on their customers at the behest of the Chinese government. No supporting evidence has been released to the public. Despite this lack of evidence, this week the Trump Administration has banned Huawei from doing business with any US based entity using an executive order.</description>
     </item>
     <item>
       <title>Reality vs Idealism Equals Burnout</title>
-      <link>https://jaylittle.github.io/post/view/2019/4/reality-vs-idealism-equals-burnout/</link>
+      <link>https://jaylittle.com/post/view/2019/4/reality-vs-idealism-equals-burnout/</link>
       <pubDate>Wed, 10 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2019/4/reality-vs-idealism-equals-burnout/</guid>
+      <guid>https://jaylittle.com/post/view/2019/4/reality-vs-idealism-equals-burnout/</guid>
       <description>In today&amp;rsquo;s irregularly scheduled pontification, I&amp;rsquo;m going to be addressing a subject that I have been personally struggling with for the majority of my career. When it comes to expectations in software development, I have recently realized that holding oneself to insane standards is not only ill-advised but potentially career ending.
 If you are a regular reader (which is impossible as I&amp;rsquo;m never going to be a regular poster) then you have likely already figured out that I am a software developer on the verge of burnout.</description>
     </item>
     <item>
       <title>Privacy is Dead and Nobody Cares</title>
-      <link>https://jaylittle.github.io/post/view/2019/3/privacy-is-dead-and-nobody-cares/</link>
+      <link>https://jaylittle.com/post/view/2019/3/privacy-is-dead-and-nobody-cares/</link>
       <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2019/3/privacy-is-dead-and-nobody-cares/</guid>
+      <guid>https://jaylittle.com/post/view/2019/3/privacy-is-dead-and-nobody-cares/</guid>
       <description>Over the last few years I have chronicled my struggle to maintain my privacy while maintaining an effective online presence. If you are an avid reader, you know that I believe that I am fighting a losing battle. Today marks the beginning of a new chapter as I have finally realized that most people just don&amp;rsquo;t care and nothing that you or I can do will ever be enough to make them care.</description>
     </item>
     <item>
       <title>Windows is a Legacy Operating System</title>
-      <link>https://jaylittle.github.io/post/view/2018/10/windows-is-a-legacy-operating-system/</link>
+      <link>https://jaylittle.com/post/view/2018/10/windows-is-a-legacy-operating-system/</link>
       <pubDate>Sun, 21 Oct 2018 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2018/10/windows-is-a-legacy-operating-system/</guid>
+      <guid>https://jaylittle.com/post/view/2018/10/windows-is-a-legacy-operating-system/</guid>
       <description>People who know me and talk with me, know I&amp;rsquo;ve been making this claim for years. That means that this post has been years in the making. That is true both in terms of the argument I&amp;rsquo;m about to make and in the actions Microsoft has taken to create the situation. The reality is that if I had made this argument ten years ago, most people would&amp;rsquo;ve laughed and stopped reading by the end of the first paragraph.</description>
     </item>
     <item>
       <title>Small Servers, Shitty RAID, Twitch and Caves of Qud</title>
-      <link>https://jaylittle.github.io/post/view/2018/10/small-servers-shitty-raid-twitch-and-caves-of-qud/</link>
+      <link>https://jaylittle.com/post/view/2018/10/small-servers-shitty-raid-twitch-and-caves-of-qud/</link>
       <pubDate>Sat, 06 Oct 2018 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2018/10/small-servers-shitty-raid-twitch-and-caves-of-qud/</guid>
+      <guid>https://jaylittle.com/post/view/2018/10/small-servers-shitty-raid-twitch-and-caves-of-qud/</guid>
       <description>This post is really going to be just a random collection of random updates and thoughts. If you are looking for an overarching theme, I&amp;rsquo;m sorry to disappoint but there isn&amp;rsquo;t one. Nevertheless, this might be worth reading anyway. Your call.
 So yesterday was a painful and stressful but ultimately fruitful day for me in terms of tech. You see I received the parts required to complete my small server project.</description>
     </item>
     <item>
       <title>Proprietary Software is a Plague</title>
-      <link>https://jaylittle.github.io/post/view/2018/9/proprietary-software-is-a-plague/</link>
+      <link>https://jaylittle.com/post/view/2018/9/proprietary-software-is-a-plague/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2018/9/proprietary-software-is-a-plague/</guid>
+      <guid>https://jaylittle.com/post/view/2018/9/proprietary-software-is-a-plague/</guid>
       <description>So as I&amp;rsquo;m sure my readers have noticed, the rate at which I&amp;rsquo;ve been producing content here has slowed. The reason for that is simple: I don&amp;rsquo;t have as much to say as of late. However I have been saving up yet another classic rant and today I&amp;rsquo;m ready to unleash it upon you all. Proprietary Software is a plague and today I&amp;rsquo;m going to explain why.
 Before I get going I want to address the elephant in the room.</description>
     </item>
     <item>
       <title>Android Fraking Sucks</title>
-      <link>https://jaylittle.github.io/post/view/2018/8/android-fraking-sucks/</link>
+      <link>https://jaylittle.com/post/view/2018/8/android-fraking-sucks/</link>
       <pubDate>Sat, 11 Aug 2018 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2018/8/android-fraking-sucks/</guid>
+      <guid>https://jaylittle.com/post/view/2018/8/android-fraking-sucks/</guid>
       <description>So I&amp;rsquo;ve taken a bit of a break from writing over the last few weeks. Honestly while I kind of needed one, the reality is that I also didn&amp;rsquo;t really have anything interesting to say. Nevertheless, I&amp;rsquo;m back and I&amp;rsquo;ve decided that I&amp;rsquo;d like to spend a few minutes convincing you that the world&amp;rsquo;s most popular operating system, Android, is a steaming pile of dung. I can already hear you saying, &amp;ldquo;Oh no here comes another pro Apple diatribe.</description>
     </item>
     <item>
       <title>The Rubber Hits the Road: Principles versus Pragmatism</title>
-      <link>https://jaylittle.github.io/post/view/2018/7/the-rubber-hits-the-road-principles-versus-pragmatism/</link>
+      <link>https://jaylittle.com/post/view/2018/7/the-rubber-hits-the-road-principles-versus-pragmatism/</link>
       <pubDate>Sat, 21 Jul 2018 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2018/7/the-rubber-hits-the-road-principles-versus-pragmatism/</guid>
+      <guid>https://jaylittle.com/post/view/2018/7/the-rubber-hits-the-road-principles-versus-pragmatism/</guid>
       <description>Late last year I reiterated some principles which I intended to keep in mind for the year of 2018. More than six months into the year, I thought it would be good to publicly reflect on how all of that has been going. If you&amp;rsquo;ll recall, there were three principles. I&amp;rsquo;m going to go through each of them one by one and enumerate my progress and setbacks. If you haven&amp;rsquo;t read it yet, you might want to take the time to read my original post &amp;ldquo;Notable Principles for 2018&amp;rdquo; before continuing.</description>
     </item>
     <item>
       <title>Sadism, Masochism and HD Antennas</title>
-      <link>https://jaylittle.github.io/post/view/2018/7/sadism-masochism-and-hd-antennas/</link>
+      <link>https://jaylittle.com/post/view/2018/7/sadism-masochism-and-hd-antennas/</link>
       <pubDate>Sun, 15 Jul 2018 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2018/7/sadism-masochism-and-hd-antennas/</guid>
+      <guid>https://jaylittle.com/post/view/2018/7/sadism-masochism-and-hd-antennas/</guid>
       <description>Way back when in 2012, I did what is commonly referred to now as &amp;ldquo;cutting the cord&amp;rdquo;. It was a bold move as all I had was a Roku device, a Tivo DVR and an HD antenna. If it had been solely up to me I probably wouldn&amp;rsquo;t have bothered with the Tivo and the antenna but Annette really wanted some form of live TV, so that was that. Six years down the road, I&amp;rsquo;ve finally decided to begin moving away from the Tivo/Antenna combo.</description>
     </item>
     <item>
       <title>Why Bad Tech Doesn&#39;t Just Die Already</title>
-      <link>https://jaylittle.github.io/post/view/2018/7/why-bad-tech-doesnt-just-die-already/</link>
+      <link>https://jaylittle.com/post/view/2018/7/why-bad-tech-doesnt-just-die-already/</link>
       <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2018/7/why-bad-tech-doesnt-just-die-already/</guid>
+      <guid>https://jaylittle.com/post/view/2018/7/why-bad-tech-doesnt-just-die-already/</guid>
       <description>This week I&amp;rsquo;m going to delve into a question which occasionally rears its ugly head even for me: Why doesn&amp;rsquo;t bad tech ever seem to go away? It is worth noting up front that while this includes computer based tech, it covers all kinds of tech. For example, we still have people who insist on photocopying and faxing things.
 Why do people still photocopy things? I really don&amp;rsquo;t understand it myself.</description>
     </item>
     <item>
       <title>Avoiding the Mines in a Field of Tech Fads</title>
-      <link>https://jaylittle.github.io/post/view/2018/6/avoiding-the-mines-in-a-field-of-tech-fads/</link>
+      <link>https://jaylittle.com/post/view/2018/6/avoiding-the-mines-in-a-field-of-tech-fads/</link>
       <pubDate>Fri, 29 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2018/6/avoiding-the-mines-in-a-field-of-tech-fads/</guid>
+      <guid>https://jaylittle.com/post/view/2018/6/avoiding-the-mines-in-a-field-of-tech-fads/</guid>
       <description>Chances are that if you&amp;rsquo;ve worked in tech long enough, you can probably rattle off a list of tech fads you were forced to suffer through. But you know what my secret is? I have yet to fall for the siren song of any tech fad. But rather than just laughing at a few older fads, I&amp;rsquo;d like to try and provide some instruction on how one can tell the difference between tech fads and legitimate tech trends.</description>
     </item>
     <item>
       <title>Development Teams: Help or Hindrance?</title>
-      <link>https://jaylittle.github.io/post/view/2018/6/development-teams-help-or-hindrance/</link>
+      <link>https://jaylittle.com/post/view/2018/6/development-teams-help-or-hindrance/</link>
       <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2018/6/development-teams-help-or-hindrance/</guid>
+      <guid>https://jaylittle.com/post/view/2018/6/development-teams-help-or-hindrance/</guid>
       <description>This week I&amp;rsquo;ve decided to tackle a topic which has been in the back burner of my mind for awhile: Whether or not development teams are a help or a hindrance. Why now? I was asked some questions which revolved around this as part of a job interview I had this week and wanted to provide a more fleshed out answer here than I was able to there.
 The reality is that when it comes to developers/engineers there are really only three kinds that matter in the context of this discussion:</description>
     </item>
     <item>
       <title>Autocratic Internet: The Tyranny of Google reCAPTCHA</title>
-      <link>https://jaylittle.github.io/post/view/2018/6/autocratic-internet-the-tyranny-of-google-recaptcha/</link>
+      <link>https://jaylittle.com/post/view/2018/6/autocratic-internet-the-tyranny-of-google-recaptcha/</link>
       <pubDate>Sat, 16 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2018/6/autocratic-internet-the-tyranny-of-google-recaptcha/</guid>
+      <guid>https://jaylittle.com/post/view/2018/6/autocratic-internet-the-tyranny-of-google-recaptcha/</guid>
       <description>So over the last year, something on the Internet has been really pissing me off. That thing is Google reCAPTCHA. This thing has been driving me bonkers for over a year and I&amp;rsquo;m pretty much at the end of my rope.
 So let&amp;rsquo;s start with a bit of background. Over a year ago I began to fundamentally change the way that I accessed the Internet on a daily basis. Prior to this change, reCAPTCHA was just a minor annoyance.</description>
     </item>
     <item>
       <title>Microsoft buys Github: Whhhhhattt?</title>
-      <link>https://jaylittle.github.io/post/view/2018/6/microsoft-buys-github-whhhhhattt/</link>
+      <link>https://jaylittle.com/post/view/2018/6/microsoft-buys-github-whhhhhattt/</link>
       <pubDate>Fri, 08 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2018/6/microsoft-buys-github-whhhhhattt/</guid>
+      <guid>https://jaylittle.com/post/view/2018/6/microsoft-buys-github-whhhhhattt/</guid>
       <description>Unless you&amp;rsquo;ve been living under a rock, you probably have already heard the big tech news of the week: Microsoft is buying GitHub for 7.5 billion dollars. Wow. That&amp;rsquo;s a lot of pennies.
 Rumors of this began swirling on the Internet last weekend and the official announcement was made on Monday morning. As you may or may not know Github, despite the closed source nature of their software and services, actually provides a lot of free services to the FOSS community in the form of hosted git repositories and the associated web accessible functionality required to work with those repositories in a reasonably efficient manner.</description>
     </item>
     <item>
       <title>Dumb Homes For the Win</title>
-      <link>https://jaylittle.github.io/post/view/2018/6/dumb-homes-for-the-win/</link>
+      <link>https://jaylittle.com/post/view/2018/6/dumb-homes-for-the-win/</link>
       <pubDate>Sat, 02 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2018/6/dumb-homes-for-the-win/</guid>
+      <guid>https://jaylittle.com/post/view/2018/6/dumb-homes-for-the-win/</guid>
       <description>This morning a young man knocked on my door with the goal of selling me on a Vivint Smart Home System. Needless to say that if you know me at all, you know I put the kibosh on that in a hurry. My opposition to this idea springs from more than my fear of the cloud, though that is a factor to be sure. For starters I believe most of these mechanisms are over-engineered and consequently less reliable.</description>
     </item>
     <item>
       <title>Shattering &#39;Old Code&#39; Rose Colored Glasses</title>
-      <link>https://jaylittle.github.io/post/view/2018/5/shattering-old-code-rose-colored-glasses/</link>
+      <link>https://jaylittle.com/post/view/2018/5/shattering-old-code-rose-colored-glasses/</link>
       <pubDate>Thu, 24 May 2018 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2018/5/shattering-old-code-rose-colored-glasses/</guid>
+      <guid>https://jaylittle.com/post/view/2018/5/shattering-old-code-rose-colored-glasses/</guid>
       <description>Over the course of my career, while my standards may have changed, I have always prided myself on the idea that the code I wrote was &amp;ldquo;solid&amp;rdquo; when judged by the standards of the day. Due to a recent job change, I found myself with yet another opportunity to validate this particular belief. Sadly, in this particular case, it appears to be a mixed bag at best.
 Now let&amp;rsquo;s be clear: This application works reasonably well.</description>
     </item>
     <item>
       <title>My Ode to Rogue-Likes</title>
-      <link>https://jaylittle.github.io/post/view/2018/5/my-ode-to-roguelikes/</link>
+      <link>https://jaylittle.com/post/view/2018/5/my-ode-to-roguelikes/</link>
       <pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2018/5/my-ode-to-roguelikes/</guid>
+      <guid>https://jaylittle.com/post/view/2018/5/my-ode-to-roguelikes/</guid>
       <description>Everybody knows that I love to play RPGs (Role Playing Games). In fact I love them so much that over the last few years I mostly stopped playing games from every other genre. Despite that, my love for RPGs has begun to wane a bit in recent years. While I do still love getting immersed in wonderfully complex multi-layered lore and tweaking my stats and skills to best maximize my chances for victory, somewhere along the way the thrill of that began to fade.</description>
     </item>
     <item>
       <title>Unplanned Obsolescence</title>
-      <link>https://jaylittle.github.io/post/view/2018/5/unplanned-obsolescence/</link>
+      <link>https://jaylittle.com/post/view/2018/5/unplanned-obsolescence/</link>
       <pubDate>Sun, 06 May 2018 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2018/5/unplanned-obsolescence/</guid>
+      <guid>https://jaylittle.com/post/view/2018/5/unplanned-obsolescence/</guid>
       <description>For those of you who don&amp;rsquo;t know, I spent most of this past week at a conference in Chicago put on by my employer. This was a bit awkward as I was working out the second week of my three week notice with them. Nevertheless I went and a good time was had by all. During this trip I received a lot of unsolicited feedback from various co-workers most of which was positive and very much appreciated.</description>
     </item>
     <item>
       <title>Tor Versus Zoom</title>
-      <link>https://jaylittle.github.io/post/view/2018/4/tor-versus-zoom/</link>
+      <link>https://jaylittle.com/post/view/2018/4/tor-versus-zoom/</link>
       <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2018/4/tor-versus-zoom/</guid>
+      <guid>https://jaylittle.com/post/view/2018/4/tor-versus-zoom/</guid>
       <description>As I&amp;rsquo;m sure many of you know, an important part of being a remote worker is maintaining lines of communication with your co-workers. At work we use a variety of tools to accomplish that but one of the most important tools is one called Zoom. It is a screen sharing, audio and video conferencing tool that can accommodate hundreds of people at once and this tends to make it very useful.</description>
     </item>
     <item>
       <title>Road to Acceptance: Anger Versus Apathy</title>
-      <link>https://jaylittle.github.io/post/view/2018/4/road-to-acceptance-anger-versus-apathy/</link>
+      <link>https://jaylittle.com/post/view/2018/4/road-to-acceptance-anger-versus-apathy/</link>
       <pubDate>Wed, 18 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2018/4/road-to-acceptance-anger-versus-apathy/</guid>
+      <guid>https://jaylittle.com/post/view/2018/4/road-to-acceptance-anger-versus-apathy/</guid>
       <description>So I&amp;rsquo;ve been spending a lot of time in the midst of a situation that leaves me feeling very angry. Today I got more angry than usual and since that is becoming a more common occurrence I thought it might behoove me to delve into why.
 I&amp;rsquo;m going to start off explaining why I am angry. The core issue is that I am expected to accomplish a task that is by all rights impossible to accomplish.</description>
     </item>
     <item>
       <title>Check and Mate</title>
-      <link>https://jaylittle.github.io/post/view/2018/4/check-and-mate/</link>
+      <link>https://jaylittle.com/post/view/2018/4/check-and-mate/</link>
       <pubDate>Sun, 15 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2018/4/check-and-mate/</guid>
+      <guid>https://jaylittle.com/post/view/2018/4/check-and-mate/</guid>
       <description>So in an effort to diversify my hobbies a bit I&amp;rsquo;ve recently decided to spend some time getting to know Chess a bit better. While I have casually played Chess all of my life, the reality is that outside of knowing how the pieces move and the conditions under which a game is completed, I didn&amp;rsquo;t know much else. While this might come as a shock since I was part of the Chess Club throughout high school, the harsh reality is that there were no clubs oriented towards my primary interest (any and all things computer related).</description>
     </item>
     <item>
       <title>Oh Green Fairy, Where Art Thou?</title>
-      <link>https://jaylittle.github.io/post/view/2018/4/oh-green-fairy-where-art-thou/</link>
+      <link>https://jaylittle.com/post/view/2018/4/oh-green-fairy-where-art-thou/</link>
       <pubDate>Fri, 06 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2018/4/oh-green-fairy-where-art-thou/</guid>
+      <guid>https://jaylittle.com/post/view/2018/4/oh-green-fairy-where-art-thou/</guid>
       <description>This week we are taking a break from our regularly scheduled tech related posts/rants to delve into a subject that is near and dear to my heart: Absinthe. Anybody who knows me, knows I like to indulge myself with a snort of liquor now and again. Though I tend to stick mostly to whiskey (all kinds, no whiskey is beneath me), I do enjoy other things as well. Chief among that group is a little thing known as absinthe.</description>
     </item>
     <item>
       <title>When and Why I Leave</title>
-      <link>https://jaylittle.github.io/post/view/2018/3/when-and-why-i-leave/</link>
+      <link>https://jaylittle.com/post/view/2018/3/when-and-why-i-leave/</link>
       <pubDate>Thu, 29 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2018/3/when-and-why-i-leave/</guid>
+      <guid>https://jaylittle.com/post/view/2018/3/when-and-why-i-leave/</guid>
       <description>Anybody who has ever bothered to read my resume has probably thought to themselves: &amp;ldquo;This guy sure likes to switch jobs.&amp;rdquo; Well I can&amp;rsquo;t fault them for making that observation as it is at least half true.
 While I do switch jobs fairly often, the painful truth is that I don&amp;rsquo;t like doing it. Interviewing as a developer is an intensely painful process rife with reciting answers obtained via rote memorization and concocting inventive answers to cute but ultimately pointless logic problems.</description>
     </item>
     <item>
       <title>Agile is Good and Scrum is Dumb</title>
-      <link>https://jaylittle.github.io/post/view/2018/3/agile-is-good-and-scrum-is-dumb/</link>
+      <link>https://jaylittle.com/post/view/2018/3/agile-is-good-and-scrum-is-dumb/</link>
       <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2018/3/agile-is-good-and-scrum-is-dumb/</guid>
+      <guid>https://jaylittle.com/post/view/2018/3/agile-is-good-and-scrum-is-dumb/</guid>
       <description>One of the most disturbing trends I have seen over the last few years is the interchangeability of the terms Agile and Scrum. Most people believe that Scrum is a form of Agile. A lot of employers will advertise that they use Agile when in fact they actually use Scrum. If this doesn&amp;rsquo;t infuriate you, it likely means that you have no idea what Agile actually is, so keep reading.</description>
     </item>
     <item>
       <title>Fact: Every Tech Related Disaster Is Man-Made</title>
-      <link>https://jaylittle.github.io/post/view/2018/3/fact-every-tech-related-disaster-is-manmade/</link>
+      <link>https://jaylittle.com/post/view/2018/3/fact-every-tech-related-disaster-is-manmade/</link>
       <pubDate>Sat, 17 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2018/3/fact-every-tech-related-disaster-is-manmade/</guid>
+      <guid>https://jaylittle.com/post/view/2018/3/fact-every-tech-related-disaster-is-manmade/</guid>
       <description>Yesterday at work I was finishing off an extremely productive week. After spending the previous week on a spike, everything was really starting to come together for the feature I&amp;rsquo;m building. It was a good day. But then during a team demo somebody made a comment that turned things a bit sour for me. Later on I ranted about this during sprint planning. While the ultimate end result wasn&amp;rsquo;t a big deal, I mulled it over in an attempt to determine why any of this ticked me off to begin with.</description>
     </item>
     <item>
       <title>Things I Don&#39;t Miss About Windows: Updates</title>
-      <link>https://jaylittle.github.io/post/view/2018/3/things-i-dont-miss-about-windows-updates/</link>
+      <link>https://jaylittle.com/post/view/2018/3/things-i-dont-miss-about-windows-updates/</link>
       <pubDate>Mon, 12 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2018/3/things-i-dont-miss-about-windows-updates/</guid>
+      <guid>https://jaylittle.com/post/view/2018/3/things-i-dont-miss-about-windows-updates/</guid>
       <description>So I&amp;rsquo;m going to start off this post by being extremely blunt: I don&amp;rsquo;t like Windows. In fact when it comes to Operating Systems (aka OSes), I consider virtually any other OS a superior choice. The only exception is situations in which some piece of critically required and irreplacable software mandates that you must use Windows. Despite these feelings and the fact that my house contains only two Windows machines, only one of which belongs to me (the other belongs to my current employer), I spent quite a few hours mucking about in Windows this past weekend.</description>
     </item>
     <item>
       <title>Veni, Vidi... not so much Vici</title>
-      <link>https://jaylittle.github.io/post/view/2018/3/veni-vidi-not-so-much-vici/</link>
+      <link>https://jaylittle.com/post/view/2018/3/veni-vidi-not-so-much-vici/</link>
       <pubDate>Mon, 05 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2018/3/veni-vidi-not-so-much-vici/</guid>
+      <guid>https://jaylittle.com/post/view/2018/3/veni-vidi-not-so-much-vici/</guid>
       <description>I&amp;rsquo;ve been doing a lot thinking regarding the overall state of my trade. Of course that should be obvious to anybody who follows my posts. Much of it has been a deep dive into what can only be described as a creeping depression regarding the state of the trade from my viewpoint. Much of it is birthed by the sum of my experiences over the last two decades.
 Some might even go so far as to speculate that this constitutes the beginning of a mid-life crisis.</description>
     </item>
     <item>
       <title>Low Standards in Software tend to go Viral</title>
-      <link>https://jaylittle.github.io/post/view/2018/2/low-standards-in-software-tend-to-go-viral/</link>
+      <link>https://jaylittle.com/post/view/2018/2/low-standards-in-software-tend-to-go-viral/</link>
       <pubDate>Mon, 26 Feb 2018 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2018/2/low-standards-in-software-tend-to-go-viral/</guid>
+      <guid>https://jaylittle.com/post/view/2018/2/low-standards-in-software-tend-to-go-viral/</guid>
       <description>So here is something that has been on my mind as of late: The plague of shitty software. My goodness, there really is a lot of it floating around nowadays. That&amp;rsquo;s not what I&amp;rsquo;m really concerned about though. What concerns me is that our ability to accept shitty software leads us to create even more shitty software.
 I am not talking about end users here. I am talking about software developers.</description>
     </item>
     <item>
       <title>Code Mode: A True Developers Drug of Choice</title>
-      <link>https://jaylittle.github.io/post/view/2018/2/code-mode-a-true-developers-drug-of-choice/</link>
+      <link>https://jaylittle.com/post/view/2018/2/code-mode-a-true-developers-drug-of-choice/</link>
       <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2018/2/code-mode-a-true-developers-drug-of-choice/</guid>
+      <guid>https://jaylittle.com/post/view/2018/2/code-mode-a-true-developers-drug-of-choice/</guid>
       <description>This week I wanted to chat about a syndrome that I have experienced a few times over the years as both an amateur and a professional developer. What syndrome am I referring to? One of my favorites: The syndrome of &amp;ldquo;Code Mode&amp;rdquo;.
 What is &amp;ldquo;Code Mode&amp;rdquo;? The term refers to the scenario in which you planned on accomplishing X number of things in a given coding session and end up accomplishing X^2 instead largely due to bursts of sustained inspiration and abnormally long periods of consistent lucidity.</description>
     </item>
     <item>
       <title>The Bigger They are, the Harder They Fall</title>
-      <link>https://jaylittle.github.io/post/view/2018/2/the-bigger-they-are-the-harder-they-fall/</link>
+      <link>https://jaylittle.com/post/view/2018/2/the-bigger-they-are-the-harder-they-fall/</link>
       <pubDate>Mon, 12 Feb 2018 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2018/2/the-bigger-they-are-the-harder-they-fall/</guid>
+      <guid>https://jaylittle.com/post/view/2018/2/the-bigger-they-are-the-harder-they-fall/</guid>
       <description>When it comes to the modern day world of software, one thing above all has become clear to me over the last 20 years: On a long enough time line, failure is virtually guaranteed. That being the case, how our software approaches, adjusts for and reconciles failure is clearly its most important characteristic.
 That&amp;rsquo;s not to say that modern day software is all garbage, but in all the ways that actually matter, that largely appears to be the case.</description>
     </item>
     <item>
       <title>Ethical Quandary: Is it ever responsible to irresponsibly disclose?</title>
-      <link>https://jaylittle.github.io/post/view/2018/2/ethical-quandary-is-it-ever-responsible-to-irresponsibly-disclose/</link>
+      <link>https://jaylittle.com/post/view/2018/2/ethical-quandary-is-it-ever-responsible-to-irresponsibly-disclose/</link>
       <pubDate>Wed, 07 Feb 2018 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2018/2/ethical-quandary-is-it-ever-responsible-to-irresponsibly-disclose/</guid>
+      <guid>https://jaylittle.com/post/view/2018/2/ethical-quandary-is-it-ever-responsible-to-irresponsibly-disclose/</guid>
       <description>Today&amp;rsquo;s post is going to examine an ethical grey area that I currently find to be very relevant. Is it ever okay to ignore responsible disclosure standards for security related issues? Spoiler alert: I&amp;rsquo;m going to argue that there are cases in which ignoring these standards is not only permissible but the only real ethical course of action.
 Okay so lets start with some sample code. The below code represents a simple .</description>
     </item>
     <item>
       <title>The Evolution of Tech: Roadkill</title>
-      <link>https://jaylittle.github.io/post/view/2018/1/the-evolution-of-tech-roadkill/</link>
+      <link>https://jaylittle.com/post/view/2018/1/the-evolution-of-tech-roadkill/</link>
       <pubDate>Mon, 29 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2018/1/the-evolution-of-tech-roadkill/</guid>
+      <guid>https://jaylittle.com/post/view/2018/1/the-evolution-of-tech-roadkill/</guid>
       <description>In a follow up to last weeks post, I&amp;rsquo;ve decided to examine some of the other side effects of increased technology accessibility. After spending some more time pondering my last post, I realized that the problem goes far beyond a loss of unrelated learning opportunities. In fact I would go so far as to say that easy to use tech may in fact be making us dumber while still making us more productive.</description>
     </item>
     <item>
       <title>The Evolution of Tech: Amnesiac Highway</title>
-      <link>https://jaylittle.github.io/post/view/2018/1/the-evolution-of-tech-amnesiac-highway/</link>
+      <link>https://jaylittle.com/post/view/2018/1/the-evolution-of-tech-amnesiac-highway/</link>
       <pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2018/1/the-evolution-of-tech-amnesiac-highway/</guid>
+      <guid>https://jaylittle.com/post/view/2018/1/the-evolution-of-tech-amnesiac-highway/</guid>
       <description>Something insidious has been lapping away at the innards of my mind for quite awhile. To be honest I wasn&amp;rsquo;t even consciously aware of it 48 hours ago. So why am I writing about it now? Yesterday at my nephew&amp;rsquo;s 9th birthday party, somebody posited the theory that video games act as a gateway drug for other more productive technology related pursuits. I immediately took offense to that although I didn&amp;rsquo;t fully understand why at the time.</description>
     </item>
     <item>
       <title>The dream of FOSS Hardware: A whisper in the wind</title>
-      <link>https://jaylittle.github.io/post/view/2018/1/the-dream-of-foss-hardware-a-whisper-in-the-wind/</link>
+      <link>https://jaylittle.com/post/view/2018/1/the-dream-of-foss-hardware-a-whisper-in-the-wind/</link>
       <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2018/1/the-dream-of-foss-hardware-a-whisper-in-the-wind/</guid>
+      <guid>https://jaylittle.com/post/view/2018/1/the-dream-of-foss-hardware-a-whisper-in-the-wind/</guid>
       <description>As everybody who reads this site on a regular basis knows, I&amp;rsquo;m a strong advocate for Free and Open Source Software (FOSS). What I don&amp;rsquo;t spent quite as much time talking about are my preferences regarding hardware. The reason for this is pretty simple. My hardware preferences are pretty fleeting. While I have been a dedicated user of Linux for years, I struggle when it comes to identifying an equivalent entity on the hardware side of the fence.</description>
     </item>
     <item>
       <title>A Man Without a Web Browser</title>
-      <link>https://jaylittle.github.io/post/view/2018/1/a-man-without-a-web-browser/</link>
+      <link>https://jaylittle.com/post/view/2018/1/a-man-without-a-web-browser/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2018/1/a-man-without-a-web-browser/</guid>
+      <guid>https://jaylittle.com/post/view/2018/1/a-man-without-a-web-browser/</guid>
       <description>So those of you who know me personally know that I recently switched from Chromium to Firefox. I obviously haven&amp;rsquo;t commented on that change here. Why? Well there is actually a really good reason for my silence and I&amp;rsquo;m going to tell you why.
 The long and short of it is that Firefox Quantum represents a huge performance and compatibility improvement. However the organization which manages and maintains it, Mozilla, has been making some really questionable moves as of late so I&amp;rsquo;m already looking for an alternative.</description>
     </item>
     <item>
       <title>Notable Principles for 2018</title>
-      <link>https://jaylittle.github.io/post/view/2017/12/notable-principles-for-2018/</link>
+      <link>https://jaylittle.com/post/view/2017/12/notable-principles-for-2018/</link>
       <pubDate>Tue, 26 Dec 2017 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2017/12/notable-principles-for-2018/</guid>
+      <guid>https://jaylittle.com/post/view/2017/12/notable-principles-for-2018/</guid>
       <description>With the new year right around the corner, it seems its the expected time to make a few resolutions. Though I have gone out of my way to largely ignore this practice, at the end of 2016 I made my first resolution in over a decade. That resolution was, &amp;ldquo;Don&amp;rsquo;t buy any video games&amp;rdquo; which I actually managed to stick to for about six months. This year I&amp;rsquo;ve decided to tweak my approach.</description>
     </item>
     <item>
       <title>Repeat after me: Games are supposed to be fun</title>
-      <link>https://jaylittle.github.io/post/view/2017/12/repeat-after-me-games-are-supposed-to-be-fun/</link>
+      <link>https://jaylittle.com/post/view/2017/12/repeat-after-me-games-are-supposed-to-be-fun/</link>
       <pubDate>Tue, 19 Dec 2017 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2017/12/repeat-after-me-games-are-supposed-to-be-fun/</guid>
+      <guid>https://jaylittle.com/post/view/2017/12/repeat-after-me-games-are-supposed-to-be-fun/</guid>
       <description>So over the last few weeks I&amp;rsquo;ve been dividing my time between Divinity: Original Sin and Horizon Zero Dawn. I stated playing Divinity first so I&amp;rsquo;ve plowed much more time into it, lets say 60 hours. Whereas I&amp;rsquo;ve put about 25 hours into Horizon. I love Horizon. So why am I telling you this? I have a confession. I hate Divinity. I hate nearly everything about it. I can already hear you asking, &amp;ldquo;Why do you hate it?</description>
     </item>
     <item>
       <title>Riding the Nostalgia Wave: How Old is too Old?</title>
-      <link>https://jaylittle.github.io/post/view/2017/12/riding-the-nostalgia-wave-how-old-is-too-old/</link>
+      <link>https://jaylittle.com/post/view/2017/12/riding-the-nostalgia-wave-how-old-is-too-old/</link>
       <pubDate>Tue, 05 Dec 2017 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2017/12/riding-the-nostalgia-wave-how-old-is-too-old/</guid>
+      <guid>https://jaylittle.com/post/view/2017/12/riding-the-nostalgia-wave-how-old-is-too-old/</guid>
       <description>Over my years as a software developer I have on occasion stopped and asked myself, &amp;ldquo;What exactly is the point?&amp;rdquo; I realize that on the surface that sounds a bit depressing, but you have to recognize that over the last forty years virtually every type of program you can think of has already been written. Sure there are a handful of exceptions, but generally most of us aren&amp;rsquo;t doing anything particularly new.</description>
     </item>
     <item>
       <title>Net Neutrality: Deja Vu Edition</title>
-      <link>https://jaylittle.github.io/post/view/2017/11/net-neutrality-deja-vu-edition/</link>
+      <link>https://jaylittle.com/post/view/2017/11/net-neutrality-deja-vu-edition/</link>
       <pubDate>Sat, 25 Nov 2017 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2017/11/net-neutrality-deja-vu-edition/</guid>
+      <guid>https://jaylittle.com/post/view/2017/11/net-neutrality-deja-vu-edition/</guid>
       <description>This morning I felt like writing a piece about a subject that is very near and dear to my heart: Net Neutrality. Though as I started I got a feeling of Deja Vu. Oh wait. I already wrote that post, didn&amp;rsquo;t I? After taking some time to reread it, I&amp;rsquo;m pretty satisfied with the position I outlined there with the exception of the last couple sentences.
 So with that in mind, it&amp;rsquo;s only fair to start this post off with a correction.</description>
     </item>
     <item>
       <title>Jack of One Trade</title>
-      <link>https://jaylittle.github.io/post/view/2017/11/jack-of-one-trade/</link>
+      <link>https://jaylittle.com/post/view/2017/11/jack-of-one-trade/</link>
       <pubDate>Tue, 21 Nov 2017 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2017/11/jack-of-one-trade/</guid>
+      <guid>https://jaylittle.com/post/view/2017/11/jack-of-one-trade/</guid>
       <description>I recently discovered that a virtual Windows server I was running had been hacked. I was being paid to run it as part of an arrangement with a long time client of mine. This server ran Windows Server 2008 R2 and though it was rarely used, it was configured to automatically update when required. The only service it exposed to the internet was RDP over TCP/IP port 3392 instead of the default 3389.</description>
     </item>
     <item>
       <title>State of the Video Game Union</title>
-      <link>https://jaylittle.github.io/post/view/2017/11/state-of-the-video-game-union/</link>
+      <link>https://jaylittle.com/post/view/2017/11/state-of-the-video-game-union/</link>
       <pubDate>Wed, 15 Nov 2017 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2017/11/state-of-the-video-game-union/</guid>
+      <guid>https://jaylittle.com/post/view/2017/11/state-of-the-video-game-union/</guid>
       <description>This morning I want to talk about something that isn&amp;rsquo;t quite so serious. I want to talk about the state of video gaming. For those of you who don&amp;rsquo;t know, I&amp;rsquo;m a pretty big gamer. I&amp;rsquo;ve been gaming for over thirty years. I started off on an Apple IIe, Atari 2600 and Colecovision. Yeah I definitely had a blessed childhood. Joking aside, I&amp;rsquo;m still gaming 32 years later. The platforms and economic drivers have changed but my addiction hobby remains largely intact.</description>
     </item>
     <item>
       <title>Goodbye Windows 10 : Viva La Linux!</title>
-      <link>https://jaylittle.github.io/post/view/2016/7/goodbye-windows-10-viva-la-linux/</link>
+      <link>https://jaylittle.com/post/view/2016/7/goodbye-windows-10-viva-la-linux/</link>
       <pubDate>Mon, 31 Jul 2017 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2016/7/goodbye-windows-10-viva-la-linux/</guid>
+      <guid>https://jaylittle.com/post/view/2016/7/goodbye-windows-10-viva-la-linux/</guid>
       <description>Yesterday was a red letter day for me. Two decades after using Linux for the first time, I have finally managed to fully convert all of daily driver devices to boot Linux. Any of you who know me, know that for years now I&amp;rsquo;ve been running Linux natively and in a single boot configuration on whatever primary personal laptop I happened to be using at the time. You might also know that just over a year ago I managed to get my wife using it on her laptop.</description>
     </item>
     <item>
       <title>The Manifesto of a Productive Business Software Developer</title>
-      <link>https://jaylittle.github.io/post/view/2015/11/the-manifesto-of-a-productive-business-software-developer/</link>
+      <link>https://jaylittle.com/post/view/2015/11/the-manifesto-of-a-productive-business-software-developer/</link>
       <pubDate>Tue, 03 Nov 2015 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2015/11/the-manifesto-of-a-productive-business-software-developer/</guid>
+      <guid>https://jaylittle.com/post/view/2015/11/the-manifesto-of-a-productive-business-software-developer/</guid>
       <description>The other day I got asked by my boss&amp;rsquo; boss to share the &amp;ldquo;secret sauce&amp;rdquo; behind my productivity at work. This was an odd moment for me as over the last 17 years of my of professional life, nobody has ever asked me to do that. But it did get me thinking about it and that has led to me making a few notes on the subject that I&amp;rsquo;ve decided to share with the world.</description>
     </item>
     <item>
       <title>The Day Facebook and American Cloud Computing Died</title>
-      <link>https://jaylittle.github.io/post/view/2015/10/the-day-facebook-and-american-cloud-computing-died/</link>
+      <link>https://jaylittle.com/post/view/2015/10/the-day-facebook-and-american-cloud-computing-died/</link>
       <pubDate>Wed, 28 Oct 2015 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2015/10/the-day-facebook-and-american-cloud-computing-died/</guid>
+      <guid>https://jaylittle.com/post/view/2015/10/the-day-facebook-and-american-cloud-computing-died/</guid>
       <description>The day has finally come. Today I have been forced to dissolve my relationship with Facebook. Why? In a single word: CISA. In a nutshell CISA is a piece of legislation that allows companies like Facebook to more freely share customer data with the government. All data shared with the government (DHS) under the auspices of this law is automatically shared with the FBI and the NSA. Even more importantly, customers have no recourse against this data sharing as the corporations in question will be immune to lawsuits which touch upon activities covered by it and the process itself is specifically exempted from the Freedom of Information Act.</description>
     </item>
     <item>
       <title>Ode to GoldBox RPGs</title>
-      <link>https://jaylittle.github.io/post/view/2015/5/ode-to-goldbox-rpgs/</link>
+      <link>https://jaylittle.com/post/view/2015/5/ode-to-goldbox-rpgs/</link>
       <pubDate>Mon, 18 May 2015 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2015/5/ode-to-goldbox-rpgs/</guid>
+      <guid>https://jaylittle.com/post/view/2015/5/ode-to-goldbox-rpgs/</guid>
       <description>As many of you know, I self identify as a retro and an indie gamer. That pretty much means that for the most part, I don&amp;rsquo;t play many of the modern AAA games out there. Of course as a retro gamer, one must avoid going full hipster (otherwise known as asshole) by at least acknowledging that the retro games of today were once the AAA games of yesterday.
 As I revealed in my Kryoflux article awhile back, I began collecting physical versions of the Advanced Dungeons and Dragons Goldbox games from SSI.</description>
     </item>
     <item>
       <title>The Problem with Internet Explorer and Spartan</title>
-      <link>https://jaylittle.github.io/post/view/2015/3/the-problem-with-internet-explorer-and-spartan/</link>
+      <link>https://jaylittle.com/post/view/2015/3/the-problem-with-internet-explorer-and-spartan/</link>
       <pubDate>Tue, 31 Mar 2015 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2015/3/the-problem-with-internet-explorer-and-spartan/</guid>
+      <guid>https://jaylittle.com/post/view/2015/3/the-problem-with-internet-explorer-and-spartan/</guid>
       <description>Anybody who knows me professionally, knows that I despise Microsofts Internet Explorer web browser. What they probably don&amp;rsquo;t know is why I despise it. Most people likely assume that because I&amp;rsquo;m a Penguin, I&amp;rsquo;m also an Internet Explorer hater. The two do tend to go hand in hand. However nothing could be further from the truth. I use Linux a great deal on my own time, but professionally I tend to spend most of my time with Windows.</description>
     </item>
     <item>
       <title>Lenovo X1 Carbon: My New Ultrabook</title>
-      <link>https://jaylittle.github.io/post/view/2015/3/lenovo-x1-carbon-my-new-ultrabook/</link>
+      <link>https://jaylittle.com/post/view/2015/3/lenovo-x1-carbon-my-new-ultrabook/</link>
       <pubDate>Thu, 12 Mar 2015 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2015/3/lenovo-x1-carbon-my-new-ultrabook/</guid>
+      <guid>https://jaylittle.com/post/view/2015/3/lenovo-x1-carbon-my-new-ultrabook/</guid>
       <description>So as some of you know, I tend to get a new laptop every 12 to 18 months. Over the years my preferences for laptops have changed drastically however and this has been reflected by my latest purchase, a third generation Lenovo X1 Carbon ultrabook. Long gone are the days where power is king and I&amp;rsquo;d tolerate any inconvenience to get it. There are a number of reasons for this, the most prominent of which I hope to address as part of this post.</description>
     </item>
     <item>
       <title>Accountability: The Missing Ingredient</title>
-      <link>https://jaylittle.github.io/post/view/2014/12/accountability-the-missing-ingredient/</link>
+      <link>https://jaylittle.com/post/view/2014/12/accountability-the-missing-ingredient/</link>
       <pubDate>Thu, 04 Dec 2014 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2014/12/accountability-the-missing-ingredient/</guid>
+      <guid>https://jaylittle.com/post/view/2014/12/accountability-the-missing-ingredient/</guid>
       <description>Over the last few weeks, the public has been subjected to an array of Grand Juries deciding not to indict cops accused of homicide. Keep in mind that we aren&amp;rsquo;t talking about the verdicts of trials here. We are talking about indictments. An indictment is given when a Grand Jury decides that there is enough evidence present to actually have a trial. The prosecutors typically select their strongest evidence and present it to the Grand Jury in an effort to get an indictment.</description>
     </item>
     <item>
       <title>The Anatomy of an Epic Fail</title>
-      <link>https://jaylittle.github.io/post/view/2014/10/the-anatomy-of-an-epic-fail/</link>
+      <link>https://jaylittle.com/post/view/2014/10/the-anatomy-of-an-epic-fail/</link>
       <pubDate>Wed, 22 Oct 2014 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2014/10/the-anatomy-of-an-epic-fail/</guid>
+      <guid>https://jaylittle.com/post/view/2014/10/the-anatomy-of-an-epic-fail/</guid>
       <description>I just finished reading an article detailing an idea for modernizing the US Postal System and I have some thoughts that I&amp;rsquo;d like to share. Before I begin, I&amp;rsquo;d like to take a moment to explain why the following critique is so important to me. The long and short of it is that as a software developer, my career essentially consists of solving problems. Software is just the tool I tend to rely upon for getting the job done.</description>
     </item>
     <item>
       <title>JPL Coding, Independence and Ethics Redux</title>
-      <link>https://jaylittle.github.io/post/view/2014/9/jpl-coding-independence-and-ethics-redux/</link>
+      <link>https://jaylittle.com/post/view/2014/9/jpl-coding-independence-and-ethics-redux/</link>
       <pubDate>Mon, 29 Sep 2014 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2014/9/jpl-coding-independence-and-ethics-redux/</guid>
+      <guid>https://jaylittle.com/post/view/2014/9/jpl-coding-independence-and-ethics-redux/</guid>
       <description>As any of my readers know, ethics is a topic that is very near and dear to my heart when it comes to software development. When you run your own shop, there comes a time when your ethics are going to be tested. I thought I understood what that test would entail only to recently discover that I had absolutely no idea at all. To protect the innocent as well as the guilty names have been changed, but the story that follows is quite true.</description>
     </item>
     <item>
       <title>The Dilemma of the ALS Ice Bucket Challenge</title>
-      <link>https://jaylittle.github.io/post/view/2014/8/the-dilemma-of-the-als-ice-bucket-challenge/</link>
+      <link>https://jaylittle.com/post/view/2014/8/the-dilemma-of-the-als-ice-bucket-challenge/</link>
       <pubDate>Thu, 21 Aug 2014 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2014/8/the-dilemma-of-the-als-ice-bucket-challenge/</guid>
+      <guid>https://jaylittle.com/post/view/2014/8/the-dilemma-of-the-als-ice-bucket-challenge/</guid>
       <description>So if you haven&amp;rsquo;t been living under a rock, you&amp;rsquo;ve probably noticed that over the last few weeks the internet has been awash with people jumping on the &amp;ldquo;ALS Ice Bucket Challenge&amp;rdquo; train. Over the same period of time, I&amp;rsquo;ve made a number of comments in various online venues which have indicated my distaste for this trend. A number of people have asked me to explain why I feel this way.</description>
     </item>
     <item>
       <title>Why I believe in Net Neutrality</title>
-      <link>https://jaylittle.github.io/post/view/2014/5/why-i-believe-in-net-neutrality/</link>
+      <link>https://jaylittle.com/post/view/2014/5/why-i-believe-in-net-neutrality/</link>
       <pubDate>Thu, 15 May 2014 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2014/5/why-i-believe-in-net-neutrality/</guid>
+      <guid>https://jaylittle.com/post/view/2014/5/why-i-believe-in-net-neutrality/</guid>
       <description>Let&amp;rsquo;s face the facts, most of the people coming to this site either already support Net Neutrality or they have no idea what that term means and are now supremely annoyed that accessing my resume is such a pain in the ass. I apologize to the first group for wasting your time by telling you something that you already know and to the second for well&amp;hellip; actually I don&amp;rsquo;t apologize. As a fellow internet denizen, you are probably not new here.</description>
     </item>
     <item>
       <title>Archaeology and Computing</title>
-      <link>https://jaylittle.github.io/post/view/2014/2/archaeology-and-computing/</link>
+      <link>https://jaylittle.com/post/view/2014/2/archaeology-and-computing/</link>
       <pubDate>Tue, 04 Feb 2014 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2014/2/archaeology-and-computing/</guid>
+      <guid>https://jaylittle.com/post/view/2014/2/archaeology-and-computing/</guid>
       <description>Those of you who know me reasonably well, know that I enjoy tinkering with old software. As a developer I&amp;rsquo;ve always been fascinated with the evolution of software throughout the years. As a result I tend to collect old pieces of software. However 95% of this collection is electronic as I have tended to shy away from physical media. However not even this strong preference has been able to keep me wondering throughout the years, &amp;ldquo;What is happening to all of that old media?</description>
     </item>
     <item>
       <title>JPL Coding, Independence and Ethics</title>
-      <link>https://jaylittle.github.io/post/view/2013/12/jpl-coding-and-my-independence/</link>
+      <link>https://jaylittle.com/post/view/2013/12/jpl-coding-and-my-independence/</link>
       <pubDate>Fri, 13 Dec 2013 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2013/12/jpl-coding-and-my-independence/</guid>
+      <guid>https://jaylittle.com/post/view/2013/12/jpl-coding-and-my-independence/</guid>
       <description>So as some of you undoubtedly know, last January I decided to start working for myself. Fast forward to today and I am closing in on the end of my first year as an independent software developer. It has been quite a ride. This past year has been most educational and interesting. I hear you asking, &amp;ldquo;In what way?&amp;rdquo; Well for starters I got to take my &amp;ldquo;ivory tower&amp;rdquo; ethics through a trial by fire of sorts this year.</description>
     </item>
     <item>
       <title>The Feds &#43; Health Insurance &#43; CGI Federal &#43; Experian == A Fucking Nightmare</title>
-      <link>https://jaylittle.github.io/post/view/2013/10/the-feds-health-insurance-cms-federal-experian-a-fucking-nightmare/</link>
+      <link>https://jaylittle.com/post/view/2013/10/the-feds-health-insurance-cms-federal-experian-a-fucking-nightmare/</link>
       <pubDate>Thu, 10 Oct 2013 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2013/10/the-feds-health-insurance-cms-federal-experian-a-fucking-nightmare/</guid>
+      <guid>https://jaylittle.com/post/view/2013/10/the-feds-health-insurance-cms-federal-experian-a-fucking-nightmare/</guid>
       <description>So as most of you know, the health insurance exchanges for ACA (Affordable Care Act) went live on October 1st, 2013. Well at least in theory they did. When it comes to the exchanges states had two choices: Either implement their own exchange so that residents of that state could buy health insurance or let the federal government do it for you. At the end of the day, only 16 states decided to implement their own exchanges.</description>
     </item>
     <item>
       <title>Benefitfocus has gone public!</title>
-      <link>https://jaylittle.github.io/post/view/2013/9/benefitfocus-has-gone-public/</link>
+      <link>https://jaylittle.com/post/view/2013/9/benefitfocus-has-gone-public/</link>
       <pubDate>Wed, 18 Sep 2013 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2013/9/benefitfocus-has-gone-public/</guid>
+      <guid>https://jaylittle.com/post/view/2013/9/benefitfocus-has-gone-public/</guid>
       <description>Well this has certainly been a long time coming. It seems that Benefitfocus has finally gone public and the share price is skyrocketing. To my friends still there, I would like to say congratulations. Though I&amp;rsquo;m not sure why. Unless you are getting stock options, it doesn&amp;rsquo;t really mean all that much from a compensation standpoint. It does of course mean that your company has now begun the long infamous transition from a stable independent entity to a marionette whose strings are randomly tugged by hordes of idiotic investors.</description>
     </item>
     <item>
       <title>The Case for Disbanding the NSA</title>
-      <link>https://jaylittle.github.io/post/view/2013/9/the-case-for-disbanding-the-nsa/</link>
+      <link>https://jaylittle.com/post/view/2013/9/the-case-for-disbanding-the-nsa/</link>
       <pubDate>Fri, 06 Sep 2013 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2013/9/the-case-for-disbanding-the-nsa/</guid>
+      <guid>https://jaylittle.com/post/view/2013/9/the-case-for-disbanding-the-nsa/</guid>
       <description>Within the last 24 hours, we have learned that NSA has successfully circumvented the most popular forms of encryption in use on the Internet today. This revelation not only undermines the career of people like myself, who essentially work exclusively with web facing technologies within our applications and solutions, but it also undermines the future of the American public.
 How does this undermine the future of the American Public? Well that&amp;rsquo;s simple.</description>
     </item>
     <item>
       <title>Benefitfocus, IPOs and Offshoring</title>
-      <link>https://jaylittle.github.io/post/view/2013/4/benefitfocus-ipos-and-offshoring/</link>
+      <link>https://jaylittle.com/post/view/2013/4/benefitfocus-ipos-and-offshoring/</link>
       <pubDate>Mon, 01 Apr 2013 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2013/4/benefitfocus-ipos-and-offshoring/</guid>
+      <guid>https://jaylittle.com/post/view/2013/4/benefitfocus-ipos-and-offshoring/</guid>
       <description>As anybody who has read my resume knows, I used to work at a company called Benefitfocus. At some point I decided to move on. Now if you spend some time looking at Benefitfocus&amp;rsquo; website you will probably come away quizzically as according to the culture page there, I would be a great fit as an employee. Sadly, nothing could be further from the truth. Don&amp;rsquo;t get me wrong. Working at BF was a great experience.</description>
     </item>
     <item>
       <title>My Windows 8 Review</title>
-      <link>https://jaylittle.github.io/post/view/2012/10/my-windows-8-review/</link>
+      <link>https://jaylittle.com/post/view/2012/10/my-windows-8-review/</link>
       <pubDate>Wed, 31 Oct 2012 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2012/10/my-windows-8-review/</guid>
+      <guid>https://jaylittle.com/post/view/2012/10/my-windows-8-review/</guid>
       <description>Well for what it&amp;rsquo;s worth here is my own personal Windows 8 experience. I finally took the time to install Windows 8 on my System76 panp9 (Core I7, HD4000, Ivy Bridge) laptop. I have an MS Action Pack subscription so I&amp;rsquo;ve had access to the RTM bits for awhile, but just couldn&amp;rsquo;t be bothered until now. I installed Windows 8 (after using Clonezilla to backup my Arch Linux install of course).</description>
     </item>
     <item>
       <title>Code Monkey Manifesto</title>
-      <link>https://jaylittle.github.io/post/view/2012/7/code-monkey-manifesto/</link>
+      <link>https://jaylittle.com/post/view/2012/7/code-monkey-manifesto/</link>
       <pubDate>Thu, 19 Jul 2012 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2012/7/code-monkey-manifesto/</guid>
+      <guid>https://jaylittle.com/post/view/2012/7/code-monkey-manifesto/</guid>
       <description>For those of you not familiar with my resume, let me sum it up for you: I&amp;rsquo;ve been designing, developing, deploying and supporting software for 13 years. I&amp;rsquo;ve seen my fair share of failures but on the flip side, I&amp;rsquo;ve also seen more than my fair share of successes. I&amp;rsquo;d say when it comes right down to it, developing great software isn&amp;rsquo;t really that difficult. Above all else it has been my experience that the primary requirement one must fulfill in order to develop great software is that you have to care.</description>
     </item>
     <item>
       <title>Dear PBS Nightly News...</title>
-      <link>https://jaylittle.github.io/post/view/2011/6/dear-pbs-nightly-news/</link>
+      <link>https://jaylittle.com/post/view/2011/6/dear-pbs-nightly-news/</link>
       <pubDate>Thu, 02 Jun 2011 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2011/6/dear-pbs-nightly-news/</guid>
+      <guid>https://jaylittle.com/post/view/2011/6/dear-pbs-nightly-news/</guid>
       <description>Subject: In regards to your &amp;ldquo;Computer Hacking&amp;rdquo; story
 To whom it does concern,
 To start I would like to say: I&amp;rsquo;ve been a fan of PBS for years and for the most part I appreciate the dedication and the impartiality of the PBS News Hour staff. In addition I make my living working in IT and have a sizable level of experience in regards to Computer Security. However on a less congratulatory note, I just finished watching your &amp;ldquo;Computer Hacking&amp;rdquo; discussion that was broadcast on the PBS Nightly News on 2011/06/01 @ 6 PM EST and I was appalled.</description>
     </item>
     <item>
       <title>Local Boredom brought to you by me</title>
-      <link>https://jaylittle.github.io/post/view/2009/11/local-boredom-brought-to-you-by-me/</link>
+      <link>https://jaylittle.com/post/view/2009/11/local-boredom-brought-to-you-by-me/</link>
       <pubDate>Tue, 03 Nov 2009 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2009/11/local-boredom-brought-to-you-by-me/</guid>
+      <guid>https://jaylittle.com/post/view/2009/11/local-boredom-brought-to-you-by-me/</guid>
       <description>So apparently there is an election where I live in Greer today. And I don&amp;rsquo;t care. However when the father of one of the candidates came stumping through my neighborhood this weekend and handed me a brochure advertising his daughter&amp;rsquo;s candidacy, I couldn&amp;rsquo;t help but be struck by the level of nonsense it contained. For instance his daughters political party membership, views on important topics and stances and on issues relevant to Greer as a community were not included in this pamphlet.</description>
     </item>
     <item>
       <title>TiVO == Gestapo</title>
-      <link>https://jaylittle.github.io/post/view/2009/9/tivo-gestapo/</link>
+      <link>https://jaylittle.com/post/view/2009/9/tivo-gestapo/</link>
       <pubDate>Sat, 05 Sep 2009 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2009/9/tivo-gestapo/</guid>
+      <guid>https://jaylittle.com/post/view/2009/9/tivo-gestapo/</guid>
       <description>Wow. So today I finally signed up with DirectTV and their HD DVR service. Little did I know that my biggest source of drama here would be with TiVo. Back in Jan of 2009, I had canceled TiVo after my original 2 year commitment was up and tried out the Cable company&amp;rsquo;s DVR option. After about a month of suffering, we decided to move back to our low def TiVo (having already tried the TiVo HD and found that neither TiVo nor our cable company could/would get the CableCARD solution to work).</description>
     </item>
     <item>
       <title>Windows 7 is out</title>
-      <link>https://jaylittle.github.io/post/view/2009/7/windows-7-is-out/</link>
+      <link>https://jaylittle.com/post/view/2009/7/windows-7-is-out/</link>
       <pubDate>Sun, 26 Jul 2009 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2009/7/windows-7-is-out/</guid>
+      <guid>https://jaylittle.com/post/view/2009/7/windows-7-is-out/</guid>
       <description>Well, the day has finally come. Or it came a few days ago. Well technically it came on July 13th, but wasn&amp;rsquo;t announced until this Wednesday July 22nd. Windows 7 is done! And not only that, but the untouched RTM build straight from Microsoft is floating around out there in the wild. I can&amp;rsquo;t wait to get my keys via my Action Pack subscription next month. Though until then I&amp;rsquo;ve installed it with no key.</description>
     </item>
     <item>
       <title>Knick Knacks</title>
-      <link>https://jaylittle.github.io/post/view/2009/2/knick-knacks/</link>
+      <link>https://jaylittle.com/post/view/2009/2/knick-knacks/</link>
       <pubDate>Tue, 24 Feb 2009 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2009/2/knick-knacks/</guid>
+      <guid>https://jaylittle.com/post/view/2009/2/knick-knacks/</guid>
       <description>Hmmmm&amp;hellip; it&amp;rsquo;s been awhile hasn&amp;rsquo;t it? Well not only am I posting something to the site, I&amp;rsquo;ve also uploaded a slightly improved build of it along with adding a new default theme into the mix. I&amp;rsquo;ve been toying with the idea of a decent all black theme for awhile now and finally got around to throwing together something that works. Of course I&amp;rsquo;d be lying if I said that I came up with it all by myself.</description>
     </item>
     <item>
       <title>RIP Free Market</title>
-      <link>https://jaylittle.github.io/post/view/2008/11/rip-free-market/</link>
+      <link>https://jaylittle.com/post/view/2008/11/rip-free-market/</link>
       <pubDate>Mon, 24 Nov 2008 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2008/11/rip-free-market/</guid>
+      <guid>https://jaylittle.com/post/view/2008/11/rip-free-market/</guid>
       <description>So this weekend brings news that our wonderful government is planning on bailing out yet another bank. Really? I guess the fact that this tactic failed the first half dozen times or so doesn&amp;rsquo;t mean it won&amp;rsquo;t work this time around, right? Oh but wait despite what it sounds like there are some fresh tactics, only it&amp;rsquo;s not what we need but rather what the people who stand to lose the most actually want:</description>
     </item>
     <item>
       <title>Rack em, Stack em, Watch em fall</title>
-      <link>https://jaylittle.github.io/post/view/2008/9/rack-em-stack-em-watch-em-fall/</link>
+      <link>https://jaylittle.com/post/view/2008/9/rack-em-stack-em-watch-em-fall/</link>
       <pubDate>Tue, 30 Sep 2008 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2008/9/rack-em-stack-em-watch-em-fall/</guid>
+      <guid>https://jaylittle.com/post/view/2008/9/rack-em-stack-em-watch-em-fall/</guid>
       <description>Today the US Congress rejected the Financial Bailout Plan as put forward by the Bush Administration. While they are vowing to restructure the bill and get another vote going when they return from recess later in the week, I believe the idea has summarily died. The concept of bailing out the financial wizards who claimed that effectively turning debt into a form of currency via securities was risk-free is a disheartening concept to most.</description>
     </item>
     <item>
       <title>You Suck at Photoshop</title>
-      <link>https://jaylittle.github.io/post/view/2008/4/you-suck-at-photoshop/</link>
+      <link>https://jaylittle.com/post/view/2008/4/you-suck-at-photoshop/</link>
       <pubDate>Sat, 05 Apr 2008 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2008/4/you-suck-at-photoshop/</guid>
+      <guid>https://jaylittle.com/post/view/2008/4/you-suck-at-photoshop/</guid>
       <description>So ever since Tuesday, I&amp;rsquo;ve had some rough stomach problems. I&amp;rsquo;ll spare you the sloppy details, suffice to say that I&amp;rsquo;ve been spending most of this week at home trying to work my way through it all. Sometime in the last few days, I found a wonderful video series on YouTube called, &amp;ldquo;You Suck at PhotoShop&amp;rdquo;. This series of ten videos are essentially at their core, tutorials for how to use PhotoShop for advanced image manipulation.</description>
     </item>
     <item>
       <title>Get Flash You Stupid Hippie</title>
-      <link>https://jaylittle.github.io/post/view/2008/3/get-flash-you-stupid-hippie/</link>
+      <link>https://jaylittle.com/post/view/2008/3/get-flash-you-stupid-hippie/</link>
       <pubDate>Sat, 22 Mar 2008 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2008/3/get-flash-you-stupid-hippie/</guid>
+      <guid>https://jaylittle.com/post/view/2008/3/get-flash-you-stupid-hippie/</guid>
       <description>So I was doing a bit of surfing from my new server (see my previous post) and I happened to check out South Park Studios for an list of current South Park episodes, and I got this tasteful tidbit for my trouble:
 Now that is some funny shit. It&amp;rsquo;s good to see that South Park Studios really is designed in the same spirit as the show it showcases. That gave me a good laugh for the day.</description>
     </item>
     <item>
       <title>So long and thanks for all the processor cycles!</title>
-      <link>https://jaylittle.github.io/post/view/2008/3/so-long-and-thanks-for-all-the-processor-cycles/</link>
+      <link>https://jaylittle.com/post/view/2008/3/so-long-and-thanks-for-all-the-processor-cycles/</link>
       <pubDate>Thu, 20 Mar 2008 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2008/3/so-long-and-thanks-for-all-the-processor-cycles/</guid>
+      <guid>https://jaylittle.com/post/view/2008/3/so-long-and-thanks-for-all-the-processor-cycles/</guid>
       <description>So it has finally happened. What you say? My old server that I was using for everything here at home, has finally been replaced. No it didn&amp;rsquo;t break or fail in some way. After 5 years of good dedicated service (4.5 of which were trouble free), it was just time to move on to another box. Of course this had nothing to do with the fact that for this old Dual P4-Class Xeon box, upgrading the RAM from one gig to at least two gigs would cost me at least a thousand dollars.</description>
     </item>
     <item>
       <title>Tivo HD &#43; Charter Cable = Suckage</title>
-      <link>https://jaylittle.github.io/post/view/2008/2/tivo-hd-charter-cable-suckage/</link>
+      <link>https://jaylittle.com/post/view/2008/2/tivo-hd-charter-cable-suckage/</link>
       <pubDate>Fri, 01 Feb 2008 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2008/2/tivo-hd-charter-cable-suckage/</guid>
+      <guid>https://jaylittle.com/post/view/2008/2/tivo-hd-charter-cable-suckage/</guid>
       <description>Let&amp;rsquo;s start this post with a bit of background information: For starters, in late 2006, I purchased a Tivo Series 2 DVR and replaced my Cable Company&amp;rsquo;s PVR with it. Since it was a Series 2 DVR, I was no longer able to receive digital or HD cable stations, but that was okay because at the time having a PVR that actually worked correctly consistently (yes Moxi I am looking at you) was more important than high definition.</description>
     </item>
     <item>
       <title>An unexpected cache of stimpacks</title>
-      <link>https://jaylittle.github.io/post/view/2008/1/an-unexpected-cache-of-stimpacks/</link>
+      <link>https://jaylittle.com/post/view/2008/1/an-unexpected-cache-of-stimpacks/</link>
       <pubDate>Wed, 09 Jan 2008 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2008/1/an-unexpected-cache-of-stimpacks/</guid>
+      <guid>https://jaylittle.com/post/view/2008/1/an-unexpected-cache-of-stimpacks/</guid>
       <description>So it seems that I&amp;rsquo;m not the only retro-gamer out there wishing for more of the good old days of gaming. One of my all time favorite RPG series, Fallout is typically revered as a pinnacle of the CRPG experience. That having been said, it appears that an enterprising soul has taken it upon himself to add missing content that the devs cut and make a number of other mods to Fallout 2 and release them for public consumption:</description>
     </item>
     <item>
       <title>Gaming</title>
-      <link>https://jaylittle.github.io/post/view/2008/1/gaming/</link>
+      <link>https://jaylittle.com/post/view/2008/1/gaming/</link>
       <pubDate>Sun, 06 Jan 2008 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2008/1/gaming/</guid>
+      <guid>https://jaylittle.com/post/view/2008/1/gaming/</guid>
       <description>So of course I&amp;rsquo;m still gaming. Pretty decently too. Over the last year I managed to snag a Wii. The Wii is a pretty cool piece of equipment. However my mainline gaming interest has stayed with RPG gaming. Over the course of the last year I&amp;rsquo;ve played and beaten a number of games (some not for the first time either) such as all three Gothic games, Baldur&amp;rsquo;s Gate 1 (still working up to actually playing through 2), Neverwinter Nights 1 (almost finished but dropped at the end), Oblivion (Morrowind was better), KOTOR 2 (which was great until the last 4th of the game) as well as a number of other classics like Chrono Trigger.</description>
     </item>
     <item>
       <title>Here today, a forgotten Vista’ tomorrow</title>
-      <link>https://jaylittle.github.io/post/view/2007/2/here-today-a-forgotten-vista-tomorrow/</link>
+      <link>https://jaylittle.com/post/view/2007/2/here-today-a-forgotten-vista-tomorrow/</link>
       <pubDate>Sat, 24 Feb 2007 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2007/2/here-today-a-forgotten-vista-tomorrow/</guid>
+      <guid>https://jaylittle.com/post/view/2007/2/here-today-a-forgotten-vista-tomorrow/</guid>
       <description>Yeah it’s been awhile. I’ve been busy.
 I just finished spending a full month with the newly released Windows Vista and boy do I have quite a bit to say about it. To put a long story short, I’m now using Windows XP once again. As most of you imaginary readers know, Vista is in and of itself a culmination of over five years of effort on the part of Microsoft to follow up on their previous consumer OS release, Windows XP.</description>
     </item>
     <item>
       <title>Dead but not dying, Gone but not leaving.</title>
-      <link>https://jaylittle.github.io/post/view/2006/9/dead-but-not-dying-gone-but-not-leaving/</link>
+      <link>https://jaylittle.com/post/view/2006/9/dead-but-not-dying-gone-but-not-leaving/</link>
       <pubDate>Fri, 22 Sep 2006 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2006/9/dead-but-not-dying-gone-but-not-leaving/</guid>
+      <guid>https://jaylittle.com/post/view/2006/9/dead-but-not-dying-gone-but-not-leaving/</guid>
       <description>That title pretty much sums up the state of my website, does it not? I still keep an eye on it and obviously I have secured some form of hosting for it since moving into my first home, though I have yet to actually do anything with it. I guess it takes two ingredients to keep a site going: Hosting and somebody producing some sort of content.
 As you can imagine, I have been quite busy.</description>
     </item>
     <item>
       <title>Various bits and bytes</title>
-      <link>https://jaylittle.github.io/post/view/2006/5/various-bits-and-bytes/</link>
+      <link>https://jaylittle.com/post/view/2006/5/various-bits-and-bytes/</link>
       <pubDate>Wed, 24 May 2006 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2006/5/various-bits-and-bytes/</guid>
+      <guid>https://jaylittle.com/post/view/2006/5/various-bits-and-bytes/</guid>
       <description>I finally bought a house. Yeah I did it. Well I am going to do it. We will close on the house a week from today and begin moving in the following day. To say that my wife and I are excited is an understatement at best.
 That having been said, I have decided that I will likely close down this site for awhile. My life has become cluttered and as a result, many portions of it remain unkept like an old closet that is never opened.</description>
     </item>
     <item>
       <title>A moment of comtemplation regarding my experience as an Apple ibook owner</title>
-      <link>https://jaylittle.github.io/post/view/2005/9/a-moment-of-comtemplation-regarding-my-experience-as-an-apple-ibook-owner/</link>
+      <link>https://jaylittle.com/post/view/2005/9/a-moment-of-comtemplation-regarding-my-experience-as-an-apple-ibook-owner/</link>
       <pubDate>Thu, 01 Sep 2005 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2005/9/a-moment-of-comtemplation-regarding-my-experience-as-an-apple-ibook-owner/</guid>
+      <guid>https://jaylittle.com/post/view/2005/9/a-moment-of-comtemplation-regarding-my-experience-as-an-apple-ibook-owner/</guid>
       <description>I have finally decided that I will no longer purchase any Apple products from this point forward due to the continuing issues that I have experienced with my iBook over the last three years. I sent this email out earlier today to the address that is rumored to be monitored by a merry band of assistants working to seperate the garbage from the garbage for Mr. Steve Jobs, CEO of Apple Inc.</description>
     </item>
     <item>
       <title>A Door to Door Con Gone Wrong</title>
-      <link>https://jaylittle.github.io/post/view/2005/8/a-door-to-door-con-gone-wrong/</link>
+      <link>https://jaylittle.com/post/view/2005/8/a-door-to-door-con-gone-wrong/</link>
       <pubDate>Sat, 13 Aug 2005 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2005/8/a-door-to-door-con-gone-wrong/</guid>
+      <guid>https://jaylittle.com/post/view/2005/8/a-door-to-door-con-gone-wrong/</guid>
       <description>The wife and I went through a scary yet thought provoking experience earlier this evening. This email I sent to the perpetrator&amp;rsquo;s company, Chapel Sales Inc ought to explain it:
 To whom it does concern,
 I am writing this email in an effort to relay an experience I had with one of your representatives earlier this evening. Earlier this evening at around 7:30 PM EST, one of your representatives who identified himself as Clemson Cockfield knocked on the door of our residence.</description>
     </item>
     <item>
       <title>Honeymoons and all that stuff.</title>
-      <link>https://jaylittle.github.io/post/view/2004/12/honeymoons-and-all-that-stuff/</link>
+      <link>https://jaylittle.com/post/view/2004/12/honeymoons-and-all-that-stuff/</link>
       <pubDate>Thu, 02 Dec 2004 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2004/12/honeymoons-and-all-that-stuff/</guid>
+      <guid>https://jaylittle.com/post/view/2004/12/honeymoons-and-all-that-stuff/</guid>
       <description>As some of you may know&amp;hellip; Annette and I never actually got to go on a honeymoon when we got married. However one of our larger wedding presents was the promise of funding for such a venture should we ever find the time to do it. Well&amp;hellip; okay maybe finding the time is the wrong way to put it. You see both Annette and I were &amp;ldquo;unemployed&amp;rdquo; when we got married and as such we didn&amp;rsquo;t want to take the chance that we might spend additional money that we didn&amp;rsquo;t have on something that seemed purely optional at the time.</description>
     </item>
     <item>
       <title>Jay Little the world&#39;s #1 stud got hitched.</title>
-      <link>https://jaylittle.github.io/post/view/2004/4/jay-little-the-worlds-1-stud-got-hitched/</link>
+      <link>https://jaylittle.com/post/view/2004/4/jay-little-the-worlds-1-stud-got-hitched/</link>
       <pubDate>Mon, 12 Apr 2004 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2004/4/jay-little-the-worlds-1-stud-got-hitched/</guid>
+      <guid>https://jaylittle.com/post/view/2004/4/jay-little-the-worlds-1-stud-got-hitched/</guid>
       <description>Okay well maybe I wasn&amp;rsquo;t rated number one - but I was pretty darn close - let me tell you. Anyway as most of you likely already know, Annette and I got married yesterday on April 11th, 2004. I&amp;rsquo;ve written a little piece on the wedding and provided some photographs for the enjoyment of my audience. I&amp;rsquo;ve also uploaded a copy of the vows Annette and I wrote for ourselves in case anybody is interested.</description>
     </item>
     <item>
       <title>I&#39;m getting married today - w00t!</title>
-      <link>https://jaylittle.github.io/post/view/2004/4/im-getting-married-today-w00t/</link>
+      <link>https://jaylittle.com/post/view/2004/4/im-getting-married-today-w00t/</link>
       <pubDate>Sun, 11 Apr 2004 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2004/4/im-getting-married-today-w00t/</guid>
+      <guid>https://jaylittle.com/post/view/2004/4/im-getting-married-today-w00t/</guid>
       <description>Thats right. Today is my wedding day. Annette and I decided to get married earlier this week and thanks in a large part to my family we have a nice little ceremony planned for today. This is the best thing that has ever happened to me - so hopefully this is the beginning of an upswing for me (and my site of course). Anyway we aren&amp;rsquo;t really going on a honeymoon per se due to money related issues.</description>
     </item>
     <item>
       <title>Lots of times on my hands to play with.... CDE?!?!</title>
-      <link>https://jaylittle.github.io/post/view/2004/1/lots-of-times-on-my-hands-to-play-with-cde/</link>
+      <link>https://jaylittle.com/post/view/2004/1/lots-of-times-on-my-hands-to-play-with-cde/</link>
       <pubDate>Fri, 16 Jan 2004 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2004/1/lots-of-times-on-my-hands-to-play-with-cde/</guid>
+      <guid>https://jaylittle.com/post/view/2004/1/lots-of-times-on-my-hands-to-play-with-cde/</guid>
       <description>A friend of mine Bruce who works at Cornell University in New York - just gave me one of their own DEC Alphastation 250 4/266 boxes to play with. This machine was originally built in 1993 and believe it or not it still manages to work after 11 years. After futzing around for a bit - I finally got the thing to boot. Hell I even managed to login into it (only after cracking the root password though).</description>
     </item>
     <item>
       <title>A sign of a true geek:  Major Uptime</title>
-      <link>https://jaylittle.github.io/post/view/2003/10/a-sign-of-a-true-geek-major-uptime/</link>
+      <link>https://jaylittle.com/post/view/2003/10/a-sign-of-a-true-geek-major-uptime/</link>
       <pubDate>Mon, 20 Oct 2003 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2003/10/a-sign-of-a-true-geek-major-uptime/</guid>
+      <guid>https://jaylittle.com/post/view/2003/10/a-sign-of-a-true-geek-major-uptime/</guid>
       <description>There is a lot of stuff that geeks care about that don&amp;rsquo;t really interest the rest of the populace. Somewhere within that laundry list of topics is one entitled, &amp;ldquo;Major Uptime&amp;rdquo;. Most people turn off their computers every night. Most geeks do not. Why? Simply put - there is some sort of odd geek pride associated with being able to operate a computer stably for a long a period of time.</description>
     </item>
     <item>
       <title>Feline Diabetes for one please. Ching! Ching!</title>
-      <link>https://jaylittle.github.io/post/view/2003/6/feline-diabetes-for-one-please-ching-ching/</link>
+      <link>https://jaylittle.com/post/view/2003/6/feline-diabetes-for-one-please-ching-ching/</link>
       <pubDate>Thu, 26 Jun 2003 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2003/6/feline-diabetes-for-one-please-ching-ching/</guid>
+      <guid>https://jaylittle.com/post/view/2003/6/feline-diabetes-for-one-please-ching-ching/</guid>
       <description>I recently became aware of a rather startling fact that most people are likely not aware of. Felines (Cats for the laymen fools among you) can get diabetes. How did I find this out you ask&amp;hellip;.
 Well I came home from work about two weeks ago to find my fav cat Tommy hiding behind the couch. He wouldn&amp;rsquo;t even crawl out for this food call (which if you&amp;rsquo;ve seen the size of this cat - isn&amp;rsquo;t normal).</description>
     </item>
     <item>
       <title>Dual Xeon Goodness</title>
-      <link>https://jaylittle.github.io/post/view/2003/2/dual-xeon-goodness/</link>
+      <link>https://jaylittle.com/post/view/2003/2/dual-xeon-goodness/</link>
       <pubDate>Tue, 18 Feb 2003 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2003/2/dual-xeon-goodness/</guid>
+      <guid>https://jaylittle.com/post/view/2003/2/dual-xeon-goodness/</guid>
       <description>Well after months of planning and years of dreaming it has finally happened&amp;hellip; I have built the dream machine. It cost $3000+ dollars but it is finally here. Yes it is an SMP box and as you may have guessed based on the title - it uses Xeon processors. Here are the raw specs:
 2x 2.6ghz Xeons 1024mb PC800 RDRAM 70 gigs harddrive capacity ATI Radeon 9700 Pro Memorex DVD+RW 2.</description>
     </item>
     <item>
       <title>The March of Gentoo continues...</title>
-      <link>https://jaylittle.github.io/post/view/2003/1/the-march-of-gentoo-continues/</link>
+      <link>https://jaylittle.com/post/view/2003/1/the-march-of-gentoo-continues/</link>
       <pubDate>Wed, 15 Jan 2003 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2003/1/the-march-of-gentoo-continues/</guid>
+      <guid>https://jaylittle.com/post/view/2003/1/the-march-of-gentoo-continues/</guid>
       <description>As some of my loyal readers (whom I could probably count on a single hand) may remember - I switched my Linux box over to Gentoo a few months back. I was so enthralled over Gentoo that I decided to actually make a post on my site here about how it was literally the &amp;ldquo;second coming of christ&amp;rdquo;. Well okay maybe I am exaggerating&amp;hellip;
 Anyway like grains of sand through the hourglass the saga of Gentoo continues.</description>
     </item>
     <item>
       <title>Gentoo Linux is da Bomb</title>
-      <link>https://jaylittle.github.io/post/view/2002/10/gentoo-linux-is-da-bomb/</link>
+      <link>https://jaylittle.com/post/view/2002/10/gentoo-linux-is-da-bomb/</link>
       <pubDate>Sun, 27 Oct 2002 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2002/10/gentoo-linux-is-da-bomb/</guid>
+      <guid>https://jaylittle.com/post/view/2002/10/gentoo-linux-is-da-bomb/</guid>
       <description>Well I&amp;rsquo;ve finally concluded my latest round of Linux upgrades. I originally planned on migrating my Linux box to RH Linux 8 but apparent kernel related incompatibilities prevented me from doing so. So in my desperation I decided to give good ole Gentoo Linux a shot. For those of you who don&amp;rsquo;t know - Gentoo is a highly customizable version of Linux that (1) requires you to install the system manually and (2) requires you to compile the system software and libraries from scratch.</description>
     </item>
     <item>
       <title>Erik&#39;s New Face - Is it really all that new?</title>
-      <link>https://jaylittle.github.io/post/view/2002/8/eriks-new-face-is-it-really-all-that-new/</link>
+      <link>https://jaylittle.com/post/view/2002/8/eriks-new-face-is-it-really-all-that-new/</link>
       <pubDate>Sat, 03 Aug 2002 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2002/8/eriks-new-face-is-it-really-all-that-new/</guid>
+      <guid>https://jaylittle.com/post/view/2002/8/eriks-new-face-is-it-really-all-that-new/</guid>
       <description>In true journalistic style I have gone to great lengths to acquire further photographic evidence regarding the appearance of Erik Jeffries in his youth. In a world wide exclusive here are the fake and real photographs being placed on display side by side for your viewing pleasure. Now lets be honest - can you tell the difference between these two hunks? I sure cant.
 Are you getting hot and bothered yet?</description>
     </item>
     <item>
       <title>Anybody Remember Erik?</title>
-      <link>https://jaylittle.github.io/post/view/2002/7/anybody-remember-erik/</link>
+      <link>https://jaylittle.com/post/view/2002/7/anybody-remember-erik/</link>
       <pubDate>Wed, 17 Jul 2002 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2002/7/anybody-remember-erik/</guid>
+      <guid>https://jaylittle.com/post/view/2002/7/anybody-remember-erik/</guid>
       <description>So does anybody remember Erik Jeffries, the lucky guy who got to post a story on my site because of some stupid superbowl bet that he won? His Story
 Anyway it seems that some member of his family managed to obtain a picture which resembles what he looked like in his early twenties. Since I&amp;rsquo;m such a &amp;ldquo;good friend&amp;rdquo; of the family I thought I would share it with the world:</description>
     </item>
     <item>
       <title>TrueType Fonts and Linux</title>
-      <link>https://jaylittle.github.io/post/view/2002/6/truetype-fonts-and-linux/</link>
+      <link>https://jaylittle.com/post/view/2002/6/truetype-fonts-and-linux/</link>
       <pubDate>Mon, 10 Jun 2002 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2002/6/truetype-fonts-and-linux/</guid>
+      <guid>https://jaylittle.com/post/view/2002/6/truetype-fonts-and-linux/</guid>
       <description>Well I just finished spending the last hour getting decent font support set up on my Linux box. Having been recently inspired by a thread on Arstechnica detailing how to set up nice looking fonts in Linux (Redhat 7.3 uses the crappiest ones by default) - I decided to waste a little time and go at it.
 Needless to say, I was successful :-) The irony is that I&amp;rsquo;m unable to see the effects on my own site because the default neowin theme uses Helvetica and that font doesn&amp;rsquo;t appear to have been &amp;ldquo;upgraded&amp;rdquo; in its appearance.</description>
     </item>
     <item>
       <title>Into the depths of Linux</title>
-      <link>https://jaylittle.github.io/post/view/2002/4/into-the-depths-of-linux/</link>
+      <link>https://jaylittle.com/post/view/2002/4/into-the-depths-of-linux/</link>
       <pubDate>Wed, 24 Apr 2002 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2002/4/into-the-depths-of-linux/</guid>
+      <guid>https://jaylittle.com/post/view/2002/4/into-the-depths-of-linux/</guid>
       <description>Well over the last few weeks I&amp;rsquo;ve had the opportunity to install and really attempt to get in depth with Linux. Though I&amp;rsquo;ve been using it on and off for years - I&amp;rsquo;ve never dedicated an entire machine to it. I must say its been quite an interesting adventure thus far. While Linux can be difficult to configure and requires a major time investment - it has quickly become clear that its amazing what you can download for free.</description>
     </item>
     <item>
       <title>The Patriots win the Superbowl - By Erik Jeffreys</title>
-      <link>https://jaylittle.github.io/post/view/2002/2/the-patriots-win-the-superbowl-by-erik-jeffreys/</link>
+      <link>https://jaylittle.com/post/view/2002/2/the-patriots-win-the-superbowl-by-erik-jeffreys/</link>
       <pubDate>Mon, 04 Feb 2002 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2002/2/the-patriots-win-the-superbowl-by-erik-jeffreys/</guid>
+      <guid>https://jaylittle.com/post/view/2002/2/the-patriots-win-the-superbowl-by-erik-jeffreys/</guid>
       <description>Yes the patriots have won the superbowl despite everybody thinking otherwise. In fact I was so sure that this wouldn&amp;rsquo;t happen - I made a bet with a work friend of mine. The bet was that if the Patriots won - we could post something to my site. Well it appears that something quite hot froze over and that they did - so here is Erik&amp;rsquo;s message to the world:</description>
     </item>
     <item>
       <title>Linux Bugs</title>
-      <link>https://jaylittle.github.io/post/view/2001/10/linux-bugs/</link>
+      <link>https://jaylittle.com/post/view/2001/10/linux-bugs/</link>
       <pubDate>Tue, 30 Oct 2001 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2001/10/linux-bugs/</guid>
+      <guid>https://jaylittle.com/post/view/2001/10/linux-bugs/</guid>
       <description>So last night I made a decision regarding the future of Linux on my new computer. It wasnt an easy decision but it was one that had to be made considering the circumstances.
 I&amp;rsquo;m done playing with Linux for the time being. None of the latest distributions seems to feature full support for my exotic i850 P4/RDRAM system configuration even though its getting to be about a year old now. (The Config - not the machine)</description>
     </item>
     <item>
       <title>The Mozilla MSN Mystery</title>
-      <link>https://jaylittle.github.io/post/view/2001/10/the-mozilla-msn-mystery/</link>
+      <link>https://jaylittle.com/post/view/2001/10/the-mozilla-msn-mystery/</link>
       <pubDate>Fri, 26 Oct 2001 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2001/10/the-mozilla-msn-mystery/</guid>
+      <guid>https://jaylittle.com/post/view/2001/10/the-mozilla-msn-mystery/</guid>
       <description>Well well well&amp;hellip; on the day that Microsoft releases XP it seems that they have also released the &amp;lsquo;updated&amp;rsquo; version of MSN. It seems that this new version of MSN refuses to function correctly with non Microsoft browsers.
 After playing with this problem for a bit - I finally figured out how to modify the user agent in mozilla so that it would look as Internet Explorer to MSN. You can see the comparison between MSN on Mozilla 9.</description>
     </item>
     <item>
       <title>Digital Cable</title>
-      <link>https://jaylittle.github.io/post/view/2001/10/digital-cable/</link>
+      <link>https://jaylittle.com/post/view/2001/10/digital-cable/</link>
       <pubDate>Thu, 18 Oct 2001 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2001/10/digital-cable/</guid>
+      <guid>https://jaylittle.com/post/view/2001/10/digital-cable/</guid>
       <description>So my roommate Lewis and I got our new Digital Cable service hooked up yesterday. For $100/month we get the cable modem service along with the expanded Digital Cable service. Its really a great deal. There are hundreds of channels and loads of stuff to watch. In fact if you are not careful you&amp;rsquo;ll spend more time looking for stuff to watch than actually watching it.
 There are lots of movie channels too.</description>
     </item>
     <item>
       <title>Email Address Changeover</title>
-      <link>https://jaylittle.github.io/post/view/2001/10/email-address-changeover/</link>
+      <link>https://jaylittle.com/post/view/2001/10/email-address-changeover/</link>
       <pubDate>Wed, 17 Oct 2001 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2001/10/email-address-changeover/</guid>
+      <guid>https://jaylittle.com/post/view/2001/10/email-address-changeover/</guid>
       <description>Alright - I&amp;rsquo;ve finally begun to undertake the &amp;ldquo;enormous&amp;rdquo; task of changing my email address from darkgamorck@home.com to jaylittle@jaylittle.com
 Needless to say - I&amp;rsquo;ve only just begun to realize just how much of a hassle this will be. But hopefully I can make things a little easier on myself by asking anybody who reads this item to change my email address to the jaylittle.com (assuming anybody actually cares :-)
 Thanks alot,</description>
     </item>
     <item>
       <title>www.jaylittle.com</title>
-      <link>https://jaylittle.github.io/post/view/2001/10/wwwjaylittlecom/</link>
+      <link>https://jaylittle.com/post/view/2001/10/wwwjaylittlecom/</link>
       <pubDate>Thu, 11 Oct 2001 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2001/10/wwwjaylittlecom/</guid>
+      <guid>https://jaylittle.com/post/view/2001/10/wwwjaylittlecom/</guid>
       <description>Thats right guys! My favorite domain just opened up for registration and I snagged it right up! No more stupid @home IP address, no more weird port numbers, and no more slow upload speed caps imposed by my friends on at @home!
 This will also help my resume to look a little better of course. Now that my site looks somewhat professional because I have a domain name instead of some half baked scheme using a crappy old computer, an unstable IP address, and an alternate port :-)</description>
     </item>
     <item>
       <title>GE and Pentium 4s</title>
-      <link>https://jaylittle.github.io/post/view/2001/10/ge-and-pentium-4s/</link>
+      <link>https://jaylittle.com/post/view/2001/10/ge-and-pentium-4s/</link>
       <pubDate>Thu, 04 Oct 2001 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2001/10/ge-and-pentium-4s/</guid>
+      <guid>https://jaylittle.com/post/view/2001/10/ge-and-pentium-4s/</guid>
       <description>Yeppo - everything with GE worked out fine. My contract has been renewed (with the other Agency) and things are looking good in that respect.
 I built a new Pentium 4 based box a few weeks ago. The specs of it are 1.7 ghz P4/640 MB RDRAM/70 gigs/Geforce3. Its definitely a sweet little box. Surprisingly some of the biggest performance increase came through the Seti@Home program. On the P3 1ghz box, it would normally take me 8 to 9 nine hours to complete a given work unit.</description>
     </item>
     <item>
       <title>WilL WRiTe COdE fOR fOod</title>
-      <link>https://jaylittle.github.io/post/view/2001/9/will-write-code-for-food/</link>
+      <link>https://jaylittle.com/post/view/2001/9/will-write-code-for-food/</link>
       <pubDate>Mon, 10 Sep 2001 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2001/9/will-write-code-for-food/</guid>
+      <guid>https://jaylittle.com/post/view/2001/9/will-write-code-for-food/</guid>
       <description>Well it looks like things are coming to a head with my job situation. As some of you probably know, I currently work as a contractor for GE Power Systems doing web development work. My contract was originally for a time period of six months - needless to say I will have been working there a year come September 20th.
 The problem is that GE has a 1 year limitation when it comes to contractors under their &amp;ldquo;employ&amp;rdquo;.</description>
     </item>
     <item>
       <title>Windows XP Pre-Order</title>
-      <link>https://jaylittle.github.io/post/view/2001/9/windows-xp-preorder/</link>
+      <link>https://jaylittle.com/post/view/2001/9/windows-xp-preorder/</link>
       <pubDate>Mon, 03 Sep 2001 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2001/9/windows-xp-preorder/</guid>
+      <guid>https://jaylittle.com/post/view/2001/9/windows-xp-preorder/</guid>
       <description>You can preorder your copy of Windows XP today from CompUSA today. I went ahead and picked up my full version of XP Pro tonight for about $315.00 (including tax and shipping charges).
 Some of you probably thought I was joking when I said I was planning on buying XP. After all why would an &amp;ldquo;unofficial&amp;rdquo; beta tester bother paying for a piece of software?
 Because its damn good - period.</description>
     </item>
     <item>
       <title>Windows XP Build 2600 (Pre RTM)</title>
-      <link>https://jaylittle.github.io/post/view/2001/8/windows-xp-build-2600-pre-rtm/</link>
+      <link>https://jaylittle.com/post/view/2001/8/windows-xp-build-2600-pre-rtm/</link>
       <pubDate>Tue, 21 Aug 2001 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/post/view/2001/8/windows-xp-build-2600-pre-rtm/</guid>
+      <guid>https://jaylittle.com/post/view/2001/8/windows-xp-build-2600-pre-rtm/</guid>
       <description>Thats right kiddies. Windows XP RTM has almost hit in the form of Pre RTM build 2600. While its likely that the RTM build will in fact be the same (with the 180 day evaluation restrictions removed) - it should be signed off later this week - as early as tommorrow.
 I just got it installed and so far so good. It seems just as good as RC2 (which seemed to alleviate most of my major issues with XP).</description>
     </item>
     <item>
       <title>About</title>
-      <link>https://jaylittle.github.io/article/view/about/</link>
+      <link>https://jaylittle.com/article/view/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/article/view/about/</guid>
+      <guid>https://jaylittle.com/article/view/about/</guid>
       <description>Who The content in this site typically has something to do with me, Jay Little. As you may have guessed, I own and run this site. On this site you can find out a lot of things about me by just poking your head about and seeing what pops up. If you have any questions please feel free to email me and I assure you that I will make an attempt to address your concerns.</description>
     </item>
     <item>
       <title>Doris Godby&#39;s Chicken and Rice</title>
-      <link>https://jaylittle.github.io/article/view/recipes/chicken-and-rice/</link>
+      <link>https://jaylittle.com/article/view/recipes/chicken-and-rice/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/article/view/recipes/chicken-and-rice/</guid>
+      <guid>https://jaylittle.com/article/view/recipes/chicken-and-rice/</guid>
       <description>Ingredients List 1 1/2 Cups Of Water
 3/4 Cup of Uncooked Long Grain Rice
 1 Can (10.5 oz) Cream of Chicken Soup
@@ -1170,16 +1170,16 @@ Mix cautiously but relatively well using a fork</description>
     </item>
     <item>
       <title>Jay and Annette Wedding 2004</title>
-      <link>https://jaylittle.github.io/article/view/jay-and-annette-wedding-2004/</link>
+      <link>https://jaylittle.com/article/view/jay-and-annette-wedding-2004/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/article/view/jay-and-annette-wedding-2004/</guid>
+      <guid>https://jaylittle.com/article/view/jay-and-annette-wedding-2004/</guid>
       <description>Introduction I&amp;rsquo;ve finally decided to settle down a bit and as a result I&amp;rsquo;ve gotten married. Who was the lucky (unlucky?) girl you ask? Well it was none other than my long time girlfriend, the love of my life, and truly my soulmate: Annette Louise Prescott. I know that I haven&amp;rsquo;t spoken about Annette very much on the site so here is a little bit of the backstory for those of you who don&amp;rsquo;t already know:</description>
     </item>
     <item>
       <title>Jays Award Winning Mac and Cheese</title>
-      <link>https://jaylittle.github.io/article/view/recipes/mac-and-cheese/</link>
+      <link>https://jaylittle.com/article/view/recipes/mac-and-cheese/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/article/view/recipes/mac-and-cheese/</guid>
+      <guid>https://jaylittle.com/article/view/recipes/mac-and-cheese/</guid>
       <description>Ingredients List 1 cup uncooked rotini pasta (it holds cheese better - don&amp;rsquo;t lie, you wish you had thought of it now)
 2 tablespoons salted butter (we are all gonna die, may as well enjoy it)
 1 1/2 cups hand grated mix of Parmesan, Asiago and Gouda cheese (yes I really mean hand grated from three premium blocks of cheese - dont buy that crap pre-grated nonsense either)
@@ -1187,9 +1187,9 @@ Mix cautiously but relatively well using a fork</description>
     </item>
     <item>
       <title>Meme&#39;s Decadent Peanut Butter Pie</title>
-      <link>https://jaylittle.github.io/article/view/recipes/peanut-butter-pie/</link>
+      <link>https://jaylittle.com/article/view/recipes/peanut-butter-pie/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/article/view/recipes/peanut-butter-pie/</guid>
+      <guid>https://jaylittle.com/article/view/recipes/peanut-butter-pie/</guid>
       <description>Ingredients List 8 ounces of Cream Cheese
 1 cup of Peanut Butter
 Creamy, not that Chunky Garbage
@@ -1203,9 +1203,9 @@ Pro Tip: Do it with a real Kitchen-Aid mixer, anything else is just you lying to
     </item>
     <item>
       <title>Meme&#39;s Sausage Balls</title>
-      <link>https://jaylittle.github.io/article/view/recipes/sausage-balls/</link>
+      <link>https://jaylittle.com/article/view/recipes/sausage-balls/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/article/view/recipes/sausage-balls/</guid>
+      <guid>https://jaylittle.com/article/view/recipes/sausage-balls/</guid>
       <description>Ingredients List 1 pound of Sausage
 3 1/2 cups of Bisquick
 10 ounces of shredded cheese
@@ -1216,9 +1216,9 @@ Bake at 350 degrees for 15 to 20 minutes</description>
     </item>
     <item>
       <title>Pa Little&#39;s Christmas Fudge</title>
-      <link>https://jaylittle.github.io/article/view/recipes/fudge/</link>
+      <link>https://jaylittle.com/article/view/recipes/fudge/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/article/view/recipes/fudge/</guid>
+      <guid>https://jaylittle.com/article/view/recipes/fudge/</guid>
       <description>Ingredients List 4 cups sugar
 1 can (13 oz) evaporated milk
 2 sticks marg. or butter (1 cup or 1/2 lb)
@@ -1234,9 +1234,9 @@ Seriously if it burns or doesn&amp;rsquo;t boil, the fudge will suck</descriptio
     </item>
     <item>
       <title>Pa Little&#39;s Tuna Casserole</title>
-      <link>https://jaylittle.github.io/article/view/recipes/tuna-casserole/</link>
+      <link>https://jaylittle.com/article/view/recipes/tuna-casserole/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/article/view/recipes/tuna-casserole/</guid>
+      <guid>https://jaylittle.com/article/view/recipes/tuna-casserole/</guid>
       <description>Ingredients List 3 Cups Uncooked Elbow Macaroni
 1 Can (6 oz) Tuna
 1 Can (10.5 oz) Cream of Mushroom Soup
@@ -1252,17 +1252,17 @@ Mix Mushroom soup, 1 soup can of milk, and drained tuna in a casserole dish</des
     </item>
     <item>
       <title>Recipes</title>
-      <link>https://jaylittle.github.io/article/view/recipes/</link>
+      <link>https://jaylittle.com/article/view/recipes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/article/view/recipes/</guid>
+      <guid>https://jaylittle.com/article/view/recipes/</guid>
       <description>Why? The purpose of this article is to document various recipes that have been floating around in my family and Annette&amp;rsquo;s family for years now. Some of these were handwritten, some of them were typed up in a more formal fashion, but all of them were essentially kept within the family. Until now.
 Annette and I have seen a lot of family members pass over the last few years and making some of their recipes has helped to keep the memory of these departed family members alive so to speak.</description>
     </item>
     <item>
       <title>Resume</title>
-      <link>https://jaylittle.github.io/resume/</link>
+      <link>https://jaylittle.com/resume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jaylittle.github.io/resume/</guid>
+      <guid>https://jaylittle.com/resume/</guid>
       <description>Objective My objective is to write the most useful, efficient and secure software possible to solve the problem at hand.
 Skills Applications Visual Studio Code / 2022, Rider Databases SQL Server, SQLite, DB2, MariaDB / MySQL Operating Systems Linux, Windows, MacOS Back End C#, .NET 8.x, ASP.NET, Git, REST, APIs, Docker Front End HTML, CSS, Bootstrap, Javascript, Vue.js, React.js, AngularJS (1.x) Work History Paylocity
 Software Engineer (Remote)
