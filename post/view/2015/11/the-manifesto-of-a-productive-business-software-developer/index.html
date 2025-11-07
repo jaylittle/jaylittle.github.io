@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
 <meta name="description" content="The other day I got asked by my boss&rsquo; boss to share the &ldquo;secret sauce&rdquo; behind my productivity at work.  This was an odd moment for me as over the last 17 years of my of professional life, nobody has ever asked me to do that.  But it did get me thinking about it and that has led to me making a few notes on the subject that I&rsquo;ve decided to share with the world.">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/post/view/2015/11/the-manifesto-of-a-productive-business-software-developer/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a5781257de4197b8e3d54346acdf1dd55a9ba4cb91dcace192fc1baf228c08b5.css" integrity="sha256-pXgSV95Bl7jj1UNGrN8d1VqbpMuR3KzhkvwbryKMCLU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -39,23 +39,38 @@
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
+            .toc {
+                background: var(--entry);
             }
+        }
 
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
             }
         }
 
     </style>
-</noscript><meta property="og:url" content="https://jaylittle.com/post/view/2015/11/the-manifesto-of-a-productive-business-software-developer/">
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://jaylittle.com/post/view/2015/11/the-manifesto-of-a-productive-business-software-developer/">
   <meta property="og:site_name" content="Jay Little">
   <meta property="og:title" content="The Manifesto of a Productive Business Software Developer">
   <meta property="og:description" content="The other day I got asked by my boss’ boss to share the “secret sauce” behind my productivity at work. This was an odd moment for me as over the last 17 years of my of professional life, nobody has ever asked me to do that. But it did get me thinking about it and that has led to me making a few notes on the subject that I’ve decided to share with the world.">
@@ -123,20 +138,8 @@
 }
 </script>
 </head>
-
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
+<body id="top">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
@@ -205,7 +208,7 @@
     <h1 class="post-title entry-hint-parent">
       The Manifesto of a Productive Business Software Developer
     </h1>
-    <div class="post-meta"><span title='2015-11-03 00:00:00 +0000 UTC'>November 3, 2015</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;Jay Little
+    <div class="post-meta"><span title='2015-11-03 00:00:00 +0000 UTC'>November 3, 2015</span>&nbsp;·&nbsp;<span>7 min</span>&nbsp;·&nbsp;<span>Jay Little</span>
 
 </div>
   </header> 
@@ -215,38 +218,33 @@
 </ol>
 <blockquote>
 <p>All too often the developers I work with only have a skin deep knowledge of the product they are tasked with augmenting and supporting.  This will only hurt your productivity in the long run.  One of the reasons I like to take on as much work as I do when I start some place new is so that I can get familiar with the code base that I&rsquo;m going to be working with.  The bigger the code base is, the more commitment you&rsquo;ll need to come to terms with it.</p>
-<p>Nevertheless, developing an understanding of how things work in a code base will heighten your ability to change how things work in that code base.  It will also allow you to fix bugs in a more efficient manner as well as reduce the risk of you creating new bugs.  Take the time to explore and dig deep when you are working on something in an unfamiliar section of code.  Don&rsquo;t get hung up on the &ldquo;could haves&rdquo;, &ldquo;would haves&rdquo; and the &ldquo;should haves&rdquo;.  The code base is what it is.  Bitching won&rsquo;t fix it.  Only good old fashioned incremental hard work has a snowball&rsquo;s chance of pulling it off.</p>
-</blockquote>
+<p>Nevertheless, developing an understanding of how things work in a code base will heighten your ability to change how things work in that code base.  It will also allow you to fix bugs in a more efficient manner as well as reduce the risk of you creating new bugs.  Take the time to explore and dig deep when you are working on something in an unfamiliar section of code.  Don&rsquo;t get hung up on the &ldquo;could haves&rdquo;, &ldquo;would haves&rdquo; and the &ldquo;should haves&rdquo;.  The code base is what it is.  Bitching won&rsquo;t fix it.  Only good old fashioned incremental hard work has a snowball&rsquo;s chance of pulling it off.</p></blockquote>
 <ol start="2">
 <li><strong>Your customer expects timely results.</strong></li>
 </ol>
 <blockquote>
 <p>In my experience those results usually manifest in the form of releases and updates.  On a longer running project you may fall back to demos and test environments as a way of showcasing progress.  Nevertheless, every day should result in measurable progress on any problem you are spending time solving.  Remember we are business software developers and business isn&rsquo;t content to wait for the &ldquo;nerdery&rdquo; to get its shit together.</p>
-<p>This advice becomes even more prudent when faced with bugs.  Bugs are defects in the prior work you have delivered to a customer.  Defects cannot be tolerated.  If you receive a bug report for software that is in production or software that is about to go to production, resolving that bug report should be your absolute highest priority.  Co-workers have marveled at and criticized the zeal I display when I get into bug hunting mode.  The truth is that I consider bugs to be a sign of failure and wiping them from existence is vital for my mental health, at least for me.  Obviously your mileage may vary here.</p>
-</blockquote>
+<p>This advice becomes even more prudent when faced with bugs.  Bugs are defects in the prior work you have delivered to a customer.  Defects cannot be tolerated.  If you receive a bug report for software that is in production or software that is about to go to production, resolving that bug report should be your absolute highest priority.  Co-workers have marveled at and criticized the zeal I display when I get into bug hunting mode.  The truth is that I consider bugs to be a sign of failure and wiping them from existence is vital for my mental health, at least for me.  Obviously your mileage may vary here.</p></blockquote>
 <ol start="3">
 <li><strong>Don&rsquo;t get caught up in ivory tower bullshit.</strong></li>
 </ol>
 <blockquote>
 <p>In our industry it is all too common to hear people rattle on about the latest &ldquo;design pattern&rdquo;, &ldquo;testing framework&rdquo; or &ldquo;development methodology&rdquo;.  Here&rsquo;s a bit of truth for you: I don&rsquo;t know a single design pattern.  I simply don&rsquo;t give a shit.  As far as automation goes, I believe that at best it offers some limited value in particular situations, but I&rsquo;m by no means a convert.  My only development methodology is this: &ldquo;Release good software in a timely manner&rdquo;.</p>
 <p>Obviously this advice flies in the face of certain principles that guide our profession.  But you aren&rsquo;t going to stand out by following the herd like some kind of sheep.  If you want to be a better developer, you&rsquo;ve got to focus on the results.  The best way to do that is to stay focused on the problem that your customer has tasked you with solving.  Be sure you have taken the time to properly define that problem up front.  Remember that regardless of what new technology or concept comes along, software developers were solving business problems long before it came along.  While we scoff at ancient languages like COBOL or even old fashioned procedural programming concepts, the reality is that &ldquo;It&rsquo;s a poor craftsman that blames his tools&rdquo; or so the old adage goes.</p>
-<p>To summarize: If your approach doesn&rsquo;t directly benefit the customer, you are likely doing it wrong.</p>
-</blockquote>
+<p>To summarize: If your approach doesn&rsquo;t directly benefit the customer, you are likely doing it wrong.</p></blockquote>
 <ol start="4">
 <li><strong>You are the customer&rsquo;s last resort.</strong></li>
 </ol>
 <blockquote>
 <p>In other words, treat every issue as if it was something that either you yourself fix or it doesn&rsquo;t get fixed at all.  I&rsquo;ve spent a substantial portion of my career billing people by the hour for my coding services both directly and indirectly.  I&rsquo;ve legitimately found myself in this situation many times.  This mentality is something that a lot of developers lack in my experience as deep down they know they can just call in the Calvary and get them deal with it.  I say that with the full realization that I&rsquo;m usually the Calvary.</p>
-<p>There is real value in conditioning yourself to rely upon yourself.  This doesn&rsquo;t mean you shouldn&rsquo;t ask for help in certain situations but my expectation is that a seasoned/senior developer should be able to produce a viable solution for every single problem they are presented with.  It might not always be the absolute best solution, but then again, the job of the rest of us is to lend a helping hand when that situation arises.  If you at least take a real crack at the problem and produce a proposed solution before asking for help, you are definitely on the right path here.</p>
-</blockquote>
+<p>There is real value in conditioning yourself to rely upon yourself.  This doesn&rsquo;t mean you shouldn&rsquo;t ask for help in certain situations but my expectation is that a seasoned/senior developer should be able to produce a viable solution for every single problem they are presented with.  It might not always be the absolute best solution, but then again, the job of the rest of us is to lend a helping hand when that situation arises.  If you at least take a real crack at the problem and produce a proposed solution before asking for help, you are definitely on the right path here.</p></blockquote>
 <ol start="5">
 <li><strong>Locally test.</strong></li>
 </ol>
 <blockquote>
 <p>Does this one seem kind of obvious?  Good.  It should.  I&rsquo;ve worked with a lot of developers over the years and the dirty little secret that most of them share is that they don&rsquo;t locally test their work.  They just code and deploy.  Once I had a co-worker at a previous job compliment me on the motivation I displayed for getting our application running locally because &ldquo;nobody else here has it setup locally&rdquo;.  I was literally floored.  That means all of the other developers aren&rsquo;t testing their work before they push it.  That&rsquo;s absolutely ludicrous in my mind.</p>
 <p>This extends to bug fixing as well.  When I receive a bug report, the first order of business in my mind is to try and replicate that bug in my local environment.  Once I can replicate the failure, I can verify the fix.  None of this is rocket science.  When it comes to quality in software development I&rsquo;ve found over the years that you either put in the time up front, or you&rsquo;ll put ten times as much effort into fixing the bugs after the code goes into production.  Do you really want to skimp on this up front?  I sure as hell don&rsquo;t.</p>
-<p>To finish up, I&rsquo;d like to offer up a caveat of sorts.  Regardless of the advice that I provided, at the end of the day practice makes perfect.  My father handed me my first software development book at the impressionable age of six and let me goof around on the family Apple IIe with it.  That&rsquo;s where I got my start.  If you do the math, since I just turned 36, that means I&rsquo;ve been writing code for around 30 years now.  It started off as a hobby but for the last 17 years it&rsquo;s put bread on my table.  The long and short of it is that I&rsquo;ve been doing this a very long time.  Longer than most people seem to realize.  I&rsquo;m a firm believer that when children are taught skills and consistently develop those skills throughout the course of their life, they typically become masters of those skills.</p>
-</blockquote>
+<p>To finish up, I&rsquo;d like to offer up a caveat of sorts.  Regardless of the advice that I provided, at the end of the day practice makes perfect.  My father handed me my first software development book at the impressionable age of six and let me goof around on the family Apple IIe with it.  That&rsquo;s where I got my start.  If you do the math, since I just turned 36, that means I&rsquo;ve been writing code for around 30 years now.  It started off as a hobby but for the last 17 years it&rsquo;s put bread on my table.  The long and short of it is that I&rsquo;ve been doing this a very long time.  Longer than most people seem to realize.  I&rsquo;m a firm believer that when children are taught skills and consistently develop those skills throughout the course of their life, they typically become masters of those skills.</p></blockquote>
 <p>In any event, I&rsquo;ve found that the best way to improve a particular skill is to keep using that skill and employing a reasonable level of self criticism.  Given enough time and effort, your skills and productivity will only improve short of a severe mental blockade of some sort.  Bottom line: Keep on keeping on.</p>
 
 
@@ -275,9 +273,14 @@
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -318,11 +321,12 @@
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

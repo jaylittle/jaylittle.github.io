@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
 <meta name="description" content="I&rsquo;ve spent a lot of time debating on whether or not I should even write this blog post.  Truth is that I was this close to just letting the entire thing fade into oblivion but after searching out some reading material on the subject, I decided that I needed to write about this, if only to remind future Jay what he just escaped from.  Future Jay has a tendency to forget important things like that.">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/post/view/2022/12/pop-goes-the-gaslighting-weasel/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a5781257de4197b8e3d54346acdf1dd55a9ba4cb91dcace192fc1baf228c08b5.css" integrity="sha256-pXgSV95Bl7jj1UNGrN8d1VqbpMuR3KzhkvwbryKMCLU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -39,23 +39,38 @@
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
+            .toc {
+                background: var(--entry);
             }
+        }
 
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
             }
         }
 
     </style>
-</noscript><meta property="og:url" content="https://jaylittle.com/post/view/2022/12/pop-goes-the-gaslighting-weasel/">
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://jaylittle.com/post/view/2022/12/pop-goes-the-gaslighting-weasel/">
   <meta property="og:site_name" content="Jay Little">
   <meta property="og:title" content="Pop Goes the Gaslighting Weasel">
   <meta property="og:description" content="I’ve spent a lot of time debating on whether or not I should even write this blog post. Truth is that I was this close to just letting the entire thing fade into oblivion but after searching out some reading material on the subject, I decided that I needed to write about this, if only to remind future Jay what he just escaped from. Future Jay has a tendency to forget important things like that.">
@@ -123,20 +138,8 @@
 }
 </script>
 </head>
-
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
+<body id="top">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
@@ -205,7 +208,7 @@
     <h1 class="post-title entry-hint-parent">
       Pop Goes the Gaslighting Weasel
     </h1>
-    <div class="post-meta"><span title='2022-12-28 00:00:00 +0000 UTC'>December 28, 2022</span>&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Jay Little
+    <div class="post-meta"><span title='2022-12-28 00:00:00 +0000 UTC'>December 28, 2022</span>&nbsp;·&nbsp;<span>6 min</span>&nbsp;·&nbsp;<span>Jay Little</span>
 
 </div>
   </header> 
@@ -217,17 +220,14 @@
 <p>But sometimes the truth cannot be avoided.  Sometimes we need to document these things so that in the future we will be less likely to forget them.  Sometimes we have to express ourselves in the hopes that other people in similar situations might be able to find a way to break the vicious cycle.  Our collective pain and suffering cannot all be for naught.  That&rsquo;s why I&rsquo;m writing this.  In addition after reading <a href="https://www.verywellmind.com/is-someone-gaslighting-you-4147470">an article on gaslighting</a> this morning, I realized that this boss literally did all of these things to me on a regular basis for years on end.  I am a victim of their emotional abuse.</p>
 <p>I refuse to act like a victim by burying my head in the sand while being silently grateful for my personal reprieve however.  No, on the contrary, we are going to dig into this a bit.  I am going to do that by explaining how I experienced some of the major components of gaslighting mentioned in the article above.</p>
 <blockquote>
-<p>People who engage in gaslighting are often habitual and pathological liars and frequently exhibit narcissistic tendencies. It is typical for them to blatantly lie and never back down or change their stories, even when you call them out or provide proof of their deception.</p>
-</blockquote>
+<p>People who engage in gaslighting are often habitual and pathological liars and frequently exhibit narcissistic tendencies. It is typical for them to blatantly lie and never back down or change their stories, even when you call them out or provide proof of their deception.</p></blockquote>
 <p>My boss lied all of the time.  Despite the fact that it was relatively easy to know they were lying, they didn&rsquo;t care.  If you called them out on it, they&rsquo;d either ignore that, change the subject or somehow try to turn it back around on you.  They didn&rsquo;t just do this to me.  They did it to everybody who works with them.</p>
 <blockquote>
-<p>When you ask a someone who gaslights a question or call them out for something they did or said, they may change the subject by asking a question instead of responding to the issue at hand. This not only throws off your train of thought but causes you to question the need to press a matter when they don&rsquo;t feel the need to respond.</p>
-</blockquote>
+<p>When you ask a someone who gaslights a question or call them out for something they did or said, they may change the subject by asking a question instead of responding to the issue at hand. This not only throws off your train of thought but causes you to question the need to press a matter when they don&rsquo;t feel the need to respond.</p></blockquote>
 <p>My boss did this constantly.  There were at least half a dozen incidents in the last four and a half years alone when I was ready to quit because of some stunt they had recently pulled.  When we met in person to discuss it and suddenly we&rsquo;d end up discussing very different topics and when it was over I&rsquo;d find myself wondering whether or not I had been making a mountain out of molehill.</p>
 <p>In fact no discussion with this person ever went the way I wanted it to.  That&rsquo;s because they were experts at distracting and herding my attention into whichever direction they preferred.  In the last four and a half years, I didn&rsquo;t get a single raise or performance review out of my boss despite me asking for these things on a regular basis.  But I did find myself questioning my value and always wondering if I was worthy enough to keep on working there.  Turns out, this was by design.</p>
 <blockquote>
-<p>A person who gaslights tends to retell stories in ways that are in their favor. For instance, if your partner shoved you against the wall and you are discussing it later, they may twist the story and say you stumbled and they tried to steady you, which is what caused you to fall into the wall.</p>
-</blockquote>
+<p>A person who gaslights tends to retell stories in ways that are in their favor. For instance, if your partner shoved you against the wall and you are discussing it later, they may twist the story and say you stumbled and they tried to steady you, which is what caused you to fall into the wall.</p></blockquote>
 <p>This is one of the things that resonates with me most.  Mostly because I had worked with my boss a lot over the course of many years so we had worked together on a rather extensive list of projects.  One thing I had started to notice over the last few years is that no matter how bad some of these projects had gone, My bosses memories of them always seem to paint the project in a very positive light whereas my memories were usually more negative.</p>
 <p>Meanwhile the ex-clients generally had very negative memories too.  I know because I was still working with some of them on my own and we&rsquo;d occasionally chat about the past.   Of course now I realize that that my boss was painting themselves in a positive light.  In every story they tell, they are the hero.  There can be no other version of it.  At least not in their deeply disturbed worldview.</p>
 <p>Needless to say, I won&rsquo;t be working with this person again.  Especially now that I have fully realized how I was being treated.  I&rsquo;m also not going to belabor this issue or go too deeply into specifics as I know that despite protests saying otherwise, this person deeply desires any kind of open line of communication with me.  I will not give them that.</p>
@@ -259,9 +259,14 @@
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -302,11 +307,12 @@
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

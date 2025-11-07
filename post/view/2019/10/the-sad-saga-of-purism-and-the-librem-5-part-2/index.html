@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
 Sometime in the midst of the Aspen shipping window I began to casually express skepticism on the Purism subreddit.  In some of my comments I posited the theory that Purism had hit rough financial straits.  I also further theorized that Purism was using PR to generate more revenue in the form of pre-orders for the device so that the project could continue.  Within a day of posting this, I was contacted by an informed ex-employee of Purism. They gave me their credentials which I verified using information they provided and information I was able to dig up.  My source has decided not to go public yet at the time of publication.  This means that while I have verified their identity, I cannot share any information you would require to do so.">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/post/view/2019/10/the-sad-saga-of-purism-and-the-librem-5-part-2/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a5781257de4197b8e3d54346acdf1dd55a9ba4cb91dcace192fc1baf228c08b5.css" integrity="sha256-pXgSV95Bl7jj1UNGrN8d1VqbpMuR3KzhkvwbryKMCLU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -40,23 +40,38 @@ Sometime in the midst of the Aspen shipping window I began to casually express s
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
+            .toc {
+                background: var(--entry);
             }
+        }
 
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
             }
         }
 
     </style>
-</noscript><meta property="og:url" content="https://jaylittle.com/post/view/2019/10/the-sad-saga-of-purism-and-the-librem-5-part-2/">
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://jaylittle.com/post/view/2019/10/the-sad-saga-of-purism-and-the-librem-5-part-2/">
   <meta property="og:site_name" content="Jay Little">
   <meta property="og:title" content="The Sad Saga of Purism and the Librem 5 : Part 2">
   <meta property="og:description" content="This post marks the second in my series about the sad saga of Purism and the Librem 5. If you haven’t read the first post yet, I highly recommend that you click here. Give it at least a good skim before reading this one as it contains important background information that is required to appreciate this one.
@@ -126,20 +141,8 @@ Sometime in the midst of the Aspen shipping window I began to casually express s
 }
 </script>
 </head>
-
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
+<body id="top">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
@@ -208,7 +211,7 @@ Sometime in the midst of the Aspen shipping window I began to casually express s
     <h1 class="post-title entry-hint-parent">
       The Sad Saga of Purism and the Librem 5 : Part 2
     </h1>
-    <div class="post-meta"><span title='2019-10-25 00:00:00 +0000 UTC'>October 25, 2019</span>&nbsp;·&nbsp;8 min&nbsp;·&nbsp;Jay Little
+    <div class="post-meta"><span title='2019-10-25 00:00:00 +0000 UTC'>October 25, 2019</span>&nbsp;·&nbsp;<span>8 min</span>&nbsp;·&nbsp;<span>Jay Little</span>
 
 </div>
   </header> 
@@ -241,8 +244,7 @@ Sometime in the midst of the Aspen shipping window I began to casually express s
 <li>
 <p>There are a lot of great people working at Purism who are not in any way aware of these issues.  Todd has structured the company in such a way that employees can be segregated and isolated.  In addition most of the work force is remote, so this makes it very easy to keep people out of the loop.</p>
 </li>
-</ol>
-</blockquote>
+</ol></blockquote>
 <p>Now, let&rsquo;s go over what publicly accessible information can be used to help us at least partially verify these claims.</p>
 <ol>
 <li>
@@ -302,9 +304,14 @@ Sometime in the midst of the Aspen shipping window I began to casually express s
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -345,11 +352,12 @@ Sometime in the midst of the Aspen shipping window I began to casually express s
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

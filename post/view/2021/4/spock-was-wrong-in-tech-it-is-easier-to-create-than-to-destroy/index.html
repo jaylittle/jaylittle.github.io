@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
 <meta name="description" content="I assume most of you didn&rsquo;t already know this, so I&rsquo;m going to clarify it up front.  One of my favorite sci-fi trilogies is comprised of Star Trek II: The Wrath of Khan, Star Trek III: The Search for Spock and Star Trek IV: The Voyage Home.  Obviously they weren&rsquo;t meant to stand alone as a trilogy as they are three movies plucked out of a larger group of films, but I don&rsquo;t care.  They share a coherent story arc between them which begins with the second film and is resolved at the end of the fourth film.  There are parts of these movies that inspire much debate among Trekkies, but as a whole, short of a few exceptions like the Matrix trilogy, they are my favorites.">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/post/view/2021/4/spock-was-wrong-in-tech-it-is-easier-to-create-than-to-destroy/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a5781257de4197b8e3d54346acdf1dd55a9ba4cb91dcace192fc1baf228c08b5.css" integrity="sha256-pXgSV95Bl7jj1UNGrN8d1VqbpMuR3KzhkvwbryKMCLU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -39,23 +39,38 @@
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
+            .toc {
+                background: var(--entry);
             }
+        }
 
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
             }
         }
 
     </style>
-</noscript><meta property="og:url" content="https://jaylittle.com/post/view/2021/4/spock-was-wrong-in-tech-it-is-easier-to-create-than-to-destroy/">
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://jaylittle.com/post/view/2021/4/spock-was-wrong-in-tech-it-is-easier-to-create-than-to-destroy/">
   <meta property="og:site_name" content="Jay Little">
   <meta property="og:title" content="Spock Was Wrong: In Tech it is Easier to Create than to Destroy">
   <meta property="og:description" content="I assume most of you didn’t already know this, so I’m going to clarify it up front. One of my favorite sci-fi trilogies is comprised of Star Trek II: The Wrath of Khan, Star Trek III: The Search for Spock and Star Trek IV: The Voyage Home. Obviously they weren’t meant to stand alone as a trilogy as they are three movies plucked out of a larger group of films, but I don’t care. They share a coherent story arc between them which begins with the second film and is resolved at the end of the fourth film. There are parts of these movies that inspire much debate among Trekkies, but as a whole, short of a few exceptions like the Matrix trilogy, they are my favorites.">
@@ -123,20 +138,8 @@
 }
 </script>
 </head>
-
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
+<body id="top">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
@@ -205,7 +208,7 @@
     <h1 class="post-title entry-hint-parent">
       Spock Was Wrong: In Tech it is Easier to Create than to Destroy
     </h1>
-    <div class="post-meta"><span title='2021-04-05 00:00:00 +0000 UTC'>April 5, 2021</span>&nbsp;·&nbsp;8 min&nbsp;·&nbsp;Jay Little
+    <div class="post-meta"><span title='2021-04-05 00:00:00 +0000 UTC'>April 5, 2021</span>&nbsp;·&nbsp;<span>8 min</span>&nbsp;·&nbsp;<span>Jay Little</span>
 
 </div>
   </header> 
@@ -215,8 +218,7 @@
 <p>McCoy: But, dear Lord, do you think we&rsquo;re intelligent enough to&hellip; Suppose, what if this thing were used where life already exists?</p>
 <p>Spock: It would destroy such life in favour of its new matrix.</p>
 <p>McCoy: It&rsquo;s new matrix? &hellip;Do you have you any idea what you&rsquo;re saying?</p>
-<p>Spock: I was not attempting to evaluate its moral implications, Doctor. As a matter of cosmic history, it has always been easier to destroy than to create.</p>
-</blockquote>
+<p>Spock: I was not attempting to evaluate its moral implications, Doctor. As a matter of cosmic history, it has always been easier to destroy than to create.</p></blockquote>
 <p>Spocks final sentence has always struck me as rather poignant and I&rsquo;ve carried it with me over the years as a reminder.  But as a reminder of what?  I honestly do not know.  As of late, I have spent a lot of time thinking about the reverse trend in technology in which nothing ever seems to really die or go away.  In fact if you take a hard, honest and broad look at tech in general, what you&rsquo;ll see very much resembles the diagrams we were shown of the fossil records in school.  Only in this case those dinosaurs didn&rsquo;t die off, they just got buried by the new stuff.</p>
 <p>Tech is much like that.  We all talk about cutting edge web stuff and mobile tech, while overtly ignoring the army of older tech still in service which is dutifully performing some duty or another.  Virtually nobody is learning COBOL in school now, yet it drives a wide variety of systems that society and corporations rely upon.  When I was getting my associate degree in the late 90s, I actually took two semesters of COBOL as part of that program and I hated every minute of it.  It was an obtuse, wordy and limiting language.  Yet they were teaching it because local employers were hiring COBOL programmers straight out of school.  I also spent a semester with RPG which is far less prevalent than COBOL yet it still persists as well.</p>
 <p>A year ago I ported an old FORTRAN program for my employer into ASP.NET Core C# and even though my ability to read FORTRAN is terrible, I managed to get the job done by spending a lot of time reading documentation.  Despite the terrible nature of the code and the brittle nature of the data structures it contained, I came away impressed by FORTRANs ability to process and perform mathmatical operations against wide swaths of data contained within arrays in a very simple and concise fashion.  This isn&rsquo;t something that we value in modern languages as we generally don&rsquo;t spend a lot of time working with basic arrays.  Nevertheless I acquired some appreciation for some of the unique things FORTRAN brought to the table.  In any event, I completed a line by line port of the program which not only replicates the results of the original program but it also fixes some of the overflow related bugs present in the original version.  It is worth noting that while Python is generally considered to be the heir apparent to FORTRAN, I find this to be comical as Python&rsquo;s track record with math is less than great and as a language it leaves a lot to be desired.</p>
@@ -254,9 +256,14 @@
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -297,11 +304,12 @@
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +13,7 @@ To whom it does concern,
 I am writing this email in an effort to relay an experience I had with one of your representatives earlier this evening.  Earlier this evening at around 7:30 PM EST, one of your representatives who identified himself as Clemson Cockfield knocked on the door of our residence.  After explaining his purpose and showing us a list of magazine subscriptions, we decided that we were not interested.  However Clemson had told us that he was trying to raise money to purchase the books he needed for his college education so we decided to provide him with a ten dollar donation in the form of a check.   After asking for a glass of water, Clemson left the premises.">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/post/view/2005/8/a-door-to-door-con-gone-wrong/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a5781257de4197b8e3d54346acdf1dd55a9ba4cb91dcace192fc1baf228c08b5.css" integrity="sha256-pXgSV95Bl7jj1UNGrN8d1VqbpMuR3KzhkvwbryKMCLU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -42,23 +42,38 @@ I am writing this email in an effort to relay an experience I had with one of yo
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
+            .toc {
+                background: var(--entry);
             }
+        }
 
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
             }
         }
 
     </style>
-</noscript><meta property="og:url" content="https://jaylittle.com/post/view/2005/8/a-door-to-door-con-gone-wrong/">
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://jaylittle.com/post/view/2005/8/a-door-to-door-con-gone-wrong/">
   <meta property="og:site_name" content="Jay Little">
   <meta property="og:title" content="A Door to Door Con Gone Wrong">
   <meta property="og:description" content="The wife and I went through a scary yet thought provoking experience earlier this evening. This email I sent to the perpetrator’s company, Chapel Sales Inc ought to explain it:
@@ -131,20 +146,8 @@ I am writing this email in an effort to relay an experience I had with one of yo
 }
 </script>
 </head>
-
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
+<body id="top">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
@@ -213,7 +216,7 @@ I am writing this email in an effort to relay an experience I had with one of yo
     <h1 class="post-title entry-hint-parent">
       A Door to Door Con Gone Wrong
     </h1>
-    <div class="post-meta"><span title='2005-08-13 00:00:00 +0000 UTC'>August 13, 2005</span>&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Jay Little
+    <div class="post-meta"><span title='2005-08-13 00:00:00 +0000 UTC'>August 13, 2005</span>&nbsp;·&nbsp;<span>6 min</span>&nbsp;·&nbsp;<span>Jay Little</span>
 
 </div>
   </header> 
@@ -238,8 +241,7 @@ I am writing this email in an effort to relay an experience I had with one of yo
 </ol>
 <p>We appreciate your time and we would appreciate a response.  We have every intent of pressing charges against Mr. Cockfield whom we were informed was already on probation.  My wife and I would like to strongly urge you to sever all ties with this individual in an effort to clear up any misconceptions that may have been generated here this evening.  For your information we have also forwarded a copy of this report to the Better Business Bureau as well as the National Field Sales Association (both organizations that you are part of).</p>
 <p>Sincerely,</p>
-<p>Jay and Annette Little</p>
-</blockquote>
+<p>Jay and Annette Little</p></blockquote>
 <p>What an experience.  While Mr. Cockfield is definitely spending the night in a cell, I can&rsquo;t help but to wonder whether or not we will experience any form of retaliation.  Seeing that he was on probation, this rather small charge will likely end up sending him back to whatever institution he had somehow avoided previously.  We do intend to follow through and make absolutely sure that justice is done.  After seeing that he had in fact modified our check (previous this we were just going to let him go), we decided to push the point from a legal standpoint.</p>
 <p>A word to the wise:  If anybody from Chapel Sales comes knocking on your door, ask them to politely leave (don&rsquo;t be gruff as the officers indicated they also have a reputation for vandalism when it comes to negative responses).  Anybody who comes to your door offering to sell something, ought to be taken with a grain of salt especially given the wired world we live in today.  Identity Theft has occurred with far less information than is available on the typical check.  From this point forward I think the wife and I won&rsquo;t be speaking much less buying anything from door to door salesmen if we can at all help it.</p>
 
@@ -269,9 +271,14 @@ I am writing this email in an effort to relay an experience I had with one of yo
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -312,11 +319,12 @@ I am writing this email in an effort to relay an experience I had with one of yo
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

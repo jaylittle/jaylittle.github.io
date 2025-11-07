@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
 <meta name="description" content="So in light of the exceptionally serious posts that have graced the front page of this site over the last month I have decided to do something a little different today.  Consider this my official attempt to remind you all that I am actually capable of doing something other than bitching about the behavior of corporations and people.  The topic of conversation today will be the MiSTer and why I&rsquo;m absolutely enthralled with it.">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/post/view/2019/11/paradise-reclaimed-retro-gaming-fpgas-and-the-mister/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a5781257de4197b8e3d54346acdf1dd55a9ba4cb91dcace192fc1baf228c08b5.css" integrity="sha256-pXgSV95Bl7jj1UNGrN8d1VqbpMuR3KzhkvwbryKMCLU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -39,23 +39,38 @@
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
+            .toc {
+                background: var(--entry);
             }
+        }
 
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
             }
         }
 
     </style>
-</noscript><meta property="og:url" content="https://jaylittle.com/post/view/2019/11/paradise-reclaimed-retro-gaming-fpgas-and-the-mister/">
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://jaylittle.com/post/view/2019/11/paradise-reclaimed-retro-gaming-fpgas-and-the-mister/">
   <meta property="og:site_name" content="Jay Little">
   <meta property="og:title" content="Paradise Reclaimed: Retro Gaming, FPGAs and the MiSTer">
   <meta property="og:description" content="So in light of the exceptionally serious posts that have graced the front page of this site over the last month I have decided to do something a little different today. Consider this my official attempt to remind you all that I am actually capable of doing something other than bitching about the behavior of corporations and people. The topic of conversation today will be the MiSTer and why I’m absolutely enthralled with it.">
@@ -123,20 +138,8 @@
 }
 </script>
 </head>
-
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
+<body id="top">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
@@ -205,7 +208,7 @@
     <h1 class="post-title entry-hint-parent">
       Paradise Reclaimed: Retro Gaming, FPGAs and the MiSTer
     </h1>
-    <div class="post-meta"><span title='2019-11-16 00:00:00 +0000 UTC'>November 16, 2019</span>&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Jay Little
+    <div class="post-meta"><span title='2019-11-16 00:00:00 +0000 UTC'>November 16, 2019</span>&nbsp;·&nbsp;<span>6 min</span>&nbsp;·&nbsp;<span>Jay Little</span>
 
 </div>
   </header> 
@@ -214,8 +217,7 @@
 <p>MiSTer is effectively a collection of non-mass produced add on boards designed to interface with a specific Single Board Computer known as the <a href="http://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&amp;CategoryNo=167&amp;No=1046">Terasic DE10-Nano</a>.  By a traditional SBC measuring stick it appears to be relatively weak, as it is only equipped with a relatively low speed dual core ARM processor and a gigabyte of RAM.   However the real thing that it brings to the table is the FPGA chip it comes with.  That chip along with the amazing community around this board form the core of what makes this project so amazing.</p>
 <p>So what is an FPGA?  Well this <a href="https://www.xilinx.com/products/silicon-devices/fpga/what-is-an-fpga.html">this website</a> gives a pretty good answer, so lets start there:</p>
 <blockquote>
-<p>Field Programmable Gate Arrays (FPGAs) are semiconductor devices that are based around a matrix of configurable logic blocks (CLBs) connected via programmable interconnects. FPGAs can be reprogrammed to desired application or functionality requirements after manufacturing.</p>
-</blockquote>
+<p>Field Programmable Gate Arrays (FPGAs) are semiconductor devices that are based around a matrix of configurable logic blocks (CLBs) connected via programmable interconnects. FPGAs can be reprogrammed to desired application or functionality requirements after manufacturing.</p></blockquote>
 <p>The basic take away here is that an FPGA chip can be dynamically configured on a hardware level to act as another piece of hardware.  In the case of the MiSTer this capability is being used to emulate chips present within retro computers, consoles and arcade machines to great effect.  So why should anybody care?  What makes this better than a Raspberry Pi when it comes to emulation?  Well to be blunt, the MiSTer is using hardware to emulate these retro machines rather than software.  This has several advantages and a few disadvantages.</p>
 <p>For starters the emulation tends to be of a much higher fidelity on the MiSTer when compared to traditional software based emulators.  Not all software based emulators suffer from this, notably emulators like Higan/BSNES that go out of their way to provide stunningly accurate emulation.  The problem with those software solutions is that require relatively high powered hardware in order to run them effectively.  On the flip side, the MiSTer doesn&rsquo;t require a whole lot of power at all.</p>
 <p>Secondly emulating retro hardware via hardware rather than software allows one to reduce the lag present in the typical software based emulation experience.  This is something most people don&rsquo;t even notice, because they haven&rsquo;t used the real hardware in so long.  I was one of those people.  My first time playing a game like Super Mario Brothers on the MiSTer was like a breath of fresh air.  I suddenly realized that I hadn&rsquo;t actually lost all of my reflexes for these games over the last 20 years, but instead I&rsquo;ve just been getting screwed over by input lag.</p>
@@ -251,9 +253,14 @@
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -294,11 +301,12 @@
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

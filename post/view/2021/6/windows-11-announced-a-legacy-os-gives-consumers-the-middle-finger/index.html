@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
 Now if you are a frequent reader, you know that I wholeheartedly believe that Windows is a Legacy Operating System. The core of my reasoning can be understood by quoting a single part of the post:">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/post/view/2021/6/windows-11-announced-a-legacy-os-gives-consumers-the-middle-finger/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a5781257de4197b8e3d54346acdf1dd55a9ba4cb91dcace192fc1baf228c08b5.css" integrity="sha256-pXgSV95Bl7jj1UNGrN8d1VqbpMuR3KzhkvwbryKMCLU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -40,23 +40,38 @@ Now if you are a frequent reader, you know that I wholeheartedly believe that Wi
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
+            .toc {
+                background: var(--entry);
             }
+        }
 
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
             }
         }
 
     </style>
-</noscript><meta property="og:url" content="https://jaylittle.com/post/view/2021/6/windows-11-announced-a-legacy-os-gives-consumers-the-middle-finger/">
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://jaylittle.com/post/view/2021/6/windows-11-announced-a-legacy-os-gives-consumers-the-middle-finger/">
   <meta property="og:site_name" content="Jay Little">
   <meta property="og:title" content="Windows 11 Announced: A Legacy OS Gives Consumers The Middle Finger">
   <meta property="og:description" content="As some of you may have heard, yesterday Microsoft announced the upcoming release of Windows 11. As an early build had leaked last week and Microsoft had dropped a number of hints this did not shock anybody in particular. What was rather shocking was how little Microsoft seems to give a shit about the normal everyday average computer user.
@@ -126,20 +141,8 @@ Now if you are a frequent reader, you know that I wholeheartedly believe that Wi
 }
 </script>
 </head>
-
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
+<body id="top">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
@@ -208,7 +211,7 @@ Now if you are a frequent reader, you know that I wholeheartedly believe that Wi
     <h1 class="post-title entry-hint-parent">
       Windows 11 Announced: A Legacy OS Gives Consumers The Middle Finger
     </h1>
-    <div class="post-meta"><span title='2021-06-25 00:00:00 +0000 UTC'>June 25, 2021</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;Jay Little
+    <div class="post-meta"><span title='2021-06-25 00:00:00 +0000 UTC'>June 25, 2021</span>&nbsp;·&nbsp;<span>7 min</span>&nbsp;·&nbsp;<span>Jay Little</span>
 
 </div>
   </header> 
@@ -223,15 +226,13 @@ that made the upgrade worth it beyond a few technical changes such as
 faster boot up times. Most of it&rsquo;s new fangled features such as support
 for touch, Metro/Modern apps and the app store were absolute garbage.
 In fact, even the current incarnations of these features in Windows 10
-are garbage. Virtually nothing has improved on any of these fronts.</p>
-</blockquote>
+are garbage. Virtually nothing has improved on any of these fronts.</p></blockquote>
 <p>Windows 11 is clearly not only continuing this tradition but doubling down on it the most obscene fashion. &ldquo;How so?&rdquo; I hear you ask. Well lets start with the <a href="https://docs.microsoft.com/en-us/windows/compatibility/windows-11/">system requirements</a>:</p>
 <blockquote>
 <ul>
 <li>System firmware: Trusted Platform Module (TPM) version 2.0</li>
 <li>Graphics card: Compatible with DirectX 12 or later with WDDM 2.0 driver</li>
-</ul>
-</blockquote>
+</ul></blockquote>
 <p>So while most of what we are going to talk about is the TPM module, lets briefly touch on the DirectX 12 requirement first. This requirement is absurd. Short of gamers and high end niches of professionals (video / graphic editors / engineers) there is absolutely no reason for any user to care about DirectX 12. It brings nothing to the table for the vast majority of people using Windows.</p>
 <p>What this requirement will do is turn millions of functioning computers into useless piles of e-waste once support for Windows 10 expires in 2025. This is unconscionable and Microsoft should be reprimanded by the entire world for such a callous decision. Note: I did not call it self serving because honestly I have no fucking clue why they are insisting on this requirement. The reasons for it are very unclear.</p>
 <p>Okay, so now let&rsquo;s talk about the TPM module. This requirement is the real kicker and just like the DirectX 12 requirement it will turn millions of perfectly functioning computers into piles of useless e-waste. Ok I hear you asking, &ldquo;What the hell is a TPM module?&rdquo;</p>
@@ -273,9 +274,14 @@ are garbage. Virtually nothing has improved on any of these fronts.</p>
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -316,11 +322,12 @@ are garbage. Virtually nothing has improved on any of these fronts.</p>
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

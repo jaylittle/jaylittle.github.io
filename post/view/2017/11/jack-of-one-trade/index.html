@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
 <meta name="description" content="I recently discovered that a virtual Windows server I was running had been hacked.  I was being paid to run it as part of an arrangement with a long time client of mine.  This server ran Windows Server 2008 R2 and though it was rarely used, it was configured to automatically update when required.  The only service it exposed to the internet was RDP over TCP/IP port 3392 instead of the default 3389.">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/post/view/2017/11/jack-of-one-trade/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a5781257de4197b8e3d54346acdf1dd55a9ba4cb91dcace192fc1baf228c08b5.css" integrity="sha256-pXgSV95Bl7jj1UNGrN8d1VqbpMuR3KzhkvwbryKMCLU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -39,23 +39,38 @@
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
+            .toc {
+                background: var(--entry);
             }
+        }
 
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
             }
         }
 
     </style>
-</noscript><meta property="og:url" content="https://jaylittle.com/post/view/2017/11/jack-of-one-trade/">
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://jaylittle.com/post/view/2017/11/jack-of-one-trade/">
   <meta property="og:site_name" content="Jay Little">
   <meta property="og:title" content="Jack of One Trade">
   <meta property="og:description" content="I recently discovered that a virtual Windows server I was running had been hacked. I was being paid to run it as part of an arrangement with a long time client of mine. This server ran Windows Server 2008 R2 and though it was rarely used, it was configured to automatically update when required. The only service it exposed to the internet was RDP over TCP/IP port 3392 instead of the default 3389.">
@@ -123,20 +138,8 @@
 }
 </script>
 </head>
-
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
+<body id="top">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
@@ -205,7 +208,7 @@
     <h1 class="post-title entry-hint-parent">
       Jack of One Trade
     </h1>
-    <div class="post-meta"><span title='2017-11-21 00:00:00 +0000 UTC'>November 21, 2017</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;Jay Little
+    <div class="post-meta"><span title='2017-11-21 00:00:00 +0000 UTC'>November 21, 2017</span>&nbsp;·&nbsp;<span>7 min</span>&nbsp;·&nbsp;<span>Jay Little</span>
 
 </div>
   </header> 
@@ -219,13 +222,11 @@
 <p>The files on the desktop had been renamed and encrypted.  The files in the public user profile had been renamed and encrypted.  Some of the files in the ProgramData folder had been renamed and encrypted.  Most importantly, I apparently had caught the attacker in the act as the ransomware was running and it was again renaming and encrypting the off site replica of my clients files.  So I logged the user off.  I then killed all remaining process running under the context of said user.  I then nuked the user profile.  I then cleaned up some of the damage.  I restored my offsite replica using the secondary backup I had created.</p>
 <p>At this point I realized that cleaning up the mess wasn&rsquo;t enough.  There was a bigger problem here.  I was being paid to run a Windows server with a single service exposed to the open internet.  The reality is that I&rsquo;m not a Windows guy.  I&rsquo;ve been transitioning to Linux for well over a decade now and my Windows skills have suffered as a result.  In addition, I&rsquo;ve been working solely as a software developer in my primary job for almost the last three years.  I haven&rsquo;t been doing any real server maintenance work in that time.  The hard truth is that this was no longer my area of expertise.  This is why I updated my resume.  I changed my objective statement.  For well over a decade it has read:</p>
 <blockquote>
-<p>&ldquo;My objective is to expand upon my skills as an Information Technology professional in the areas of Web Development, Networked Systems Security and Systems Administration.&rdquo;</p>
-</blockquote>
+<p>&ldquo;My objective is to expand upon my skills as an Information Technology professional in the areas of Web Development, Networked Systems Security and Systems Administration.&rdquo;</p></blockquote>
 <p>Sounds great, right?  Well yeah it sounds great when you are first starting out in your career and have a &ldquo;jack of all trades&rdquo; mentality.  For a long while it was actually true.  I was doing all of those things simultaneously at previous jobs and I was mostly doing them with Windows.</p>
 <p>But now?  I primarily write software.  I run a few Linux servers, but I&rsquo;m also a dedicated Linux user.  I own a single Windows machine and its an old Surface 3 that I only boot up when I need to reprogram my Logitech Harmony One remote control.  That is really its sole purpose in life.  The only servers I&rsquo;m fully responsible for are my own.  So given all that, I have now updated my objective statement to this:</p>
 <blockquote>
-<p>&ldquo;My objective is to write the most useful, efficient and secure software possible to solve the problem at hand.&rdquo;</p>
-</blockquote>
+<p>&ldquo;My objective is to write the most useful, efficient and secure software possible to solve the problem at hand.&rdquo;</p></blockquote>
 <p>So what can you learn from this?  For starters: When solving a mystery, don&rsquo;t limit yourself to whatever narrow scope you happen to be currently entrenched in.  That was my primary mistake here.  Had I thought about that server sooner, I would&rsquo;ve discovered the real problem sooner and saved myself and my client a lot of heartache.  Secondly, if you don&rsquo;t use it, you&rsquo;ll lose it.  I used to be able to competently administer a Windows server and keep it safe from all the script kiddies and hackers out there.  Clearly that is not the case anymore.</p>
 
 
@@ -254,9 +255,14 @@
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -297,11 +303,12 @@
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

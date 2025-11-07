@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
 I already hear you asking, &ldquo;What happened Jay?&rdquo;  Well the modern web happened, that&rsquo;s what.  Since I&rsquo;m a web developer you are probably operating under the assumption that I&rsquo;m acquainted with the modern web and it&rsquo;s basic rules more-so than most.  You aren&rsquo;t wrong.  However I am not infallible.  That having been said, the events of the last 24 hours have forced me to take a long hard stare at one of my blind spots, produce a full accounting of the horrors that were subsequently revealed to me and react accordingly.">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/post/view/2019/8/the-modern-web-is-a-quagmire-so-i-embraced-noscript/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a5781257de4197b8e3d54346acdf1dd55a9ba4cb91dcace192fc1baf228c08b5.css" integrity="sha256-pXgSV95Bl7jj1UNGrN8d1VqbpMuR3KzhkvwbryKMCLU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -40,23 +40,38 @@ I already hear you asking, &ldquo;What happened Jay?&rdquo;  Well the modern web
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
+            .toc {
+                background: var(--entry);
             }
+        }
 
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
             }
         }
 
     </style>
-</noscript><meta property="og:url" content="https://jaylittle.com/post/view/2019/8/the-modern-web-is-a-quagmire-so-i-embraced-noscript/">
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://jaylittle.com/post/view/2019/8/the-modern-web-is-a-quagmire-so-i-embraced-noscript/">
   <meta property="og:site_name" content="Jay Little">
   <meta property="og:title" content="The Modern Web Is A Quagmire, So I Embraced NoScript">
   <meta property="og:description" content="If you are a regular visitor, you know that I normally I update my site with new content on a monthly basis. However the events of the last 24 hours have compelled me to break with tradition and reach out to the wider world as soon as possible.
@@ -126,20 +141,8 @@ I already hear you asking, &ldquo;What happened Jay?&rdquo;  Well the modern web
 }
 </script>
 </head>
-
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
+<body id="top">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
@@ -208,7 +211,7 @@ I already hear you asking, &ldquo;What happened Jay?&rdquo;  Well the modern web
     <h1 class="post-title entry-hint-parent">
       The Modern Web Is A Quagmire, So I Embraced NoScript
     </h1>
-    <div class="post-meta"><span title='2019-08-21 00:00:00 +0000 UTC'>August 21, 2019</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;Jay Little
+    <div class="post-meta"><span title='2019-08-21 00:00:00 +0000 UTC'>August 21, 2019</span>&nbsp;·&nbsp;<span>7 min</span>&nbsp;·&nbsp;<span>Jay Little</span>
 
 </div>
   </header> 
@@ -273,9 +276,14 @@ I already hear you asking, &ldquo;What happened Jay?&rdquo;  Well the modern web
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -316,11 +324,12 @@ I already hear you asking, &ldquo;What happened Jay?&rdquo;  Well the modern web
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

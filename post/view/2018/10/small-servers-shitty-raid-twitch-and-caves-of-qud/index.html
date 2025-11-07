@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
 So yesterday was a painful and stressful but ultimately fruitful day for me in terms of tech.  You see I received the parts required to complete my small server project.  By some miracle Fedex delivered the parts early in the morning rather than later, so I ended up spending a huge portion of my day on this.  However since this final server was meant to act as my file/print server, I decided to deviate a bit and buy a CloudShell2 NAS case for the ODroid XU4Q SBC (Single Board Computer).  What a mistake that turned out to be.  As it&rsquo;s first order of business the embedded RAID Controller decided to mirror my backup drive onto my live drive despite the fact I had configured the jumpers to turn off RAID in favor of presenting the two six terabyte drives as separate volumes.">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/post/view/2018/10/small-servers-shitty-raid-twitch-and-caves-of-qud/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a5781257de4197b8e3d54346acdf1dd55a9ba4cb91dcace192fc1baf228c08b5.css" integrity="sha256-pXgSV95Bl7jj1UNGrN8d1VqbpMuR3KzhkvwbryKMCLU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -40,23 +40,38 @@ So yesterday was a painful and stressful but ultimately fruitful day for me in t
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
+            .toc {
+                background: var(--entry);
             }
+        }
 
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
             }
         }
 
     </style>
-</noscript><meta property="og:url" content="https://jaylittle.com/post/view/2018/10/small-servers-shitty-raid-twitch-and-caves-of-qud/">
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://jaylittle.com/post/view/2018/10/small-servers-shitty-raid-twitch-and-caves-of-qud/">
   <meta property="og:site_name" content="Jay Little">
   <meta property="og:title" content="Small Servers, Shitty RAID, Twitch and Caves of Qud">
   <meta property="og:description" content="This post is really going to be just a random collection of random updates and thoughts. If you are looking for an overarching theme, I’m sorry to disappoint but there isn’t one. Nevertheless, this might be worth reading anyway. Your call.
@@ -126,20 +141,8 @@ So yesterday was a painful and stressful but ultimately fruitful day for me in t
 }
 </script>
 </head>
-
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
+<body id="top">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
@@ -208,7 +211,7 @@ So yesterday was a painful and stressful but ultimately fruitful day for me in t
     <h1 class="post-title entry-hint-parent">
       Small Servers, Shitty RAID, Twitch and Caves of Qud
     </h1>
-    <div class="post-meta"><span title='2018-10-06 00:00:00 +0000 UTC'>October 6, 2018</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Jay Little
+    <div class="post-meta"><span title='2018-10-06 00:00:00 +0000 UTC'>October 6, 2018</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Jay Little</span>
 
 </div>
   </header> 
@@ -247,9 +250,14 @@ So yesterday was a painful and stressful but ultimately fruitful day for me in t
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -290,11 +298,12 @@ So yesterday was a painful and stressful but ultimately fruitful day for me in t
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

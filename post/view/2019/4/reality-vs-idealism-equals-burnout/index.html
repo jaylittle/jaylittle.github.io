@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
 If you are a regular reader (which is impossible as I&rsquo;m never going to be a regular poster) then you have likely already figured out that I am a software developer on the verge of burnout.  I&rsquo;ve been tip toeing along the edge of that chasm for the last five or six years now.  In response I have been exploring a variety of possible solutions to the problem.  For the most part these solutions have proven to be nothing more than temporary band-aids.  Given enough time I always end up longingly gazing into that chasm of ill-repute where ex-software developers congregate.">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/post/view/2019/4/reality-vs-idealism-equals-burnout/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a5781257de4197b8e3d54346acdf1dd55a9ba4cb91dcace192fc1baf228c08b5.css" integrity="sha256-pXgSV95Bl7jj1UNGrN8d1VqbpMuR3KzhkvwbryKMCLU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -40,23 +40,38 @@ If you are a regular reader (which is impossible as I&rsquo;m never going to be 
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
+            .toc {
+                background: var(--entry);
             }
+        }
 
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
             }
         }
 
     </style>
-</noscript><meta property="og:url" content="https://jaylittle.com/post/view/2019/4/reality-vs-idealism-equals-burnout/">
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://jaylittle.com/post/view/2019/4/reality-vs-idealism-equals-burnout/">
   <meta property="og:site_name" content="Jay Little">
   <meta property="og:title" content="Reality vs Idealism Equals Burnout">
   <meta property="og:description" content="In today’s irregularly scheduled pontification, I’m going to be addressing a subject that I have been personally struggling with for the majority of my career. When it comes to expectations in software development, I have recently realized that holding oneself to insane standards is not only ill-advised but potentially career ending.
@@ -126,20 +141,8 @@ If you are a regular reader (which is impossible as I&rsquo;m never going to be 
 }
 </script>
 </head>
-
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
+<body id="top">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
@@ -208,7 +211,7 @@ If you are a regular reader (which is impossible as I&rsquo;m never going to be 
     <h1 class="post-title entry-hint-parent">
       Reality vs Idealism Equals Burnout
     </h1>
-    <div class="post-meta"><span title='2019-04-10 00:00:00 +0000 UTC'>April 10, 2019</span>&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Jay Little
+    <div class="post-meta"><span title='2019-04-10 00:00:00 +0000 UTC'>April 10, 2019</span>&nbsp;·&nbsp;<span>6 min</span>&nbsp;·&nbsp;<span>Jay Little</span>
 
 </div>
   </header> 
@@ -232,8 +235,7 @@ If you are a regular reader (which is impossible as I&rsquo;m never going to be 
 <li>
 <p>I am not afraid to push back against the status quo</p>
 </li>
-</ol>
-</blockquote>
+</ol></blockquote>
 <p>It wasn&rsquo;t always this way.  It took me a few years to get there.  I remember when I was fired from my very first software dev job (which I don&rsquo;t bother listing on my resume in case you are wondering) after two weeks.  This was largely because I couldn&rsquo;t make a relatively simple modification to a simple Solomon ERP screen within the span of a week.  At my first software dev job that lasted longer than two weeks, I had horrible quality control issues and this was particularly bad because I was writing AR and AP data conversions for hospital systems.  Nevertheless over the last two decades I have worked hard to hone these traits and I have been rewarded for it.</p>
 <p>Yet I still find myself dissatisfied and staring into the chasm.  Why is that?  Well I recently realized that at the heart of the situation is my love for projects like &ldquo;Small Server&rdquo;.  One of the reasons I love that project so much, despite the fact it required virtually no code to be written outside of a few simple shell scripts, is because I was able to radically reshape the way IT works within the confines of my own little world virtually overnight.</p>
 <p>I picked a path or if you would, &ldquo;named reality&rdquo; and then set forth on making it happen.  When everything was said and done not only was the project a success, but the way in which I did things have been radically altered as a side effect of these changes.  I was able to take my technical skills and apply them in a way that actually made a real difference.  Not only is every tech related thing in my house now more efficient and using less power, but I can rest a bit easier knowing that I did my part to reduce my overall environmental impact on the world.</p>
@@ -241,8 +243,7 @@ If you are a regular reader (which is impossible as I&rsquo;m never going to be 
 <p>The reality is that when it comes to work, customers and managers tend to bend over backwards to preserve the status quo, even if it is detrimental to their productivity.  Human beings are reluctant to change and work flows involving technical tools are no exception.  These target audiences tend to prefer incremental over revolutionary change.  To be frank, more often than not I generally agree with them.  But during my career in times when the opportunity to revolutionize the way something is being done has arisen, every single one of my employers has failed to rise to the occasion.</p>
 <p>So what&rsquo;s the solution?  Well I&rsquo;m not really sure.  Though I have decided to try something out which may or may not make a difference.  I&rsquo;d like to share it with you.  Instead of aspiring to change the world and move mountains professionally I&rsquo;ve decided to adopt a much different measure of success.  Basically at the end of each week I&rsquo;m going to ask myself this question:</p>
 <blockquote>
-<p>Did my work make anyone&rsquo;s life better or easier this week?</p>
-</blockquote>
+<p>Did my work make anyone&rsquo;s life better or easier this week?</p></blockquote>
 <p>When the answer to that question is yes, then I have decided to commit myself to being content with that.  If one does not need to move mountains to landscape, why torture myself by making moving mountains my goal?  The only sane answer is that life is too short to keep doing that to myself and it&rsquo;s long past time that I made a change here.</p>
 <p>But rest assured, I&rsquo;m going to keep doing what I do inside the confines of my own time and property.  I wouldn&rsquo;t be who I am if I decided to compromise on that.  Viva la revolución! At home anyway.</p>
 
@@ -272,9 +273,14 @@ If you are a regular reader (which is impossible as I&rsquo;m never going to be 
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -315,11 +321,12 @@ If you are a regular reader (which is impossible as I&rsquo;m never going to be 
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
 Perhaps I&rsquo;m getting a bit too old and loose lipped for my own good, but the truth is that creating software for other people is exceedingly difficult.  Contrary to the opinions of non-practitioners (aka non-coders), this difficulty is not the fault of coding languages, tools and paradigms.  It is actually the result of clients and developers not taking the time to understand the root causes of the problems they want to solve and not designing a solution around the conclusions you&rsquo;d draw from that process.">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/post/view/2023/4/low-code-software-development-is-a-lie/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a5781257de4197b8e3d54346acdf1dd55a9ba4cb91dcace192fc1baf228c08b5.css" integrity="sha256-pXgSV95Bl7jj1UNGrN8d1VqbpMuR3KzhkvwbryKMCLU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -40,23 +40,38 @@ Perhaps I&rsquo;m getting a bit too old and loose lipped for my own good, but th
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
+            .toc {
+                background: var(--entry);
             }
+        }
 
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
             }
         }
 
     </style>
-</noscript><meta property="og:url" content="https://jaylittle.com/post/view/2023/4/low-code-software-development-is-a-lie/">
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://jaylittle.com/post/view/2023/4/low-code-software-development-is-a-lie/">
   <meta property="og:site_name" content="Jay Little">
   <meta property="og:title" content="Low Code Software Development Is A Lie">
   <meta property="og:description" content="I’ve been writing custom software for a long time and one of the things that annoys me most is when a client adopts the position that there is a silver bullet which will reduce or remove the inherent complexity of this task. This happens more often than you’d think and guess what? They are almost always wrong.
@@ -126,20 +141,8 @@ Perhaps I&rsquo;m getting a bit too old and loose lipped for my own good, but th
 }
 </script>
 </head>
-
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
+<body id="top">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
@@ -208,7 +211,7 @@ Perhaps I&rsquo;m getting a bit too old and loose lipped for my own good, but th
     <h1 class="post-title entry-hint-parent">
       Low Code Software Development Is A Lie
     </h1>
-    <div class="post-meta"><span title='2023-04-14 00:00:00 +0000 UTC'>April 14, 2023</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Jay Little
+    <div class="post-meta"><span title='2023-04-14 00:00:00 +0000 UTC'>April 14, 2023</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Jay Little</span>
 
 </div>
   </header> 
@@ -218,8 +221,7 @@ Perhaps I&rsquo;m getting a bit too old and loose lipped for my own good, but th
 <p>So let&rsquo;s be clear: I&rsquo;m not disparaging clients.  They know they have a problem, they just might not fully understand how to design and implement the most sensible and appropriate solution to that problem.  Sometimes, it doesn&rsquo;t even make sense to write any code to solve some of the problems I have been presented with over the years.  That&rsquo;s because in a lot of cases, the problem at hand is actually a process problem.  But from the client&rsquo;s perspective, it&rsquo;s easier to pay somebody to code a tool to solve a problem than to attempt to change an entrenched process.</p>
 <p>I previously touched on this idea back in 2019 in my post <a href="https://jaylittle.com/post/view/2019/12/why-i-cant-stfu-and-just-code-a-solution-to-your-problems">&ldquo;Why I Can&rsquo;t STFU And Just Code A Solution To Your Problems&rdquo;</a>:</p>
 <blockquote>
-<p>The easiest way to explain my mindset is as follows. I&rsquo;m a professional problem solver whose primary tool is code. People don&rsquo;t come to me and ask me to write code because everything is hunky dory. On the contrary they come to me and ask me to code a solution for whatever problem they are currently experiencing.</p>
-</blockquote>
+<p>The easiest way to explain my mindset is as follows. I&rsquo;m a professional problem solver whose primary tool is code. People don&rsquo;t come to me and ask me to write code because everything is hunky dory. On the contrary they come to me and ask me to code a solution for whatever problem they are currently experiencing.</p></blockquote>
 <p>In any event, if you get past all this, its time to write some code, right?  Well usually.  That&rsquo;s where this blog post comes in.  Sometimes a client falls into the trap of believing that there is some kind of silver bullet they can employ which will negate the inherent complexity around coding custom solutions.  Nowadays the most cliche form of this is to say, &ldquo;Well I&rsquo;ll just ask ChatGPT to code that for me&rdquo;.  <a href="https://jaylittle.com/post/view/2023/2/chatgpt-far-more-hype-than-substance">I declare shenanigans</a>.  While ChatGPT can handle some simple coding tasks, anything beyond that causes it to rapidly devolve into an unmanageable mess.</p>
 <p>Beyond the in vogue AI Chatbot example, there are a wide variety of other snake oil tools lingering about.  All of them sell prospective buyers on the premise of allowing them to cut through the cruft and quickly pump out custom software without going through the years of training that professional Software Developers tend to go through.  The most relevant example of this syndrome are so-called low code tools.  As it so happens, I work with one of these at my current job.</p>
 <p>This low-code tool is called <a href="https://www.outsystems.com/">OutSystems</a> and my review of it is that its a steaming pile of shit.  I won&rsquo;t go into the technical specifics of why as that probably deserves it&rsquo;s own post.  While it has enabled some non-developers to produce custom logic and screens, it hasn&rsquo;t actually removed the inherent complexity around designing proper data structures, writing fault tolerant software and validating the quality of the resulting software.  Because a lot of the coders in question don&rsquo;t have this expertise, the end result is a custom software system that is poorly thought through, is brittle and as a result will require constant fire fighting on the part of the future members of the team in an effort to keep it functional.</p>
@@ -253,9 +255,14 @@ Perhaps I&rsquo;m getting a bit too old and loose lipped for my own good, but th
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -296,11 +303,12 @@ Perhaps I&rsquo;m getting a bit too old and loose lipped for my own good, but th
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

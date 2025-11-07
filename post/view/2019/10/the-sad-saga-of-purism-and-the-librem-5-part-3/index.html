@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
 After mulling over everything I had seen along with what my source had shared with me, I decided that I had a moral duty to spread the word as far and as wide as possible while protecting the identity of my source as best as I could.  I resolved that the best way to do this would be to create threads with specific questions directed towards Purism which would help to shed some light on some the questions I now had.  I created two threads, one on the Purism forums and one in the Purism subreddit.">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/post/view/2019/10/the-sad-saga-of-purism-and-the-librem-5-part-3/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a5781257de4197b8e3d54346acdf1dd55a9ba4cb91dcace192fc1baf228c08b5.css" integrity="sha256-pXgSV95Bl7jj1UNGrN8d1VqbpMuR3KzhkvwbryKMCLU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -40,23 +40,38 @@ After mulling over everything I had seen along with what my source had shared wi
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
+            .toc {
+                background: var(--entry);
             }
+        }
 
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
             }
         }
 
     </style>
-</noscript><meta property="og:url" content="https://jaylittle.com/post/view/2019/10/the-sad-saga-of-purism-and-the-librem-5-part-3/">
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://jaylittle.com/post/view/2019/10/the-sad-saga-of-purism-and-the-librem-5-part-3/">
   <meta property="og:site_name" content="Jay Little">
   <meta property="og:title" content="The Sad Saga of Purism and the Librem 5 : Part 3">
   <meta property="og:description" content="This post marks the third in my series about the sad saga of Purism and the Librem 5. If you haven’t read the first or second posts yet, I highly recommend that you click here and then click here. Give them both at least a quick skim before reading this one as they contain important background information that is required to appreciate this one.
@@ -126,20 +141,8 @@ After mulling over everything I had seen along with what my source had shared wi
 }
 </script>
 </head>
-
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
+<body id="top">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
@@ -208,7 +211,7 @@ After mulling over everything I had seen along with what my source had shared wi
     <h1 class="post-title entry-hint-parent">
       The Sad Saga of Purism and the Librem 5 : Part 3
     </h1>
-    <div class="post-meta"><span title='2019-10-26 00:00:00 +0000 UTC'>October 26, 2019</span>&nbsp;·&nbsp;9 min&nbsp;·&nbsp;Jay Little
+    <div class="post-meta"><span title='2019-10-26 00:00:00 +0000 UTC'>October 26, 2019</span>&nbsp;·&nbsp;<span>9 min</span>&nbsp;·&nbsp;<span>Jay Little</span>
 
 </div>
   </header> 
@@ -224,8 +227,7 @@ After mulling over everything I had seen along with what my source had shared wi
 <p>The real question that I&rsquo;d like to touch on is: How did we get here and why do so many strongly insist that Purism&rsquo;s behavior has been ethical?  How we got here is actually very simple.  It&rsquo;s the same way we got here when it comes to every other tech company on the planet.  We the customers let them get away with a myriad of tiny offenses and somewhere along the way all of that begins to snowball into a series of major offenses.  Companies like Google, Microsoft and Apple didn&rsquo;t start off as objectionable.  They all actually started off as small groups of like minded people who shared an urge to build things that fulfilled the needs or their customers and enhanced their lives.  But over time when faced with the various tiny liberties taken by these companies, the customers made a conscious choice to look the other way.  From the perspective of the individual customer, the benefits of doing this far outweigh the downside presented by the tiny problem they are currently evaluating.  The inevitable end result is that these sins add up over time and the whole can easily begin to outweigh the threat presented by the sum of its parts.</p>
 <p>When it comes to explaining why so many community members still feel that Purism&rsquo;s behavior is excusable, that is a tougher nut to crack.  My theory on it is as follows: The promise of the Librem 5 phone is very alluring.  As customers we are all tired of being abused and victimized by the likes of Google, Apple and the ever growing ranks of greedy and ethically challenged mobile application developers.  The unintended side effect of this was it made Purism effectively untouchable as they are offering something we simply cannot obtain anywhere else.  To be blunt /u/whitelinge on reddit put it far better than I ever could, so I&rsquo;ll just quote <a href="https://www.reddit.com/r/Purism/comments/dm2smy/is_the_librem_5_being_targeted_in_a_viral_media/f54gaur/">part of his post</a> on the topic:</p>
 <blockquote>
-<p>Let&rsquo;s assume the company is in jeopardy. Let&rsquo;s assume the project is over-promised and will be late and under-deliver. Let&rsquo;s assume the CEO is a fuckup and the Marketing Director is a liar. None of that is as bad as NO smartphone alternative to Google and Apple, let alone an open and privacy-focused alternative. I&rsquo;m a Linux user and I very much want a Linux phone. And there has been so, so many false starts and near misses over almost a decade. My patience and goodwill for Purism and the Librem 5 is effectively infinite. It&rsquo;s not over until they shutter the doors or can the project. Until that happens I will continue to hope they limp over that finish line no matter what.</p>
-</blockquote>
+<p>Let&rsquo;s assume the company is in jeopardy. Let&rsquo;s assume the project is over-promised and will be late and under-deliver. Let&rsquo;s assume the CEO is a fuckup and the Marketing Director is a liar. None of that is as bad as NO smartphone alternative to Google and Apple, let alone an open and privacy-focused alternative. I&rsquo;m a Linux user and I very much want a Linux phone. And there has been so, so many false starts and near misses over almost a decade. My patience and goodwill for Purism and the Librem 5 is effectively infinite. It&rsquo;s not over until they shutter the doors or can the project. Until that happens I will continue to hope they limp over that finish line no matter what.</p></blockquote>
 <p>I sympathize with fellow members of the community who currently live in the space between the rock and the hard place that whitelinge occupies.  However there are now so many signs that Purism isn&rsquo;t competent enough to be trusted with a phone, much less our privacy, that I cannot in good conscience do business with them.  So let me make my ultimate position clear: Even if I am wrong or say Purism gets a huge cash infusion from an investor which allows the Librem 5 project to be completed, I will not purchase one.  I refuse to reward Purism in light of the tactics they have and continue to employ.</p>
 <p>If there is a moral to this tale, then I say let it be this: Truth can only be denied for so long.  The further you run from the truth, the more painful your reunion with it promises to be.  This fundamental rule applies to everybody and everything whether they be customers, backers, investors, executives, corporations, politicians or governments.  Don&rsquo;t believe me?  It is this core idea that compelled my various sources, Zlatan, myself and numerous other members of the community to take action.  While our short term reputations suffered inside of these echo chambers, I&rsquo;m happy to say that our principles have not.  Phones may come and go, but good principles can and should last a lifetime.</p>
 <p>Relevant Links: <a href="https://jaylittle.com/post/view/2019/10/the-sad-saga-of-purism-and-the-librem-5-part-1">Part 1</a> <a href="https://jaylittle.com/post/view/2019/10/the-sad-saga-of-purism-and-the-librem-5-part-2">Part 2</a></p>
@@ -256,9 +258,14 @@ After mulling over everything I had seen along with what my source had shared wi
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -299,11 +306,12 @@ After mulling over everything I had seen along with what my source had shared wi
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

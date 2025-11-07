@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
 <meta name="description" content="Posts - Jay Little">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/post/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a5781257de4197b8e3d54346acdf1dd55a9ba4cb91dcace192fc1baf228c08b5.css" integrity="sha256-pXgSV95Bl7jj1UNGrN8d1VqbpMuR3KzhkvwbryKMCLU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -18,7 +18,7 @@
 <link rel="mask-icon" href="https://jaylittle.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://jaylittle.com/post/index.xml">
+<link rel="alternate" type="application/rss+xml" href="https://jaylittle.com/post/index.xml" title="rss">
 <link rel="alternate" hreflang="en" href="https://jaylittle.com/post/">
 <noscript>
     <style>
@@ -40,23 +40,38 @@
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
+            .toc {
+                background: var(--entry);
             }
+        }
 
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
             }
         }
 
     </style>
-</noscript><meta property="og:url" content="https://jaylittle.com/post/">
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://jaylittle.com/post/">
   <meta property="og:site_name" content="Jay Little">
   <meta property="og:title" content="Posts">
   <meta property="og:description" content="Software Developer and Tech Tinkerer">
@@ -82,20 +97,8 @@
 }
 </script>
 </head>
-
 <body class="list" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
@@ -173,7 +176,7 @@
 So last week I decided, in a huff mind you, to dump Pop! OS and replace it with Fedora. Now those of you who know my Linux history should be shocked by this as the last time I seriously used an RPM based distribution was back in the early 2000s before I got hitched. It has been a VERY long time.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2022-04-26 00:00:00 +0000 UTC'>April 26, 2022</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;Jay Little</footer>
+  <footer class="entry-footer"><span title='2022-04-26 00:00:00 +0000 UTC'>April 26, 2022</span>&nbsp;·&nbsp;<span>7 min</span>&nbsp;·&nbsp;<span>Jay Little</span></footer>
   <a class="entry-link" aria-label="post link to Pop! Goes the Distro And Fiber Internet For The Win" href="https://jaylittle.com/post/view/2022/4/pop-goes-the-distro-and-fiber-internet-for-the-win/"></a>
 </article>
 
@@ -187,7 +190,7 @@ So last week I decided, in a huff mind you, to dump Pop! OS and replace it with 
 Once upon a time, I used to be your typical PC Gamer type: I valued performance at the cost of everything else. When I met my wife in 2003, I had just built a dual Xeon workstation with an ATI Radeon 9700 that was huge and exceptionally loud. I loved that machine. It was fast and it did everything I wanted. Sometime after getting married, I discovered that my wife didn’t much care for me spending hours on end in a separate room playing video games, so I transitioned to gaming laptops.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2022-03-16 00:00:00 +0000 UTC'>March 16, 2022</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;Jay Little</footer>
+  <footer class="entry-footer"><span title='2022-03-16 00:00:00 +0000 UTC'>March 16, 2022</span>&nbsp;·&nbsp;<span>7 min</span>&nbsp;·&nbsp;<span>Jay Little</span></footer>
   <a class="entry-link" aria-label="post link to Finally... some Peace and Quiet" href="https://jaylittle.com/post/view/2022/3/finally-some-peace-and-quiet/"></a>
 </article>
 
@@ -201,7 +204,7 @@ Once upon a time, I used to be your typical PC Gamer type: I valued performance 
 So it gets somewhat awkward when you realize that I work in tech and plan to continue doing so for the foreseeable future. It gets way more awkward if you know that when it comes to tech scams / fads, nobody is more susceptible to falling for this stuff than people who work in tech. That’s where all this stuff starts and builds momentum after all. Without buy in from the tech community, almost none of this garbage would exist.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2022-02-15 00:00:00 +0000 UTC'>February 15, 2022</span>&nbsp;·&nbsp;8 min&nbsp;·&nbsp;Jay Little</footer>
+  <footer class="entry-footer"><span title='2022-02-15 00:00:00 +0000 UTC'>February 15, 2022</span>&nbsp;·&nbsp;<span>8 min</span>&nbsp;·&nbsp;<span>Jay Little</span></footer>
   <a class="entry-link" aria-label="post link to Scam Review: Big Tech Bullshit" href="https://jaylittle.com/post/view/2022/2/scam-review-big-tech-bullshit/"></a>
 </article>
 
@@ -214,7 +217,7 @@ So it gets somewhat awkward when you realize that I work in tech and plan to con
     <p>So long time readers will remember that about four years back, I posted a diatribe entitled “Repeat after me: Games are supposed to be fun” that basically railed against the realization that a lot of the new games floating around weren’t actually all that fun to play. Well today we are going to revisit that topic, freshly inspired by the time I’ve been spending with both Diablo 2: Resurrected and Minecraft: Dungeons.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2021-10-06 00:00:00 +0000 UTC'>October 6, 2021</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;Jay Little</footer>
+  <footer class="entry-footer"><span title='2021-10-06 00:00:00 +0000 UTC'>October 6, 2021</span>&nbsp;·&nbsp;<span>7 min</span>&nbsp;·&nbsp;<span>Jay Little</span></footer>
   <a class="entry-link" aria-label="post link to Fun, Franchises and ReMastered Classic Games" href="https://jaylittle.com/post/view/2021/10/fun-franchises-and-remastered-classic-games/"></a>
 </article>
 
@@ -228,7 +231,7 @@ So it gets somewhat awkward when you realize that I work in tech and plan to con
 Fast forward to the present day, seven years later and you’ll find a situation that is almost unrecognizable. Intel is still pushing processors built on the same tech as they were in 2014. They just have more cores, generate more heat and suck down way more power. To be fair, their integrated GPU (Intel Xe) is actually a bit better nowadays. But only if you ignore the woeful state of the drivers.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2021-07-20 00:00:00 +0000 UTC'>July 20, 2021</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Jay Little</footer>
+  <footer class="entry-footer"><span title='2021-07-20 00:00:00 +0000 UTC'>July 20, 2021</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Jay Little</span></footer>
   <a class="entry-link" aria-label="post link to The Rise of Ryzen" href="https://jaylittle.com/post/view/2021/7/the-rise-of-ryzen/"></a>
 </article>
 
@@ -242,7 +245,7 @@ Fast forward to the present day, seven years later and you’ll find a situation
 Now if you are a frequent reader, you know that I wholeheartedly believe that Windows is a Legacy Operating System. The core of my reasoning can be understood by quoting a single part of the post:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2021-06-25 00:00:00 +0000 UTC'>June 25, 2021</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;Jay Little</footer>
+  <footer class="entry-footer"><span title='2021-06-25 00:00:00 +0000 UTC'>June 25, 2021</span>&nbsp;·&nbsp;<span>7 min</span>&nbsp;·&nbsp;<span>Jay Little</span></footer>
   <a class="entry-link" aria-label="post link to Windows 11 Announced: A Legacy OS Gives Consumers The Middle Finger" href="https://jaylittle.com/post/view/2021/6/windows-11-announced-a-legacy-os-gives-consumers-the-middle-finger/"></a>
 </article>
 
@@ -255,7 +258,7 @@ Now if you are a frequent reader, you know that I wholeheartedly believe that Wi
     <p>I assume most of you didn’t already know this, so I’m going to clarify it up front. One of my favorite sci-fi trilogies is comprised of Star Trek II: The Wrath of Khan, Star Trek III: The Search for Spock and Star Trek IV: The Voyage Home. Obviously they weren’t meant to stand alone as a trilogy as they are three movies plucked out of a larger group of films, but I don’t care. They share a coherent story arc between them which begins with the second film and is resolved at the end of the fourth film. There are parts of these movies that inspire much debate among Trekkies, but as a whole, short of a few exceptions like the Matrix trilogy, they are my favorites.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2021-04-05 00:00:00 +0000 UTC'>April 5, 2021</span>&nbsp;·&nbsp;8 min&nbsp;·&nbsp;Jay Little</footer>
+  <footer class="entry-footer"><span title='2021-04-05 00:00:00 +0000 UTC'>April 5, 2021</span>&nbsp;·&nbsp;<span>8 min</span>&nbsp;·&nbsp;<span>Jay Little</span></footer>
   <a class="entry-link" aria-label="post link to Spock Was Wrong: In Tech it is Easier to Create than to Destroy" href="https://jaylittle.com/post/view/2021/4/spock-was-wrong-in-tech-it-is-easier-to-create-than-to-destroy/"></a>
 </article>
 
@@ -268,7 +271,7 @@ Now if you are a frequent reader, you know that I wholeheartedly believe that Wi
     <p>Anybody who has spent any amount of time reading my content over the past few years knows what my small server project is. For those of you not in the know, it was basically my attempt to stop using an old desktop as my home server and transition all of its duties to SBCs (Single Board Computers) which are smaller, quieter, cooler, less performant and most importantly, use way less power. That project was a success. I eventually ended up with four ODroid XU4Qs handling various tasks. After I finished that project I started to get more ambitious. Could I actually take this project to the next level and curtail the power usage of my home office?
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2021-03-04 00:00:00 +0000 UTC'>March 4, 2021</span>&nbsp;·&nbsp;12 min&nbsp;·&nbsp;Jay Little</footer>
+  <footer class="entry-footer"><span title='2021-03-04 00:00:00 +0000 UTC'>March 4, 2021</span>&nbsp;·&nbsp;<span>12 min</span>&nbsp;·&nbsp;<span>Jay Little</span></footer>
   <a class="entry-link" aria-label="post link to Goodbye Small Server, Hello 150 Watt Office" href="https://jaylittle.com/post/view/2021/3/goodbye-small-server-hello-150-watt-office/"></a>
 </article>
 
@@ -281,7 +284,7 @@ Now if you are a frequent reader, you know that I wholeheartedly believe that Wi
     <p>Over the last few months, I have been having trouble with the stability of my home internet connection. This became evident to me while live streaming to Twitch as my stream would begin dropping a lot of frames in a really short amount of time. For a time, recycling the power on the cable modem would make a positive difference, but after a few months that stopped working reliably. This post is about my subsequent experience trying to write a scheduled cron job that would let me know whenever my internet connection was having issues.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2020-08-05 00:00:00 +0000 UTC'>August 5, 2020</span>&nbsp;·&nbsp;9 min&nbsp;·&nbsp;Jay Little</footer>
+  <footer class="entry-footer"><span title='2020-08-05 00:00:00 +0000 UTC'>August 5, 2020</span>&nbsp;·&nbsp;<span>9 min</span>&nbsp;·&nbsp;<span>Jay Little</span></footer>
   <a class="entry-link" aria-label="post link to To Ping Or Not To Ping, That Is The Question" href="https://jaylittle.com/post/view/2020/8/to-ping-or-not-to-ping-that-is-the-question/"></a>
 </article>
 
@@ -294,7 +297,7 @@ Now if you are a frequent reader, you know that I wholeheartedly believe that Wi
     <p>In today’s world with everything either burning or smoldering, it can be distressing to wake up each day and face the latest developments. Everything that is happening now is happening because, like the Empires of yesteryear, systems rise and they fall. The sad truth is that most people have developed a blind spot when it comes to issues of this sort. That’s primarily because getting there requires a bigger picture perspective most people seem to lack.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2020-06-24 00:00:00 +0000 UTC'>June 24, 2020</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;Jay Little</footer>
+  <footer class="entry-footer"><span title='2020-06-24 00:00:00 +0000 UTC'>June 24, 2020</span>&nbsp;·&nbsp;<span>7 min</span>&nbsp;·&nbsp;<span>Jay Little</span></footer>
   <a class="entry-link" aria-label="post link to Ding Dong: The Internet is Dead" href="https://jaylittle.com/post/view/2020/6/ding-dong-the-internet-is-dead/"></a>
 </article>
 <footer class="page-footer">
@@ -324,9 +327,14 @@ Now if you are a frequent reader, you know that I wholeheartedly believe that Wi
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -367,11 +375,12 @@ Now if you are a frequent reader, you know that I wholeheartedly believe that Wi
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

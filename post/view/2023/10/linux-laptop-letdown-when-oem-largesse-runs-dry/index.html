@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
 So as regular readers know, I have largely only purchased laptops with Linux preinstalled for quite a few years.  This is because as a person living within a capitalistic society, I am ethically compelled to vote with my dollar as it is the only vote I have which actually seems to matter.  To make a long story short: I do not wish to reward Microsoft for their ongoing objectionable behaviors relating to Windows and I really don&rsquo;t much care for MacOS so Linux is my de-facto operating system of choice.">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/post/view/2023/10/linux-laptop-letdown-when-oem-largesse-runs-dry/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a5781257de4197b8e3d54346acdf1dd55a9ba4cb91dcace192fc1baf228c08b5.css" integrity="sha256-pXgSV95Bl7jj1UNGrN8d1VqbpMuR3KzhkvwbryKMCLU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -40,23 +40,38 @@ So as regular readers know, I have largely only purchased laptops with Linux pre
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
+            .toc {
+                background: var(--entry);
             }
+        }
 
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
             }
         }
 
     </style>
-</noscript><meta property="og:url" content="https://jaylittle.com/post/view/2023/10/linux-laptop-letdown-when-oem-largesse-runs-dry/">
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://jaylittle.com/post/view/2023/10/linux-laptop-letdown-when-oem-largesse-runs-dry/">
   <meta property="og:site_name" content="Jay Little">
   <meta property="og:title" content="Linux Laptop Letdown: When OEM Largesse Runs Dry">
   <meta property="og:description" content="Today’s post is about a subject near and dear to my heart: Laptops with Linux preinstalled. Sadly this is not a happy post, but rather one in which I share my recent angst about the state of Linux Laptop hardware and how I have maneuvered myself into a very neglected corner.
@@ -126,20 +141,8 @@ So as regular readers know, I have largely only purchased laptops with Linux pre
 }
 </script>
 </head>
-
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
+<body id="top">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
@@ -208,7 +211,7 @@ So as regular readers know, I have largely only purchased laptops with Linux pre
     <h1 class="post-title entry-hint-parent">
       Linux Laptop Letdown: When OEM Largesse Runs Dry
     </h1>
-    <div class="post-meta"><span title='2023-10-17 00:00:00 +0000 UTC'>October 17, 2023</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;Jay Little
+    <div class="post-meta"><span title='2023-10-17 00:00:00 +0000 UTC'>October 17, 2023</span>&nbsp;·&nbsp;<span>7 min</span>&nbsp;·&nbsp;<span>Jay Little</span>
 
 </div>
   </header> 
@@ -228,8 +231,7 @@ So as regular readers know, I have largely only purchased laptops with Linux pre
 <p>It arrived a few weeks ago and it has been awesome!  That battery it came with (52whr) was a bit small, but thankfully you can buy a larger battery (86whr) from Lenovo and upgrade it yourself without too much trouble.  So I did exactly that.  Now this laptop gets between 8 and 12 hours of light to medium use on the battery, which is quite good in my book.  Oh and the keyboard in this laptop is replaceable.</p>
 <p>In addition its well supported in Linux.  By well supported I mean that all of the hardware works, including the soldered on Qualcomm wifi hardware (which was my biggest fear going into the purchase) and that all of the system firmware is directly updatable from within Linux using fwupd.  Finally its relatively quiet unless you choose to engage in performance intensive activities.</p>
 <p>Needless to say, I&rsquo;m a happy Lenovo P16s owner now and I highly recommend this laptop to anybody looking to purchase something Linux compatible.  It doesn&rsquo;t ship with Linux, but it is well supported by Lenovo in Linux.  They even have Linux specific firmware updates for it.</p>
-<p>Finally, System76 finally gave me a full refund on my Pangolin purchase.  This made me very happy.  I&rsquo;m still unhappy with them for shipping such an obviously broken piece of hardware and trying to get away with it.  I will think long and hard before purchasing anything else from them for the foreseeable future as this experience hasn&rsquo;t left a great impression overall.</p>
-</blockquote>
+<p>Finally, System76 finally gave me a full refund on my Pangolin purchase.  This made me very happy.  I&rsquo;m still unhappy with them for shipping such an obviously broken piece of hardware and trying to get away with it.  I will think long and hard before purchasing anything else from them for the foreseeable future as this experience hasn&rsquo;t left a great impression overall.</p></blockquote>
 
 
   </div>
@@ -257,9 +259,14 @@ So as regular readers know, I have largely only purchased laptops with Linux pre
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -300,11 +307,12 @@ So as regular readers know, I have largely only purchased laptops with Linux pre
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

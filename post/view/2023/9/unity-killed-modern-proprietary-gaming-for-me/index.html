@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
 Note: This post is a follow-up to my 2019 post &ldquo;My Modern Gaming Escape Plan&rdquo;. If you haven&rsquo;t read it or have gasp had the audacity to forget it over the last four years, I strongly advise you to read it (again) first.">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/post/view/2023/9/unity-killed-modern-proprietary-gaming-for-me/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a5781257de4197b8e3d54346acdf1dd55a9ba4cb91dcace192fc1baf228c08b5.css" integrity="sha256-pXgSV95Bl7jj1UNGrN8d1VqbpMuR3KzhkvwbryKMCLU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -40,23 +40,38 @@ Note: This post is a follow-up to my 2019 post &ldquo;My Modern Gaming Escape Pl
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
+            .toc {
+                background: var(--entry);
             }
+        }
 
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
             }
         }
 
     </style>
-</noscript><meta property="og:url" content="https://jaylittle.com/post/view/2023/9/unity-killed-modern-proprietary-gaming-for-me/">
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://jaylittle.com/post/view/2023/9/unity-killed-modern-proprietary-gaming-for-me/">
   <meta property="og:site_name" content="Jay Little">
   <meta property="og:title" content="Unity Killed Modern Proprietary Gaming For Me">
   <meta property="og:description" content="As some of you undoubtedly have heard Unity, the company behind one of the most prolific game engines of our time called Unity Engine, recently announced some changes to their pricing. On the surface this may sound like quite a big nothing burger if you aren’t familiar with the process of how software is made, let me assure you: This announcement is rocking the entire gaming world.
@@ -126,20 +141,8 @@ Note: This post is a follow-up to my 2019 post &ldquo;My Modern Gaming Escape Pl
 }
 </script>
 </head>
-
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
+<body id="top">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
@@ -208,7 +211,7 @@ Note: This post is a follow-up to my 2019 post &ldquo;My Modern Gaming Escape Pl
     <h1 class="post-title entry-hint-parent">
       Unity Killed Modern Proprietary Gaming For Me
     </h1>
-    <div class="post-meta"><span title='2023-09-15 00:00:00 +0000 UTC'>September 15, 2023</span>&nbsp;·&nbsp;8 min&nbsp;·&nbsp;Jay Little
+    <div class="post-meta"><span title='2023-09-15 00:00:00 +0000 UTC'>September 15, 2023</span>&nbsp;·&nbsp;<span>8 min</span>&nbsp;·&nbsp;<span>Jay Little</span>
 
 </div>
   </header> 
@@ -218,8 +221,7 @@ Note: This post is a follow-up to my 2019 post &ldquo;My Modern Gaming Escape Pl
 <blockquote>
 <p>We are introducing a Unity Runtime Fee that is based upon each time a qualifying game is downloaded by an end user. We chose this because each time a game is downloaded, the Unity Runtime is also installed.  Also we believe that an initial install-based fee allows creators to keep the ongoing financial gains from player engagement, unlike a revenue share.</p>
 <p>&hellip;</p>
-<p>Games qualify for the Unity Runtime Fee after two criteria have been met: 1) the game has passed a minimum revenue threshold in the last 12 months, and 2) the game has passed a minimum lifetime install count. We set high revenue and game install thresholds to avoid impacting those who have yet to find scale, meaning they don’t need to pay the fee until they have reached significant success.</p>
-</blockquote>
+<p>Games qualify for the Unity Runtime Fee after two criteria have been met: 1) the game has passed a minimum revenue threshold in the last 12 months, and 2) the game has passed a minimum lifetime install count. We set high revenue and game install thresholds to avoid impacting those who have yet to find scale, meaning they don’t need to pay the fee until they have reached significant success.</p></blockquote>
 <p>Unity is transitioning from just charging devs for the right to use their engine via a subscription model to now also charging devs each time any of their products which use the Unity Engine / Runtime are installed by an end user.</p>
 <p>This is utterly mind blowing.  This is not how things are done in software.  While the fees will only be assessed on installs starting from January 1st, 2024 and onwards the lifetime installation tallies that you have to reach in order to be charged are from the entire lifetime of the product.  This means that every time an end user installs the game on a new piece of hardware, Unity plans on charging the dev at least $0.20 for that.  Despite the fact that the dev&rsquo;s revenue stream is not in any way directly tied to this activity.  Online game storefronts generally don&rsquo;t restrict the number of installs or number of devices a game you have purchased can be installed on (though some nasty games implement other middleware that allows for these kinds of restrictions).</p>
 <p>How does Unity manage to tally this?  Are the game distribution platforms like Epic, Steam, Xbox and Playstation sharing this information with them?  Certainly not.  That means that the actual Unity Engine code must be providing this information to Unity (a fact they refuse to admit to even though it clearly must be true).  Since they are using lifetime installation tallies, this heavily implies that the spyware required to accomplish this has been present and active in the Unity Engine for quite awhile.</p>
@@ -267,9 +269,14 @@ Note: This post is a follow-up to my 2019 post &ldquo;My Modern Gaming Escape Pl
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -310,11 +317,12 @@ Note: This post is a follow-up to my 2019 post &ldquo;My Modern Gaming Escape Pl
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

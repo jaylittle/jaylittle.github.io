@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +19,7 @@ Soundblaster Live 5.1&#43; (Audigy 2 had SMP compatibility issues)
 Yes the machine is truly a pleasure to use.  As you may have also guessed - I built it on my own and purchased the parts from various online retailers.  So the real question is of course, what OS is this monster sporting?  For right now and the forseeable future its running Windows XP.  I&rsquo;ve spent some time attempting to work with Linux on this machine and while it does run like a dream, the drivers for the 9700 series video card are a bit immature as of now.  Currently the ATI drivers do not allow me to drive both of my monitors off the same video card like I am able to in windows.  So for now - this is a Windows only workstation.">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/post/view/2003/2/dual-xeon-goodness/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a5781257de4197b8e3d54346acdf1dd55a9ba4cb91dcace192fc1baf228c08b5.css" integrity="sha256-pXgSV95Bl7jj1UNGrN8d1VqbpMuR3KzhkvwbryKMCLU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -48,23 +48,38 @@ Yes the machine is truly a pleasure to use.  As you may have also guessed - I bu
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
+            .toc {
+                background: var(--entry);
             }
+        }
 
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
             }
         }
 
     </style>
-</noscript><meta property="og:url" content="https://jaylittle.com/post/view/2003/2/dual-xeon-goodness/">
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://jaylittle.com/post/view/2003/2/dual-xeon-goodness/">
   <meta property="og:site_name" content="Jay Little">
   <meta property="og:title" content="Dual Xeon Goodness">
   <meta property="og:description" content="Well after months of planning and years of dreaming it has finally happened… I have built the dream machine. It cost $3000&#43; dollars but it is finally here. Yes it is an SMP box and as you may have guessed based on the title - it uses Xeon processors. Here are the raw specs:
@@ -142,20 +157,8 @@ Yes the machine is truly a pleasure to use.  As you may have also guessed - I bu
 }
 </script>
 </head>
-
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
+<body id="top">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
@@ -224,7 +227,7 @@ Yes the machine is truly a pleasure to use.  As you may have also guessed - I bu
     <h1 class="post-title entry-hint-parent">
       Dual Xeon Goodness
     </h1>
-    <div class="post-meta"><span title='2003-02-18 00:00:00 +0000 UTC'>February 18, 2003</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Jay Little
+    <div class="post-meta"><span title='2003-02-18 00:00:00 +0000 UTC'>February 18, 2003</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Jay Little</span>
 
 </div>
   </header> 
@@ -267,9 +270,14 @@ Yes the machine is truly a pleasure to use.  As you may have also guessed - I bu
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -310,11 +318,12 @@ Yes the machine is truly a pleasure to use.  As you may have also guessed - I bu
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

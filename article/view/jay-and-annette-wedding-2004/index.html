@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
 I&rsquo;ve finally decided to settle down a bit and as a result I&rsquo;ve gotten married.  Who was the lucky (unlucky?) girl you ask?  Well it was none other than my long time girlfriend, the love of my life, and truly my soulmate:  Annette Louise Prescott.  I know that I haven&rsquo;t spoken about Annette very much on the site so here is a little bit of the backstory for those of you who don&rsquo;t already know:">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/article/view/jay-and-annette-wedding-2004/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a5781257de4197b8e3d54346acdf1dd55a9ba4cb91dcace192fc1baf228c08b5.css" integrity="sha256-pXgSV95Bl7jj1UNGrN8d1VqbpMuR3KzhkvwbryKMCLU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -41,23 +41,38 @@ I&rsquo;ve finally decided to settle down a bit and as a result I&rsquo;ve gotte
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
+            .toc {
+                background: var(--entry);
             }
+        }
 
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
             }
         }
 
     </style>
-</noscript><meta property="og:url" content="https://jaylittle.com/article/view/jay-and-annette-wedding-2004/">
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://jaylittle.com/article/view/jay-and-annette-wedding-2004/">
   <meta property="og:site_name" content="Jay Little">
   <meta property="og:title" content="Jay and Annette Wedding 2004">
   <meta property="og:description" content="Introduction I’ve finally decided to settle down a bit and as a result I’ve gotten married. Who was the lucky (unlucky?) girl you ask? Well it was none other than my long time girlfriend, the love of my life, and truly my soulmate: Annette Louise Prescott. I know that I haven’t spoken about Annette very much on the site so here is a little bit of the backstory for those of you who don’t already know:">
@@ -125,20 +140,8 @@ I&rsquo;ve finally decided to settle down a bit and as a result I&rsquo;ve gotte
 }
 </script>
 </head>
-
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
+<body id="top">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
@@ -207,7 +210,7 @@ I&rsquo;ve finally decided to settle down a bit and as a result I&rsquo;ve gotte
     <h1 class="post-title entry-hint-parent">
       Jay and Annette Wedding 2004
     </h1>
-    <div class="post-meta">4 min&nbsp;·&nbsp;Jay Little
+    <div class="post-meta"><span>4 min</span>&nbsp;·&nbsp;<span>Jay Little</span>
 
 </div>
   </header> 
@@ -292,9 +295,14 @@ There were some requests for more &ldquo;Cake Fight&rdquo; pictures.  I aim to p
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -335,11 +343,12 @@ There were some requests for more &ldquo;Cake Fight&rdquo; pictures.  I aim to p
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

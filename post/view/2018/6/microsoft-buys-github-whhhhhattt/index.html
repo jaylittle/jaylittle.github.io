@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
 Rumors of this began swirling on the Internet last weekend and the official announcement was made on Monday morning.  As you may or may not know Github, despite the closed source nature of their software and services, actually provides a lot of free services to the FOSS community in the form of hosted git repositories and the associated web accessible functionality required to work with those repositories in a reasonably efficient manner.  In addition you probably need to know that I myself am I paying user of Github as I host client source code in private repositories on the Github platform.">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/post/view/2018/6/microsoft-buys-github-whhhhhattt/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a5781257de4197b8e3d54346acdf1dd55a9ba4cb91dcace192fc1baf228c08b5.css" integrity="sha256-pXgSV95Bl7jj1UNGrN8d1VqbpMuR3KzhkvwbryKMCLU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -40,23 +40,38 @@ Rumors of this began swirling on the Internet last weekend and the official anno
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
+            .toc {
+                background: var(--entry);
             }
+        }
 
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
             }
         }
 
     </style>
-</noscript><meta property="og:url" content="https://jaylittle.com/post/view/2018/6/microsoft-buys-github-whhhhhattt/">
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://jaylittle.com/post/view/2018/6/microsoft-buys-github-whhhhhattt/">
   <meta property="og:site_name" content="Jay Little">
   <meta property="og:title" content="Microsoft buys Github: Whhhhhattt?">
   <meta property="og:description" content="Unless you’ve been living under a rock, you probably have already heard the big tech news of the week: Microsoft is buying GitHub for 7.5 billion dollars. Wow. That’s a lot of pennies.
@@ -126,20 +141,8 @@ Rumors of this began swirling on the Internet last weekend and the official anno
 }
 </script>
 </head>
-
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
+<body id="top">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
@@ -208,7 +211,7 @@ Rumors of this began swirling on the Internet last weekend and the official anno
     <h1 class="post-title entry-hint-parent">
       Microsoft buys Github: Whhhhhattt?
     </h1>
-    <div class="post-meta"><span title='2018-06-08 00:00:00 +0000 UTC'>June 8, 2018</span>&nbsp;·&nbsp;9 min&nbsp;·&nbsp;Jay Little
+    <div class="post-meta"><span title='2018-06-08 00:00:00 +0000 UTC'>June 8, 2018</span>&nbsp;·&nbsp;<span>9 min</span>&nbsp;·&nbsp;<span>Jay Little</span>
 
 </div>
   </header> 
@@ -235,8 +238,7 @@ Rumors of this began swirling on the Internet last weekend and the official anno
 <blockquote>
 <p>In early October 2009, a server malfunction or technician error at Danger&rsquo;s data centers resulted in the loss of all Sidekick user data. As Sidekicks store users&rsquo; data on Danger&rsquo;s servers—versus using local storage—users lost contact directories, calendars, photos, and all other media not locally backed up. Local backup could be accomplished through an app ($9.99 USD) which synchronized contacts, calendar, and tasks, but not notes, between the web and a local Windows PC. In an October 10 letter to subscribers, Microsoft expressed its doubt that any data would be recovered.</p>
 <p>The customer&rsquo;s data that was lost was, at the time, being hosted in Microsoft&rsquo;s data centers. Some media reports have suggested that Microsoft hired Hitachi to perform an upgrade to its storage area network (SAN), when something went wrong, resulting in data destruction. Microsoft did not have an active backup of the data and it had to be restored from a month-old copy of the server data, totaling 800GB in size, from offsite backup tapes. The entire restoration of data took over 2 months for customer data and full functionality to be restored.</p>
-<p>The Danger/Sidekick episode is one in a series of cloud computing mishaps that have raised questions about the reliability of such offerings.</p>
-</blockquote>
+<p>The Danger/Sidekick episode is one in a series of cloud computing mishaps that have raised questions about the reliability of such offerings.</p></blockquote>
 <p>While most people don&rsquo;t recognize the name of &ldquo;Danger&rdquo;, they probably should.  If you want to understand why I fear the cloud and ultimately the massive corporations who control large swathes of it, the aftermath of that incident should prove educational.</p>
 </li>
 <li>
@@ -293,9 +295,14 @@ Rumors of this began swirling on the Internet last weekend and the official anno
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -336,11 +343,12 @@ Rumors of this began swirling on the Internet last weekend and the official anno
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

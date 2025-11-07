@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
 <meta name="description" content="So this morning I was listening to one of the Linux related podcasts, Coder Radio and the hosts read feedback from a listener who claimed that he was &ldquo;bored&rdquo; with PHP and ready to try something else.  Now to be fair, in this particular case, the writer outlined some circumstances that made me sympathize with him.  Long story short is that parts of the PHP based stack he was relying on for some of his software had changed significantly.  In order to update his software to a currently supported version of PHP, he basically now has to rewrite it from scratch.  So yeah, that sucks.">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/post/view/2023/6/developer-brethren-its-time-to-embrace-boring/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a5781257de4197b8e3d54346acdf1dd55a9ba4cb91dcace192fc1baf228c08b5.css" integrity="sha256-pXgSV95Bl7jj1UNGrN8d1VqbpMuR3KzhkvwbryKMCLU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -39,23 +39,38 @@
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
+            .toc {
+                background: var(--entry);
             }
+        }
 
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
             }
         }
 
     </style>
-</noscript><meta property="og:url" content="https://jaylittle.com/post/view/2023/6/developer-brethren-its-time-to-embrace-boring/">
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://jaylittle.com/post/view/2023/6/developer-brethren-its-time-to-embrace-boring/">
   <meta property="og:site_name" content="Jay Little">
   <meta property="og:title" content="Developer Brethren, its Time to Embrace Boring!">
   <meta property="og:description" content="So this morning I was listening to one of the Linux related podcasts, Coder Radio and the hosts read feedback from a listener who claimed that he was “bored” with PHP and ready to try something else. Now to be fair, in this particular case, the writer outlined some circumstances that made me sympathize with him. Long story short is that parts of the PHP based stack he was relying on for some of his software had changed significantly. In order to update his software to a currently supported version of PHP, he basically now has to rewrite it from scratch. So yeah, that sucks.">
@@ -123,20 +138,8 @@
 }
 </script>
 </head>
-
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
+<body id="top">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
@@ -205,7 +208,7 @@
     <h1 class="post-title entry-hint-parent">
       Developer Brethren, its Time to Embrace Boring!
     </h1>
-    <div class="post-meta"><span title='2023-06-22 00:00:00 +0000 UTC'>June 22, 2023</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;Jay Little
+    <div class="post-meta"><span title='2023-06-22 00:00:00 +0000 UTC'>June 22, 2023</span>&nbsp;·&nbsp;<span>7 min</span>&nbsp;·&nbsp;<span>Jay Little</span>
 
 </div>
   </header> 
@@ -227,8 +230,7 @@
 <li>Fragments</li>
 <li>Improved TypeScript support</li>
 <li>Other breaking changes</li>
-</ol>
-</blockquote>
+</ol></blockquote>
 <p>In truth, none of that stuff in the list above matters to me beyond performance improvements.  None of it matters to my ex-employer either as everything was running perfectly fine.  If I was still working there, I would already be lobbying heavily for the time required to make the transition from Vue 2.x to Vue 3.x and it would be an exceptionally hard sell.  That&rsquo;s because as soon as you take the argument for the upgrade outside of the Developer Echo Chamber, it falls flat on its face.  The best possible case one could make is that soon Vue 2.x will no longer be supported with security updates or be extended to take advantage of relevant new browser features.  But even that&rsquo;s a hard sell as it doesn&rsquo;t create a path for you to argue for any tangible up front benefits.</p>
 <p>Let me go even further here:  I like it when my developer tools are boring.  If they are boring, it means they are consistent and reliable.  It means that they aren&rsquo;t creating undue drama in my life or the lives of my end users.  As an industry, we should all be striving towards building things that ultimately end up being boring.  But of course that engineer like inclination flies in the face of all the scam-adjacent tech bro behavior that makes up the public face of our industry.  You can&rsquo;t spend all of your time hyping up investors and rich assholes so they&rsquo;ll give you stacks of cash by telling them that you are going to be building boring and reliable tools based on boring and reliable technologies that already exist.  Not unless you are building something that is actually innovative.  Which most of us aren&rsquo;t.</p>
 <p>So of course that&rsquo;s why everybody is talking themselves blue in the face about nonsense techs like Artificial Intelligence and Blockchains.  Because new is what reels in big fish so that they&rsquo;ll fund whatever dumbass idea the founder has hidden behind a shiny layer of en vogue tech buzzwords.  Developers get sucked into this thinking because all of the tech personalities spend a huge chunk of their time talking up all of this stuff which creates all of the conditions required for <a href="https://www.verywellmind.com/how-to-cope-with-fomo-4174664">FOMO (Fear Of Missing Out)</a> to percolate through our professional ranks.</p>
@@ -261,9 +263,14 @@
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -304,11 +311,12 @@
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
 <meta name="description" content="One of the most disturbing trends I have seen over the last few years is the interchangeability of the terms Agile and Scrum.  Most people believe that Scrum is a form of Agile.  A lot of employers will advertise that they use Agile when in fact they actually use Scrum.  If this doesn&rsquo;t infuriate you, it likely means that you have no idea what Agile actually is, so keep reading.">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/post/view/2018/3/agile-is-good-and-scrum-is-dumb/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a5781257de4197b8e3d54346acdf1dd55a9ba4cb91dcace192fc1baf228c08b5.css" integrity="sha256-pXgSV95Bl7jj1UNGrN8d1VqbpMuR3KzhkvwbryKMCLU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -39,23 +39,38 @@
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
+            .toc {
+                background: var(--entry);
             }
+        }
 
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
             }
         }
 
     </style>
-</noscript><meta property="og:url" content="https://jaylittle.com/post/view/2018/3/agile-is-good-and-scrum-is-dumb/">
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://jaylittle.com/post/view/2018/3/agile-is-good-and-scrum-is-dumb/">
   <meta property="og:site_name" content="Jay Little">
   <meta property="og:title" content="Agile is Good and Scrum is Dumb">
   <meta property="og:description" content="One of the most disturbing trends I have seen over the last few years is the interchangeability of the terms Agile and Scrum. Most people believe that Scrum is a form of Agile. A lot of employers will advertise that they use Agile when in fact they actually use Scrum. If this doesn’t infuriate you, it likely means that you have no idea what Agile actually is, so keep reading.">
@@ -123,20 +138,8 @@
 }
 </script>
 </head>
-
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
+<body id="top">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
@@ -205,7 +208,7 @@
     <h1 class="post-title entry-hint-parent">
       Agile is Good and Scrum is Dumb
     </h1>
-    <div class="post-meta"><span title='2018-03-23 00:00:00 +0000 UTC'>March 23, 2018</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Jay Little
+    <div class="post-meta"><span title='2018-03-23 00:00:00 +0000 UTC'>March 23, 2018</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Jay Little</span>
 
 </div>
   </header> 
@@ -217,8 +220,7 @@
 <li>Working software over comprehensive documentation</li>
 <li>Customer collaboration over contract negotiation</li>
 <li>Responding to change over following a plan</li>
-</ul>
-</blockquote>
+</ul></blockquote>
 <p>That&rsquo;s it.  That&rsquo;s most of Agile right there (the rest being <a href="http://agilemanifesto.org/principles.html">here</a>).  It&rsquo;s amazingly simple, concise and quite awesome.  Over the years I&rsquo;ve had the opportunity to develop software in situations that any lack formal processes.  I&rsquo;m happy to say that in those situations I have managed to figure out a way of doing things that can effectively be described by the four bullet points above.</p>
 <p>Now, I&rsquo;ve also had the opportunity to develop software in situations which are rife with formal processes that must be followed.  Some of those situations were modeled on the infamous old school <a href="https://en.wikipedia.org/wiki/Waterfall_model">Waterfall methodology</a>.  Some of these situations were modeled on the fad driven and supposedly Agile like zombie beast known as the <a href="https://en.wikipedia.org/wiki/Scrum_%28software_development%29">Scrum methodology</a>.  Both suffer from severe downsides.  Both offer some upsides.  Neither one is perfect, but neither one is absolutely terrible either.</p>
 <p>Let&rsquo;s be clear: I&rsquo;ve spent the last three years working in an organization that makes use of Scrum for software development.  Refreshingly, individual product teams at my employer have some level of control over how closely they follow Scrum (an approach which is actually modeled after the Agile principles).  For example on my first team we made pretty heavy use of Scrum.  We did sprints, planning poker, story points, burn down charts (for a time), grooming, retrospectives and three amigos among other things.  In my current team we only do sprints, partial grooming and retros.  Everything else is ignored.</p>
@@ -231,8 +233,7 @@
 <blockquote>
 <ul>
 <li>Individuals and interactions over processes and tools</li>
-</ul>
-</blockquote>
+</ul></blockquote>
 <p>Scrum is the exact opposite of that.  This leads me to my conclusion: Scrum is the antithesis of Agile.  If you are doing Scrum, you are not doing Agile.  Don&rsquo;t believe me?  Fair enough.  I am just some random guy with a blog.  There are <a href="https://www.youtube.com/watch?v=vSnCeJEka_s">lots of people</a> who are far more eloquent than I am, who make a very compelling case for the same exact point.</p>
 <p>Bottom Line: There is always a better way to do things.  Sometimes doing things better requires less process rather than more.  The inability to understand this is really a problem in the tech industry as a whole.  We tend to rely on process in situations when we are surrounded by people who have tendency to not meet our expectations.  Process becomes the hedge that we fall back on in order to save ourselves from the people.  If I had the power and the choice, I&rsquo;d prefer to surround myself with talented, dedicated and reliable people with the freedom to act rather than mediocre people who need to be herded like cattle.</p>
 
@@ -262,9 +263,14 @@
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -305,11 +311,12 @@
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })
