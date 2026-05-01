@@ -11,7 +11,7 @@
 Now let&rsquo;s be clear:  This application works reasonably well.  The bulk of the code was written about eight years ago.  The application hasn&rsquo;t received any updates in over five years when I started working on it again last week.  Despite this, it was still in service and providing value to my employer.  That is a victory which brings a smile to my face.">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/post/view/2018/5/shattering-old-code-rose-colored-glasses/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.71da6873cf321d7c352ac63831b6f3bd3e9fbc537800631bf24848e7fc6b72d1.css" integrity="sha256-cdpoc88yHXw1KsY4MbbzvT6fvFN4AGMb8khI5/xrctE=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -52,12 +52,6 @@ Now let&rsquo;s be clear:  This application works reasonably well.  The bulk of 
             }
         }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
-        }
-
     </style>
 </noscript>
 <script>
@@ -81,10 +75,11 @@ Now let’s be clear: This application works reasonably well. The bulk of the co
     <meta property="article:section" content="post">
     <meta property="article:published_time" content="2018-05-24T00:00:00+00:00">
     <meta property="article:modified_time" content="2018-05-24T00:00:00+00:00">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Shattering &#39;Old Code&#39; Rose Colored Glasses">
-<meta name="twitter:description" content="Over the course of my career, while my standards may have changed, I have always prided myself on the idea that the code I wrote was &ldquo;solid&rdquo; when judged by the standards of the day.  Due to a recent job change, I found myself with yet another opportunity to validate this particular belief.  Sadly, in this particular case, it appears to be a mixed bag at best.
-Now let&rsquo;s be clear:  This application works reasonably well.  The bulk of the code was written about eight years ago.  The application hasn&rsquo;t received any updates in over five years when I started working on it again last week.  Despite this, it was still in service and providing value to my employer.  That is a victory which brings a smile to my face.">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Shattering &#39;Old Code&#39; Rose Colored Glasses">
+  <meta name="twitter:description" content="Over the course of my career, while my standards may have changed, I have always prided myself on the idea that the code I wrote was “solid” when judged by the standards of the day. Due to a recent job change, I found myself with yet another opportunity to validate this particular belief. Sadly, in this particular case, it appears to be a mixed bag at best.
+Now let’s be clear: This application works reasonably well. The bulk of the code was written about eight years ago. The application hasn’t received any updates in over five years when I started working on it again last week. Despite this, it was still in service and providing value to my employer. That is a victory which brings a smile to my face.">
 
 
 <script type="application/ld+json">
@@ -143,17 +138,17 @@ Now let&rsquo;s be clear:  This application works reasonably well.  The bulk of 
 </head>
 <body id="top">
     <header class="header">
-    <nav class="nav">
+    <nav class="header-nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -169,7 +164,7 @@ Now let&rsquo;s be clear:  This application works reasonably well.  The bulk of 
                 </button>
             </div>
         </div>
-        <ul id="menu">
+        <ul id="menu" class="menu">
             <li>
                 <a href="https://jaylittle.com/article/view/about/" title="About">
                     <span>About</span>
@@ -207,7 +202,13 @@ Now let&rsquo;s be clear:  This application works reasonably well.  The bulk of 
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://jaylittle.com/">Home</a>&nbsp;»&nbsp;<a href="https://jaylittle.com/post/">Posts</a></div>
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    <a href='https://jaylittle.com/'>Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="https://jaylittle.com/post/">Posts</a></nav>
     <h1 class="post-title entry-hint-parent">
       Shattering &#39;Old Code&#39; Rose Colored Glasses
     </h1>
@@ -215,7 +216,7 @@ Now let&rsquo;s be clear:  This application works reasonably well.  The bulk of 
 
 </div>
   </header> 
-  <div class="post-content"><p>Over the course of my career, while my standards may have changed, I have always prided myself on the idea that the code I wrote was &ldquo;solid&rdquo; when judged by the standards of the day.  Due to a recent job change, I found myself with yet another opportunity to validate this particular belief.  Sadly, in this particular case, it appears to be a mixed bag at best.</p>
+  <div class="post-content md-content"><p>Over the course of my career, while my standards may have changed, I have always prided myself on the idea that the code I wrote was &ldquo;solid&rdquo; when judged by the standards of the day.  Due to a recent job change, I found myself with yet another opportunity to validate this particular belief.  Sadly, in this particular case, it appears to be a mixed bag at best.</p>
 <p>Now let&rsquo;s be clear:  This application works reasonably well.  The bulk of the code was written about eight years ago.  The application hasn&rsquo;t received any updates in over five years when I started working on it again last week.  Despite this, it was still in service and providing value to my employer.  That is a victory which brings a smile to my face.</p>
 <p>But it&rsquo;s not all good news.  Some parts of this application are absolutely terrible.  For starters I made some poor technology choices.  One example of this is choosing to use <a href="https://msdn.microsoft.com/en-us/library/bb425822.aspx">LINQ to SQL</a> for the Data Access Layer.  By the time I was done writing the bulk of this application, Microsoft had already released the <a href="https://msdn.microsoft.com/en-us/library/aa937723(v=vs.113).aspx">Entity Framework</a> as an upgrade.  I probably should&rsquo;ve taken the time to switch to that.  Ironically I&rsquo;ve now completely sworn off Entity Framework as I believe that writing your own SQL is the only way to ensure consistent database performance across anything but the smallest of applications.  To put it in simpler terms: I prefer to use <a href="https://github.com/StackExchange/Dapper">Dapper</a> for the DAL and hand write all of my SQL code.</p>
 <p>Another massive downside to my use of LINQ to SQL was the fact that I hadn&rsquo;t bothered to dispose of any of the Database Context objects I created.  This of course created memory and database connection leaks which required that the application pool needed to be restarted from time to time.  There is also no clean separation of concerns in the code base.  For example: the data layer and the business layer are incestuously mingled together.  In addition, I very much overused static methods in classes.</p>
@@ -245,9 +246,11 @@ Now let&rsquo;s be clear:  This application works reasonably well.  The bulk of 
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
 </a>
 
@@ -286,14 +289,13 @@ Now let&rsquo;s be clear:  This application works reasonably well.  The bulk of 
 
 </script>
 <script>
-    var mybutton = document.getElementById("top-link");
+    var toplink = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
         } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
+            toplink.classList.add("hidden");
         }
     };
 

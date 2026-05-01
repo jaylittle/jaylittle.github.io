@@ -10,7 +10,7 @@
 <meta name="description" content="Everybody knows that I love to play RPGs (Role Playing Games).  In fact I love them so much that over the last few years I mostly stopped playing games from every other genre.  Despite that, my love for RPGs has begun to wane a bit in recent years.  While I do still love getting immersed in wonderfully complex multi-layered lore and tweaking my stats and skills to best maximize my chances for victory, somewhere along the way the thrill of that began to fade.  Maybe it&rsquo;s the fact that I&rsquo;ve played hundreds or even thousands of these games and after awhile they all start to blur together.  Or perhaps it&rsquo;s the fact that the infamous RPG grind really can wear you down if you spend too much time grappling with it.">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/post/view/2018/5/my-ode-to-roguelikes/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.71da6873cf321d7c352ac63831b6f3bd3e9fbc537800631bf24848e7fc6b72d1.css" integrity="sha256-cdpoc88yHXw1KsY4MbbzvT6fvFN4AGMb8khI5/xrctE=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -51,12 +51,6 @@
             }
         }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
-        }
-
     </style>
 </noscript>
 <script>
@@ -79,9 +73,10 @@
     <meta property="article:section" content="post">
     <meta property="article:published_time" content="2018-05-15T00:00:00+00:00">
     <meta property="article:modified_time" content="2018-05-15T00:00:00+00:00">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="My Ode to Rogue-Likes">
-<meta name="twitter:description" content="Everybody knows that I love to play RPGs (Role Playing Games).  In fact I love them so much that over the last few years I mostly stopped playing games from every other genre.  Despite that, my love for RPGs has begun to wane a bit in recent years.  While I do still love getting immersed in wonderfully complex multi-layered lore and tweaking my stats and skills to best maximize my chances for victory, somewhere along the way the thrill of that began to fade.  Maybe it&rsquo;s the fact that I&rsquo;ve played hundreds or even thousands of these games and after awhile they all start to blur together.  Or perhaps it&rsquo;s the fact that the infamous RPG grind really can wear you down if you spend too much time grappling with it.">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="My Ode to Rogue-Likes">
+  <meta name="twitter:description" content="Everybody knows that I love to play RPGs (Role Playing Games). In fact I love them so much that over the last few years I mostly stopped playing games from every other genre. Despite that, my love for RPGs has begun to wane a bit in recent years. While I do still love getting immersed in wonderfully complex multi-layered lore and tweaking my stats and skills to best maximize my chances for victory, somewhere along the way the thrill of that began to fade. Maybe it’s the fact that I’ve played hundreds or even thousands of these games and after awhile they all start to blur together. Or perhaps it’s the fact that the infamous RPG grind really can wear you down if you spend too much time grappling with it.">
 
 
 <script type="application/ld+json">
@@ -140,17 +135,17 @@
 </head>
 <body id="top">
     <header class="header">
-    <nav class="nav">
+    <nav class="header-nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -166,7 +161,7 @@
                 </button>
             </div>
         </div>
-        <ul id="menu">
+        <ul id="menu" class="menu">
             <li>
                 <a href="https://jaylittle.com/article/view/about/" title="About">
                     <span>About</span>
@@ -204,7 +199,13 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://jaylittle.com/">Home</a>&nbsp;»&nbsp;<a href="https://jaylittle.com/post/">Posts</a></div>
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    <a href='https://jaylittle.com/'>Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="https://jaylittle.com/post/">Posts</a></nav>
     <h1 class="post-title entry-hint-parent">
       My Ode to Rogue-Likes
     </h1>
@@ -212,7 +213,7 @@
 
 </div>
   </header> 
-  <div class="post-content"><p>Everybody knows that I love to play RPGs (Role Playing Games).  In fact I love them so much that over the last few years I mostly stopped playing games from every other genre.  Despite that, my love for RPGs has begun to wane a bit in recent years.  While I do still love getting immersed in wonderfully complex multi-layered lore and tweaking my stats and skills to best maximize my chances for victory, somewhere along the way the thrill of that began to fade.  Maybe it&rsquo;s the fact that I&rsquo;ve played hundreds or even thousands of these games and after awhile they all start to blur together.  Or perhaps it&rsquo;s the fact that the infamous RPG <a href="https://en.wikipedia.org/wiki/Grinding_(gaming)">grind</a> really can wear you down if you spend too much time grappling with it.</p>
+  <div class="post-content md-content"><p>Everybody knows that I love to play RPGs (Role Playing Games).  In fact I love them so much that over the last few years I mostly stopped playing games from every other genre.  Despite that, my love for RPGs has begun to wane a bit in recent years.  While I do still love getting immersed in wonderfully complex multi-layered lore and tweaking my stats and skills to best maximize my chances for victory, somewhere along the way the thrill of that began to fade.  Maybe it&rsquo;s the fact that I&rsquo;ve played hundreds or even thousands of these games and after awhile they all start to blur together.  Or perhaps it&rsquo;s the fact that the infamous RPG <a href="https://en.wikipedia.org/wiki/Grinding_(gaming)">grind</a> really can wear you down if you spend too much time grappling with it.</p>
 <p>Nearly a year ago I stumbled across a game on Steam called <a href="https://store.steampowered.com/app/333640/Caves_of_Qud/">Caves of Qud</a> and I absolutely fell in love.  Caves of Qud is a highly evolved member of the RPG sub-genre affectionately known as <a href="https://en.wikipedia.org/wiki/Roguelike">Rogue-Likes</a>.  While it&rsquo;s not the first game in the genre I&rsquo;ve played, it&rsquo;s the one that really ignited my passion for it.</p>
 <p>Why is the genre called Rogue-Like?  Because the very first game in this sub-genre was called <a href="https://en.wikipedia.org/wiki/Rogue_(video_game)">Rogue</a> and it was released all the way back in 1980.  What is a Rogue-Like?  It&rsquo;s basically an RPG variant with turn based combat, some element of randomness in terms of the precise challenges you will face and most importantly: permadeath.  That&rsquo;s right.  When you die in these games, it&rsquo;s forever.  You can&rsquo;t reload and try a different variation and must start over.  So if your first conclusion is that these games are hella-hard, you are absolutely correct.</p>
 <p>Once the random elements are thrown into the mix, you have a situation in which each and every play through is unique.  Since one false step can result in your character permanently dying and you don&rsquo;t have any real way of knowing what you&rsquo;ll face in advance, players tend to be very careful and consider the consequences of every action.  Throw in some great character customization and you&rsquo;ve got a perfect storm of game play.</p>
@@ -258,9 +259,11 @@
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
 </a>
 
@@ -299,14 +302,13 @@
 
 </script>
 <script>
-    var mybutton = document.getElementById("top-link");
+    var toplink = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
         } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
+            toplink.classList.add("hidden");
         }
     };
 

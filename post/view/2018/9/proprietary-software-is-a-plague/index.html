@@ -11,7 +11,7 @@
 Before I get going I want to address the elephant in the room.  I&rsquo;ve spent my entire career writing proprietary software, haven&rsquo;t I?  Yes I have.  I am part of the problem.  However because I&rsquo;ve spent the vast majority of my career writing custom software for clients which is used internally, I am able to absolve myself of most of this.  The reality is that when I write custom software for a client the ultimate choice of whether or not that software is distributed and under what license it&rsquo;s distributed is up to them.  For the most part these are internal tools, and distribution isn&rsquo;t even a factor.  In addition my clients retain full rights to the source code I produce.  It belongs to them, not me.  In that situation the client ultimately maintains the control and power that will benefit their business in the long run.">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/post/view/2018/9/proprietary-software-is-a-plague/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.71da6873cf321d7c352ac63831b6f3bd3e9fbc537800631bf24848e7fc6b72d1.css" integrity="sha256-cdpoc88yHXw1KsY4MbbzvT6fvFN4AGMb8khI5/xrctE=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -52,12 +52,6 @@ Before I get going I want to address the elephant in the room.  I&rsquo;ve spent
             }
         }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
-        }
-
     </style>
 </noscript>
 <script>
@@ -81,10 +75,11 @@ Before I get going I want to address the elephant in the room. I’ve spent my e
     <meta property="article:section" content="post">
     <meta property="article:published_time" content="2018-09-01T00:00:00+00:00">
     <meta property="article:modified_time" content="2018-09-01T00:00:00+00:00">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Proprietary Software is a Plague">
-<meta name="twitter:description" content="So as I&rsquo;m sure my readers have noticed, the rate at which I&rsquo;ve been producing content here has slowed.  The reason for that is simple: I don&rsquo;t have as much to say as of late.  However I have been saving up yet another classic rant and today I&rsquo;m ready to unleash it upon you all.  Proprietary Software is a plague and today I&rsquo;m going to explain why.
-Before I get going I want to address the elephant in the room.  I&rsquo;ve spent my entire career writing proprietary software, haven&rsquo;t I?  Yes I have.  I am part of the problem.  However because I&rsquo;ve spent the vast majority of my career writing custom software for clients which is used internally, I am able to absolve myself of most of this.  The reality is that when I write custom software for a client the ultimate choice of whether or not that software is distributed and under what license it&rsquo;s distributed is up to them.  For the most part these are internal tools, and distribution isn&rsquo;t even a factor.  In addition my clients retain full rights to the source code I produce.  It belongs to them, not me.  In that situation the client ultimately maintains the control and power that will benefit their business in the long run.">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Proprietary Software is a Plague">
+  <meta name="twitter:description" content="So as I’m sure my readers have noticed, the rate at which I’ve been producing content here has slowed. The reason for that is simple: I don’t have as much to say as of late. However I have been saving up yet another classic rant and today I’m ready to unleash it upon you all. Proprietary Software is a plague and today I’m going to explain why.
+Before I get going I want to address the elephant in the room. I’ve spent my entire career writing proprietary software, haven’t I? Yes I have. I am part of the problem. However because I’ve spent the vast majority of my career writing custom software for clients which is used internally, I am able to absolve myself of most of this. The reality is that when I write custom software for a client the ultimate choice of whether or not that software is distributed and under what license it’s distributed is up to them. For the most part these are internal tools, and distribution isn’t even a factor. In addition my clients retain full rights to the source code I produce. It belongs to them, not me. In that situation the client ultimately maintains the control and power that will benefit their business in the long run.">
 
 
 <script type="application/ld+json">
@@ -143,17 +138,17 @@ Before I get going I want to address the elephant in the room.  I&rsquo;ve spent
 </head>
 <body id="top">
     <header class="header">
-    <nav class="nav">
+    <nav class="header-nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -169,7 +164,7 @@ Before I get going I want to address the elephant in the room.  I&rsquo;ve spent
                 </button>
             </div>
         </div>
-        <ul id="menu">
+        <ul id="menu" class="menu">
             <li>
                 <a href="https://jaylittle.com/article/view/about/" title="About">
                     <span>About</span>
@@ -207,7 +202,13 @@ Before I get going I want to address the elephant in the room.  I&rsquo;ve spent
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://jaylittle.com/">Home</a>&nbsp;»&nbsp;<a href="https://jaylittle.com/post/">Posts</a></div>
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    <a href='https://jaylittle.com/'>Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="https://jaylittle.com/post/">Posts</a></nav>
     <h1 class="post-title entry-hint-parent">
       Proprietary Software is a Plague
     </h1>
@@ -215,7 +216,7 @@ Before I get going I want to address the elephant in the room.  I&rsquo;ve spent
 
 </div>
   </header> 
-  <div class="post-content"><p>So as I&rsquo;m sure my readers have noticed, the rate at which I&rsquo;ve been producing content here has slowed.  The reason for that is simple: I don&rsquo;t have as much to say as of late.  However I have been saving up yet another classic rant and today I&rsquo;m ready to unleash it upon you all.  Proprietary Software is a plague and today I&rsquo;m going to explain why.</p>
+  <div class="post-content md-content"><p>So as I&rsquo;m sure my readers have noticed, the rate at which I&rsquo;ve been producing content here has slowed.  The reason for that is simple: I don&rsquo;t have as much to say as of late.  However I have been saving up yet another classic rant and today I&rsquo;m ready to unleash it upon you all.  Proprietary Software is a plague and today I&rsquo;m going to explain why.</p>
 <p>Before I get going I want to address the elephant in the room.  I&rsquo;ve spent my entire career writing proprietary software, haven&rsquo;t I?  Yes I have.  I am part of the problem.  However because I&rsquo;ve spent the vast majority of my career writing custom software for clients which is used internally, I am able to absolve myself of most of this.  The reality is that when I write custom software for a client the ultimate choice of whether or not that software is distributed and under what license it&rsquo;s distributed is up to them.  For the most part these are internal tools, and distribution isn&rsquo;t even a factor.  In addition my clients retain full rights to the source code I produce.  It belongs to them, not me.  In that situation the client ultimately maintains the control and power that will benefit their business in the long run.</p>
 <p>In addition it is important to note that I believe the negative impact proprietary software is substantially lessened for certain activities.  For example when it comes to video games and consuming content, proprietary software isn&rsquo;t really a negative as long as that software is made available on a relatively wide range of platforms.  That&rsquo;s because in my mind these activities are reasonably transient and I&rsquo;m okay with that.</p>
 <p>Where proprietary software really plagues people is in general business and personal scenarios.  Proprietary software generally isn&rsquo;t just a purchase once and use forever type of engagement.  Instead vendors are always looking for ways to extract more revenue out of you. Whether that comes from insane licensing mechanisms, support agreements, subscriptions or the tried and true technique of releasing new major versions as part of a regular cadence, it is inherently antagonistic.</p>
@@ -243,9 +244,11 @@ Before I get going I want to address the elephant in the room.  I&rsquo;ve spent
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
 </a>
 
@@ -284,14 +287,13 @@ Before I get going I want to address the elephant in the room.  I&rsquo;ve spent
 
 </script>
 <script>
-    var mybutton = document.getElementById("top-link");
+    var toplink = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
         } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
+            toplink.classList.add("hidden");
         }
     };
 

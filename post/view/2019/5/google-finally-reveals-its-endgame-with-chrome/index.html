@@ -10,7 +10,7 @@
 <meta name="description" content="Earlier this year in January, Google publicly toyed with making some changes to its Extension WebRequest API that would effectively kill off reputable ad-blockers.  This announcement was met with much sound and fury and Google appeared to fold after a few weeks of controversy and a bit of research on the part of the community.  However all of this ultimately signified nothing as Google announced plans to move forward with nearly the exact same plan this week.">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/post/view/2019/5/google-finally-reveals-its-endgame-with-chrome/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.71da6873cf321d7c352ac63831b6f3bd3e9fbc537800631bf24848e7fc6b72d1.css" integrity="sha256-cdpoc88yHXw1KsY4MbbzvT6fvFN4AGMb8khI5/xrctE=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -51,12 +51,6 @@
             }
         }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
-        }
-
     </style>
 </noscript>
 <script>
@@ -79,9 +73,10 @@
     <meta property="article:section" content="post">
     <meta property="article:published_time" content="2019-05-31T00:00:00+00:00">
     <meta property="article:modified_time" content="2019-05-31T00:00:00+00:00">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Google Finally Reveals Its Endgame with Chrome">
-<meta name="twitter:description" content="Earlier this year in January, Google publicly toyed with making some changes to its Extension WebRequest API that would effectively kill off reputable ad-blockers.  This announcement was met with much sound and fury and Google appeared to fold after a few weeks of controversy and a bit of research on the part of the community.  However all of this ultimately signified nothing as Google announced plans to move forward with nearly the exact same plan this week.">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Google Finally Reveals Its Endgame with Chrome">
+  <meta name="twitter:description" content="Earlier this year in January, Google publicly toyed with making some changes to its Extension WebRequest API that would effectively kill off reputable ad-blockers. This announcement was met with much sound and fury and Google appeared to fold after a few weeks of controversy and a bit of research on the part of the community. However all of this ultimately signified nothing as Google announced plans to move forward with nearly the exact same plan this week.">
 
 
 <script type="application/ld+json">
@@ -140,17 +135,17 @@
 </head>
 <body id="top">
     <header class="header">
-    <nav class="nav">
+    <nav class="header-nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -166,7 +161,7 @@
                 </button>
             </div>
         </div>
-        <ul id="menu">
+        <ul id="menu" class="menu">
             <li>
                 <a href="https://jaylittle.com/article/view/about/" title="About">
                     <span>About</span>
@@ -204,7 +199,13 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://jaylittle.com/">Home</a>&nbsp;»&nbsp;<a href="https://jaylittle.com/post/">Posts</a></div>
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    <a href='https://jaylittle.com/'>Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="https://jaylittle.com/post/">Posts</a></nav>
     <h1 class="post-title entry-hint-parent">
       Google Finally Reveals Its Endgame with Chrome
     </h1>
@@ -212,7 +213,7 @@
 
 </div>
   </header> 
-  <div class="post-content"><p>Earlier this year in January, <a href="https://www.ghacks.net/2019/01/22/chrome-extension-manifest-v3-could-end-ublock-origin-for-chrome/">Google publicly toyed with making some changes to its Extension WebRequest API that would effectively kill off reputable ad-blockers</a>.  This announcement was met with much sound and fury and <a href="https://www.zdnet.com/article/google-backtracks-on-chrome-modifications-that-would-have-crippled-ad-blockers/">Google appeared to fold after a few weeks of controversy and a bit of research on the part of the community</a>.  However all of this ultimately signified nothing as <a href="https://9to5google.com/2019/05/29/chrome-ad-blocking-enterprise-manifest-v3/">Google announced plans to move forward</a> with nearly the exact same plan this week.</p>
+  <div class="post-content md-content"><p>Earlier this year in January, <a href="https://www.ghacks.net/2019/01/22/chrome-extension-manifest-v3-could-end-ublock-origin-for-chrome/">Google publicly toyed with making some changes to its Extension WebRequest API that would effectively kill off reputable ad-blockers</a>.  This announcement was met with much sound and fury and <a href="https://www.zdnet.com/article/google-backtracks-on-chrome-modifications-that-would-have-crippled-ad-blockers/">Google appeared to fold after a few weeks of controversy and a bit of research on the part of the community</a>.  However all of this ultimately signified nothing as <a href="https://9to5google.com/2019/05/29/chrome-ad-blocking-enterprise-manifest-v3/">Google announced plans to move forward</a> with nearly the exact same plan this week.</p>
 <p>What changed?  Well now Google plans to allow paying &ldquo;enterprises&rdquo; to retain access to the deprecated WebRequest APIs that ad blocker extensions in Chrome use.  There is some level of debate over what that actually means in practice but what we all seem to agree on is that it means that out of the box, the handful of effective ad-blocking extensions for Chrome like uBlock Origin will cease to function.  Users will only be left with half-ass ad blockers like <a href="https://www.themarysue.com/adblock-to-allow-some-ads/">Adblock Plus</a> which allows companies to pay to have their ads displayed and is directly aligned with Google.</p>
 <p>Once this change is unleashed, the developers of the reputable extensions are already planning on abandoning Chrome as a target platform.  This effectively seals the fate of Chrome users.  Much like the protagonist in the film Clockwork Orange, the eyes of Chrome users will be forced to remain open as they ingest the wealth of material fed to them by their handlers, or as we refer to them in this case, Google.  The material of course is advertising trash.</p>
 <p>Why is Google doing this?  Google is doing this because they clearly believe that they aren&rsquo;t making enough money off of their users.  Google is an advertising company.  Every action they take is an effort to facilitate that.  Google doesn&rsquo;t care about making the world a better place.  Google only cares about making money and making as much of it as possible.  To be fair, on the surface this isn&rsquo;t different from any other corporation.  What makes the situation with Google so concerning is the fact that Google has achieved a de-facto status with many tools and services (Chrome, Search, GMail, Android).  In these areas Google has clearly begun to brainstorm methods to more effectively monetize their de-facto status.</p>
@@ -252,9 +253,11 @@
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
 </a>
 
@@ -293,14 +296,13 @@
 
 </script>
 <script>
-    var mybutton = document.getElementById("top-link");
+    var toplink = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
         } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
+            toplink.classList.add("hidden");
         }
     };
 

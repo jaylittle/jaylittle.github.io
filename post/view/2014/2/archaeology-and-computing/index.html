@@ -10,7 +10,7 @@
 <meta name="description" content="Those of you who know me reasonably well, know that I enjoy tinkering with old software.  As a developer I&rsquo;ve always been fascinated with the evolution of software throughout the years.  As a result I tend to collect old pieces of software.  However 95% of this collection is electronic as I have tended to shy away from physical media.  However not even this strong preference has been able to keep me wondering throughout the years, &ldquo;What is happening to all of that old media?&rdquo;">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/post/view/2014/2/archaeology-and-computing/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.71da6873cf321d7c352ac63831b6f3bd3e9fbc537800631bf24848e7fc6b72d1.css" integrity="sha256-cdpoc88yHXw1KsY4MbbzvT6fvFN4AGMb8khI5/xrctE=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -51,12 +51,6 @@
             }
         }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
-        }
-
     </style>
 </noscript>
 <script>
@@ -79,9 +73,10 @@
     <meta property="article:section" content="post">
     <meta property="article:published_time" content="2014-02-04T00:00:00+00:00">
     <meta property="article:modified_time" content="2014-02-04T00:00:00+00:00">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Archaeology and Computing">
-<meta name="twitter:description" content="Those of you who know me reasonably well, know that I enjoy tinkering with old software.  As a developer I&rsquo;ve always been fascinated with the evolution of software throughout the years.  As a result I tend to collect old pieces of software.  However 95% of this collection is electronic as I have tended to shy away from physical media.  However not even this strong preference has been able to keep me wondering throughout the years, &ldquo;What is happening to all of that old media?&rdquo;">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Archaeology and Computing">
+  <meta name="twitter:description" content="Those of you who know me reasonably well, know that I enjoy tinkering with old software. As a developer I’ve always been fascinated with the evolution of software throughout the years. As a result I tend to collect old pieces of software. However 95% of this collection is electronic as I have tended to shy away from physical media. However not even this strong preference has been able to keep me wondering throughout the years, “What is happening to all of that old media?”">
 
 
 <script type="application/ld+json">
@@ -140,17 +135,17 @@
 </head>
 <body id="top">
     <header class="header">
-    <nav class="nav">
+    <nav class="header-nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -166,7 +161,7 @@
                 </button>
             </div>
         </div>
-        <ul id="menu">
+        <ul id="menu" class="menu">
             <li>
                 <a href="https://jaylittle.com/article/view/about/" title="About">
                     <span>About</span>
@@ -204,7 +199,13 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://jaylittle.com/">Home</a>&nbsp;»&nbsp;<a href="https://jaylittle.com/post/">Posts</a></div>
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    <a href='https://jaylittle.com/'>Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="https://jaylittle.com/post/">Posts</a></nav>
     <h1 class="post-title entry-hint-parent">
       Archaeology and Computing
     </h1>
@@ -212,7 +213,7 @@
 
 </div>
   </header> 
-  <div class="post-content"><p>Those of you who know me reasonably well, know that I enjoy tinkering with old software.  As a developer I&rsquo;ve always been fascinated with the evolution of software throughout the years.  As a result I tend to collect old pieces of software.  However 95% of this collection is electronic as I have tended to shy away from physical media.  However not even this strong preference has been able to keep me wondering throughout the years, &ldquo;What is happening to all of that old media?&rdquo;</p>
+  <div class="post-content md-content"><p>Those of you who know me reasonably well, know that I enjoy tinkering with old software.  As a developer I&rsquo;ve always been fascinated with the evolution of software throughout the years.  As a result I tend to collect old pieces of software.  However 95% of this collection is electronic as I have tended to shy away from physical media.  However not even this strong preference has been able to keep me wondering throughout the years, &ldquo;What is happening to all of that old media?&rdquo;</p>
 <p>First off, let&rsquo;s define what constitutes &ldquo;old&rdquo; as that is a relative term which encompasses different time periods for different people.  For the purposes of this discussion the term &ldquo;old&rdquo; primarily refers to 5.25 inch floppy disks as that is really the first form of media that I became accustomed to while growing up.  For others it might refer to the old 8 inch floppy disks.  And for others it might refer to 3.5 inch floppy disks and if it does, chances are you aren&rsquo;t going to appreciate any of what follows ;)  In any event to narrow down the context of this discussion further, I&rsquo;m primarily interested in 5.25 inch floppy disks that contain data and/or programs for IBM DOS compatible hardware as that was my preferred platform of the era in question.</p>
 <p>Needless to say if you do the research you will quickly realize that extracting the data off a 5.25 inch floppy disk is nearly impossible with modern day hardware.  Modern PCs no longer contain the legacy ports and/or controllers required to connect traditional floppy disks.  In addition modern operating systems do not tend to include any support for such antiquated devices.  3.5 inch disks are a different story as one can readily purchase cheap USB 3.5 inch drives and modern day operating systems still at least include partial support for this form of media.  5.25 inch floppy drives never had any USB compatible variants created for them however which poses the question that has rattled around in my mind for years:  How does a modern computer user with modern equipment go about extracting data off of these 5.25 inch disks?</p>
 <p>Well today I&rsquo;m going to answer that question for you.  I recently purchased a  <a href="http://kryoflux.com/">Kryoflux interface board</a> from it&rsquo;s manufacturer which is located in the United Kingdom.  This is a device that has been created to solve the very problem that I wanted to solve.  The only downside is that device requires that you supply a compatible drive for the media in question and the device will provide a USB compatible interface and the appropriate software to access the data from that drive on any modern PC running either Windows, Linux or Mac OS X.  Keeping that in mind, I headed on over to <a href="http://www.recycledgoods.com/">Recycled Goods</a> and tried to pick a relatively decent looking IBM PC compatible 1.2 megabyte 5.25 inch drive out.  Though let&rsquo;s be honest - you are kind of shooting blind here no matter what you do.  The newest 5.25 inch drives are going to be at least 20 years old.  So getting a working one on the first try would constitute something of a small miracle.</p>
@@ -251,9 +252,11 @@
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
 </a>
 
@@ -292,14 +295,13 @@
 
 </script>
 <script>
-    var mybutton = document.getElementById("top-link");
+    var toplink = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
         } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
+            toplink.classList.add("hidden");
         }
     };
 

@@ -10,7 +10,7 @@
 <meta name="description" content="Over my years as a software developer I have on occasion stopped and asked myself, &ldquo;What exactly is the point?&rdquo;  I realize that on the surface that sounds a bit depressing, but you have to recognize that over the last forty years virtually every type of program you can think of has already been written.  Sure there are a handful of exceptions, but generally most of us aren&rsquo;t doing anything particularly new.">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/post/view/2017/12/riding-the-nostalgia-wave-how-old-is-too-old/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.71da6873cf321d7c352ac63831b6f3bd3e9fbc537800631bf24848e7fc6b72d1.css" integrity="sha256-cdpoc88yHXw1KsY4MbbzvT6fvFN4AGMb8khI5/xrctE=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -51,12 +51,6 @@
             }
         }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
-        }
-
     </style>
 </noscript>
 <script>
@@ -79,9 +73,10 @@
     <meta property="article:section" content="post">
     <meta property="article:published_time" content="2017-12-05T00:00:00+00:00">
     <meta property="article:modified_time" content="2017-12-05T00:00:00+00:00">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Riding the Nostalgia Wave: How Old is too Old?">
-<meta name="twitter:description" content="Over my years as a software developer I have on occasion stopped and asked myself, &ldquo;What exactly is the point?&rdquo;  I realize that on the surface that sounds a bit depressing, but you have to recognize that over the last forty years virtually every type of program you can think of has already been written.  Sure there are a handful of exceptions, but generally most of us aren&rsquo;t doing anything particularly new.">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Riding the Nostalgia Wave: How Old is too Old?">
+  <meta name="twitter:description" content="Over my years as a software developer I have on occasion stopped and asked myself, “What exactly is the point?” I realize that on the surface that sounds a bit depressing, but you have to recognize that over the last forty years virtually every type of program you can think of has already been written. Sure there are a handful of exceptions, but generally most of us aren’t doing anything particularly new.">
 
 
 <script type="application/ld+json">
@@ -140,17 +135,17 @@
 </head>
 <body id="top">
     <header class="header">
-    <nav class="nav">
+    <nav class="header-nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -166,7 +161,7 @@
                 </button>
             </div>
         </div>
-        <ul id="menu">
+        <ul id="menu" class="menu">
             <li>
                 <a href="https://jaylittle.com/article/view/about/" title="About">
                     <span>About</span>
@@ -204,7 +199,13 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://jaylittle.com/">Home</a>&nbsp;»&nbsp;<a href="https://jaylittle.com/post/">Posts</a></div>
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    <a href='https://jaylittle.com/'>Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="https://jaylittle.com/post/">Posts</a></nav>
     <h1 class="post-title entry-hint-parent">
       Riding the Nostalgia Wave: How Old is too Old?
     </h1>
@@ -212,7 +213,7 @@
 
 </div>
   </header> 
-  <div class="post-content"><p>Over my years as a software developer I have on occasion stopped and asked myself, &ldquo;What exactly is the point?&rdquo;  I realize that on the surface that sounds a bit depressing, but you have to recognize that over the last forty years virtually every type of program you can think of has already been written.  Sure there are a handful of exceptions, but generally most of us aren&rsquo;t doing anything particularly new.</p>
+  <div class="post-content md-content"><p>Over my years as a software developer I have on occasion stopped and asked myself, &ldquo;What exactly is the point?&rdquo;  I realize that on the surface that sounds a bit depressing, but you have to recognize that over the last forty years virtually every type of program you can think of has already been written.  Sure there are a handful of exceptions, but generally most of us aren&rsquo;t doing anything particularly new.</p>
 <p>If you spend real time thinking about this, you&rsquo;ll end up coming up with all sorts of related questions.  For instance, how did we manage to do so much with software in the past when we had so little in the way of hardware resources available to us?  We had a pittance of RAM, storage and processor power yet despite all this, I was still able to cruise the internet on a 486/33 with Windows 3.11 back in the day.  I was still able to type up papers using word processors that ran in MS/DOS.  I was still able to email people.  I was still able to play awesome and engaging games.  I was still able to communicate with people in far off places.</p>
 <p>Decades later, things certainly look nicer.  We definitely have a lot more options in terms of which software packages we can choose from to complete a particular task.  Of course as a retro gamer, I&rsquo;m not even going to really mention video games.  If you are at all aesthetically concerned then the games of yesteryear are probably not going to be your cup of tea regardless of how fun they may or may not be.  Beyond that I can&rsquo;t help but to wonder: Are me making effective use of the resources we have available to us today?  Do today&rsquo;s software packages represent more of a revolutionary advancement when compared to yesterday&rsquo;s packages or an evolutionary one?</p>
 <p>After thinking about this a great deal, I believe the answer is firmly rooted on the evolutionary side of the fence.  In this industry we spend a lot of time crowing about innovation but the honest truth is that most of us aren&rsquo;t innovating at all.  We are largely spending most of our time writing code that attempts to automate a manual process or provide a tool that enables a user in some sort of specific way.  So if we follow that thought process to its logical conclusion, it begs the question: Should we just keep using old software?  That&rsquo;s where things get a bit tricky.  In theory I believe we could use a lot of old software packages and suffer minimal drawbacks.  But there are many exceptions to that general rule of thumb.  There may even be enough exceptions to render the exercise worthless.</p>
@@ -241,9 +242,11 @@
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
 </a>
 
@@ -282,14 +285,13 @@
 
 </script>
 <script>
-    var mybutton = document.getElementById("top-link");
+    var toplink = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
         } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
+            toplink.classList.add("hidden");
         }
     };
 

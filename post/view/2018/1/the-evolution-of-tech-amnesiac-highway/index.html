@@ -10,7 +10,7 @@
 <meta name="description" content="Something insidious has been lapping away at the innards of my mind for quite awhile.  To be honest I wasn&rsquo;t even consciously aware of it 48 hours ago.  So why am I writing about it now?  Yesterday at my nephew&rsquo;s 9th birthday party, somebody posited the theory that video games act as a gateway drug for other more productive technology related pursuits.  I immediately took offense to that although I didn&rsquo;t fully understand why at the time.  Now that I&rsquo;ve had some time to think about it, I decided to go ahead and write about why I feel that way.">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/post/view/2018/1/the-evolution-of-tech-amnesiac-highway/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.71da6873cf321d7c352ac63831b6f3bd3e9fbc537800631bf24848e7fc6b72d1.css" integrity="sha256-cdpoc88yHXw1KsY4MbbzvT6fvFN4AGMb8khI5/xrctE=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -51,12 +51,6 @@
             }
         }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
-        }
-
     </style>
 </noscript>
 <script>
@@ -79,9 +73,10 @@
     <meta property="article:section" content="post">
     <meta property="article:published_time" content="2018-01-22T00:00:00+00:00">
     <meta property="article:modified_time" content="2018-01-22T00:00:00+00:00">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="The Evolution of Tech: Amnesiac Highway">
-<meta name="twitter:description" content="Something insidious has been lapping away at the innards of my mind for quite awhile.  To be honest I wasn&rsquo;t even consciously aware of it 48 hours ago.  So why am I writing about it now?  Yesterday at my nephew&rsquo;s 9th birthday party, somebody posited the theory that video games act as a gateway drug for other more productive technology related pursuits.  I immediately took offense to that although I didn&rsquo;t fully understand why at the time.  Now that I&rsquo;ve had some time to think about it, I decided to go ahead and write about why I feel that way.">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="The Evolution of Tech: Amnesiac Highway">
+  <meta name="twitter:description" content="Something insidious has been lapping away at the innards of my mind for quite awhile. To be honest I wasn’t even consciously aware of it 48 hours ago. So why am I writing about it now? Yesterday at my nephew’s 9th birthday party, somebody posited the theory that video games act as a gateway drug for other more productive technology related pursuits. I immediately took offense to that although I didn’t fully understand why at the time. Now that I’ve had some time to think about it, I decided to go ahead and write about why I feel that way.">
 
 
 <script type="application/ld+json">
@@ -140,17 +135,17 @@
 </head>
 <body id="top">
     <header class="header">
-    <nav class="nav">
+    <nav class="header-nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -166,7 +161,7 @@
                 </button>
             </div>
         </div>
-        <ul id="menu">
+        <ul id="menu" class="menu">
             <li>
                 <a href="https://jaylittle.com/article/view/about/" title="About">
                     <span>About</span>
@@ -204,7 +199,13 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://jaylittle.com/">Home</a>&nbsp;»&nbsp;<a href="https://jaylittle.com/post/">Posts</a></div>
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    <a href='https://jaylittle.com/'>Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="https://jaylittle.com/post/">Posts</a></nav>
     <h1 class="post-title entry-hint-parent">
       The Evolution of Tech: Amnesiac Highway
     </h1>
@@ -212,7 +213,7 @@
 
 </div>
   </header> 
-  <div class="post-content"><p>Something insidious has been lapping away at the innards of my mind for quite awhile.  To be honest I wasn&rsquo;t even consciously aware of it 48 hours ago.  So why am I writing about it now?  Yesterday at my nephew&rsquo;s 9th birthday party, somebody posited the theory that video games act as a gateway drug for other more productive technology related pursuits.  I immediately took offense to that although I didn&rsquo;t fully understand why at the time.  Now that I&rsquo;ve had some time to think about it, I decided to go ahead and write about why I feel that way.</p>
+  <div class="post-content md-content"><p>Something insidious has been lapping away at the innards of my mind for quite awhile.  To be honest I wasn&rsquo;t even consciously aware of it 48 hours ago.  So why am I writing about it now?  Yesterday at my nephew&rsquo;s 9th birthday party, somebody posited the theory that video games act as a gateway drug for other more productive technology related pursuits.  I immediately took offense to that although I didn&rsquo;t fully understand why at the time.  Now that I&rsquo;ve had some time to think about it, I decided to go ahead and write about why I feel that way.</p>
 <p>The long and short of it is: I believe that theory used to be at least somewhat true given the right circumstances.  I don&rsquo;t believe it is really true at all now.  Why?  Well I believe that technology has changed in a fundamental manner.  The end result of this change is that there is far less bleed between tech related activities.</p>
 <p>When I was a kid, I largely only cared about playing video games on the computer.  Everything else was secondary.  Chances are that if I was spending time on the family Apple IIe, I was playing &ldquo;Below the Root&rdquo; or a lessor game of some sort.  Playing games on the Apple IIe was easy enough that I didn&rsquo;t have to learn anything else.  Thankfully my parents purchased me some illustrated books aimed at children that started me down the path of writing code.  But the truth is, beyond writing BASIC and playing games, I really didn&rsquo;t know a whole lot about that machine.</p>
 <p>After the Apple IIe was retired, I spent a lot of time on various PCs running a variant of MS-DOS.  This situation persisted from the late eighties until 1996 or 1997 when I finally got a PC capable of running Windows 95.  The important thing to note here is that DOS was not easy.  It was not friendly.  If you wanted to really use DOS for anything, you were kind of forced to learn something about it.</p>
@@ -240,9 +241,11 @@
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
 </a>
 
@@ -281,14 +284,13 @@
 
 </script>
 <script>
-    var mybutton = document.getElementById("top-link");
+    var toplink = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
         } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
+            toplink.classList.add("hidden");
         }
     };
 

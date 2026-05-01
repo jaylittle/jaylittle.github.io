@@ -11,7 +11,7 @@
 I just finished spending a full month with the newly released Windows Vista and boy do I have quite a bit to say about it.  To put a long story short, I’m now using Windows XP once again.  As most of you imaginary readers know, Vista is in and of itself a culmination of over five years of effort on the part of Microsoft to follow up on their previous consumer OS release, Windows XP.  Though controversial, due to its newfound copy protection, Windows XP is widely considered to be the latest success in the line of ever evolving operating systems produced by the software giant of Redmond, Washington.">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/post/view/2007/2/here-today-a-forgotten-vista-tomorrow/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.71da6873cf321d7c352ac63831b6f3bd3e9fbc537800631bf24848e7fc6b72d1.css" integrity="sha256-cdpoc88yHXw1KsY4MbbzvT6fvFN4AGMb8khI5/xrctE=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -52,12 +52,6 @@ I just finished spending a full month with the newly released Windows Vista and 
             }
         }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
-        }
-
     </style>
 </noscript>
 <script>
@@ -81,10 +75,11 @@ I just finished spending a full month with the newly released Windows Vista and 
     <meta property="article:section" content="post">
     <meta property="article:published_time" content="2007-02-24T00:00:00+00:00">
     <meta property="article:modified_time" content="2007-02-24T00:00:00+00:00">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Here today, a forgotten Vista’ tomorrow">
-<meta name="twitter:description" content="Yeah it’s been awhile.  I’ve been busy.
-I just finished spending a full month with the newly released Windows Vista and boy do I have quite a bit to say about it.  To put a long story short, I’m now using Windows XP once again.  As most of you imaginary readers know, Vista is in and of itself a culmination of over five years of effort on the part of Microsoft to follow up on their previous consumer OS release, Windows XP.  Though controversial, due to its newfound copy protection, Windows XP is widely considered to be the latest success in the line of ever evolving operating systems produced by the software giant of Redmond, Washington.">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Here today, a forgotten Vista’ tomorrow">
+  <meta name="twitter:description" content="Yeah it’s been awhile. I’ve been busy.
+I just finished spending a full month with the newly released Windows Vista and boy do I have quite a bit to say about it. To put a long story short, I’m now using Windows XP once again. As most of you imaginary readers know, Vista is in and of itself a culmination of over five years of effort on the part of Microsoft to follow up on their previous consumer OS release, Windows XP. Though controversial, due to its newfound copy protection, Windows XP is widely considered to be the latest success in the line of ever evolving operating systems produced by the software giant of Redmond, Washington.">
 
 
 <script type="application/ld+json">
@@ -143,17 +138,17 @@ I just finished spending a full month with the newly released Windows Vista and 
 </head>
 <body id="top">
     <header class="header">
-    <nav class="nav">
+    <nav class="header-nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -169,7 +164,7 @@ I just finished spending a full month with the newly released Windows Vista and 
                 </button>
             </div>
         </div>
-        <ul id="menu">
+        <ul id="menu" class="menu">
             <li>
                 <a href="https://jaylittle.com/article/view/about/" title="About">
                     <span>About</span>
@@ -207,7 +202,13 @@ I just finished spending a full month with the newly released Windows Vista and 
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://jaylittle.com/">Home</a>&nbsp;»&nbsp;<a href="https://jaylittle.com/post/">Posts</a></div>
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    <a href='https://jaylittle.com/'>Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="https://jaylittle.com/post/">Posts</a></nav>
     <h1 class="post-title entry-hint-parent">
       Here today, a forgotten Vista’ tomorrow
     </h1>
@@ -215,7 +216,7 @@ I just finished spending a full month with the newly released Windows Vista and 
 
 </div>
   </header> 
-  <div class="post-content"><p>Yeah it’s been awhile.  I’ve been busy.</p>
+  <div class="post-content md-content"><p>Yeah it’s been awhile.  I’ve been busy.</p>
 <p>I just finished spending a full month with the newly released Windows Vista and boy do I have quite a bit to say about it.  To put a long story short, I’m now using Windows XP once again.  As most of you imaginary readers know, Vista is in and of itself a culmination of over five years of effort on the part of Microsoft to follow up on their previous consumer OS release, Windows XP.  Though controversial, due to its newfound copy protection, Windows XP is widely considered to be the latest success in the line of ever evolving operating systems produced by the software giant of Redmond, Washington.</p>
 <p>Windows XP was far from perfect, though it is safe to say that it has ended up a better OS than it started as.  Windows XP is like that pair of good ole reliable shoes that you just can’t seem to find a reason to get rid of.  As I came to find out, Windows Vista is like the new pair of overpriced shoes you just brought home only to find that they were undersized, overrated, uncomfortable and generally designed for somebody that had already lost most of the sensation in their feet.</p>
 <p>As anybody from Microsoft will tell you, there are a lot of new things in Vista.  There are a few upfront in your face changes such as the new Aero UI and most importantly UAC.  Most of the changes that are generally referred to are behind the scenes types of changes that you as an end user will only notice over time rather than straight away (if at all).  I suspect the new glitzy UI is going to be the single feature that motivates the majority of Windows Vista upgrades.</p>
@@ -266,9 +267,11 @@ I just finished spending a full month with the newly released Windows Vista and 
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
 </a>
 
@@ -307,14 +310,13 @@ I just finished spending a full month with the newly released Windows Vista and 
 
 </script>
 <script>
-    var mybutton = document.getElementById("top-link");
+    var toplink = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
         } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
+            toplink.classList.add("hidden");
         }
     };
 

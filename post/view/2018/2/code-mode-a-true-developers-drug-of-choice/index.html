@@ -11,7 +11,7 @@
 What is &ldquo;Code Mode&rdquo;?  The term refers to the scenario in which you planned on accomplishing X number of things in a given coding session and end up accomplishing X^2 instead largely due to bursts of sustained inspiration and abnormally long periods of consistent lucidity.  Why do I call it &ldquo;Code Mode&rdquo;?  My father, who is also a professional developer, called it this for years. So for me this term has become synonymous with this state of mind.  I should start off by saying that this is generally considered to be a good thing.  For me this syndrome tends to manifest in response to particularly frustrating coding sessions in which I either did not meet all of the goals I had going into it or I literally had to fight tooth and nail for every win.">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/post/view/2018/2/code-mode-a-true-developers-drug-of-choice/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.71da6873cf321d7c352ac63831b6f3bd3e9fbc537800631bf24848e7fc6b72d1.css" integrity="sha256-cdpoc88yHXw1KsY4MbbzvT6fvFN4AGMb8khI5/xrctE=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -52,12 +52,6 @@ What is &ldquo;Code Mode&rdquo;?  The term refers to the scenario in which you p
             }
         }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
-        }
-
     </style>
 </noscript>
 <script>
@@ -81,10 +75,11 @@ What is “Code Mode”? The term refers to the scenario in which you planned on
     <meta property="article:section" content="post">
     <meta property="article:published_time" content="2018-02-19T00:00:00+00:00">
     <meta property="article:modified_time" content="2018-02-19T00:00:00+00:00">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Code Mode: A True Developers Drug of Choice">
-<meta name="twitter:description" content="This week I wanted to chat about a syndrome that I have experienced a few times over the years as both an amateur and a professional developer.  What syndrome am I referring to?  One of my favorites: The syndrome of &ldquo;Code Mode&rdquo;.
-What is &ldquo;Code Mode&rdquo;?  The term refers to the scenario in which you planned on accomplishing X number of things in a given coding session and end up accomplishing X^2 instead largely due to bursts of sustained inspiration and abnormally long periods of consistent lucidity.  Why do I call it &ldquo;Code Mode&rdquo;?  My father, who is also a professional developer, called it this for years. So for me this term has become synonymous with this state of mind.  I should start off by saying that this is generally considered to be a good thing.  For me this syndrome tends to manifest in response to particularly frustrating coding sessions in which I either did not meet all of the goals I had going into it or I literally had to fight tooth and nail for every win.">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Code Mode: A True Developers Drug of Choice">
+  <meta name="twitter:description" content="This week I wanted to chat about a syndrome that I have experienced a few times over the years as both an amateur and a professional developer. What syndrome am I referring to? One of my favorites: The syndrome of “Code Mode”.
+What is “Code Mode”? The term refers to the scenario in which you planned on accomplishing X number of things in a given coding session and end up accomplishing X^2 instead largely due to bursts of sustained inspiration and abnormally long periods of consistent lucidity. Why do I call it “Code Mode”? My father, who is also a professional developer, called it this for years. So for me this term has become synonymous with this state of mind. I should start off by saying that this is generally considered to be a good thing. For me this syndrome tends to manifest in response to particularly frustrating coding sessions in which I either did not meet all of the goals I had going into it or I literally had to fight tooth and nail for every win.">
 
 
 <script type="application/ld+json">
@@ -143,17 +138,17 @@ What is &ldquo;Code Mode&rdquo;?  The term refers to the scenario in which you p
 </head>
 <body id="top">
     <header class="header">
-    <nav class="nav">
+    <nav class="header-nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -169,7 +164,7 @@ What is &ldquo;Code Mode&rdquo;?  The term refers to the scenario in which you p
                 </button>
             </div>
         </div>
-        <ul id="menu">
+        <ul id="menu" class="menu">
             <li>
                 <a href="https://jaylittle.com/article/view/about/" title="About">
                     <span>About</span>
@@ -207,7 +202,13 @@ What is &ldquo;Code Mode&rdquo;?  The term refers to the scenario in which you p
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://jaylittle.com/">Home</a>&nbsp;»&nbsp;<a href="https://jaylittle.com/post/">Posts</a></div>
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    <a href='https://jaylittle.com/'>Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="https://jaylittle.com/post/">Posts</a></nav>
     <h1 class="post-title entry-hint-parent">
       Code Mode: A True Developers Drug of Choice
     </h1>
@@ -215,7 +216,7 @@ What is &ldquo;Code Mode&rdquo;?  The term refers to the scenario in which you p
 
 </div>
   </header> 
-  <div class="post-content"><p>This week I wanted to chat about a syndrome that I have experienced a few times over the years as both an amateur and a professional developer.  What syndrome am I referring to?  One of my favorites: The syndrome of &ldquo;Code Mode&rdquo;.</p>
+  <div class="post-content md-content"><p>This week I wanted to chat about a syndrome that I have experienced a few times over the years as both an amateur and a professional developer.  What syndrome am I referring to?  One of my favorites: The syndrome of &ldquo;Code Mode&rdquo;.</p>
 <p>What is &ldquo;Code Mode&rdquo;?  The term refers to the scenario in which you planned on accomplishing X number of things in a given coding session and end up accomplishing X^2 instead largely due to bursts of sustained inspiration and abnormally long periods of consistent lucidity.  Why do I call it &ldquo;Code Mode&rdquo;?  My father, who is also a professional developer, called it this for years. So for me this term has become synonymous with this state of mind.  I should start off by saying that this is generally considered to be a good thing.  For me this syndrome tends to manifest in response to particularly frustrating coding sessions in which I either did not meet all of the goals I had going into it or I literally had to fight tooth and nail for every win.</p>
 <p>I had one of those frustrating sessions this past Friday.  While it was largely avoidable as the painful productivity of that day did nothing but put me ahead of schedule, I couldn&rsquo;t help myself.  I had to continue no matter how painful.  Why?  Well a day prior I had come up with a new approach for solving a long running problem and despite my plan to take it relatively easy on Friday, I literally dreamed about writing this code on Thursday night.  The way I see it is that when your subconscious is telling you to get your ass to work, it&rsquo;s probably a good idea to listen.  So I did.</p>
 <p>While Friday was a rough day, I did ultimately manage to prove the concept out.  I came in on Monday thinking that I would have a relatively light day as I could coast on Fridays accomplishments.  Hardly.  As soon as I dived back into the code, I started to see other opportunities for improvement.  In fact I even went so far as to fix several other items which weren&rsquo;t even directly related to what I was working on.  Here is the kicker: It was all easy.  Stunningly easy.  My brain was in the exact place it needed to be to facilitate all of this.</p>
@@ -241,9 +242,11 @@ What is &ldquo;Code Mode&rdquo;?  The term refers to the scenario in which you p
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
 </a>
 
@@ -282,14 +285,13 @@ What is &ldquo;Code Mode&rdquo;?  The term refers to the scenario in which you p
 
 </script>
 <script>
-    var mybutton = document.getElementById("top-link");
+    var toplink = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
         } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
+            toplink.classList.add("hidden");
         }
     };
 

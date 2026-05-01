@@ -10,7 +10,7 @@
 <meta name="description" content="There is a lot of stuff that geeks care about that don&rsquo;t really interest the rest of the populace.  Somewhere within that laundry list of topics is one entitled, &ldquo;Major Uptime&rdquo;.  Most people turn off their computers every night.  Most geeks do not.  Why?  Simply put - there is some sort of odd geek pride associated with being able to operate a computer stably for a long a period of time.  (Note: this especially counts for those of us who make a living administering would-be stable machines)">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/post/view/2003/10/a-sign-of-a-true-geek-major-uptime/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.71da6873cf321d7c352ac63831b6f3bd3e9fbc537800631bf24848e7fc6b72d1.css" integrity="sha256-cdpoc88yHXw1KsY4MbbzvT6fvFN4AGMb8khI5/xrctE=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -51,12 +51,6 @@
             }
         }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
-        }
-
     </style>
 </noscript>
 <script>
@@ -79,9 +73,10 @@
     <meta property="article:section" content="post">
     <meta property="article:published_time" content="2003-10-20T00:00:00+00:00">
     <meta property="article:modified_time" content="2003-10-20T00:00:00+00:00">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="A sign of a true geek:  Major Uptime">
-<meta name="twitter:description" content="There is a lot of stuff that geeks care about that don&rsquo;t really interest the rest of the populace.  Somewhere within that laundry list of topics is one entitled, &ldquo;Major Uptime&rdquo;.  Most people turn off their computers every night.  Most geeks do not.  Why?  Simply put - there is some sort of odd geek pride associated with being able to operate a computer stably for a long a period of time.  (Note: this especially counts for those of us who make a living administering would-be stable machines)">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="A sign of a true geek:  Major Uptime">
+  <meta name="twitter:description" content="There is a lot of stuff that geeks care about that don’t really interest the rest of the populace. Somewhere within that laundry list of topics is one entitled, “Major Uptime”. Most people turn off their computers every night. Most geeks do not. Why? Simply put - there is some sort of odd geek pride associated with being able to operate a computer stably for a long a period of time. (Note: this especially counts for those of us who make a living administering would-be stable machines)">
 
 
 <script type="application/ld+json">
@@ -140,17 +135,17 @@
 </head>
 <body id="top">
     <header class="header">
-    <nav class="nav">
+    <nav class="header-nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -166,7 +161,7 @@
                 </button>
             </div>
         </div>
-        <ul id="menu">
+        <ul id="menu" class="menu">
             <li>
                 <a href="https://jaylittle.com/article/view/about/" title="About">
                     <span>About</span>
@@ -204,7 +199,13 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://jaylittle.com/">Home</a>&nbsp;»&nbsp;<a href="https://jaylittle.com/post/">Posts</a></div>
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    <a href='https://jaylittle.com/'>Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="https://jaylittle.com/post/">Posts</a></nav>
     <h1 class="post-title entry-hint-parent">
       A sign of a true geek:  Major Uptime
     </h1>
@@ -212,7 +213,7 @@
 
 </div>
   </header> 
-  <div class="post-content"><p>There is a lot of stuff that geeks care about that don&rsquo;t really interest the rest of the populace.  Somewhere within that laundry list of topics is one entitled, &ldquo;Major Uptime&rdquo;.  Most people turn off their computers every night.  Most geeks do not.  Why?  Simply put - there is some sort of odd geek pride associated with being able to operate a computer stably for a long a period of time.  (Note: this especially counts for those of us who make a living administering would-be stable machines)</p>
+  <div class="post-content md-content"><p>There is a lot of stuff that geeks care about that don&rsquo;t really interest the rest of the populace.  Somewhere within that laundry list of topics is one entitled, &ldquo;Major Uptime&rdquo;.  Most people turn off their computers every night.  Most geeks do not.  Why?  Simply put - there is some sort of odd geek pride associated with being able to operate a computer stably for a long a period of time.  (Note: this especially counts for those of us who make a living administering would-be stable machines)</p>
 <p>Below is a picture.  It is a very significant picture.  Why?  Because one of my home machines which runs 24/7 has finally broken the 100 day barrier of uptime.  It is very rare that I get this opportunity as it seems like I&rsquo;m always patching some piece of software or another and/or rebooting due to some driver update, hardware change or power problem.  This particular machine is the oldest of my five computers.  It is a Dell Pentium II 233/mhz with 128 megs of RAM and a 15 gigabyte harddrive.  Currently it runs Linux 24/7 (though it dual boots with Windows 95/MS DOS) and it serves the sole purpose of receiving radio stations on my FM tuner card and streaming the MP3 audio of those stations to my shoutcast server.</p>
 <p>Of course I&rsquo;ve done all of this just so I can listen to the Greenville radio stations without actually having a radio with me.  It sounds quite sad I know - but alas that is the curse of the geek.  And without further introduction&hellip;.  I present the picture:</p>
 <figure class="align-center ">
@@ -243,9 +244,11 @@
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
 </a>
 
@@ -284,14 +287,13 @@
 
 </script>
 <script>
-    var mybutton = document.getElementById("top-link");
+    var toplink = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
         } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
+            toplink.classList.add("hidden");
         }
     };
 

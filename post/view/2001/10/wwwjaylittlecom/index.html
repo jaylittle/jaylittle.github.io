@@ -11,7 +11,7 @@
 This will also help my resume to look a little better of course.  Now that my site looks somewhat professional because I have a domain name instead of some half baked scheme using a crappy old computer, an unstable IP address, and an alternate port :-)">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/post/view/2001/10/wwwjaylittlecom/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.71da6873cf321d7c352ac63831b6f3bd3e9fbc537800631bf24848e7fc6b72d1.css" integrity="sha256-cdpoc88yHXw1KsY4MbbzvT6fvFN4AGMb8khI5/xrctE=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -52,12 +52,6 @@ This will also help my resume to look a little better of course.  Now that my si
             }
         }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
-        }
-
     </style>
 </noscript>
 <script>
@@ -81,10 +75,11 @@ This will also help my resume to look a little better of course. Now that my sit
     <meta property="article:section" content="post">
     <meta property="article:published_time" content="2001-10-11T00:00:00+00:00">
     <meta property="article:modified_time" content="2001-10-11T00:00:00+00:00">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="www.jaylittle.com">
-<meta name="twitter:description" content="Thats right guys!  My favorite domain just opened up for registration and I snagged it right up!  No more stupid @home IP address, no more weird port numbers, and no more slow upload speed caps imposed by my friends on at @home!
-This will also help my resume to look a little better of course.  Now that my site looks somewhat professional because I have a domain name instead of some half baked scheme using a crappy old computer, an unstable IP address, and an alternate port :-)">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="www.jaylittle.com">
+  <meta name="twitter:description" content="Thats right guys! My favorite domain just opened up for registration and I snagged it right up! No more stupid @home IP address, no more weird port numbers, and no more slow upload speed caps imposed by my friends on at @home!
+This will also help my resume to look a little better of course. Now that my site looks somewhat professional because I have a domain name instead of some half baked scheme using a crappy old computer, an unstable IP address, and an alternate port :-)">
 
 
 <script type="application/ld+json">
@@ -143,17 +138,17 @@ This will also help my resume to look a little better of course.  Now that my si
 </head>
 <body id="top">
     <header class="header">
-    <nav class="nav">
+    <nav class="header-nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -169,7 +164,7 @@ This will also help my resume to look a little better of course.  Now that my si
                 </button>
             </div>
         </div>
-        <ul id="menu">
+        <ul id="menu" class="menu">
             <li>
                 <a href="https://jaylittle.com/article/view/about/" title="About">
                     <span>About</span>
@@ -207,7 +202,13 @@ This will also help my resume to look a little better of course.  Now that my si
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://jaylittle.com/">Home</a>&nbsp;»&nbsp;<a href="https://jaylittle.com/post/">Posts</a></div>
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    <a href='https://jaylittle.com/'>Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="https://jaylittle.com/post/">Posts</a></nav>
     <h1 class="post-title entry-hint-parent">
       www.jaylittle.com
     </h1>
@@ -215,7 +216,7 @@ This will also help my resume to look a little better of course.  Now that my si
 
 </div>
   </header> 
-  <div class="post-content"><p>Thats right guys!  My favorite domain just opened up for registration and I snagged it right up!  No more stupid @home IP address, no more weird port numbers, and no more slow upload speed caps imposed by my friends on at @home!</p>
+  <div class="post-content md-content"><p>Thats right guys!  My favorite domain just opened up for registration and I snagged it right up!  No more stupid @home IP address, no more weird port numbers, and no more slow upload speed caps imposed by my friends on at @home!</p>
 <p>This will also help my resume to look a little better of course.  Now that my site looks somewhat professional because I have a domain name instead of some half baked scheme using a crappy old computer, an unstable IP address, and an alternate port :-)</p>
 <p>Either way - it should be alot easier to get to my site now (maybe people will actually start showing up! YEAH!).  BTW, you can still contact me at <a href="mailto:darkgamorck@home.com">darkgamorck@home.com</a> but I would rather that you use <a href="mailto:jaylittle@jaylittle.com">jaylittle@jaylittle.com</a> since my @home address will probably be disappearing in short order due to the fact that they are very close to shutting down their operations.</p>
 <p>J</p>
@@ -239,9 +240,11 @@ This will also help my resume to look a little better of course.  Now that my si
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
 </a>
 
@@ -280,14 +283,13 @@ This will also help my resume to look a little better of course.  Now that my si
 
 </script>
 <script>
-    var mybutton = document.getElementById("top-link");
+    var toplink = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
         } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
+            toplink.classList.add("hidden");
         }
     };
 

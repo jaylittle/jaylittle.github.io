@@ -11,7 +11,7 @@
 The long and short of it is that Firefox Quantum represents a huge performance and compatibility improvement. However the organization which manages and maintains it, Mozilla, has been making some really questionable moves as of late so I&rsquo;m already looking for an alternative.  The first symptom of this problem reared it&rsquo;s ugly head with the Cliqz data slurping scandal. While this was a test pilot in which an addon was being pre-installed in a small percentage of Firefox downloads for users located in Germany (according to Mozilla), it still represented a step that chilled privacy advocates such as myself to the core.  But hey, no big deal, right?  That was a one time thing and everybody fucks up.  Shit happens.  Most people ended up giving them a pass here, myself included.  The reality here is that this was a limited pilot and Firefox was still a better bet for privacy advocates than anything even remotely related to Google such as Chrome or Chromium.">
 <meta name="author" content="Jay Little">
 <link rel="canonical" href="https://jaylittle.com/post/view/2018/1/a-man-without-a-web-browser/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.71da6873cf321d7c352ac63831b6f3bd3e9fbc537800631bf24848e7fc6b72d1.css" integrity="sha256-cdpoc88yHXw1KsY4MbbzvT6fvFN4AGMb8khI5/xrctE=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://jaylittle.com/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://jaylittle.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://jaylittle.com/favicon-32x32.png">
@@ -52,12 +52,6 @@ The long and short of it is that Firefox Quantum represents a huge performance a
             }
         }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
-        }
-
     </style>
 </noscript>
 <script>
@@ -81,10 +75,11 @@ The long and short of it is that Firefox Quantum represents a huge performance a
     <meta property="article:section" content="post">
     <meta property="article:published_time" content="2018-01-01T00:00:00+00:00">
     <meta property="article:modified_time" content="2018-01-01T00:00:00+00:00">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="A Man Without a Web Browser">
-<meta name="twitter:description" content="So those of you who know me personally know that I recently switched from Chromium to Firefox.  I obviously haven&rsquo;t commented on that change here.  Why?  Well there is actually a really good reason for my silence and I&rsquo;m going to tell you why.
-The long and short of it is that Firefox Quantum represents a huge performance and compatibility improvement. However the organization which manages and maintains it, Mozilla, has been making some really questionable moves as of late so I&rsquo;m already looking for an alternative.  The first symptom of this problem reared it&rsquo;s ugly head with the Cliqz data slurping scandal. While this was a test pilot in which an addon was being pre-installed in a small percentage of Firefox downloads for users located in Germany (according to Mozilla), it still represented a step that chilled privacy advocates such as myself to the core.  But hey, no big deal, right?  That was a one time thing and everybody fucks up.  Shit happens.  Most people ended up giving them a pass here, myself included.  The reality here is that this was a limited pilot and Firefox was still a better bet for privacy advocates than anything even remotely related to Google such as Chrome or Chromium.">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="A Man Without a Web Browser">
+  <meta name="twitter:description" content="So those of you who know me personally know that I recently switched from Chromium to Firefox. I obviously haven’t commented on that change here. Why? Well there is actually a really good reason for my silence and I’m going to tell you why.
+The long and short of it is that Firefox Quantum represents a huge performance and compatibility improvement. However the organization which manages and maintains it, Mozilla, has been making some really questionable moves as of late so I’m already looking for an alternative. The first symptom of this problem reared it’s ugly head with the Cliqz data slurping scandal. While this was a test pilot in which an addon was being pre-installed in a small percentage of Firefox downloads for users located in Germany (according to Mozilla), it still represented a step that chilled privacy advocates such as myself to the core. But hey, no big deal, right? That was a one time thing and everybody fucks up. Shit happens. Most people ended up giving them a pass here, myself included. The reality here is that this was a limited pilot and Firefox was still a better bet for privacy advocates than anything even remotely related to Google such as Chrome or Chromium.">
 
 
 <script type="application/ld+json">
@@ -143,17 +138,17 @@ The long and short of it is that Firefox Quantum represents a huge performance a
 </head>
 <body id="top">
     <header class="header">
-    <nav class="nav">
+    <nav class="header-nav">
         <div class="logo">
             <a href="https://jaylittle.com/" accesskey="h" title="Jay Little (Alt + H)">Jay Little</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -169,7 +164,7 @@ The long and short of it is that Firefox Quantum represents a huge performance a
                 </button>
             </div>
         </div>
-        <ul id="menu">
+        <ul id="menu" class="menu">
             <li>
                 <a href="https://jaylittle.com/article/view/about/" title="About">
                     <span>About</span>
@@ -207,7 +202,13 @@ The long and short of it is that Firefox Quantum represents a huge performance a
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://jaylittle.com/">Home</a>&nbsp;»&nbsp;<a href="https://jaylittle.com/post/">Posts</a></div>
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    <a href='https://jaylittle.com/'>Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="https://jaylittle.com/post/">Posts</a></nav>
     <h1 class="post-title entry-hint-parent">
       A Man Without a Web Browser
     </h1>
@@ -215,7 +216,7 @@ The long and short of it is that Firefox Quantum represents a huge performance a
 
 </div>
   </header> 
-  <div class="post-content"><p>So those of you who know me personally know that I recently switched from Chromium to Firefox.  I obviously haven&rsquo;t commented on that change here.  Why?  Well there is actually a really good reason for my silence and I&rsquo;m going to tell you why.</p>
+  <div class="post-content md-content"><p>So those of you who know me personally know that I recently switched from Chromium to Firefox.  I obviously haven&rsquo;t commented on that change here.  Why?  Well there is actually a really good reason for my silence and I&rsquo;m going to tell you why.</p>
 <p>The long and short of it is that <a href="https://www.wired.com/story/firefox-quantum-the-browser-built-for-2017/">Firefox Quantum</a> represents a huge performance and compatibility improvement. However the organization which manages and maintains it, Mozilla, has been making some really questionable moves as of late so I&rsquo;m already looking for an alternative.  The first symptom of this problem reared it&rsquo;s ugly head with the <a href="http://www.zdnet.com/article/firefox-tests-cliqz-engine-which-slurps-user-browsing-data/">Cliqz data slurping scandal</a>. While this was a test pilot in which an addon was being pre-installed in a small percentage of Firefox downloads for users located in Germany (according to Mozilla), it still represented a step that chilled privacy advocates such as myself to the core.  But hey, no big deal, right?  That was a one time thing and everybody fucks up.  Shit happens.  Most people ended up giving them a pass here, myself included.  The reality here is that this was a limited pilot and Firefox was still a better bet for privacy advocates than anything even remotely related to Google such as Chrome or Chromium.</p>
 <p>But then the now infamous <a href="https://www.cnet.com/news/mozilla-backpedals-after-mr-robot-firefox-misstep/">Mr. Robot debacle happened</a>.  No matter what way you slice it, this is fucked.  The gist of this scandal is that Mozilla decided to auto install a Mr. Robot themed addon onto the browsers of users that had not opted out of something called Shield Studies.  Thankfully I had opted out of this service as I tend to turn off all telemetry related functions for the official release version of any piece of software I use.  My fellow users who had not woke up one morning to find this addon installed in their browser with absolutely no guidance on why it was there or what it was doing.</p>
 <p>This represents a problem for two reasons.  First the Shield Studies feature doesn&rsquo;t tell you that you are effectively pimping your eyes out to Mozilla for marketing related purposes.  It bills itself as a way for users to help improve the browser.  This addon did nothing of the sort.  Secondly the very idea that Mozilla has the power to add or remove addons from your browser at will without requiring any direct consent from the end user is extremely disturbing.  Not even Google has those kinds of balls.  So this all puts me in an awkward position.  I&rsquo;m still using Firefox 57.  I&rsquo;m a huge fan of the improvements that it has made.  I still severely distrust Google along with Chrome and Chromium as a result.  However I now also distrust Mozilla.  So all of those factors effectively put me into a position where I am now looking for an alternative to the alternative.</p>
@@ -242,9 +243,11 @@ The long and short of it is that Firefox Quantum represents a huge performance a
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
 </a>
 
@@ -283,14 +286,13 @@ The long and short of it is that Firefox Quantum represents a huge performance a
 
 </script>
 <script>
-    var mybutton = document.getElementById("top-link");
+    var toplink = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
         } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
+            toplink.classList.add("hidden");
         }
     };
 
